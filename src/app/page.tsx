@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
     
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-400 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
