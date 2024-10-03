@@ -5,7 +5,7 @@ import Image from "next/image";
 const TopBar = () => {
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-black">
+      <nav className="bg-white border-gray-200 dark:bg-black xs:hidden hidden sm:hidden md:block lg:block">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
                   <a href="tel:5541251234" className="font-montserrat text-sm  text-gray-200 dark:text-gray-200 hover:underline flex flex-row">
