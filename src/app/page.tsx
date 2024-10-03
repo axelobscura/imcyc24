@@ -34,10 +34,10 @@ export default function Home() {
                 />
               </svg>
             </a>
-            <h1 className="mb-4 text-4xl font-light tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 className="mb-4 text-3xl font-light tracking-tight leading-none text-gray-900 md:text-4xl lg:text-6xl dark:text-white">
               COMPARTIR EL CONOCIMIENTO
             </h1>
-            <p className="mb-8 text-sm font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
+            <p className="mb-8 text-xs font-light text-gray-500 lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
             El Instituto Mexicano del Cemento y del Concreto A.C. es una organización dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.
             </p>
             <form className="w-full max-w-md mx-auto">
