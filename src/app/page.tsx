@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 
 export default function Home() {
