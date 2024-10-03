@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
     
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-400 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
@@ -34,10 +34,10 @@ export default function Home() {
                 />
               </svg>
             </a>
-            <h1 className="mb-4 text-3xl font-light tracking-tight leading-none text-gray-900 md:text-4xl lg:text-6xl dark:text-white">
+            <h1 className="font-montserrat mb-4 text-3xl font-light tracking-tight leading-none text-gray-900 md:text-4xl lg:text-6xl dark:text-white">
               COMPARTIR EL CONOCIMIENTO
             </h1>
-            <p className="mb-8 text-xs font-light text-gray-500 lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
+            <p className="font-montserrat mb-8 text-xs font-light text-gray-500 lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
             El Instituto Mexicano del Cemento y del Concreto A.C. es una organización dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.
             </p>
             <form className="w-full max-w-md mx-auto">
