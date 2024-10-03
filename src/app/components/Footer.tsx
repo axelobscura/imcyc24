@@ -26,28 +26,28 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/que-es-el-imcyc">
                       ¿Qué es el IMCYC?
                     </Link>
                   </li>
                   
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/historia">
                       Historia
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/mision">
                       Misión
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/gerencia-tecnica">
                       ¿Qué es la Gerencia Técnica?
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/gerencia-ensenanza">
                       ¿Qué es la Gerencia de Enseñanza?
                     </Link>
                   </li>
@@ -60,23 +60,23 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/laboratorio-de-ensayos">
                       Laboratorio de ensayos
                     </Link>
                   </li>
                   
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/laboratorio-de-calibracion">
                       Laboratorio de calibración
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/asesoria-en-estructuras">
                       Asesoría técnica en estructuras
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/">
+                    <Link href="/certificacion-de-personas">
                       Organismo de certificación de personas
                     </Link>
                   </li>
