@@ -151,6 +151,55 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+              <div>
+                <h2 className="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  Próximos cursos
+                  <p style={{fontSize: '12px'}}><small>Calendario de cursos 2024</small></p>
+                </h2>
+                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
+                  <li className="mb-2">
+                    <Link href="/">
+                      Capacitación
+                    </Link>
+                  </li>
+                  
+                  <li className="mb-2">
+                    <Link href="/">
+                      Membresías
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      Plataforma en línea
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      Sellos de calidad
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      Revista CYT
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      Tienda IMCYC
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      CO - Working
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/">
+                      Constacias de aptitud
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

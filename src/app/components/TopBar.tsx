@@ -5,6 +5,7 @@ import Image from "next/image";
 const TopBar = () => {
   return (
     <>
+    <div className="fixed z-50 w-full">
       <nav className="bg-white border-gray-200 dark:bg-black xs:hidden hidden sm:hidden md:block lg:block">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
@@ -43,7 +44,7 @@ const TopBar = () => {
               </div>
           </div>
       </nav>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 z-50 shadow-lg">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 z-50 shadow-lg dark:bg-opacity-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
@@ -149,7 +150,7 @@ const TopBar = () => {
                 placeholder="Buscar..."
               />
             </div>
-            <ul className="flex flex-col p-4 md:p-0 mt-5 font-light border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-5 font-light border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <Link
                   href="/"
@@ -278,6 +279,7 @@ const TopBar = () => {
           </div>
         </div> */}
       </nav>
+      </div>
     </>
   );
 };
