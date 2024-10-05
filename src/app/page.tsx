@@ -8,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <p className="pb-7">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
             <a
               href="#"
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
@@ -34,6 +35,7 @@ export default function Home() {
                 />
               </svg>
             </a>
+            
             <h1 className="font-montserrat mb-4 text-3xl font-light tracking-tight leading-none text-gray-900 md:text-4xl lg:text-6xl dark:text-white">
               COMPARTIR EL CONOCIMIENTO
             </h1>
