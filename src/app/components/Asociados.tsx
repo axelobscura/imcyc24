@@ -32,7 +32,7 @@ const Asociados = () => {
                 <Image
                   src="/asociados/logo_fortaleza_b.svg"
                   alt="Asociados"
-                  width={90}
+                  width={80}
                   height={0}
                 />
             </Link>
