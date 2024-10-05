@@ -16,9 +16,10 @@ export default function QueEsElImcyc() {
               <hr />
               <br />
               <p className="text-justify font-montserrat text-sm">
-                El <b>Instituto Mexicano del Cemento y del Concreto A.C.</b> es una asociación no lucrativa dedicada a la
-                investigación, enseñanza y difusión de las técnicas de
-                aplicación del cemento y del concreto.{" "}
+                El <b>Instituto Mexicano del Cemento y del Concreto A.C.</b> es
+                una asociación no lucrativa dedicada a la investigación,
+                enseñanza y difusión de las técnicas de aplicación del cemento y
+                del concreto.{" "}
                 <b>
                   Su misión es promover la utilización óptima del cemento y del
                   concreto
@@ -29,29 +30,39 @@ export default function QueEsElImcyc() {
                 industria, así como de la sociedad.
                 <br />
                 <br />
-                El IMCYC <b>surgió en 1923 como un «Comité para Propagar el Uso del
-                Cemento Portland». Ya en 1959 se constituyó como Instituto
-                Mexicano del Cemento y del Concreto, A.C.</b>, con el objetivo de
-                investigar y promover métodos constructivos y soluciones
-                técnicas que permitan un uso más económico y racional del
-                concreto en la construcción, para ofrecer el concreto al
-                diseñador, al constructor y al propietario como la alternativa
-                más ventajosa frente al empleo de otros materiales, además de
-                crear más y mejores satisfactores para los asociados y sus
-                clientes.
+                El IMCYC{" "}
+                <b>
+                  surgió en 1923 como un «Comité para Propagar el Uso del
+                  Cemento Portland». Ya en 1959 se constituyó como Instituto
+                  Mexicano del Cemento y del Concreto, A.C.
+                </b>
+                , con el objetivo de investigar y promover métodos constructivos
+                y soluciones técnicas que permitan un uso más económico y
+                racional del concreto en la construcción, para ofrecer el
+                concreto al diseñador, al constructor y al propietario como la
+                alternativa más ventajosa frente al empleo de otros materiales,
+                además de crear más y mejores satisfactores para los asociados y
+                sus clientes.
                 <br />
                 <br />
-                De este modo, <b>se aportan nuevos conocimientos sobre el cemento y
-                el concreto, y se enseña a trabajarlo con calidad, resolviendo
-                los problemas de aplicación en las obras y orientando a los
-                profesionales en sus múltiples oportunidades de utilización</b>. Así
-                mismo, se fortalecen nuestras estructuras, desarrollando al
-                personal, ampliando nuestra presencia nacional e internacional y
-                haciendo más efectivas y eficientes las operaciones. <b>El Instituto Mexicano del Cemento y del Concreto A.C., es
-                imagen, voz y representatividad del Sector Cemento y Concreto
-                ante la sociedad</b>, las autoridades nacionales y entidades
-                internacionales, no estando comprometido con ninguna de las
-                empresas del ramo.
+                De este modo,{" "}
+                <b>
+                  se aportan nuevos conocimientos sobre el cemento y el
+                  concreto, y se enseña a trabajarlo con calidad, resolviendo
+                  los problemas de aplicación en las obras y orientando a los
+                  profesionales en sus múltiples oportunidades de utilización
+                </b>
+                . Así mismo, se fortalecen nuestras estructuras, desarrollando
+                al personal, ampliando nuestra presencia nacional e
+                internacional y haciendo más efectivas y eficientes las
+                operaciones.{" "}
+                <b>
+                  El Instituto Mexicano del Cemento y del Concreto A.C., es
+                  imagen, voz y representatividad del Sector Cemento y Concreto
+                  ante la sociedad
+                </b>
+                , las autoridades nacionales y entidades internacionales, no
+                estando comprometido con ninguna de las empresas del ramo.
               </p>
             </div>
             <div className="w-full flex justify-center">
