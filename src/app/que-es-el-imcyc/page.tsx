@@ -8,15 +8,15 @@ export default function QueEsElImcyc() {
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-center justify-items-center">
-            <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-8 sm:pt-50">
-              <h1 className="text-4xl font-bold text-white">
+            <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-8 sm:pt-50 pl-40">
+              <h1 className="text-4xl font-bold text-white pt-10 pl-">
                 ¿Qué es el IMCYC?
               </h1>
               <br />
               <hr />
               <br />
               <p className="text-justify font-montserrat text-sm">
-                El IMCYC, A.C. es una asociación no lucrativa dedicada a la
+                El <b>Instituto Mexicano del Cemento y del Concreto A.C.</b> es una asociación no lucrativa dedicada a la
                 investigación, enseñanza y difusión de las técnicas de
                 aplicación del cemento y del concreto.{" "}
                 <b>
@@ -29,9 +29,9 @@ export default function QueEsElImcyc() {
                 industria, así como de la sociedad.
                 <br />
                 <br />
-                El IMCYC surgió en 1923 como un «Comité para Propagar el Uso del
+                El IMCYC <b>surgió en 1923 como un «Comité para Propagar el Uso del
                 Cemento Portland». Ya en 1959 se constituyó como Instituto
-                Mexicano del Cemento y del Concreto, A.C., con el objetivo de
+                Mexicano del Cemento y del Concreto, A.C.</b>, con el objetivo de
                 investigar y promover métodos constructivos y soluciones
                 técnicas que permitan un uso más económico y racional del
                 concreto en la construcción, para ofrecer el concreto al
@@ -41,10 +41,10 @@ export default function QueEsElImcyc() {
                 clientes.
                 <br />
                 <br />
-                De este modo, se aportan nuevos conocimientos sobre el cemento y
+                De este modo, <b>se aportan nuevos conocimientos sobre el cemento y
                 el concreto, y se enseña a trabajarlo con calidad, resolviendo
                 los problemas de aplicación en las obras y orientando a los
-                profesionales en sus múltiples oportunidades de utilización. Así
+                profesionales en sus múltiples oportunidades de utilización</b>. Así
                 mismo, se fortalecen nuestras estructuras, desarrollando al
                 personal, ampliando nuestra presencia nacional e internacional y
                 haciendo más efectivas y eficientes las operaciones. El IMCYC es
