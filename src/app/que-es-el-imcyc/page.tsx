@@ -47,9 +47,9 @@ export default function QueEsElImcyc() {
                 profesionales en sus múltiples oportunidades de utilización</b>. Así
                 mismo, se fortalecen nuestras estructuras, desarrollando al
                 personal, ampliando nuestra presencia nacional e internacional y
-                haciendo más efectivas y eficientes las operaciones. El IMCYC es
+                haciendo más efectivas y eficientes las operaciones. <b>El Instituto Mexicano del Cemento y del Concreto A.C., es
                 imagen, voz y representatividad del Sector Cemento y Concreto
-                ante la sociedad, las autoridades nacionales y entidades
+                ante la sociedad</b>, las autoridades nacionales y entidades
                 internacionales, no estando comprometido con ninguna de las
                 empresas del ramo.
               </p>
