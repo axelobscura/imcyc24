@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Asociados from "./Asociados";
 
 const Footer = () => {
   return (
@@ -153,6 +154,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <Asociados />
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
