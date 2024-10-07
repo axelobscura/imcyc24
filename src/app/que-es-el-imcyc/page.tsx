@@ -69,8 +69,8 @@ export default function QueEsElImcyc() {
               <Image
                 src="/qs1.jpg"
                 alt="IMCYC"
-                width={500}
-                height={500}
+                width={700}
+                height={0}
                 layout="intrinsic"
               />
             </div>
