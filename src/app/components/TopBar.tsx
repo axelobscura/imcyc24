@@ -6,7 +6,7 @@ const TopBar = () => {
   return (
     <>
     <div className="fixed z-50 w-full">
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+      <nav className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
                   <a href="tel:5541251234" className="flex font-montserrat text-xs text-gray-200 dark:text-gray-200 hover:underline flex flex-row">
@@ -44,7 +44,7 @@ const TopBar = () => {
               </div>
           </div>
       </nav>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 z-50 shadow-lg dark:bg-opacity-50">
+      <nav className="bg-gray-900 bg-opacity-50 border-gray-200 dark:bg-gray-900 z-50 shadow-lg dark:bg-opacity-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
@@ -98,7 +98,7 @@ const TopBar = () => {
               <input
                 type="text"
                 id="search-navbar"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-900 bg-gray-90 focus:ring-gray-900 focus:border-blue-500 dark:bg-gray-900 dark:border-gray-900 dark:placeholder-gray-900 dark:text-white dark:focus:ring-gray-900 dark:focus:border-gray-900"
+                className="block w-full p-2 ps-10 text-sm bg-gray-900 text-gray-900 border border-gray-900 bg-gray-90 focus:ring-gray-900 focus:border-blue-500 dark:bg-gray-900 dark:border-gray-900 dark:placeholder-gray-900 dark:text-white dark:focus:ring-gray-900 dark:focus:border-gray-900"
                 placeholder="Buscar..."
               />
             </div>
@@ -153,8 +153,8 @@ const TopBar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-5 font-light border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <Link
-                  href="/"
-                  className="font-montserrat block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm"
+                  href="/que-es-el-imcyc"
+                  className="font-montserrat block py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm "
                   aria-current="page"
                 >
                   QUIENES SOMOS
@@ -172,7 +172,7 @@ const TopBar = () => {
               <li>
                 <a
                   href="#"
-                  className="font-montserrat block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
+                  className="font-montserrat block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
                 >
                   ENSEÑANZA
                 </a>
@@ -180,7 +180,7 @@ const TopBar = () => {
               <li>
                 <a
                   href="#"
-                  className="font-montserrat block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
+                  className="font-montserrat block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
                 >
                   NOTICIAS
                 </a>
@@ -188,7 +188,7 @@ const TopBar = () => {
               <li>
                 <a
                   href="#"
-                  className="font-montserrat block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
+                  className="font-montserrat block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-sm"
                 >
                   CONTACTO
                 </a>

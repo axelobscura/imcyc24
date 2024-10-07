@@ -8,15 +8,15 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
-            <p className="pb-7">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
+            <p className="pb-7 text-white">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
             <a
               href="#"
-              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
+              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
             >
               <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">
                 Nuevo calendario de cursos 2025
               </span>{" "}
-              <span className="text-sm font-medium">
+              <span className="text-sm font-medium text-white">
                 Cursos, Cerificaciones, Diplomados, Webinars en línea y más...
               </span>
               <svg
@@ -36,22 +36,22 @@ export default function Home() {
               </svg>
             </a>
             
-            <h1 className="font-montserrat mb-4 text-3xl font-light tracking-tight leading-none text-gray-900 md:text-4xl lg:text-6xl dark:text-white">
+            <h1 className="font-montserrat mb-4 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
               COMPARTIR EL CONOCIMIENTO
             </h1>
-            <p className="font-montserrat mb-8 text-xs font-light text-gray-500 lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
+            <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
             El Instituto Mexicano del Cemento y del Concreto A.C. es una organización dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.
             </p>
             <form className="w-full max-w-md mx-auto">
               <label
-                className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                className="mb-2 text-sm font-medium text-white sr-only dark:text-white"
               >
                 Email sign-up
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none">
                   <svg
-                    className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    className="w-4 h-4 text-gray-400 dark:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -64,7 +64,7 @@ export default function Home() {
                 <input
                   type="email"
                   id="default-email"
-                  className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-900 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Ingrese su correo electrónico..."
                   required
                 />
