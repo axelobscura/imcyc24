@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-3 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                   ¿Quiénes Somos?
                   <p style={{fontSize: '12px'}}><small>Compartir el conocimiento</small></p>
                 </h2>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-3 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                   Gerencia técnica
                   <p style={{fontSize: '12px'}}><small>Servicios técnicos especializados</small></p>
                 </h2>
@@ -104,7 +104,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-3 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                   Capacitación
                   <p style={{fontSize: '12px'}}><small>Servicios de enseñanza y empresariales</small></p>
                 </h2>

@@ -15,7 +15,7 @@ export default function QueEsElImcyc() {
               <br />
               <hr />
               <br />
-              <p className="text-justify font-montserrat text-sm">
+              <p className="text-justify font-montserrat text-sm text-white">
                 El <b>Instituto Mexicano del Cemento y del Concreto A.C.</b> es
                 una asociación no lucrativa dedicada a la investigación,
                 enseñanza y difusión de las técnicas de aplicación del cemento y
