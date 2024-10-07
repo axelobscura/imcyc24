@@ -7,7 +7,7 @@ export default function GerenciaTecnica() {
         <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-center justify-items-center">
           <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-10 sm:pl-26 md:pl-26 lg:pl-40">
             <h1 className="text-4xl font-bold text-white pt-10 sm:pl-190">
-              ¿QUÉ ES LA GERENCIA TÉCNICA?
+              ¿Qué es la GERENCIA TÉCNICA?
             </h1>
             <br />
             <hr />
