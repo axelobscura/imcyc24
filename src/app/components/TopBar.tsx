@@ -15,13 +15,13 @@ const TopBar = () => {
                     </svg>
                     <span className="ml-2 flex items-center">(55) 53 22 57 40 Ext. 210</span>
                   </a>
-                  <a href="tel:5541251234" className="flex font-montserrat text-xs  text-gray-500 dark:text-gray-200 hover:underline flex flex-row">
+                  <a href="tel:5541251234" className="flex font-montserrat text-xs  text-white dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
                     <span className="ml-2 flex items-center">imcyc@imcyc.com</span>
                   </a>
-                  <a href="tel:5541251234" className="flex font-montserrat text-xs  text-gray-500 dark:text-gray-200 hover:underline flex flex-row">
+                  <a href="tel:5541251234" className="flex font-montserrat text-xs  text-white dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
