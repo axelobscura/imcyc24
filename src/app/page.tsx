@@ -64,7 +64,7 @@ export default function Home() {
                 <input
                   type="email"
                   id="default-email"
-                  className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-900 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-900 rounded-lg bg-gray-900 focus:ring-blue-900 focus:border-blue-500 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Ingrese su correo electrónico..."
                   required
                 />
