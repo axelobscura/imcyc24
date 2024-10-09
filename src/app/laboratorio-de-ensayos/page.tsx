@@ -1,14 +1,56 @@
-//FLOWBITE - https://flowbite.com/docs/components/navbar/
-
 export default function LaboratorioDeEnsayos() {
+  const servicios = [
+    {
+      nombre: "Concreto",
+      imagen: "/ensayos/concreto.jpg"
+    },
+    {
+      nombre: "Agregados",
+      imagen: "/ensayos/agregados.jpg"
+    },
+    {
+      nombre: "Prefabricados",
+      imagen: "/ensayos/prefabricados.jpg"
+    },
+    {
+      nombre: "Cemento",
+      imagen: "/ensayos/cemento.jpg"
+    },
+    {
+      nombre: "Adhesivos",
+      imagen: "/ensayos/adhesivos.jpg"
+    },
+    {
+      nombre: "Acero",
+      imagen: "/ensayos/acero.jpg"
+    },
+    {
+      nombre: "Otros servicios",
+      imagen: "/ensayos/otros_servicios.jpg"
+    }
+  ];
   return (
-    <div>
-    
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
-
-      </main>
-    </div>
-    </div>
+    <>
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 bg-opacity-80 bg-[url('/gerencia-tecnica.jpg')] bg-gray-900 bg-blend-multiply">
+        <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
+          <ul className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr] gap-8 pt-0 sm:pt-20">
+            {servicios.map((servicio) => (
+              <li>
+                <div className="max-w-sm bg-gray-900 border border-gray-800 rounded-lg shadow hover:opacity-70">
+                    <a href="#">
+                        <img className="rounded-t-lg" src={servicio.imagen} alt={servicio.nombre} />
+                    </a>
+                    <div className="p-5 text-center">
+                        <a href="#">
+                            <h5 className="font-montserrat mb-2 text-2xl font-bold tracking-tight text-white uppercase font-light">{servicio.nombre}</h5>
+                        </a>
+                    </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }
