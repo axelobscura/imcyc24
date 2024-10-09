@@ -6,7 +6,6 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import { HiChevronDown } from "react-icons/hi";
 import Image from "next/image";
 
 function Menu() {
