@@ -5,31 +5,38 @@ export default function LaboratorioDeEnsayos() {
   const servicios = [
     {
       nombre: "Concreto",
-      imagen: "/ensayos/concreto.jpg"
+      imagen: "/ensayos/concreto.jpg",
+      url: "concreto"
     },
     {
       nombre: "Agregados",
-      imagen: "/ensayos/agregados.jpg"
+      imagen: "/ensayos/agregados.jpg",
+      url: "agregados"
     },
     {
       nombre: "Prefabricados",
-      imagen: "/ensayos/prefabricados.jpg"
+      imagen: "/ensayos/prefabricados.jpg",
+      url: "prefabricados"
     },
     {
       nombre: "Cemento",
-      imagen: "/ensayos/cemento.jpg"
+      imagen: "/ensayos/cemento.jpg",
+      url: "cemento"
     },
     {
       nombre: "Adhesivos",
-      imagen: "/ensayos/adhesivos.jpg"
+      imagen: "/ensayos/adhesivos.jpg",
+      url: "adhesivos"
     },
     {
       nombre: "Acero",
-      imagen: "/ensayos/acero.jpg"
+      imagen: "/ensayos/acero.jpg",
+      url: "acero"
     },
     {
       nombre: "Otros servicios",
-      imagen: "/ensayos/otros_servicios.jpg"
+      imagen: "/ensayos/otros_servicios.jpg",
+      url: "otros-servicios"
     }
   ];
   return (
@@ -40,8 +47,12 @@ export default function LaboratorioDeEnsayos() {
             {servicios.map((servicio) => (
               <li key={servicio.nombre}>
                 <div className="max-w-sm bg-gray-900 border border-gray-700 hover:border-gray-500 rounded-sm shadow hover:opacity-70">
-                    <Link href="/">
-                        <Image className="rounded-t-sm" src={servicio.imagen} alt={servicio.nombre} />
+                    <Link href={`/laboratorio-de-ensayos/${encodeURIComponent(servicio.url)}`}>
+                        <Image 
+                          className="rounded-t-sm" src={servicio.imagen} alt={servicio.nombre} 
+                          width="300"
+                          height="0"
+                        />
                     </Link>
                     <div className="p-5 text-center">
                         <Link href="/">
