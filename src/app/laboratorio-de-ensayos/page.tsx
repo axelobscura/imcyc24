@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function LaboratorioDeEnsayos() {
   const servicios = [
     {
@@ -35,15 +38,15 @@ export default function LaboratorioDeEnsayos() {
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
           <ul className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr] gap-8 pt-0 sm:pt-20">
             {servicios.map((servicio) => (
-              <li>
+              <li key={servicio.nombre}>
                 <div className="max-w-sm bg-gray-900 border border-gray-700 hover:border-gray-500 rounded-sm shadow hover:opacity-70">
-                    <a href="#">
-                        <img className="rounded-t-sm" src={servicio.imagen} alt={servicio.nombre} />
-                    </a>
+                    <Link href="/">
+                        <Image className="rounded-t-sm" src={servicio.imagen} alt={servicio.nombre} />
+                    </Link>
                     <div className="p-5 text-center">
-                        <a href="#">
+                        <Link href="/">
                             <h5 className="font-montserrat mb-2 text-2xl tracking-tight text-white uppercase font-light">{servicio.nombre}</h5>
-                        </a>
+                        </Link>
                     </div>
                 </div>
               </li>
