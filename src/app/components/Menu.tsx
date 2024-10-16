@@ -138,7 +138,7 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/capacitacion"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -147,7 +147,7 @@ function Menu() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/membresias"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -158,7 +158,7 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/plataforma-en-linea"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -167,7 +167,7 @@ function Menu() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/sellos-de-calidad"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -178,7 +178,7 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/revista-cyt"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -187,7 +187,7 @@ function Menu() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/tienda"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -198,7 +198,7 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/co-working"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -207,7 +207,7 @@ function Menu() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/gerencia-ensenanza/constancia-de-aptitud"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
