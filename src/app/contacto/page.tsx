@@ -4,20 +4,11 @@ import { CiCircleChevRight } from "react-icons/ci";
 export default function Contacto() {
   return (
     <div>
-      <div className="flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/contacto.jpeg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)]  bg-gradient-to-t from-gray-900 to-gray-800 z-10 bg-cover bg-center bg-no-repeat">
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
-            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
-              <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-0 border border-gray-800">
-                <h1 className="font-montserrat text-3xl text-white pt-0 sm:pl-50 uppercase font-semibold">
-                  Contacto
-                </h1>
-                <p>Instituto Mexicano del Cemento y del Concreto A.C.</p>
-              </div>
-              <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] items-center"></div>
-            </div>
-            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-start justify-items-stretch pt-1 w-full">
-              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-800">
+            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-start justify-items-stretch pt-20 w-full">
+              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-700">
                 <h1 className="flex items-center font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold pb-3">
                   <CiCircleChevRight className="mr-2"/> OFICINAS GENERALES
                 </h1>
@@ -62,7 +53,7 @@ export default function Contacto() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-800">
+              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-700">
                 <h1 className="flex items-center font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold pb-3">
                   <CiCircleChevRight className="mr-2"/> GERENCIA TÉCNICA IMCYC
                 </h1>
