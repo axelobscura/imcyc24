@@ -211,7 +211,7 @@ function Menu() {
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
-                    Constacias de aptitud
+                    Constancias de aptitud
                   </Link>
                 </li>
               </div>
@@ -219,13 +219,13 @@ function Menu() {
           </MegaMenuDropdown>
 
           <NavbarLink
-            href="/"
+            href="/noticias"
             className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
             Noticias
           </NavbarLink>
           <NavbarLink
-            href="/"
+            href="/contacto"
             className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
             Contacto
