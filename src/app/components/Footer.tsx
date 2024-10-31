@@ -162,7 +162,7 @@ const Footer = () => {
               <a href="https://imcyc.com/" className="hover:underline">
                 Instituto Mexicano del Cemento y del Concreto A.C.
               </a>
-              , Todos los Derechos Revervados.
+              , Todos los Derechos Revervados. <Link href="/aviso-de-privacidad"><span className="text-gray-100">Aviso de Privacidad.</span></Link>
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
               <a
