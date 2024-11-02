@@ -1,9 +1,11 @@
-'use client'
+'use client';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function TipoEnsayo() {
   const pathname = usePathname();
   const param = pathname.split('/')[2].split('-').join(" ");
+  const [useSeccion, setSeccion] = useState("");
 
   const concreto = [
     "Diseño de mezclas de concreto. <sup><b>NA</b></sup>",
@@ -76,28 +78,44 @@ export default function TipoEnsayo() {
     "Contenido de carbonatos totales en agregado calizo.<sup><b>NA</b></sup>"
   ];
 
+  useEffect(() => {
+    if (param === 'concreto') {
+      setSeccion("/ensayos/concreto.jpg");
+    };
+    if (param === 'agregados') {
+      setSeccion("/ensayos/concreto.jpg");
+    };
+    if (param === 'prefabricados') {
+      setSeccion("/ensayos/prefabricados_04.jpg");
+    };
+  }, []);
+
   return (
     <div>
-      <div className="flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/ensayos/concreto.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
-          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
-            
-            <div className="bg-gray-900 bg-opacity-0 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-              <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
-                {param}
-              </h1>
-              <p className='font-montserrat'>Servicios especializados en {param}.</p>
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
+            <div>
+              <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
+                <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
+                  {param}
+                </h1>
+                <p className='font-montserrat'>Servicios especializados en {param}.</p>
+              </div>
+              <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
+                <p className="text-3xs font-bold text-white text-right sm:text-right">Acreditación No. <strong>C-053-059/11</strong></p>
+              </div>
             </div>
-            <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-              <p className="text-3xs font-bold text-white text-right sm:text-right">Acreditación No. <strong>C-053-059/11</strong></p>
-            </div>
-            <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] items-center'>
+            <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               {param === "concreto" && concreto.map((item, index) => (
-                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-6 m-1 flex items-center uppercase h-24 font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
               ))}
               {param === "agregados" && agregados.map((item, index) => (
-                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-6 m-1 flex items-center uppercase h-24 font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+              ))}
+              {param === "prefabricados" && agregados.map((item, index) => (
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
               ))}
             </div>
           </div>
