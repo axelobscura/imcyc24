@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 export default function TipoEnsayo() {
   const pathname = usePathname();
   const param = pathname.split('/')[2].split('-').join(" ");
-  // const [useSeccion, setSeccion] = useState("");
 
   const concreto = [
     "Diseño de mezclas de concreto. <sup><b>NA</b></sup>",
@@ -77,18 +76,6 @@ export default function TipoEnsayo() {
     "Contenido de carbonato de magnesio en agregado calizo.<sup><b>NA</b></sup>",
     "Contenido de carbonatos totales en agregado calizo.<sup><b>NA</b></sup>"
   ];
-
-  // useEffect(() => {
-  //   if (param === 'concreto') {
-  //     setSeccion("/ensayos/concreto.jpg");
-  //   };
-  //   if (param === 'agregados') {
-  //     setSeccion("/ensayos/concreto.jpg");
-  //   };
-  //   if (param === 'prefabricados') {
-  //     setSeccion("/ensayos/prefabricados_04.jpg");
-  //   };
-  // }, []);
 
   return (
     <div>
