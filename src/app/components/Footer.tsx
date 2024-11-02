@@ -2,10 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Asociados from "./Asociados";
+import Membresias from "./Membresias";
 
 const Footer = () => {
   return (
     <>
+      <Membresias />
       <footer className="bg-gray-900 dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
