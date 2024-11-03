@@ -30,6 +30,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="G-7SERF2HH4M" />
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E7NY2W59JZ"
+        />
+
+        <script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7SERF2HH4M');
+          `}
+        </script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
