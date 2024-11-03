@@ -150,7 +150,27 @@ const Membresias = () => {
           <li>
             <Link href="/membresias" rel="noopener noreferrer">
                 <Image
+                  src="/asociados/lamaco.png"
+                  alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
+                  width={59}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="/membresias" rel="noopener noreferrer">
+                <Image
                   src="/asociados/Logo_Lanco.png"
+                  alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
+                  width={75}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="/membresias" rel="noopener noreferrer">
+                <Image
+                  src="/asociados/CRDC.jpg"
                   alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
                   width={75}
                   height={0}

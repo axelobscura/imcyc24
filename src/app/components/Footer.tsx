@@ -2,12 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Asociados from "./Asociados";
-import Membresias from "./Membresias";
 
 const Footer = () => {
   return (
     <>
-      <Membresias />
       <footer className="bg-gray-900 dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
@@ -27,30 +25,30 @@ const Footer = () => {
                   ¿Quiénes Somos?
                   <p style={{fontSize: '12px'}}><small>Compartir el conocimiento</small></p>
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
+                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm footer">
                   <li className="mb-2">
-                    <Link href="/que-es-el-imcyc">
+                    <Link href="/que-es-el-imcyc" className="hover:text-gray-100">
                       ¿Qué es el IMCYC?
                     </Link>
                   </li>
                   
                   <li className="mb-2">
-                    <Link href="/historia">
+                    <Link href="/historia" className="hover:text-gray-100">
                       Historia
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/mision">
+                    <Link href="/mision" className="hover:text-gray-100">
                       Misión
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/gerencia-tecnica">
+                    <Link href="/gerencia-tecnica" className="hover:text-gray-100">
                       ¿Qué es la Gerencia Técnica?
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/gerencia-ensenanza">
+                    <Link href="/gerencia-ensenanza" className="hover:text-gray-100">
                       ¿Qué es la Gerencia de Enseñanza?
                     </Link>
                   </li>
@@ -63,43 +61,43 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
                   <li className="mb-2">
-                    <Link href="/laboratorio-de-ensayos">
+                    <Link href="/laboratorio-de-ensayos" className="hover:text-gray-100">
                       Laboratorio de ensayos
                     </Link>
                   </li>
                   
                   <li className="mb-2">
-                    <Link href="/laboratorio-de-calibracion">
+                    <Link href="/laboratorio-de-calibracion" className="hover:text-gray-100">
                       Laboratorio de calibración
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/asesoria-en-estructuras">
+                    <Link href="/asesoria-en-estructuras" className="hover:text-gray-100">
                       Asesoría técnica en estructuras
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/certificacion-de-personas">
+                    <Link href="/certificacion-de-personas" className="hover:text-gray-100">
                       Organismo de certificación de personas
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/organismo-de-certificacion-de-producto">
+                    <Link href="/certificacion-de-producto" className="hover:text-gray-100">
                       Organismo de certificación de producto
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/proveedor-de-ensayos-de-aptitud">
+                    <Link href="/proveedor-de-ensayos-de-aptitud" className="hover:text-gray-100">
                       Proveedor de ensayos de aptitud
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/asociados">
+                    <Link href="/nuestros-asociados" className="hover:text-gray-100">
                       Nuestros asociados
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/quejas-y-apelaciones">
+                    <Link href="/quejas-y-apelaciones" className="hover:text-gray-100">
                       Quejas y apelaciones
                     </Link>
                   </li>
@@ -112,43 +110,43 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
                   <li className="mb-2">
-                    <Link href="/capacitacion">
+                    <Link href="/capacitacion" className="hover:text-gray-100">
                       Capacitación
                     </Link>
                   </li>
                   
                   <li className="mb-2">
-                    <Link href="/membresias">
+                    <Link href="/membresias" className="hover:text-gray-100">
                       Membresías
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/webinars">
+                    <Link href="/plataforma-en-linea" className="hover:text-gray-100">
                       Plataforma en línea
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/sellos-de-calidad">
+                    <Link href="/sellos-de-calidad" className="hover:text-gray-100">
                       Sellos de calidad
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/revista-cyt">
+                    <Link href="/revista-cyt" className="hover:text-gray-100">
                       Revista CYT
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/tienda-imcyc">
+                    <Link href="/tienda-imcyc" className="hover:text-gray-100">
                       Tienda IMCYC
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/co-working">
+                    <Link href="/co-working" className="hover:text-gray-100">
                       CO - Working
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/constancias-de-aptitud">
+                    <Link href="/constancias-de-aptitud" className="hover:text-gray-100">
                       Constacias de aptitud
                     </Link>
                   </li>
@@ -160,7 +158,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 1953 - 2025{" "}
+              © 1953 - 2024{" "}
               <a href="https://imcyc.com/" className="hover:underline">
                 Instituto Mexicano del Cemento y del Concreto A.C.
               </a>
