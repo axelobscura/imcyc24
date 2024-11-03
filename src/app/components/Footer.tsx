@@ -147,7 +147,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2">
                     <Link href="/constancias-de-aptitud" className="hover:text-gray-100">
-                      Constacias de aptitud
+                      Constancias de aptitud
                     </Link>
                   </li>
                 </ul>

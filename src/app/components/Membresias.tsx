@@ -5,7 +5,7 @@ import Image from "next/image";
 const Membresias = () => {
   return (
     <>
-      <div className="bg-slate-950 flex w-full border-b border-gray-700">
+      <div className="bg-gray-100 flex w-full border-b border-gray-700">
         <ul className="flex justify-between items-center w-full">
           <li>
             <Link href="/membresias" rel="noopener noreferrer">
@@ -152,17 +152,7 @@ const Membresias = () => {
                 <Image
                   src="/asociados/lamaco.png"
                   alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
-                  width={59}
-                  height={0}
-                />
-            </Link>
-          </li>
-          <li>
-            <Link href="/membresias" rel="noopener noreferrer">
-                <Image
-                  src="/asociados/Logo_Lanco.png"
-                  alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
-                  width={75}
+                  width={70}
                   height={0}
                 />
             </Link>
@@ -172,7 +162,7 @@ const Membresias = () => {
                 <Image
                   src="/asociados/CRDC.jpg"
                   alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
-                  width={75}
+                  width={35}
                   height={0}
                 />
             </Link>
