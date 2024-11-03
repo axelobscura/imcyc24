@@ -7,6 +7,7 @@ export default function Membresias() {
     return (
         <div>
             <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-800 to-slate-900 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat">
+                <div className=" mx-auto max-w-screen-xl px-5">
                 <main className="pt-20">
                     <h1 className="font-montserrat text-4xl font-bold text-white pt-0 mb-0 pb-0">MEMBRESÍAS IMCYC</h1>
                     <p className="font-montserrat text-sm text-white pt-0 mt-0">Instituto Mexicano del Cemento y del Concreto A.C.</p>
@@ -416,6 +417,7 @@ export default function Membresias() {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

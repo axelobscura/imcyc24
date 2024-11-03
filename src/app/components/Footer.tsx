@@ -25,7 +25,7 @@ const Footer = () => {
                   ¿Quiénes Somos?
                   <p style={{fontSize: '12px'}}><small>Compartir el conocimiento</small></p>
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm footer">
+                <ul className="text-gray-300 font-light text-sm footer">
                   <li className="mb-2">
                     <Link href="/que-es-el-imcyc" className="hover:text-gray-100">
                       ¿Qué es el IMCYC?
@@ -59,7 +59,7 @@ const Footer = () => {
                   Gerencia técnica
                   <p style={{fontSize: '12px'}}><small>Servicios técnicos especializados</small></p>
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
+                <ul className="text-gray-300 font-light text-sm">
                   <li className="mb-2">
                     <Link href="/laboratorio-de-ensayos" className="hover:text-gray-100">
                       Laboratorio de ensayos
@@ -108,7 +108,7 @@ const Footer = () => {
                   Capacitación
                   <p style={{fontSize: '12px'}}><small>Servicios de enseñanza y empresariales</small></p>
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-light text-sm">
+                <ul className="text-gray-300 font-light text-sm">
                   <li className="mb-2">
                     <Link href="/capacitacion" className="hover:text-gray-100">
                       Capacitación
