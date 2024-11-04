@@ -52,13 +52,13 @@ export default function ModalidadPresencial() {
                 estudiantes de licenciatura y postgrado.
                 <br />
                 <br />
-                Bajo este esquema, se mantienen convenios con cámaras,
+                Bajo este esquema, <strong>se mantienen convenios con cámaras,
                 federaciones, consejos, asociaciones, incluyendo universidades
                 de México y el resto del mundo, principalmente de Latinoamérica,
                 se ofrecen cursos, diplomados, programas de certificación,
                 seminarios nacionales e internacionales, foros, simposios y
                 congresos, con la elección de temáticas y contenidos pertinentes
-                al desarrollo profesional de los participantes, con la selección
+                al desarrollo profesional de los participantes</strong>, con la selección
                 de materiales bibliográficos de alto valor técnico y la
                 participación de profesores, ponentes, conferencistas y
                 profesionales destacados líderes en la teoría, la práctica del

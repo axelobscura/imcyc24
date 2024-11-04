@@ -7,7 +7,7 @@ export default function CertificacionesAci() {
   return (
     <div>
       <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-      <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
+        <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
           <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-bold">
             Modalidad Presencial
           </h1>
@@ -21,31 +21,31 @@ export default function CertificacionesAci() {
                   Técnico para pruebas al concreto en la obra-Grado I
                 </h3>
                 <h3 onClick={() => setCurso("Técnico en pruebas de resistencia al concreto endurecido")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Técnico en pruebas de resistencia al concreto endurecido
+                  Técnico en pruebas de resistencia al concreto endurecido
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Técnico y acabador de superficies planas de concreto
+                  Técnico y acabador de superficies planas de concreto
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Técnico en pruebas de agregados
+                  Técnico en pruebas de agregados
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Supervisor especializado en obras de concreto
+                  Supervisor especializado en obras de concreto
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Supervisor y técnico de construcciones Tilt-up
+                  Supervisor y técnico de construcciones Tilt-up
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Técnico laboratorista Nivel II
+                  Técnico laboratorista Nivel II
                 </h3>
                 <h3 className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
-                Concreto lanzado
+                  Concreto lanzado
                 </h3>
               </div>
             </div>
             <div>
               <h3 className="font-montserrat font-bold text-xl">{useCurso}</h3>
-              <h4 className="font-montserrat text-md mt-3">Objetivo</h4>
+              <h4 className="font-montserrat text-md mt-3 text-2xl">Objetivo</h4>
             </div>
           </div>
         </main>
