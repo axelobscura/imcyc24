@@ -84,8 +84,9 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="/organismo-de-certificacion-de-personas"
+                    href="https://imcyc.net/ocper/"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Organismo de certificación de personas
@@ -217,13 +218,6 @@ function Menu() {
               </div>
             </ul>
           </MegaMenuDropdown>
-
-          <NavbarLink
-            href="/noticias"
-            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
-          >
-            Noticias
-          </NavbarLink>
           <NavbarLink
             href="/contacto"
             className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
