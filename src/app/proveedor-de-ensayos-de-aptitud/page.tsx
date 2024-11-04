@@ -1,7 +1,13 @@
+"use client";
 import Link from "next/link";
+import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
+import { Button, Modal } from "flowbite-react";
+import { useState } from "react";
 
 export default function ProveedorDeEnsayosDeAptitud() {
+  const [openModal, setOpenModal] = useState(false);
+  const [openModalApelacion, setOpenModalApelacion] = useState(false);
   return (
     <div>
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/proveedor.jpg')] bg-fixed bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
@@ -25,14 +31,42 @@ export default function ProveedorDeEnsayosDeAptitud() {
                 </Link>
               </div>
               <div className="w-full">
-                <Link href="https://www.imcyc.com/gerencia-tecnica/pdfs/Calendario_de_Programas_PEA_2024.pdf" rel="noopener noreferrer" target="_blank">
-                  <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center"><BiPlusCircle className="mr-3" size={20} /> PROCESO DE QUEJA</p>
-                </Link>
+                <Modal show={openModal} onClose={() => setOpenModal(false)}>
+                  <Modal.Header className="font-montserrat">Proceso de Queja</Modal.Header>
+                  <Modal.Body>
+                    <div className="space-y-6">
+                      <Image
+                        src="/proceso_queja.png"
+                        width={800}
+                        height={0}
+                        alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button onClick={() => setOpenModal(false)}>CERRAR</Button>
+                  </Modal.Footer>
+                </Modal>
+                <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer" onClick={() => setOpenModal(true)}><BiPlusCircle className="mr-3" size={20} /> PROCESO DE QUEJA</p>
               </div>
               <div className="w-full">
-                <Link href="https://www.imcyc.com/gerencia-tecnica/pdfs/Calendario_de_Programas_PEA_2024.pdf" rel="noopener noreferrer" target="_blank">
-                  <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center"><BiPlusCircle className="mr-3" size={20} /> PROCESO DE APELACIÓN</p>
-                </Link>
+                <Modal show={openModalApelacion} onClose={() => setOpenModalApelacion(false)}>
+                  <Modal.Header className="font-montserrat">Proceso de Apelación</Modal.Header>
+                  <Modal.Body>
+                    <div className="space-y-6">
+                      <Image
+                        src="/proceso_apelacion.png"
+                        width={800}
+                        height={0}
+                        alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      />
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button onClick={() => setOpenModalApelacion(false)}>CERRAR</Button>
+                  </Modal.Footer>
+                </Modal>
+                <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer" onClick={() => setOpenModalApelacion(true)}><BiPlusCircle className="mr-3" size={20} /> PROCESO DE APELACIÓN</p>
               </div>
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
