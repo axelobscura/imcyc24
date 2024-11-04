@@ -1,35 +1,36 @@
 import Link from "next/link";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function ModalidadPresencial() {
   return (
     <div>
       <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
-          <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5">
-            Modalidad Presencial
+          <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex">
+          <FaRegArrowAltCircleRight size={30} className="mr-3" />  Modalidad Presencial
           </h1>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-10 pl-5">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   CERTIFICACIONES ACI
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/certificaciones-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   CERTIFICACIONES IMCYC
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   CURSOS IMCYC
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc-calidad" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc-calidad" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   CURSOS IMCYC - CALIDAD
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/talleres" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/talleres" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   TALLERES
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/diplomados" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/diplomados" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   DIPLOMADOS
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/seminarios" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-5 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/seminarios" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
                   SEMINARIOS
                 </Link>
               </div>
