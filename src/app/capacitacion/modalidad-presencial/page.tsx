@@ -4,8 +4,8 @@ export default function ModalidadPresencial() {
   return (
     <div>
       <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl">
-          <h1 className="font-montserrat text-5xl font-light uppercase mt-10 pt-10 pl-5">
+        <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
+          <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5">
             Modalidad Presencial
           </h1>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-10 pl-5">
