@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function TipoEnsayo() {
@@ -128,9 +129,86 @@ export default function TipoEnsayo() {
     }
   ];
 
+  const cementos = [
+    "Análisis fisicoquímico de cemento.*",
+    "Propiedades físicas de cemento.*",
+    "Resistencia a la compresión de cementantes hidráulicos.*",
+    "Finura Blaine de cementantes hidráulicos -método de permeabilidad del aire.*",
+    "Finura malla 325 de cementantes hidráulicos.*",
+    "Peso específico de cementantes hidráulicos.*",
+    "Sanidad (expansión o contracción en autoclave) de cementantes hidráulicos.*",
+    "Consistencia normal de cementantes.*",
+    "Tiempo de fraguado de cementantes.*",
+    "Análisis químico de cementantes hidráulicos. NA",
+    "Contenido de trióxido de azufre, pérdida por calcinación y residuo insoluble.*",
+    "Contenido de residuo insoluble en muestra de cemento.*",
+    "Determinación del contenido de álcalis en cementantes hidráulicos.*",
+    "Reactividad potencial de cementantes hidráulicos por medio de barras de mortero.*",
+    "Cambio de longitud de morteros con cemento hidráulico expuesto a una solución de sulfato de Sodio.*",
+    "Determinación de la expansión de barras de mortero de cemento sumergidas en agua.*",
+    "Determinación del calor de hidratación de cemento hidráulico.*",
+    "Determinación del índice de color (reflectancia) en muestra de cemento blanco. NA",
+    "Expansión potencial de morteros de cemento Pórtland expuestos a sulfato - yeso óptimo NA",
+    "Contenido de aire en mortero de cemento. NA",
+    "Determinación del análisis químico de muestra de clínker NA",
+    "Propiedades fisicoquímicas de puzolana. NA",
+    "Índice de actividad de las adiciones. NA",
+    "Granulometría de arena sílice.*",
+    "Contenido de óxido de silicio (SO3) en arena sílice. NA",
+    "Contenido de cloruros y pH en arena sílice. NA",
+    "Determinación de la densidad (peso específico) de la arena sílice NA"
+  ];
+
+  const adhesivos = [
+    "Tiempo abierto.*",
+    "Resistencia a la tensión en función del tiempo abierto.*",
+    "Resistencia a la tensión en condiciones estándar.*",
+    "Resistencia a la tensión con inmersión en agua.*",
+    "Resistencia a la tensión con envejecimiento por calor.*",
+    "Resistencia a la compresión a 28 días.*",
+    "Deslizamiento*"
+  ];
+
+  const acero = [
+    "Tensión en varillas de acero de refuerzo lisas y corrugadas.*",
+    "Límite de ruptura en varillas de acero de refuerzo lisas y corrugadas.*",
+    "Porcentaje de alargamiento en varillas de acero de refuerzo lisas y corrugadas.*",
+    "Doblado de varillas de acero de refuerzo lisas y corrugadas.*",
+    "Características de corrugas.*",
+    "Ensayos físicos de torones. NA",
+    "Ensayo a tensión de conectores mecánicos. NA",
+    "Obtención de probeta de sección reducida, tensión y alargamiento de placas de acero estructural. NA"
+  ];
+
+  const otros = [
+    "Determinación de la resistencia a la compresión de cubos de mortero de azufre para cabeceo. NA",
+    "Compresión de placas de neopreno de hasta 40 x 40 cm, aplicando una carga de 100 kg/cm2 NA",
+    "Ensayo a compresión y medición de la deformación de distanciadores de plástico. NA",
+    "Análisis físico-químico de agua para fabricación de concreto. NA",
+    "Efectividad de las adiciones para prevenir la expansión excesiva de concreto debido a la reacción álcali-sílice. NA",
+    "Contenido de materia orgánica en suelos. NA",
+    "Límites de consistencia y contracción lineal. NA",
+    "Equivalente de arena. NA",
+    "Propiedades físicas de mortero. NA",
+    "Propiedades físicas de grout. NA",
+    "Propiedades físicas de muestra de estuco. NA",
+    "Adherencia del estuco a un sustrato. NA",
+    "Propiedades fisicoquímicas de yeso NA",
+    "Análisis químico de yeso. NA",
+    "Resistencia a la compresión de yeso. NA",
+    "Resistencia a la flexión de yeso. NA",
+    "Análisis químico de carbonato de Calcio. NA",
+    "Análisis químico de mineral (determinación de óxidos, álcalis y pérdida por calcinación). NA",
+    "Retención de agua de membrana para el curado del concreto. NA",
+    "Contenido de cloruros en muestra de aditivo. NA",
+    "Contenido de sólidos y densidad de muestra de aditivo. NA",
+    "Propiedades fisicoquímicas de cal hidratada. NA",
+    "Propiedades físicas de resinas epóxicas (morteros, autonivelantes). NA"
+  ];
+
   return (
     <div>
-      <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
+      <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/gerencia-tecnica.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
@@ -166,6 +244,20 @@ export default function TipoEnsayo() {
                   </div>
                 )
               })}
+              {param === "cemento" && cementos.map((item, index) => (
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+              ))}
+              {param === "adhesivos" && adhesivos.map((item, index) => (
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+              ))}
+              {param === "acero" && acero.map((item, index) => (
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+              ))}
+              {param === "otros servicios" && otros.map((item, index) => (
+                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
+              ))}
+              <p className='font-montserrat pt-3 font-1md'>- * CONSULTA NUESTRO ALCANCE ACREDITADO EN <Link href="https://www.ema.org.mx/portal_v3/" className='hover:text-gray-500' rel="noopener noreferrer" target="_blank"><strong>www.ema.org.mx</strong></Link>.</p>
+              <p>- <sup>NA</sup> NO ACREDITADO</p>
             </div>
           </div>
         </main>
