@@ -46,7 +46,9 @@ export default function Membresias() {
                                     <CiCircleCheck size={40} />
                                 </td>
                                 <td className="px-6 py-4">
-                                    <CiCircleCheck size={40} />
+                                    <div className="flex justify-center">
+                                        <CiCircleCheck size={40} />
+                                    </div>
                                 </td>
                                 <td className="px-6 py-4">
                                     15 ACCESOS
@@ -86,14 +88,18 @@ export default function Membresias() {
                                 </td>
                                 <td className="px-6 py-4">
                                 </td>
-                                <td className="px-6 text-center">
-                                    <CiCircleCheck size={40} />
+                                <td className="flex justify-center items-center">
+                                    <CiCircleCheck size={40} className="mt-4" />
+                                </td>
+                                <td className="justify-center">
+                                    <div className="flex justify-center">
+                                        <CiCircleCheck size={40} className="flex justify-center" />
+                                    </div>
                                 </td>
                                 <td className="px-6 py-4 text-center">
-                                    <CiCircleCheck size={40} />
-                                </td>
-                                <td className="px-6 py-4 text-center">
-                                    <CiCircleCheck size={40} />
+                                    <div className="flex justify-center">
+                                        <CiCircleCheck size={40} />
+                                    </div>
                                 </td>
                             </tr>
                             <tr className="text-center font-montserrat border-b bg-gray-700 border-gray-700 text-gray-100">
@@ -266,7 +272,7 @@ export default function Membresias() {
                             </tr>
                         </tbody>
                     </table>
-                    <p className="font-montserrat text-xs mt-3 ml-5">* SUJETO A DISPONIBILIDAD</p>
+                    <p className="font-montserrat text-xs mt-3 ml-5 mb-10">* SUJETO A DISPONIBILIDAD</p>
                     </div>
                 </div>
                 <div className="font-montserrat grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-5 p-5">

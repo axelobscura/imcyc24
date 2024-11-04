@@ -30,7 +30,6 @@ function Menu() {
           >
             Quienes Somos
           </NavbarLink>
-
           <MegaMenuDropdown
             className="bg-gray-900 bg-opacity-95 border-none m-0 ml-0 text-white"
             toggle={
