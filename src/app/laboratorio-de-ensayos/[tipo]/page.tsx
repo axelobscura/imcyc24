@@ -76,6 +76,58 @@ export default function TipoEnsayo() {
     "Contenido de carbonatos totales en agregado calizo.<sup><b>NA</b></sup>"
   ];
 
+  const prefabricados = [
+    {
+      "nombre": "Ensayos de bloques, tabiques, tabicones y adoquines.",
+      "categorias": [
+        "Ensayos físicos de adoquines de concreto.*",
+        "Compresión de bloques.*",
+        "Contracción por secado de bloques de concreto. NA",
+        "Absorción inicial.*",
+        "Absorción total.*",
+        "Resistencia a la abrasión.",
+        "Esfuerzo resistente a compresión de pilas. NA",
+        "Esfuerzo cortante resistente en compresión diagonal de muretes. NA",
+        "Módulo de elasticidad de mampostería. NA",
+        "Módulo de rigidez de la mampostería. NA",
+        "Cubos de mortero de junteo. NA"
+      ]
+    },
+    {
+      "nombre": "Ensayos de componentes de sistemas de losas",
+      "categorias": [
+        "Ensaye de elementos aligerantes. NA",
+        "Ensaye a flexión con carga al centro de elementos portantes.*",
+        "Ensaye a flexión del sistema completo de vigueta y bovedilla.*"
+      ]
+    },
+    {
+      "nombre": "Paneles tipo I, II y III",
+      "categorias": [
+        "Resistencia a compresión simple en paneles individuales.",
+        "Resistencia a carga lateral en paneles individuales.",
+        "Resistencia al fuego.*",
+        "Resistencia al impacto en paneles.",
+        "Carga uniformemente repartida en paneles individuales.",
+        "Resistencia a flexión en piezas individuales simplemente apoyadas.*"
+      ]
+    },
+    {
+      "nombre": "Pruebas estáticas de durmientes",
+      "categorias": [
+        "Ensayo a flexión por momento negativo en la sección del riel.",
+        "Ensayo a flexión por momento positivo en la sección del riel.",
+        "Ensayo de desarrollo de adherencia y carga de falla en la sección del riel por momento positivo.*",
+        "Ensayo de agrietamiento en la sección del riel por momento positivo.*",
+        "Ensayo a flexión por momento negativo en el centro del durmiente.*",
+        "Ensayo de extracción de insertos.*",
+        "Ensayo de torque en insertos.*",
+        "Ensayo de la extracción de la fijación.*",
+        "Ensayo de resistencia eléctrica.*"
+      ]
+    }
+  ];
+
   return (
     <div>
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
@@ -100,9 +152,20 @@ export default function TipoEnsayo() {
               {param === "agregados" && agregados.map((item, index) => (
                 <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
               ))}
-              {param === "prefabricados" && agregados.map((item, index) => (
-                <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
-              ))}
+              {param === "prefabricados" && prefabricados.map((item, index) => {
+                return(
+                  <div key={index}>
+                    <div className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 p-2 pl-5 m-0 flex items-center uppercase font-bold' key={index} dangerouslySetInnerHTML={{ __html: item.nombre }}></div>
+                    <ul className='font-montserrat bg-gray-950 bg-opacity-50 border border-gray-700 pl-10 list-disc py-3'>
+                      {item.categorias.map((sub, index) => (
+                        <div key={index}>
+                          <li>{sub}</li>
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </main>
