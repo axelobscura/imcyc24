@@ -167,7 +167,7 @@ function Menu() {
                 </li>
                 <li>
                   <Link
-                    href="/gerencia-ensenanza/sellos-de-calidad"
+                    href="/sellos-de-calidad"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />

@@ -32,7 +32,7 @@ const TopBar = () => {
               </div>
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
                   <Link href="https://www.facebook.com/imcycoficial/" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                    <FaFacebook size={25} />
+                    <FaFacebook size={29} />
                   </Link>
                   <Link href="https://instagram.com/imcyc_oficial?r=nametag" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <FaInstagram size={29} />
