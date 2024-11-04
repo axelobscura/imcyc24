@@ -158,8 +158,9 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="/gerencia-ensenanza/plataforma-en-linea"
+                    href="https://webinarsenconcreto.com/"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Plataforma en línea
