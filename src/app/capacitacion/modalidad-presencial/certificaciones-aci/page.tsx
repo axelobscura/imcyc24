@@ -72,15 +72,15 @@ const cursos = [
     "objetivo": "Certificar que el aspirante posee los conocimientos sobre tecnología del concreto, especificaciones y tolerancias de armados, cimbras, recubrimientos e insertos, para ejecutar la secuencia correcta de supervisión antes, durante y después de la colocación del concreto, así como la escolaridad y la experiencia en la construcción con concreto requeridas para ser un Supervisor en obras de concreto.",
     "dirigido": "La certificación está dirigida a supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto, así como la ejecución en obra.",
     "temario": [
-      "1.- Supervisión previa a la colocación del concreto",
-      "2.- Supervisión durante la colocación del concreto",
-      "3.- Supervisión después de la colocación del concreto",
+      "Supervisión previa a la colocación del concreto",
+      "Supervisión durante la colocación del concreto",
+      "Supervisión después de la colocación del concreto",
     ],
     "requisitos": [
-      "1.- Mínimo dos años, sí se tiene la licenciatura o es pasante de Ingeniería, Arquitectura o carrera afín.",
-      "2.- Mínimo tres años, sí se cuenta con Diploma de Carrera Técnica relacionada con la construcción.",
-      "3.- Mínimo cinco años, sí se cuenta con certificado de preparatoria o equivalente.",
-      "4.- Sí el aspirante aprueba las evaluaciones y tiene la escolaridad necesaria, pero no la experiencia requerida, se le entregará una Constancia 'En Entrenamiento' (In Training) con una vigencia de cinco años, la que será canjeada cuando demuestre que cumple con el requisito de experiencia."
+      "Mínimo dos años, sí se tiene la licenciatura o es pasante de Ingeniería, Arquitectura o carrera afín.",
+      "Mínimo tres años, sí se cuenta con Diploma de Carrera Técnica relacionada con la construcción.",
+      "Mínimo cinco años, sí se cuenta con certificado de preparatoria o equivalente.",
+      "Sí el aspirante aprueba las evaluaciones y tiene la escolaridad necesaria, pero no la experiencia requerida, se le entregará una Constancia 'En Entrenamiento' (In Training) con una vigencia de cinco años, la que será canjeada cuando demuestre que cumple con el requisito de experiencia."
     ]
   },
   {
@@ -89,14 +89,14 @@ const cursos = [
     "objetivo": "Asegurar que el aspirante cuenta con la experiencia en temas de seguridad, lectura de planos, programación, preparación del sitio y cimentaciones, losas sobre el terreno, disposición, moldaje. Así como, proporcionar los conocimientos relacionados con las propiedades del concreto, su colocación y erección de elementos en los diferentes sistemas estructurales.",
     "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, etc., dedicados a la supervisión y construcción Tilt-up .",
     "temario": [
-      "1.- Tecnología básica del concreto.",
-      "2.- Planeación del edificio Tilt-up.",
-      "3.- Cimentaciones para pisos y losas.",
-      "4.- Disposición y moldajes para paneles.",
-      "5.- Colocación del refuerzo e insertos ahogados.",
-      "6.- Colocación y acabado de paneles.",
-      "7.- Elevación, colocación y arriostramiento de paneles",
-      "8.- Conexiones y acabado"
+      "Tecnología básica del concreto.",
+      "Planeación del edificio Tilt-up.",
+      "Cimentaciones para pisos y losas.",
+      "Disposición y moldajes para paneles.",
+      "Colocación del refuerzo e insertos ahogados.",
+      "Colocación y acabado de paneles.",
+      "Elevación, colocación y arriostramiento de paneles",
+      "Conexiones y acabado"
     ]
   },
   {
@@ -124,19 +124,19 @@ const cursos = [
     "objetivo": "Este programa requiere la demostración de los conocimientos cubiertos en el análisis de tareas de trabajo (JTA) para el inspector de concreto lanzado.",
     "dirigido": "La certificación está dirigida a supervisores y lanzadores de concreto, los cuales se dedican a la ejecución de obras y verificación de calidad de estas técnicas de aplicación.",
     "temario": [
-      "1.- Guía ACI 305R-10 para colocación de concreto en climas cálidos",
-      "2.- Especificación ACI 305.1-14 para colocación de concreto en climas cálidos",
-      "3.- Guía ACI 306R-16 para colocación de concreto en climas fríos",
-      "4.- ACI 306.1-90 (02) Especificación estándar colocación de concreto en climas fríos",
-      "5.- Guía ACI 506R-16 para concreto lanzado",
-      "6.- ACI 506.1R-08 Guía de concreto lanzado reforzado con fibra",
-      "7.- Especificación ACI 506.2-13 para concreto lanzado",
-      "8.- ACI 506.4R-94 (04) Guía para la evaluación del concreto lanzado",
-      "9.- Evaluación visual de la calidad del núcleo del concreto lanzado ACI 506.6T-17",
-      "10.- ACI CCS-4 (08) Concreto lanzado para el artesano",
-      "11.- ASTM C1140 / C1140M-11 Práctica estándar para preparar y probar muestras de paneles de prueba de concreto lanzado",
-      "12.- ASTM C1604 / C1604M-05 (12) Método de prueba estándar para obtener y probar núcleos perforados de concreto lanzado",
-      "13.- Directrices de seguridad de ASA para el concreto lanzado",
+      "Guía ACI 305R-10 para colocación de concreto en climas cálidos",
+      "Especificación ACI 305.1-14 para colocación de concreto en climas cálidos",
+      "Guía ACI 306R-16 para colocación de concreto en climas fríos",
+      "ACI 306.1-90 (02) Especificación estándar colocación de concreto en climas fríos",
+      "Guía ACI 506R-16 para concreto lanzado",
+      "ACI 506.1R-08 Guía de concreto lanzado reforzado con fibra",
+      "Especificación ACI 506.2-13 para concreto lanzado",
+      "ACI 506.4R-94 (04) Guía para la evaluación del concreto lanzado",
+      "Evaluación visual de la calidad del núcleo del concreto lanzado ACI 506.6T-17",
+      "ACI CCS-4 (08) Concreto lanzado para el artesano",
+      "ASTM C1140 / C1140M-11 Práctica estándar para preparar y probar muestras de paneles de prueba de concreto lanzado",
+      "ASTM C1604 / C1604M-05 (12) Método de prueba estándar para obtener y probar núcleos perforados de concreto lanzado",
+      "Directrices de seguridad de ASA para el concreto lanzado",
     ]
   }
 ];

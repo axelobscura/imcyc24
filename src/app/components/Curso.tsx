@@ -17,7 +17,7 @@ const Curso = ({curso} : {curso: {
         <h3 className="font-montserrat text-2xl font-bold py-5">Dirigido a</h3>
         <p className="font-montserrat text-justify">{curso.dirigido}</p>
         <h3 className="font-montserrat text-2xl font-bold py-5">Temario</h3>
-        <ul className="font-montserrat list-disc px-10 text-justify">
+        <ul className="font-montserrat list-decimal px-10 text-justify">
         {curso.temario.map((tema: string, index: number) => (
             <li key={index}>{tema}</li>
         ))}
