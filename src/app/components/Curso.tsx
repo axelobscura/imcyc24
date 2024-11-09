@@ -1,6 +1,12 @@
 import React from "react";
 
-const Curso = ({curso} : {curso: any}) => {
+const Curso = ({curso} : {curso: {
+    nombre: string,
+    duracion: string,
+    objetivo: string,
+    dirigido: string,
+    temario: string[]
+}}) => {
   return (
     <>
         <h2 className="font-montserrat text-4xl font-bold">{curso.nombre}</h2>
