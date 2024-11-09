@@ -49,6 +49,22 @@ const cursos = [
       "3.3 Agua de mezclado",
       "3.4 Aditivos",
     ]
+  },
+  {
+    "nombre": "TÉCNICO EN PRUEBAS DE AGREGADOS",
+    "duracion": "8 Horas",
+    "objetivo": "Proporcionar las bases para la certificación de técnicos con experiencia en el ensaye de agregados para concreto, resolver los problemas derivados de las prácticas inadecuadas de prueba, mejorar la calidad de la construcción con concreto y preparar a la industria para la certificación obligatoria.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, etc., dedicados a la evaluación de los agregados usados para la elaboración de concreto.",
+    "temario": [
+      "Método estándar para el muestreo de agregados (AASHTO T 2/ASTM D75).",
+      "Método estándar para reducir muestras de agregados al tamaño de prueba (AASHTO T 248/ASTM C702).",
+      "Método estándar de prueba para materiales que pasan la malla de 75um (No. 200) en agregados minerales mediante lavado (AASHTO T 11/ASTM C117).",
+      "Método estándar de prueba para cribado por mallas de agregados finos y gruesos (AASHTO T 27/ASTM C136).",
+      "Método estándar de prueba para determinar la masa específica y la absorción de agregados gruesos (AASHTO T 85/ASTM C127).",
+      "Método estándar de prueba para determinar la masa específica y la absorción de agregados finos (AASHTO T 84/ASTM C128).",
+      "Método estándar de prueba para determinar el contenido de humedad total de los agregados mediante secado (AASHTO T 255/ASTM C566).",
+      "Método estándar de prueba para determinar impurezas orgánicas en agregados finos para concreto (AASHTO T 21/ASTM C40)."
+    ]
   }
 ];
 
@@ -58,13 +74,13 @@ export default function CertificacionesAci() {
     <div>
       <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] z-0 text-white">
-          <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-light">
+          <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-bold">
             Modalidad Presencial
           </h1>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-500 hover:bg-slate-500 p-3 text-left text-2xl">
+                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-2xl">
                   CERTIFICACIONES ACI
                 </Link>
                 <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
@@ -76,7 +92,7 @@ export default function CertificacionesAci() {
                 <h3 onClick={() => setCurso("Técnico y acabador de superficies planas de concreto")} className={`font-montserrat btn ${useCurso === "Técnico y acabador de superficies planas de concreto" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Técnico y acabador de superficies planas de concreto
                 </h3>
-                <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
+                <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de agregados" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Técnico en pruebas de agregados
                 </h3>
                 <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
@@ -97,6 +113,7 @@ export default function CertificacionesAci() {
               {useCurso === "Técnico para pruebas al concreto en la obra-Grado I" && <Curso curso={cursos[0]} />}
               {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
               {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}
+              {useCurso === "Técnico en pruebas de agregados" && <Curso curso={cursos[3]} />}
             </div>
           </div>
         </main>

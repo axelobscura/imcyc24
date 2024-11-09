@@ -8,13 +8,13 @@ const Curso = ({curso} : {curso: {
     temario: string[]
 }}) => {
   return (
-    <div className="bg-slate-900 bg-opacity-70 p-5">
+    <div className="bg-slate-100 text-gray-900 bg-opacity-90 px-10 py-10">
         <h2 className="font-montserrat text-4xl font-bold">{curso.nombre}</h2>
         <p className="font-montserrat text-xs">Duración: {curso.duracion}</p>
         <h3 className="font-montserrat text-2xl font-bold py-5">Objetivo</h3>
-        <p className="font-montserrat">{curso.objetivo}</p>
+        <p className="font-montserrat text-justify">{curso.objetivo}</p>
         <h3 className="font-montserrat text-2xl font-bold py-5">Dirigido a</h3>
-        <p className="font-montserrat">{curso.dirigido}</p>
+        <p className="font-montserrat text-justify">{curso.dirigido}</p>
         <h3 className="font-montserrat text-2xl font-bold py-5">Temario</h3>
         <ul className="font-montserrat list-disc px-10 text-justify">
         {curso.temario.map((tema: string, index: number) => (
