@@ -9,7 +9,7 @@ export default function ModalidadPresencial() {
           <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex">
           <FaRegArrowAltCircleRight size={30} className="mr-3" />  Modalidad Presencial
           </h1>
-          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-10 pl-5">
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
                 <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
@@ -35,7 +35,7 @@ export default function ModalidadPresencial() {
                 </Link>
               </div>
             </div>
-            <div>
+            <div className="bg-slate-100 text-gray-900 px-10 py-10">
               <p className="font-montserrat text-justify">
                 <strong>
                   El IMCYC desarrolla un programa permanente de enseñanza y
