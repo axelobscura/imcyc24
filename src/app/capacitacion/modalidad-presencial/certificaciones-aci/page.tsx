@@ -65,6 +65,79 @@ const cursos = [
       "Método estándar de prueba para determinar el contenido de humedad total de los agregados mediante secado (AASHTO T 255/ASTM C566).",
       "Método estándar de prueba para determinar impurezas orgánicas en agregados finos para concreto (AASHTO T 21/ASTM C40)."
     ]
+  },
+  {
+    "nombre": "SUPERVISOR ESPECIALIZADO EN OBRAS DE CONCRETO",
+    "duracion": "16 Horas",
+    "objetivo": "Certificar que el aspirante posee los conocimientos sobre tecnología del concreto, especificaciones y tolerancias de armados, cimbras, recubrimientos e insertos, para ejecutar la secuencia correcta de supervisión antes, durante y después de la colocación del concreto, así como la escolaridad y la experiencia en la construcción con concreto requeridas para ser un Supervisor en obras de concreto.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto, así como la ejecución en obra.",
+    "temario": [
+      "1.- Supervisión previa a la colocación del concreto",
+      "2.- Supervisión durante la colocación del concreto",
+      "3.- Supervisión después de la colocación del concreto",
+    ],
+    "requisitos": [
+      "1.- Mínimo dos años, sí se tiene la licenciatura o es pasante de Ingeniería, Arquitectura o carrera afín.",
+      "2.- Mínimo tres años, sí se cuenta con Diploma de Carrera Técnica relacionada con la construcción.",
+      "3.- Mínimo cinco años, sí se cuenta con certificado de preparatoria o equivalente.",
+      "4.- Sí el aspirante aprueba las evaluaciones y tiene la escolaridad necesaria, pero no la experiencia requerida, se le entregará una Constancia 'En Entrenamiento' (In Training) con una vigencia de cinco años, la que será canjeada cuando demuestre que cumple con el requisito de experiencia."
+    ]
+  },
+  {
+    "nombre": "SUPERVISOR Y TÉCNICO DE CONSTRUCCIONES TILT-UP",
+    "duracion": "8 Horas",
+    "objetivo": "Asegurar que el aspirante cuenta con la experiencia en temas de seguridad, lectura de planos, programación, preparación del sitio y cimentaciones, losas sobre el terreno, disposición, moldaje. Así como, proporcionar los conocimientos relacionados con las propiedades del concreto, su colocación y erección de elementos en los diferentes sistemas estructurales.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, etc., dedicados a la supervisión y construcción Tilt-up .",
+    "temario": [
+      "1.- Tecnología básica del concreto.",
+      "2.- Planeación del edificio Tilt-up.",
+      "3.- Cimentaciones para pisos y losas.",
+      "4.- Disposición y moldajes para paneles.",
+      "5.- Colocación del refuerzo e insertos ahogados.",
+      "6.- Colocación y acabado de paneles.",
+      "7.- Elevación, colocación y arriostramiento de paneles",
+      "8.- Conexiones y acabado"
+    ]
+  },
+  {
+    "nombre": "TÉCNICO LABORATORISTA NIVEL II",
+    "duracion": "8 Horas",
+    "objetivo": "Certificar que el aspirante ha demostrado el conocimiento y la capacidad para realizar de manera adecuada, registrar y reportar los resultados de procedimientos avanzados de laboratorio para agregados y concreto de cinco procedimientos ASTM básicos de laboratorio.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos y personal dedicado a la evaluación de resultados de las pruebas de laboratorios de concreto y personal dedicado a la realización de pruebas especiales al concreto.",
+    "temario": [
+      "1.- PRUEBAS ASTM Y CONOCIMIENTOS PARA EL TRABAJO",
+      "1.1 Elaboración y curado de especímenes de concreto en el laboratorio, ASTM C192 (Este estándar también requiere el conocimiento y la capacidad para llevar a cabo la prueba de revenimiento, ASTM C143; contenido de aire, ASTM C173 y ASTM C231; peso unitario, ASTM C138, y temperatura, ASTM C1046).",
+      "1.2 Moldes para la elaboración vertical de cilindros de concreto, ASTM C470*.",
+      "1.3 Resistencia a la tensión por compresión diametral (prueba brasileña) de especímenes cilíndricos de concreto, ASTM C496*.",
+      "1.4 Obtención y prueba de núcleos perforados y vigas aserradas de concreto, ASTM C42*",
+      "1.5 Método de ensaye estándar para determinar cambios de longitud del concreto y del mortero de cemento hidráulico endurecidos, ASTM C157.",
+      "1.6 Evaluación de los resultados de resistencia del concreto, ACI 214*.",
+      "1.7 Proporcionamiento de mezclas, ACI 211.1*.",
+      "2.- DEMOSTRACIÓN EN EL LABORATORIO",
+      "2.1 Elaboración y curado de especímenes de concreto en el laboratorio, ASTM C192.",
+      "2.2 Método de ensaye estándar para determinar cambios de longitud del concreto y del mortero de cemento hidráulico endurecidos, ASTM C157"
+    ]
+  },
+  {
+    "nombre": "CONCRETO LANZADO",
+    "duracion": "16 Horas",
+    "objetivo": "Este programa requiere la demostración de los conocimientos cubiertos en el análisis de tareas de trabajo (JTA) para el inspector de concreto lanzado.",
+    "dirigido": "La certificación está dirigida a supervisores y lanzadores de concreto, los cuales se dedican a la ejecución de obras y verificación de calidad de estas técnicas de aplicación.",
+    "temario": [
+      "1.- Guía ACI 305R-10 para colocación de concreto en climas cálidos",
+      "2.- Especificación ACI 305.1-14 para colocación de concreto en climas cálidos",
+      "3.- Guía ACI 306R-16 para colocación de concreto en climas fríos",
+      "4.- ACI 306.1-90 (02) Especificación estándar colocación de concreto en climas fríos",
+      "5.- Guía ACI 506R-16 para concreto lanzado",
+      "6.- ACI 506.1R-08 Guía de concreto lanzado reforzado con fibra",
+      "7.- Especificación ACI 506.2-13 para concreto lanzado",
+      "8.- ACI 506.4R-94 (04) Guía para la evaluación del concreto lanzado",
+      "9.- Evaluación visual de la calidad del núcleo del concreto lanzado ACI 506.6T-17",
+      "10.- ACI CCS-4 (08) Concreto lanzado para el artesano",
+      "11.- ASTM C1140 / C1140M-11 Práctica estándar para preparar y probar muestras de paneles de prueba de concreto lanzado",
+      "12.- ASTM C1604 / C1604M-05 (12) Método de prueba estándar para obtener y probar núcleos perforados de concreto lanzado",
+      "13.- Directrices de seguridad de ASA para el concreto lanzado",
+    ]
   }
 ];
 
@@ -72,8 +145,8 @@ export default function CertificacionesAci() {
   const [useCurso, setCurso] = useState("Técnico para pruebas al concreto en la obra-Grado I");
   return (
     <div>
-      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="grid grid-rows-[1fr] z-0 text-white">
+      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]  bg-slate-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+        <main className="grid grid-rows-[1fr] z-0 text-gray-100">
           <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-bold">
             Modalidad Presencial
           </h1>
@@ -95,16 +168,16 @@ export default function CertificacionesAci() {
                 <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de agregados" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Técnico en pruebas de agregados
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
+                <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className={`font-montserrat btn ${useCurso === "Supervisor especializado en obras de concreto" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Supervisor especializado en obras de concreto
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor y técnico de construcciones Tilt-up")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
+                <h3 onClick={() => setCurso("Supervisor y técnico de construcciones Tilt-up")} className={`font-montserrat btn ${useCurso === "Supervisor y técnico de construcciones Tilt-up" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Supervisor y técnico de construcciones Tilt-up
                 </h3>
-                <h3 onClick={() => setCurso("Técnico laboratorista Nivel II")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
+                <h3 onClick={() => setCurso("Técnico laboratorista Nivel II")} className={`font-montserrat btn ${useCurso === "Técnico laboratorista Nivel II" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Técnico laboratorista Nivel II
                 </h3>
-                <h3 onClick={() => setCurso("Concreto lanzado")} className="font-montserrat btn bg-slate-900 hover:bg-slate-500 p-5 text-left text-md cursor-pointer">
+                <h3 onClick={() => setCurso("Concreto lanzado")} className={`font-montserrat btn ${useCurso === "Concreto lanzado" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Concreto lanzado
                 </h3>
               </div>
@@ -114,6 +187,10 @@ export default function CertificacionesAci() {
               {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
               {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}
               {useCurso === "Técnico en pruebas de agregados" && <Curso curso={cursos[3]} />}
+              {useCurso === "Supervisor especializado en obras de concreto" && <Curso curso={cursos[4]} />}
+              {useCurso === "Supervisor y técnico de construcciones Tilt-up" && <Curso curso={cursos[5]} />}
+              {useCurso === "Técnico laboratorista Nivel II" && <Curso curso={cursos[6]} />}
+              {useCurso === "Concreto lanzado" && <Curso curso={cursos[7]} />}
             </div>
           </div>
         </main>

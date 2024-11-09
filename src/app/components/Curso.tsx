@@ -5,7 +5,8 @@ const Curso = ({curso} : {curso: {
     duracion: string,
     objetivo: string,
     dirigido: string,
-    temario: string[]
+    temario: string[],
+    requisitos?: string[]
 }}) => {
   return (
     <div className="bg-slate-100 text-gray-900 bg-opacity-90 px-10 py-10">
