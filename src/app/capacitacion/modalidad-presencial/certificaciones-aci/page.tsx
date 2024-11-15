@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Curso from "@/app/components/Curso";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const cursos = [
   {
@@ -145,44 +146,44 @@ export default function CertificacionesAci() {
   const [useCurso, setCurso] = useState("Técnico para pruebas al concreto en la obra-Grado I");
   return (
     <div>
-      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]  bg-slate-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="grid grid-rows-[1fr] z-0 text-gray-100">
-          <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-bold">
-            Modalidad Presencial
+      <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]  bg-slate-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+        <main className="grid grid-rows-[1fr] justify-start z-0 mx-auto max-w-screen-xl text-gray-100">
+          <h1 className="font-montserrat text-2xl uppercase mt-14 p-5 font-light flex items-center pb-3">
+            <FaRegUserCircle className="mr-2" /> Modalidad Presencial
           </h1>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
                 <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-2xl">
-                  CERTIFICACIONES ACI
+                CERTIFICACIONES ACI
                 </Link>
-                <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico para pruebas al concreto en la obra-Grado I
                 </h3>
-                <h3 onClick={() => setCurso("Técnico en pruebas de resistencia al concreto endurecido")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de resistencia al concreto endurecido" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Técnico en pruebas de resistencia al concreto endurecido")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de resistencia al concreto endurecido" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico en pruebas de resistencia al concreto endurecido
                 </h3>
-                <h3 onClick={() => setCurso("Técnico y acabador de superficies planas de concreto")} className={`font-montserrat btn ${useCurso === "Técnico y acabador de superficies planas de concreto" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Técnico y acabador de superficies planas de concreto")} className={`font-montserrat btn ${useCurso === "Técnico y acabador de superficies planas de concreto" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico y acabador de superficies planas de concreto
                 </h3>
-                <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de agregados" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de agregados" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center justify-between`}>
                   Técnico en pruebas de agregados
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className={`font-montserrat btn ${useCurso === "Supervisor especializado en obras de concreto" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className={`font-montserrat btn ${useCurso === "Supervisor especializado en obras de concreto" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Supervisor especializado en obras de concreto
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor y técnico de construcciones Tilt-up")} className={`font-montserrat btn ${useCurso === "Supervisor y técnico de construcciones Tilt-up" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Supervisor y técnico de construcciones Tilt-up")} className={`font-montserrat btn ${useCurso === "Supervisor y técnico de construcciones Tilt-up" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Supervisor y técnico de construcciones Tilt-up
                 </h3>
-                <h3 onClick={() => setCurso("Técnico laboratorista Nivel II")} className={`font-montserrat btn ${useCurso === "Técnico laboratorista Nivel II" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Técnico laboratorista Nivel II")} className={`font-montserrat btn ${useCurso === "Técnico laboratorista Nivel II" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Técnico laboratorista Nivel II
                 </h3>
-                <h3 onClick={() => setCurso("Concreto lanzado")} className={`font-montserrat btn ${useCurso === "Concreto lanzado" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                <h3 onClick={() => setCurso("Concreto lanzado")} className={`font-montserrat btn ${useCurso === "Concreto lanzado" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Concreto lanzado
                 </h3>
               </div>
             </div>
-            <div>
+            <div className="border border-blue-900">
               {useCurso === "Técnico para pruebas al concreto en la obra-Grado I" && <Curso curso={cursos[0]} />}
               {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
               {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}

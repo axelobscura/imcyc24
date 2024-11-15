@@ -4,7 +4,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 export default function ModalidadPresencial() {
   return (
     <div>
-      <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/capacitacion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
           <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex">
           <FaRegArrowAltCircleRight size={30} className="mr-3" />  Modalidad Presencial
@@ -35,7 +35,7 @@ export default function ModalidadPresencial() {
                 </Link>
               </div>
             </div>
-            <div className="bg-slate-100 text-gray-900 px-10 py-10">
+            <div className="bg-slate-800 text-gray-100 px-10 py-10 border border-blue-900">
               <p className="font-montserrat text-justify">
                 <strong>
                   El IMCYC desarrolla un programa permanente de enseñanza y

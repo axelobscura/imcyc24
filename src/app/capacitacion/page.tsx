@@ -11,7 +11,7 @@ export default function Capacitacion() {
           <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex">
             <FaRegArrowAltCircleRight size={30} className="mr-3" />  Capacitación
           </h1>
-          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-10 pl-5">
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5">
             <div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-1 mb-3">
                 <Link href="/capacitacion/modalidad-presencial" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-1 py-3 text-left px-3 font-bold text-md flex items-center">
@@ -24,16 +24,10 @@ export default function Capacitacion() {
                   <CiCirclePlus size={30} className="mr-3" /> PROFESORES IMCYC
                 </Link>
               </div>
-              <Image
-                src="/capacitacion.jpg"
-                alt="IMCYC"
-                width={900}
-                height={0}
-                layout="intrinsic"
-              />
             </div>
-            <div>
-              <p className="font-montserrat text-justify">
+            <div className="bg-slate-900 p-5 border border-slate-700 bg-opacity-75">
+              <h1 className="font-montserrat text-4xl uppercase pb-5 border-b border-gray-200">Capacitación IMCYC</h1>
+              <p className="font-montserrat text-justify pt-5">
                 <strong>
                   El IMCYC desarrolla un programa permanente de enseñanza y
                   capacitación

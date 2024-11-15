@@ -32,16 +32,16 @@ const TopBar = () => {
               </div>
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
                   <Link href="https://www.facebook.com/imcycoficial/" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                    <FaFacebook size={29} />
+                    <FaFacebook size={20} />
                   </Link>
                   <Link href="https://instagram.com/imcyc_oficial?r=nametag" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                    <FaInstagram size={29} />
+                    <FaInstagram size={23} />
                   </Link>
                   <Link href="https://x.com/imcyc_oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                    <RiTwitterXLine size={25} />
+                    <RiTwitterXLine size={20} />
                   </Link>
                   <Link href="https://www.youtube.com/channel/UCGLxU2D2q2i8ny_klAWqPTw" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                    <FaYoutubeSquare size={25} />
+                    <FaYoutubeSquare size={20} />
                   </Link>
               </div>
           </div>
