@@ -156,6 +156,7 @@ export default function CertificacionesAci() {
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
                 <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-2xl">
                 CERTIFICACIONES ACI
+                <p className="text-xs">American Concrete Institute</p>
                 </Link>
                 <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico para pruebas al concreto en la obra-Grado I
