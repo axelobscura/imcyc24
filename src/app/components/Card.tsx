@@ -21,9 +21,7 @@ export default function CardHorizontal({titulo, desc, imagen}:{
           <h5 className="font-montserrat text-2xl font-bold tracking-tight text-gray-100 dark:text-white">
             {titulo}
           </h5>
-          <p className="font-montserrat text-gray-200 dark:text-gray-200 w-full pt-3">
-            <div className="text-justify" dangerouslySetInnerHTML={{__html: desc}}></div>
-          </p>
+          <p className="font-montserrat text-gray-200 dark:text-gray-200 w-full pt-3" dangerouslySetInnerHTML={{__html: desc}}></p>
         </div>
       </div>
   );
