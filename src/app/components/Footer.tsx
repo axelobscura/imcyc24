@@ -80,7 +80,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="https://imcyc.net/ocper/" rel="noopener noreferrer" target="_blank" className="hover:text-gray-100">
+                    <Link href="/organismo-de-certificacion-de-personas" className="hover:text-gray-100">
                       Organismo de certificación de personas
                     </Link>
                   </li>

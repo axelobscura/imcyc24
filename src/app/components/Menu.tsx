@@ -83,9 +83,8 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <Link
-                    href="https://imcyc.net/ocper/"
+                    href="/organismo-de-certificacion-de-personas"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
-                    rel="noopener noreferrer" target="_blank"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Organismo de certificación de personas
