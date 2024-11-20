@@ -1,6 +1,6 @@
 
 "use client";
-import { Card, Dropdown } from "flowbite-react";
+import { Card } from "flowbite-react";
 import Image from "next/image";
 
 export function CardProfesor({nombre, imagen, certificado, descripcion} : {
