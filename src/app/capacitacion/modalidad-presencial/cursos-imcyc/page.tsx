@@ -141,16 +141,16 @@ const cursos = [
   }
 ];
 
-export default function CertificacionesAci() {
+export default function CursosImcyc() {
   const [useCurso, setCurso] = useState("Técnico para pruebas al concreto en la obra-Grado I");
   return (
     <div>
       <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-opacity-80 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] justify-start z-0 mx-auto max-w-screen-xl text-gray-100">
           <h1 className="font-montserrat text-2xl uppercase mt-14 p-5 font-light flex items-center pb-3">
-            <FaRegUserCircle className="mr-2" /> CERTIFICACIONES ACI
+            <FaRegUserCircle className="mr-2" /> CURSOS IMCYC
           </h1>
-          <p className="text-xs pl-5">American Concrete Institute</p>
+          <p className="text-xs pl-5 mb-3">Instituto Mexicano del Cemento y del Concreto A.C.</p>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">

@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react";
-import Link from "next/link";
 import Curso from "@/app/components/Curso";
 import { FaRegUserCircle } from "react-icons/fa";
 
