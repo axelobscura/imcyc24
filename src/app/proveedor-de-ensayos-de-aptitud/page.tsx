@@ -4,6 +4,9 @@ import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
+import { Slider } from "../components/Carousel";
+
+const imagenes = ["/aptitud/PE_01.jpg","/aptitud/PE_02.jpg","/aptitud/PE_03.jpg"];
 
 export default function ProveedorDeEnsayosDeAptitud() {
   const [openModal, setOpenModal] = useState(false);
@@ -68,6 +71,7 @@ export default function ProveedorDeEnsayosDeAptitud() {
                 </Modal>
                 <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer" onClick={() => setOpenModalApelacion(true)}><BiPlusCircle className="mr-3" size={20} /> PROCESO DE APELACIÓN</p>
               </div>
+              <Slider imagenes={imagenes} />
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900">Acreditación PEA-ENS-002</h3>
