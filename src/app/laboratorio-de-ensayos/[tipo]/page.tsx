@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Slider } from '@/app/components/Carousel';
 
 export default function TipoEnsayo() {
   const pathname = usePathname();
@@ -48,6 +49,8 @@ export default function TipoEnsayo() {
     "Reactividad potencial álcali-agregado en concreto -método del uranilo. <sup><b>NA</b></sup>",
     "Profundidad de carbonatación por el método de la fenolftaleína. <sup><b>NA</b></sup>"
   ];
+
+  const concretoSlider = ["/concreto/1.jpg", "/concreto/2.jpg", "/concreto/3.jpg"]
 
   const agregados = [
     "Muestreo de agregados y reducción de muestras.*",
@@ -208,10 +211,10 @@ export default function TipoEnsayo() {
 
   return (
     <div>
-      <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/gerencia-tecnica.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
+      <div className={`flex items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/gerencia-tecnica.jpg')] bg-gray-700 bg-blend-multiply bg-fixed z-10 bg-cover bg-center bg-no-repeat`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full text-white">
-          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-3 items-start justify-items-stretch pt-20 w-full">
             <div>
               <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
@@ -220,8 +223,9 @@ export default function TipoEnsayo() {
                 <p className='font-montserrat'>Servicios especializados en {param}.</p>
               </div>
               <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-                <p className="text-3xs font-bold text-white text-right sm:text-right">Acreditación No. <strong>C-053-059/11</strong></p>
+                <p className="text-3xs font-bold text-white text-left sm:text-left">Acreditación No. <strong>C-053-059/11</strong></p>
               </div>
+              {param === "concreto" && <Slider imagenes={concretoSlider} />}
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               {param === "concreto" && concreto.map((item, index) => (

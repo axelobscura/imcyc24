@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { Slider } from "../components/Carousel";
+const imagenes = ["/calibracion/1.jpg","/calibracion/2.jpg","/calibracion/3.jpg"];
 
 export default function LaboratorioDeCalibracion() {
   return (
     <div>
-      <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/calibracion.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
+      <div className={`flex items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/calibracion.jpg')] bg-gray-700 bg-blend-multiply bg-fixed z-10 bg-cover bg-center bg-no-repeat`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full text-white">
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-start justify-items-stretch pt-20 w-full">
@@ -18,6 +20,7 @@ export default function LaboratorioDeCalibracion() {
                 <p className='font-montserrat'><strong>Ing. Vicente Gómez Bezarez</strong></p>
                 <p><Link href="mailto:vgomez@mail.imcyc.com">vgomez@mail.imcyc.com</Link></p>
               </div>
+              <Slider imagenes={imagenes} />
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               <h3 className="font-montserrat font-bold text-2xl p-3">Acreditación F-32</h3>
