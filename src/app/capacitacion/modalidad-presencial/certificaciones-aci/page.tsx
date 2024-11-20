@@ -180,7 +180,7 @@ export default function CertificacionesAci() {
                 </h3>
               </div>
             </div>
-            <div className="border border-blue-900">
+            <div>
               {useCurso === "Técnico para pruebas al concreto en la obra-Grado I" && <Curso curso={cursos[0]} />}
               {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
               {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}

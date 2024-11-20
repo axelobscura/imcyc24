@@ -20,123 +20,255 @@ const cursos = [
     ]
   },
   {
-    "nombre": "TÉCNICO EN PRUEBAS DE RESISTENCIA AL CONCRETO ENDURECIDO",
+    "nombre": "EVALUACIÓN DE ESTRUCTURAS DE CONCRETO",
     "duracion": "8 Horas",
-    "objetivo": "Conocer el procedimiento normalizado de las cuatro pruebas que se realizan al concreto endurecido con base en ASTM International (American SocietyforTesting and Materials).",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, productores de concreto, personal que se dedica a la evaluación de la calidad del concreto endurecido",
+    "objetivo": "El objetivo general de la certificación radica en que al final del evento el alumno conozca los aspectos más importantes asociados al diagnóstico, la evaluación y la intervención de una estructura de concreto caracterizada por la presencia de alguna sintomatología patológica anómala.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto.",
     "temario": [
-      "Método de prueba estándar para la resistencia a la compresión de especímenes cilíndricos de concreto. ASTM C39",
-      "Método de prueba estándar para la resistencia a la flexión del concreto (empleando una viga simple con cargas en los tercios medios). ASTM C78",
-      "Práctica estándar para el cabeceo de especímenes cilíndricos de concreto. ASTM C617",
-      "Práctica estándar para el uso de cubiertas no unidas para la determinación de la resistencia a la compresión de cilindros de concreto endurecidos. ASTM C1231"
+      "Introducción a la evaluación de estructuras de concreto",
+      "Evaluación del daño en las construcciones de concreto",
+      "Durabilidad de estructuras de concreto",
+      "Pruebas semidestructivas y no destructivas para evaluar el concreto"
     ]
   },
   {
-    "nombre": "TÉCNICO Y ACABADOR DE SUPERFICIES PLANAS DE CONCRETO",
+    "nombre": "TECNOLOGÍA DE ADITIVOS PARA CONCRETO",
     "duracion": "8 Horas",
-    "objetivo": "Proporcionar las bases para la certificación de acabadores de concreto experimentados, corregir los problemas relacionados con prácticas de campo inapropiadas, elevar la calidad de la construcción con concreto y preparar a la industria para una futura certificación obligatoria.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, productores de concreto, personal de gobierno dedicados a la industria de la construcción de pisos de concreto.",
+    "objetivo": "Dar a conocer y mostrar los temas avanzados de aditivos químicos que se utilizan en las mezclas de concreto y que demanda la industria de la construcción en estos momentos.",
+    "dirigido": "A los técnico, ingenieros, arquitectos, a todo el personal que utiliza aditivos para implementar concreto de alta vanguardia.",
     "temario": [
-      "1. Introducción",
-      "2. Tecnología básica del concreto",
-      "2.1 Componentes del concreto y el proceso de endurecimiento",
-      "2.2 Factores que afectan las propiedades del concreto",
-      "2.3 Relación agua/cemento",
-      "2.4 Seguridad",
-      "3. Materiales y proporcionamiento de mezclas de concreto",
-      "3.1 Cementos Pórtland",
-      "3.2 Agregados",
-      "3.3 Agua de mezclado",
-      "3.4 Aditivos",
+      "Historia de los aditivos",
+      "Clasificación de los aditivos",
+      "Normativa",
+      "Aditivos para concreto",
+      "Plastificantes o reductores de agua de medio rango",
+      "Superplastificantes o reductores de agua de alto rango",
+      "Acelerantes",
+      "Retardantes",
+      "Adiciones",
+      "Concretos especiales",
+      "Aditivos para cemento",
     ]
   },
   {
-    "nombre": "TÉCNICO EN PRUEBAS DE AGREGADOS",
+    "nombre": "CONSTRUCCIÓN DE PAVIMENTOS DE CONCRETO",
     "duracion": "8 Horas",
-    "objetivo": "Proporcionar las bases para la certificación de técnicos con experiencia en el ensaye de agregados para concreto, resolver los problemas derivados de las prácticas inadecuadas de prueba, mejorar la calidad de la construcción con concreto y preparar a la industria para la certificación obligatoria.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, etc., dedicados a la evaluación de los agregados usados para la elaboración de concreto.",
+    "objetivo": "Conocer las consideraciones previas que hay que tomarse en cuenta antes de realizar la pavimentación de un proyecto carretero, se analizará la mezcla de concreto y la importancia que juega en este tipo de estructuras.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la construcción y ejecución de pavimentos de concreto.",
     "temario": [
-      "Método estándar para el muestreo de agregados (AASHTO T 2/ASTM D75).",
-      "Método estándar para reducir muestras de agregados al tamaño de prueba (AASHTO T 248/ASTM C702).",
-      "Método estándar de prueba para materiales que pasan la malla de 75um (No. 200) en agregados minerales mediante lavado (AASHTO T 11/ASTM C117).",
-      "Método estándar de prueba para cribado por mallas de agregados finos y gruesos (AASHTO T 27/ASTM C136).",
-      "Método estándar de prueba para determinar la masa específica y la absorción de agregados gruesos (AASHTO T 85/ASTM C127).",
-      "Método estándar de prueba para determinar la masa específica y la absorción de agregados finos (AASHTO T 84/ASTM C128).",
-      "Método estándar de prueba para determinar el contenido de humedad total de los agregados mediante secado (AASHTO T 255/ASTM C566).",
-      "Método estándar de prueba para determinar impurezas orgánicas en agregados finos para concreto (AASHTO T 21/ASTM C40)."
+      "Introducción",
+      "Producción de concreto",
+      "Supervisión de materiales para concreto",
+      "Uniformidad del concreto",
+      "Secuencia de construcción",
+      "Control de calidad de pavimentos de concreto"
     ]
   },
   {
-    "nombre": "SUPERVISOR ESPECIALIZADO EN OBRAS DE CONCRETO",
-    "duracion": "16 Horas",
-    "objetivo": "Certificar que el aspirante posee los conocimientos sobre tecnología del concreto, especificaciones y tolerancias de armados, cimbras, recubrimientos e insertos, para ejecutar la secuencia correcta de supervisión antes, durante y después de la colocación del concreto, así como la escolaridad y la experiencia en la construcción con concreto requeridas para ser un Supervisor en obras de concreto.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto, así como la ejecución en obra.",
-    "temario": [
-      "Supervisión previa a la colocación del concreto",
-      "Supervisión durante la colocación del concreto",
-      "Supervisión después de la colocación del concreto",
-    ],
-    "requisitos": [
-      "Mínimo dos años, sí se tiene la licenciatura o es pasante de Ingeniería, Arquitectura o carrera afín.",
-      "Mínimo tres años, sí se cuenta con Diploma de Carrera Técnica relacionada con la construcción.",
-      "Mínimo cinco años, sí se cuenta con certificado de preparatoria o equivalente.",
-      "Sí el aspirante aprueba las evaluaciones y tiene la escolaridad necesaria, pero no la experiencia requerida, se le entregará una Constancia 'En Entrenamiento' (In Training) con una vigencia de cinco años, la que será canjeada cuando demuestre que cumple con el requisito de experiencia."
-    ]
-  },
-  {
-    "nombre": "SUPERVISOR Y TÉCNICO DE CONSTRUCCIONES TILT-UP",
+    "nombre": "EVALUACIÓN DE PAVIMENTOS DE CONCRETO",
     "duracion": "8 Horas",
-    "objetivo": "Asegurar que el aspirante cuenta con la experiencia en temas de seguridad, lectura de planos, programación, preparación del sitio y cimentaciones, losas sobre el terreno, disposición, moldaje. Así como, proporcionar los conocimientos relacionados con las propiedades del concreto, su colocación y erección de elementos en los diferentes sistemas estructurales.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, etc., dedicados a la supervisión y construcción Tilt-up .",
+    "objetivo": "Contar con herramientas que permitan entender el deterioro ocasionado por las cargas o solicitaciones externas, así como por los agentes erosivos que causan un daño a los pavimentos rígidos.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la ejecución y evaluación de pavimentos de concreto.",
     "temario": [
-      "Tecnología básica del concreto.",
-      "Planeación del edificio Tilt-up.",
-      "Cimentaciones para pisos y losas.",
-      "Disposición y moldajes para paneles.",
-      "Colocación del refuerzo e insertos ahogados.",
-      "Colocación y acabado de paneles.",
-      "Elevación, colocación y arriostramiento de paneles",
-      "Conexiones y acabado"
+      "Introducción",
+      "Concepto de falla estructural y funcional",
+      "Degradación gradual del pavimento",
+      "Evaluación funcional",
+      "Evaluación estructural"
     ]
   },
   {
-    "nombre": "TÉCNICO LABORATORISTA NIVEL II",
+    "nombre": "PRUEBAS FÍSICAS AL CEMENTO",
     "duracion": "8 Horas",
-    "objetivo": "Certificar que el aspirante ha demostrado el conocimiento y la capacidad para realizar de manera adecuada, registrar y reportar los resultados de procedimientos avanzados de laboratorio para agregados y concreto de cinco procedimientos ASTM básicos de laboratorio.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos y personal dedicado a la evaluación de resultados de las pruebas de laboratorios de concreto y personal dedicado a la realización de pruebas especiales al concreto.",
+    "objetivo": "Proporcionar al participante de conocimientos y habilidades para ejecutar las pruebas básicas en pastas de cemento hidráulicas con base a las normas NMX correspondientes.",
+    "dirigido": "Al personal que realiza las pruebas físicas y de desempeño de cementos en laboratorios de la industria d de a construcción.",
     "temario": [
-      "1.- PRUEBAS ASTM Y CONOCIMIENTOS PARA EL TRABAJO",
-      "1.1 Elaboración y curado de especímenes de concreto en el laboratorio, ASTM C192 (Este estándar también requiere el conocimiento y la capacidad para llevar a cabo la prueba de revenimiento, ASTM C143; contenido de aire, ASTM C173 y ASTM C231; peso unitario, ASTM C138, y temperatura, ASTM C1046).",
-      "1.2 Moldes para la elaboración vertical de cilindros de concreto, ASTM C470*.",
-      "1.3 Resistencia a la tensión por compresión diametral (prueba brasileña) de especímenes cilíndricos de concreto, ASTM C496*.",
-      "1.4 Obtención y prueba de núcleos perforados y vigas aserradas de concreto, ASTM C42*",
-      "1.5 Método de ensaye estándar para determinar cambios de longitud del concreto y del mortero de cemento hidráulico endurecidos, ASTM C157.",
-      "1.6 Evaluación de los resultados de resistencia del concreto, ACI 214*.",
-      "1.7 Proporcionamiento de mezclas, ACI 211.1*.",
-      "2.- DEMOSTRACIÓN EN EL LABORATORIO",
-      "2.1 Elaboración y curado de especímenes de concreto en el laboratorio, ASTM C192.",
-      "2.2 Método de ensaye estándar para determinar cambios de longitud del concreto y del mortero de cemento hidráulico endurecidos, ASTM C157"
+      "Determinación de la Consistencia Normal de Cementos Hidráulicos NMX-C-057-ONNCCE",
+      "Determinación de la Expansión en Autoclave (Sanidad) de Cementos Hidráulicos NMX-C-062-0NNCCE",
+      "Determinación del Fraguado Falso de Cementos Hidráulicos NMX-C-132-ONNCCE",
+      "Determinación de la Resistencia a la Compresión de Cementos Hidráulicos (cubos de 2 in o 50 mm) NMX-C-061-ONNCCE",
+      "Determinación de la Finura de Cementos Hidráulicos (No. 325) NMX-C-049-ONNCCE",
+      "Determinación de la Finura de Cementos Hidráulicos por medio de la Permeabilidad del Aire NMX-C-056-ONNCCE",
     ]
   },
   {
-    "nombre": "CONCRETO LANZADO",
-    "duracion": "16 Horas",
-    "objetivo": "Este programa requiere la demostración de los conocimientos cubiertos en el análisis de tareas de trabajo (JTA) para el inspector de concreto lanzado.",
-    "dirigido": "La certificación está dirigida a supervisores y lanzadores de concreto, los cuales se dedican a la ejecución de obras y verificación de calidad de estas técnicas de aplicación.",
+    "nombre": "REPARACIÓN DE ESTRUCTURAS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Dar a conocer los aspectos básicos del Reglamento ACI 318, presentar la manera de realizar la evaluación de las estructuras de concreto así como las bases de la rehabilitación y mantenimiento, ejemplificando algunas de ellas con casos de estudio.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la supervisión y reparación de estructuras de concreto.",
     "temario": [
-      "Guía ACI 305R-10 para colocación de concreto en climas cálidos",
-      "Especificación ACI 305.1-14 para colocación de concreto en climas cálidos",
-      "Guía ACI 306R-16 para colocación de concreto en climas fríos",
-      "ACI 306.1-90 (02) Especificación estándar colocación de concreto en climas fríos",
-      "Guía ACI 506R-16 para concreto lanzado",
-      "ACI 506.1R-08 Guía de concreto lanzado reforzado con fibra",
-      "Especificación ACI 506.2-13 para concreto lanzado",
-      "ACI 506.4R-94 (04) Guía para la evaluación del concreto lanzado",
-      "Evaluación visual de la calidad del núcleo del concreto lanzado ACI 506.6T-17",
-      "ACI CCS-4 (08) Concreto lanzado para el artesano",
-      "ASTM C1140 / C1140M-11 Práctica estándar para preparar y probar muestras de paneles de prueba de concreto lanzado",
-      "ASTM C1604 / C1604M-05 (12) Método de prueba estándar para obtener y probar núcleos perforados de concreto lanzado",
-      "Directrices de seguridad de ASA para el concreto lanzado",
+      "Módulo 1. Conceptos Básicos de Reparación de Estructuras de Concreto",
+      "Módulo 2. Impermeabilización en la Construcción",
+      "Módulo 3. Conservación y Rehabilitación de Pavimentos de Concreto",
+      "Módulo 4. Aspectos de la Durabilidad en las Estructuras de Concreto",
+      "Módulo 5. Casos de éxito en la Reparación de Estructuras de Concreto",
+      "1.5 Método de ensaye estándar para determinar cambios de longitud del concreto y del mortero de cemento hidráulico endurecidos, ASTM C157."
+    ]
+  },
+  {
+    "nombre": "DISEÑO DE ESTRUCTURAS DE CONCRETO CON BASE AL REGLAMENTO ACI 318-19",
+    "duracion": "8 Horas",
+    "objetivo": "Introducir al usuario al nuevo reglamento ACI 318-14 reorganizado. Actualizar al asistente en el manejo y entendimiento de la reorganización completa del reglamento ACI 318-14. Mostrar como impactará el capítulo de Construcción del ACI 318-14 a la industria.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la construcción , ejecución, análisis de obras de construcción de concreto.",
+    "temario": [
+      "Presentación e Introducción",
+      "Notación y terminología",
+      "Normas de referencia",
+      "Requisitos de Sistemas Estructurales",
+      "Cargas",
+      "Análisis estructural",
+      "Losas en una dirección",
+      "Losas en dos direcciones",
+      "Vigas",
+      "Columnas",
+      "Muros",
+      "Diafragmas",
+      "Cimentaciones",
+      "Concreto simple",
+      "Uniones viga-columna y losa-columna",
+      "Conexiones entre miembros",
+      "Anclaje al concreto",
+      "Estructuras resistentes a sismos",
+      "Diseño y requerimientos de durabilidad",
+      "Propiedades del acero de refuerzo, durabilidad y ahogados (Embebidos).",
+      "Factores de reducción de resistencia",
+      "Resistencia de secciones",
+      "Modelo puntual y tensor"
+    ]
+  },
+  {
+    "nombre": "DURABILIDAD DE ESTRUCTURAS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Que los participantes adquieran los conocimientos básicos necesarios para saber detectar e identificar las diferentes patologías que se pueden desarrollar en las estructuras de concreto; con lo que será posible de primera instancia, desarrollar diagnósticos eficaces encaminados a evaluar y reparar dichas estructuras, antes acciones de posible ocurrencia.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la construcción y diseño de estructuras de concreto.",
+    "temario": [
+      "Duración de las estructuras de concreto",
+      "Vida de proyecto",
+      "Vida potencial",
+      "Causas de deterioro del concreto",
+      "Condiciones de exposición",
+      "Condiciones de servicio",
+      "Reconocimiento y evaluación de los factores intrínsecos y extrínsecos que ponen en riesgo la durabilidad de las estructuras de concreto",
+      "Factores intrínsecos",
+      "Cambios volumétricos",
+      "Aspectos relativos a los agregados",
+      "Aspectos relativos al cemento y sus distintos tipos",
+      "Deficiencias constructivas",
+      "Factores extrínsecos",
+      "Condiciones climáticas",
+      "Acciones de los medios de contacto",
+      "Condiciones de servicio",
+      "Medidas de prevención aplicables para resguardar la calidad y durabilidad de las estructuras de concreto",
+      "Análisis preliminar de las condiciones a las cuales estará expuesta el concreto",
+      "Previsiones y recomendaciones para los distintos ambientes de exposición",
+      "Diseño por desempeño de la mezcla de concreto"
+    ]
+  },
+  {
+    "nombre": "PRUEBAS NO DESTRUCTIVAS (PND)",
+    "duracion": "8 Horas",
+    "objetivo": "Ofrecer una descripción y las ventajas de la ejecución de pruebas no destructivas en la evaluación de las estructuras de concreto. Así como, la aplicación y los alcances de las pruebas más comunes. Mostrar como se puede realizar un diagnóstico rápido y confiable del estado que guarda la estructura, los materiales con los que fue construida y su comportamiento futuro.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a realizar pruebas no destructivas al concreto en servicio.",
+    "temario": [
+      "Introducción al estudio de las pruebas no destructivas",
+      "Estudios de campo y laboratorio",
+      "Pruebas “semi-destructivas” para evaluar las propiedades del concreto endurecido: resistencia a la compresión, resistencia a la compresión diametral, módulo de elasticidad",
+      "Pruebas físicas: contracción por secado",
+      "Flujo plástico",
+      "Pruebas para evaluar la durabilidad del concreto. Generalidades",
+      "Estudios ferromagnéticos para la determinación representativa de los niveles de armado de refuerzo: principio de funcionamiento. Uso y aplicaciones.",
+      "Pruebas electroquímicas para la evaluación de los niveles de corrosión en estructuras de concreto: principios teóricos fundamentales y aplicaciones prácticas.",
+      "Pruebas de pull off: uso y aplicaciones en la reparación y el reforzamiento de estructuras de concreto armado",
+      "Pruebas de pull out: uso y aplicaciones",
+      "Esclerometría: uso, aplicaciones y limitaciones",
+      "Métodos, equipos y tecnologías avanzadas para la evaluación de estructuras de concreto",
+      "Aplicaciones prácticas"
+    ]
+  },
+  {
+    "nombre": "SUPERVISOR DE CONCRETO LANZADO",
+    "duracion": "8 Horas",
+    "objetivo": "Respaldar los conocimientos que el aspirante posee respecto a las tecnologías del concreto lanzado, así como tipos, aplicaciones, condiciones climáticas, curado y formas para evitar las malas aplicaciones del concreto lanzado.",
+    "dirigido": "Al personal de supervisión de la técnica de colocación de concreto lanzado, también aplica a los lanzadores de concreto.",
+    "temario": [
+      "Tecnología del concreto",
+      "Tecnología del concreto lanzado",
+      "Historia del concreto lanzado",
+      "Introducción al diseño de mezclas",
+      "Propiedades en estado fresco y endurecido del concreto lanzado",
+      "Tipos y aplicaciones de concreto lanzado",
+      "Control de calidad en estado fresco y endurecido",
+      "Evaluación especificación vs desempeño",
+      "Equipos de concreto lanzado",
+      "Aplicación manual y robótica",
+      "Técnicas de colocación",
+      "Concreto lanzado como sistema de soporte",
+      "Soporte de roca Anclas, malla, acero de refuerzo",
+      "Reparación",
+      "Condiciones climáticas",
+      "Técnicas de acabado",
+      "Curado",
+      "Seguridad",
+      "Cómo evitar las Malas aplicaciones"
+    ]
+  },
+  {
+    "nombre": "TECNOLOGÍA DEL CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Proporcionar a los participantes información relacionada con los materiales y Normas Mexicanas de los componentes del concreto. Presentar temas relacionados con sus propiedades, así como algunos aspectos de durabilidad y conceptos que son necesarios en la práctica.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la construcción, técnico de pruebas y persona que interviene en la ejecución de estructuras de concreto.",
+    "temario": [
+      "INTRODUCCIÓN",
+      "Deterioro de las estructuras",
+      "Definiciones",
+      "Proporciones típicas",
+      "Usos y tipos del concreto",
+      "Naturaleza de la resistencia del concreto",
+      "MATERIALES",
+      "Cemento hidráulico",
+      "Agregados para concreto",
+      "Agua",
+      "Aditivos",
+      "CONCRETO DURABLE",
+      "Condiciones de exposición",
+      "Condiciones de servicio",
+      "DISEÑO DE MEZCLAS",
+      "Para concreto normal y pesado, requisitos: Resistencia, Consistencia, TMA, Rendimiento",
+      "CONCRETO FRESCO Y ENDURECIDO",
+      "Propiedades evaluables",
+      "Pruebas al concreto"
+    ]
+  },
+  {
+    "nombre": "DISEÑO DE PAVIMENTOS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Proporcionar a los participantes información actualizada del proyecto y diseño, transmitir las ideas y criterios básicos de diseño; posteriormente se hace un recuento minucioso sobre cada uno de los componentes y aspectos a considerar en el proyecto y diseño de los pavimentos.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado al diseño de pavimentos de concreto.",
+    "temario": [
+      "Consideraciones generales",
+      "Tipos de pavimentos de concreto",
+      "Criterios geotécnicos en el diseño de pavimentos",
+      "Fundamentos de diseño",
+      "Diseño de pavimentos de carreteras",
+      "Detalles especiales y transiciones",
+      "Ejemplos",
+      "El sistema de drenaje de las carreteras"
+    ]
+  },
+  {
+    "nombre": "REPARACIÓN DE PAVIMENTOS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Identificar los deterioros en pavimentos de concreto mediante pruebas y técnicas de RPC para optar por la o las estrategias y procesos de rehabilitación adecuados, así como las causas de los deterioros y aplicación de técnicas preventivas.",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y reparación de pavimentos de concreto.",
+    "temario": [
+      "INTRODUCCIÓN A LA CONSERVACIÓN DE PAVIMENTOS DE CONCRETO",
+      "Ciclo de vida de los pavimentos de concreto hidráulico",
+      "Deterioros en los pavimentos de concreto y sus causas",
+      "Conservación rutinaria, preventiva y correctiva",
+      "Reparaciones superficiales, a profundidad parcial y profundidad total",
+      "CONSERVACIÓN RUTINARIA",
+      "Juntas",
+      "Grietas longitudinales y transversales"
     ]
   }
 ];
@@ -157,38 +289,62 @@ export default function CursosImcyc() {
                 <h3 onClick={() => setCurso("DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES")} className={`font-montserrat btn ${useCurso === "DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                 DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES
                 </h3>
-                <h3 onClick={() => setCurso("Técnico en pruebas de resistencia al concreto endurecido")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de resistencia al concreto endurecido" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
-                  Técnico en pruebas de resistencia al concreto endurecido
+                <h3 onClick={() => setCurso("EVALUACIÓN DE ESTRUCTURAS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "EVALUACIÓN DE ESTRUCTURAS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
+                EVALUACIÓN DE ESTRUCTURAS DE CONCRETO
                 </h3>
-                <h3 onClick={() => setCurso("Técnico y acabador de superficies planas de concreto")} className={`font-montserrat btn ${useCurso === "Técnico y acabador de superficies planas de concreto" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
-                  Técnico y acabador de superficies planas de concreto
+                <h3 onClick={() => setCurso("TECNOLOGÍA DE ADITIVOS PARA CONCRETO")} className={`font-montserrat btn ${useCurso === "TECNOLOGÍA DE ADITIVOS PARA CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
+                TECNOLOGÍA DE ADITIVOS PARA CONCRETO
                 </h3>
-                <h3 onClick={() => setCurso("Técnico en pruebas de agregados")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de agregados" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center justify-between`}>
-                  Técnico en pruebas de agregados
+                <h3 onClick={() => setCurso("CONSTRUCCIÓN DE PAVIMENTOS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "CONSTRUCCIÓN DE PAVIMENTOS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center justify-between`}>
+                CONSTRUCCIÓN DE PAVIMENTOS DE CONCRETO
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor especializado en obras de concreto")} className={`font-montserrat btn ${useCurso === "Supervisor especializado en obras de concreto" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
-                  Supervisor especializado en obras de concreto
+                <h3 onClick={() => setCurso("EVALUACIÓN DE PAVIMENTOS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "EVALUACIÓN DE PAVIMENTOS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
+                EVALUACIÓN DE PAVIMENTOS DE CONCRETO
                 </h3>
-                <h3 onClick={() => setCurso("Supervisor y técnico de construcciones Tilt-up")} className={`font-montserrat btn ${useCurso === "Supervisor y técnico de construcciones Tilt-up" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
-                  Supervisor y técnico de construcciones Tilt-up
+                <h3 onClick={() => setCurso("PRUEBAS FÍSICAS AL CEMENTO")} className={`font-montserrat btn ${useCurso === "PRUEBAS FÍSICAS AL CEMENTO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
+                PRUEBAS FÍSICAS AL CEMENTO
                 </h3>
-                <h3 onClick={() => setCurso("Técnico laboratorista Nivel II")} className={`font-montserrat btn ${useCurso === "Técnico laboratorista Nivel II" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
-                  Técnico laboratorista Nivel II
+                <h3 onClick={() => setCurso("REPARACIÓN DE ESTRUCTURAS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "REPARACIÓN DE ESTRUCTURAS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                REPARACIÓN DE ESTRUCTURAS DE CONCRETO
                 </h3>
-                <h3 onClick={() => setCurso("Concreto lanzado")} className={`font-montserrat btn ${useCurso === "Concreto lanzado" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
-                  Concreto lanzado
+                <h3 onClick={() => setCurso("DISEÑO DE ESTRUCTURAS DE CONCRETO CON BASE AL REGLAMENTO ACI 318-19")} className={`font-montserrat btn ${useCurso === "DISEÑO DE ESTRUCTURAS DE CONCRETO CON BASE AL REGLAMENTO ACI 318-19" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                DISEÑO DE ESTRUCTURAS DE CONCRETO CON BASE AL REGLAMENTO ACI 318-19
+                </h3>
+                <h3 onClick={() => setCurso("DURABILIDAD DE ESTRUCTURAS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "DURABILIDAD DE ESTRUCTURAS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                DURABILIDAD DE ESTRUCTURAS DE CONCRETO
+                </h3>
+                <h3 onClick={() => setCurso("PRUEBAS NO DESTRUCTIVAS (PND)")} className={`font-montserrat btn ${useCurso === "PRUEBAS NO DESTRUCTIVAS (PND)" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                PRUEBAS NO DESTRUCTIVAS (PND)
+                </h3>
+                <h3 onClick={() => setCurso("SUPERVISOR DE CONCRETO LANZADO")} className={`font-montserrat btn ${useCurso === "SUPERVISOR DE CONCRETO LANZADO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                SUPERVISOR DE CONCRETO LANZADO
+                </h3>
+                <h3 onClick={() => setCurso("TECNOLOGÍA DEL CONCRETO")} className={`font-montserrat btn ${useCurso === "TECNOLOGÍA DEL CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                TECNOLOGÍA DEL CONCRETO
+                </h3>
+                <h3 onClick={() => setCurso("DISEÑO DE PAVIMENTOS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "DISEÑO DE PAVIMENTOS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                DISEÑO DE PAVIMENTOS DE CONCRETO
+                </h3>
+                <h3 onClick={() => setCurso("REPARACIÓN DE PAVIMENTOS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "REPARACIÓN DE PAVIMENTOS DE CONCRETO" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                REPARACIÓN DE PAVIMENTOS DE CONCRETO
                 </h3>
               </div>
             </div>
-            <div className="border border-blue-900">
+            <div>
               {useCurso === "DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES" && <Curso curso={cursos[0]} />}
-              {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
-              {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}
-              {useCurso === "Técnico en pruebas de agregados" && <Curso curso={cursos[3]} />}
-              {useCurso === "Supervisor especializado en obras de concreto" && <Curso curso={cursos[4]} />}
-              {useCurso === "Supervisor y técnico de construcciones Tilt-up" && <Curso curso={cursos[5]} />}
-              {useCurso === "Técnico laboratorista Nivel II" && <Curso curso={cursos[6]} />}
-              {useCurso === "Concreto lanzado" && <Curso curso={cursos[7]} />}
+              {useCurso === "EVALUACIÓN DE ESTRUCTURAS DE CONCRETO" && <Curso curso={cursos[1]} />}
+              {useCurso === "TECNOLOGÍA DE ADITIVOS PARA CONCRETO" && <Curso curso={cursos[2]} />}
+              {useCurso === "CONSTRUCCIÓN DE PAVIMENTOS DE CONCRETO" && <Curso curso={cursos[3]} />}
+              {useCurso === "EVALUACIÓN DE PAVIMENTOS DE CONCRETO" && <Curso curso={cursos[4]} />}
+              {useCurso === "PRUEBAS FÍSICAS AL CEMENTO" && <Curso curso={cursos[5]} />}
+              {useCurso === "REPARACIÓN DE ESTRUCTURAS DE CONCRETO" && <Curso curso={cursos[6]} />}
+              {useCurso === "DISEÑO DE ESTRUCTURAS DE CONCRETO CON BASE AL REGLAMENTO ACI 318-19" && <Curso curso={cursos[7]} />}
+              {useCurso === "DURABILIDAD DE ESTRUCTURAS DE CONCRETO" && <Curso curso={cursos[8]} />}
+              {useCurso === "PRUEBAS NO DESTRUCTIVAS (PND)" && <Curso curso={cursos[9]} />}
+              {useCurso === "SUPERVISOR DE CONCRETO LANZADO" && <Curso curso={cursos[10]} />}
+              {useCurso === "TECNOLOGÍA DEL CONCRETO" && <Curso curso={cursos[11]} />}
+              {useCurso === "DISEÑO DE PAVIMENTOS DE CONCRETO" && <Curso curso={cursos[12]} />}
+              {useCurso === "REPARACIÓN DE PAVIMENTOS DE CONCRETO" && <Curso curso={cursos[13]} />}
             </div>
           </div>
         </main>
