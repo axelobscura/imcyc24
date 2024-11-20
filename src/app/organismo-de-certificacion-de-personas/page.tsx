@@ -73,10 +73,45 @@ export default function OrganismoDeCertificacionDePersonas() {
                 <p className='font-montserrat'><strong>Ing. Diana Zamora Godínez</strong></p>
                 <p><Link href="mailto:dzamora@mail.imcyc.com">dzamora@mail.imcyc.com</Link></p>
               </div>
+              <div className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
+                <p className='font-montserrat text-justify text-sm'><strong>El tiempo promedio puede reducirse, pero dependerá de que el solicitante entregue la documentación completa al organismo y su disponibilidad para presentar las evaluaciones correspondientes al esquema de certificación que solicite.</strong></p>
+              </div>
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               {useProducto === "proceso" &&
                 <>
+                  <div className="bg-slate-900 bg-opacity-70 p-3">
+                    <h2 className="font-montserrat p-3 text-2xl font-bold">1) Solicitud de Certificación</h2>
+                    <p className="font-montserrat pl-3">Enviar al correo dzamora@mail.imcyc.com la siguiente información:</p>
+                    <ul className="font-montserrat px-10 py-3 list-disc">
+                      <li>Solicitud de certificación debidamente llenada y firmada (solicitar el formato de solicitud a los correos anteriores o al teléfono 5276 7200 Ext. 124).</li>
+                      <li>Condición de certificación firmada, la cual debe ser enviada en conjunto con la solicitud de certificación.</li>
+                      <li>Evidencias requeridas de prerrequisitos (ver apartado de prerrequisitos), de acuerdo al esquema de certificación de interés.</li>
+                      <li>Fotografía, de acuerdo con los lineamientos que le serán indicados.</li>
+                      <li>Comprobante de pago.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-slate-900 bg-opacity-70 p-3 mt-3">
+                    <h2 className="font-montserrat p-3 text-2xl font-bold">2) Evaluaciones a realizar</h2>
+                    <p className="font-montserrat pl-3">Duración promedio de 1 a 2 meses.</p>
+                    <ul className="font-montserrat px-10 py-3 list-disc">
+                      <li>Evaluación de prerrequisitos para determinar si el solicitante es candidato para continuar con el proceso de certificación.</li>
+                      <li>Evaluación de conocimiento teórico acorde al esquema de certificación solictado con oportunidad de realizar segunda vuelta en caso de no aprobar la primera.</li>
+                      <li>Evaluación práctica acorde al esquema de certificación solicitado, con oportunidad de realizar segunda vuelta en caso de no aprobar la primera.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-slate-900 bg-opacity-70 p-3 mt-3">
+                    <h2 className="font-montserrat p-3 text-2xl font-bold">3) Dictaminación</h2>
+                    <p className="font-montserrat pl-3">Revisión y toma de decisión para otorgar la certificación con base en las evaluaciones aplicadas y presentadas por el candidato.<br/><br/>En caso de otorgarse la certificación, ésta tendra una duración de 3 años.</p>
+                  </div>
+                  <div className="bg-slate-900 bg-opacity-70 p-3 mt-3">
+                    <h2 className="font-montserrat p-3 text-2xl font-bold">4) Ampliación o Renovación</h2>
+                    <p className="font-montserrat pl-3">Duración promedio de 1 a 2 meses.</p>
+                    <h3 className="font-montserrat p-3 text-1xl font-bold">Ampliación</h3>
+                    <p className="font-montserrat pl-3">Durante la vigencia del certificado, la persona certificada podrá solicitar la ampliación de su alcance de certificación.</p>
+                    <h3 className="font-montserrat p-3 text-1xl font-bold">Renovación</h3>
+                    <p className="font-montserrat pl-3">Al acercarse el termino de la vigencia de su certificación, el organismo le notificará o usted puede solicitar su renovación.</p>
+                  </div>
                 </>
               }
               {useProducto === "esquemas" &&
