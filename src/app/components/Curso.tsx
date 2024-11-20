@@ -9,7 +9,7 @@ const Curso = ({curso} : {curso: {
     requisitos?: string[]
 }}) => {
   return (
-    <div className="bg-slate-800 text-gray-100 bg-opacity-90 px-10 py-10">
+    <div className="bg-black text-gray-100 bg-opacity-50 px-10 py-10 border border-gray-700">
         <h2 className="font-montserrat text-4xl font-bold">{curso.nombre}</h2>
         <p className="font-montserrat text-xs">Duración: {curso.duracion}</p>
         <h3 className="font-montserrat text-2xl font-bold py-5">Objetivo</h3>

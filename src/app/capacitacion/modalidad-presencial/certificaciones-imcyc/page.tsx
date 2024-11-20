@@ -97,6 +97,65 @@ const cursos = [
       "Determinación del contenido de aire del concreto recién mezclado por el método volumétrico NMX C 158 ONNCCE",
       "Elaboración y curado en campo de especímenes de concreto para su ensaye NMX C 159 ONNCCE",
     ]
+  },
+  {
+    "nombre": "TÉCNICO EN PRUEBAS DE RESISTENCIA",
+    "duracion": "8 Horas",
+    "objetivo": "Conocer el procedimiento normalizado de las cuatro pruebas que se realizan al concreto endurecido con base en a las normas Mexicanas NMX.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, productores de concreto, personal que se dedica a la evaluación de la calidad del concreto endurecido",
+    "temario": [
+      "Método de prueba estándar para la resistencia a la compresión de especímenes cilíndricos de concreto NMX C 083 ONNCCE",
+      "Método de prueba estándar para la resistencia a la flexión del concreto (empleando una viga simple con cargas en los tercios medios). NMX C 191 ONNCCE",
+      "Práctica estándar para el cabeceo de especímenes cilíndricos de concreto. NMX C 109 ONNCCE",
+      "Práctica estándar para el uso de cubiertas no unidas para la determinación de la resistencia a la compresión de cilindros de concreto endurecidos NMX C 469 ONNCCE"
+    ]
+  },
+  {
+    "nombre": "TÉCNICO EN PRUEBAS DE AGREGADOS",
+    "duracion": "8 Horas",
+    "objetivo": "Proporcionar las bases para la certificación de técnicos con experiencia en el ensaye de agregados para concreto, resolver los problemas derivados de las prácticas inadecuadas de prueba, mejorar la calidad de la construcción con concreto y preparar a la industria para la certificación obligatoria.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, etc., dedicados a la evaluación de los agregados usados para la elaboración de concreto.",
+    "temario": [
+      "Método estándar para el muestreo de agregados NMX C 030 ONNCCE",
+      "Método estándar para reducir muestras de agregados al tamaño de prueba NMX C 170 ONCCE",
+      "Método estándar de prueba para materiales que pasan la malla de 75um (No. 200) en agregados minerales mediante lavado NMX C 084",
+      "Método estándar de prueba para cribado por mallas de agregados finos y gruesos NMX C 077 ONNCCE",
+      "Método estándar de prueba para determinar la masa específica y la absorción de agregados gruesos NMX C 164 ONNCCE",
+      "Método estándar de prueba para determinar la masa específica y la absorción de agregados finos NMX C 165 ONNCCE",
+      "Método estándar de prueba para determinar el contenido de humedad total de los agregados mediante secado NMX C 166 ONCCE",
+      "Método estándar de prueba para determinar impurezas orgánicas en agregados finos para concreto NMX C 088 ONNCCE"
+    ]
+  },
+  {
+    "nombre": "OPERADORES DE PLANTAS, BOMBAS Y OLLAS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "Que los participantes adquieran el conocimiento de los sistemas para operar máquinas para concreto, su mantenimiento y seguridad. Se proporcionará a los participantes temas de fundamentos de concreto y atención al cliente.",
+    "dirigido": "El curso va dirigido a toda aquella persona interesada en la operación de equipo para la adecuada colocación del concreto y los aspectos a cuidar previa, durante y después de su colocación. Se incluyen puntos importantes de las normas mexicanas, así como los aspectos generales del concreto.",
+    "temario": [
+      "Mantenimiento y operaciones del vehículo",
+      "Componentes del camión mezclador",
+      "Inspección antes del viaje",
+      "Procedimiento de arranque y operaciones en el sitio de trabajo",
+      "Inspección post viaje, limpieza y mantenimiento",
+      "Operación y mantenimiento de plantas",
+      "Conociendo el producto",
+      "Concreto",
+      "Componentes",
+      "Normativa",
+      "Atención al cliente"
+    ]
+  },
+  {
+    "nombre": "TÉCNICO EN EVALUACIÓN DE ESTRUCTURAS DE CONCRETO",
+    "duracion": "8 Horas",
+    "objetivo": "El objetivo general de la certificación radica en que al final del evento el alumno conozca los aspectos más importantes asociados al diagnóstico, la evaluación y la intervención de una estructura de concreto caracterizada por la presencia de alguna sintomatología patológica anómala.",
+    "dirigido": "La certificación está dirigida a supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto.",
+    "temario": [
+      "Introducción a la evaluación de estructuras de concreto",
+      "Evaluación del daño en las construcciones de concreto",
+      "Durabilidad de estructuras de concreto",
+      "Pruebas semidestructivas y no destructivas para evaluar el concreto"
+    ]
   }
 ];
 
@@ -104,7 +163,7 @@ export default function CertificacionesImcyc() {
   const [useCurso, setCurso] = useState("TÉCNICO EN PRUEBAS AL CEMENTO");
   return (
     <div>
-      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]  bg-slate-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg1.jpeg')] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] z-0 mx-auto max-w-screen-xl text-gray-100">
           <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-light flex items-center pb-3">
             <FaRegUserCircle className="mr-2" /> Modalidad Presencial
@@ -131,6 +190,18 @@ export default function CertificacionesImcyc() {
                 <h3 onClick={() => setCurso("TÉCNICO PARA PRUEBAS AL CONCRETO FRESCO")} className={`font-montserrat btn ${useCurso === "TÉCNICO PARA PRUEBAS AL CONCRETO FRESCO" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                 TÉCNICO PARA PRUEBAS AL CONCRETO FRESCO
                 </h3>
+                <h3 onClick={() => setCurso("TÉCNICO EN PRUEBAS DE RESISTENCIA")} className={`font-montserrat btn ${useCurso === "TÉCNICO EN PRUEBAS DE RESISTENCIA" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                TÉCNICO EN PRUEBAS DE RESISTENCIA
+                </h3>
+                <h3 onClick={() => setCurso("TÉCNICO EN PRUEBAS DE AGREGADOS")} className={`font-montserrat btn ${useCurso === "TÉCNICO EN PRUEBAS DE AGREGADOS" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                TÉCNICO EN PRUEBAS DE AGREGADOS
+                </h3>
+                <h3 onClick={() => setCurso("OPERADORES DE PLANTAS, BOMBAS Y OLLAS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "OPERADORES DE PLANTAS, BOMBAS Y OLLAS DE CONCRETO" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                OPERADORES DE PLANTAS, BOMBAS Y OLLAS DE CONCRETO
+                </h3>
+                <h3 onClick={() => setCurso("TÉCNICO EN EVALUACIÓN DE ESTRUCTURAS DE CONCRETO")} className={`font-montserrat btn ${useCurso === "TÉCNICO EN EVALUACIÓN DE ESTRUCTURAS DE CONCRETO" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
+                TÉCNICO EN EVALUACIÓN DE ESTRUCTURAS DE CONCRETO
+                </h3>
               </div>
             </div>
             <div>
@@ -139,6 +210,10 @@ export default function CertificacionesImcyc() {
               {useCurso === "CIMBRAS PARA CONCRETO LANZADO" && <Curso curso={cursos[2]} />}
               {useCurso === "ACABADOR DE CONCRETO LANZADO" && <Curso curso={cursos[3]} />}
               {useCurso === "TÉCNICO PARA PRUEBAS AL CONCRETO FRESCO" && <Curso curso={cursos[4]} />}
+              {useCurso === "TÉCNICO EN PRUEBAS DE RESISTENCIA" && <Curso curso={cursos[5]} />}
+              {useCurso === "TÉCNICO EN PRUEBAS DE AGREGADOS" && <Curso curso={cursos[6]} />}
+              {useCurso === "OPERADORES DE PLANTAS, BOMBAS Y OLLAS DE CONCRETO" && <Curso curso={cursos[7]} />}
+              {useCurso === "TÉCNICO EN EVALUACIÓN DE ESTRUCTURAS DE CONCRETO" && <Curso curso={cursos[8]} />}
             </div>
           </div>
         </main>

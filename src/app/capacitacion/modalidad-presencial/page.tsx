@@ -4,7 +4,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 export default function ModalidadPresencial() {
   return (
     <div>
-      <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[1fr] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
           <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex font-light">
           <FaRegArrowAltCircleRight size={30} className="mr-3" />  Modalidad Presencial
@@ -12,34 +12,34 @@ export default function ModalidadPresencial() {
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   CERTIFICACIONES ACI
                   <p className="text-xs">American Concrete Institute</p>
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/certificaciones-imcyc" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   CERTIFICACIONES IMCYC
                   <p className="text-xs">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   CURSOS IMCYC
                   <p className="text-xs">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc-calidad" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/cursos-imcyc-calidad" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   CURSOS IMCYC - CALIDAD
                   <p className="text-xs">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/talleres" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/talleres" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   TALLERES
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/diplomados" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/diplomados" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   DIPLOMADOS
                 </Link>
-                <Link href="/capacitacion/modalidad-presencial/seminarios" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-xl">
+                <Link href="/capacitacion/modalidad-presencial/seminarios" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   SEMINARIOS
                 </Link>
               </div>
             </div>
-            <div className="bg-slate-900 text-gray-100 px-10 py-10 border border-blue-900">
+            <div className="bg-black bg-opacity-50 text-gray-100 px-10 py-10 border border-gray-900">
               <p className="font-montserrat text-justify">
                 <strong>
                   El IMCYC desarrolla un programa permanente de enseñanza y
