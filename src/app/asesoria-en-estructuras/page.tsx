@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Slider } from "../components/Carousel";
+
+const imagenes = ["/estructuras/AE_1.jpg", "/estructuras/AE_2.jpg", "/estructuras/AE_3.jpg", "/estructuras/AE_4.jpg", "/estructuras/AE_5.jpg", "/estructuras/AE_6.jpg", "/estructuras/AE_7.jpg"]
 
 export default function AsesoriaEnEstructuras() {
   return (
@@ -18,6 +21,7 @@ export default function AsesoriaEnEstructuras() {
                 <p className='font-montserrat'><strong>	Ing. Benito Pérez Alto</strong></p>
                 <p><Link href="mailto:bperez@mail.imcyc.com">bperez@mail.imcyc.com</Link></p>
               </div>
+              <Slider imagenes={imagenes} />
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
               <h3 className="font-montserrat font-bold text-2xl p-3">Dipstick</h3>
