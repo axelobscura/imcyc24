@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { CiCirclePlus } from "react-icons/ci";
 
 export default function Capacitacion() {

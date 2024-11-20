@@ -5,18 +5,18 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 const cursos = [
   {
-    "nombre": "TÉCNICO PARA PRUEBAS AL CONCRETO EN LA OBRA-GRADO I",
+    "nombre": "DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES",
     "duracion": "8 Horas",
-    "objetivo": "Certificar que el aspirante posee los conocimientos y habilidades para ejecutar y registrar correctamente los resultados de las pruebas de campo básicas con base a la norma ASTM en la mezcla de concreto fresco.",
-    "dirigido": "La certificación está dirigida a supervisores, técnicos, ingenieros, arquitectos, contratistas, productores de concreto, personal de gobierno, proveedores de materiales y profesionales de la industria del concreto.",
+    "objetivo": "Presentar la importancia que tiene la estructura de una losa de concreto que estará apoyada sobre el terreno en especial la subrasante y la subbase. Así como los efectos de la humedad que pueden influir en la calidad de la estructura. Seleccionar la calidad del concreto que será utilizado durante la construcción de una losa apoyada sobre el terreno. ",
+    "dirigido": "A supervisores, técnicos de la construcción, ingenieros, arquitectos y personal dedicado a la evaluación y supervisor de estructuras de concreto.",
     "temario": [
-      "Método de ensaye estándar para la medición de temperatura del concreto recién mezclado con cemento hidráulico. ASTM C 1064",
-      "Práctica estándar para el muestreo del concreto recién mezclado. ASTM C172.",
-      "Método de ensaye estándar para la determinación del revenimiento en el concreto a base de cemento hidráulico. ASTM C143.",
-      "Método de ensaye estándar para determinar el peso unitario, volumen producido y contenido de aire del concreto por medio del método gravimétrico. ASTM C138.",
-      "Método de ensaye estándar, para determinar por el método de presión, el contenido de aire del concreto recién mezclado. ASTM C231.",
-      "Método de ensaye estándar para determinar por el método volumétrico el contenido de aire del concreto recién mezclado. ASTM C173.",
-      "Práctica estándar para la elaboración y curado en campo de especímenes de concreto para su ensaye. ASTM C31"
+      "Contracción por secado. Efectos en los pisos de concreto y las causas que provocan concretos de alta contracción",
+      "Especificación de concreto. Alternativas y diferencias de distintos tipos de concreto para pisos",
+      "Aspectos relevantes en el diseño de pisos sobre rasante (ACI 360)",
+      "Números f y pisos super planos",
+      "Procedimiento constructivo",
+      "Mantenimiento y reparaciones más comunes",
+      "Estudios y pruebas no destructivas para evaluar pisos de concreto"
     ]
   },
   {
@@ -142,7 +142,7 @@ const cursos = [
 ];
 
 export default function CursosImcyc() {
-  const [useCurso, setCurso] = useState("Técnico para pruebas al concreto en la obra-Grado I");
+  const [useCurso, setCurso] = useState("DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES");
   return (
     <div>
       <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-opacity-80 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
@@ -154,8 +154,8 @@ export default function CursosImcyc() {
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
-                  Técnico para pruebas al concreto en la obra-Grado I
+                <h3 onClick={() => setCurso("DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES")} className={`font-montserrat btn ${useCurso === "DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
+                DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES
                 </h3>
                 <h3 onClick={() => setCurso("Técnico en pruebas de resistencia al concreto endurecido")} className={`font-montserrat btn ${useCurso === "Técnico en pruebas de resistencia al concreto endurecido" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico en pruebas de resistencia al concreto endurecido
@@ -181,7 +181,7 @@ export default function CursosImcyc() {
               </div>
             </div>
             <div className="border border-blue-900">
-              {useCurso === "Técnico para pruebas al concreto en la obra-Grado I" && <Curso curso={cursos[0]} />}
+              {useCurso === "DISEÑO Y CONSTRUCCIÓN DE PISOS INDUSTRIALES" && <Curso curso={cursos[0]} />}
               {useCurso === "Técnico en pruebas de resistencia al concreto endurecido" && <Curso curso={cursos[1]} />}
               {useCurso === "Técnico y acabador de superficies planas de concreto" && <Curso curso={cursos[2]} />}
               {useCurso === "Técnico en pruebas de agregados" && <Curso curso={cursos[3]} />}
