@@ -163,18 +163,15 @@ export default function CertificacionesImcyc() {
   const [useCurso, setCurso] = useState("TÉCNICO EN PRUEBAS AL CEMENTO");
   return (
     <div>
-      <div className="grid grid-rows-[1fr] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg1.jpeg')] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg1.jpeg')] bg-gray-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] z-0 mx-auto max-w-screen-xl text-gray-100">
           <h1 className="font-montserrat text-2xl uppercase mt-10 pt-10 pl-5 font-light flex items-center pb-3">
-            <FaRegUserCircle className="mr-2" /> Modalidad Presencial
+            <FaRegUserCircle className="mr-2" /> CERTIFICACIONES IMCYC
           </h1>
+          <p className="text-xs pl-5">Instituto Mexicano del Cemento y del Concreto A.C.</p>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-2xl">
-                  CERTIFICACIONES IMCYC
-                  <p className="text-xs">Instituto Mexicano del Cemento y del Concreto A.C.</p>
-                </Link>
                 <h3 onClick={() => setCurso("TÉCNICO EN PRUEBAS AL CEMENTO")} className={`font-montserrat btn ${useCurso === "TÉCNICO EN PRUEBAS AL CEMENTO" ? "bg-gray-200 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                 TÉCNICO EN PRUEBAS AL CEMENTO
                 </h3>

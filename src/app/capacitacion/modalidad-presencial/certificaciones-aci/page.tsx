@@ -146,18 +146,15 @@ export default function CertificacionesAci() {
   const [useCurso, setCurso] = useState("Técnico para pruebas al concreto en la obra-Grado I");
   return (
     <div>
-      <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]  bg-slate-900 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-opacity-80 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <main className="grid grid-rows-[1fr] justify-start z-0 mx-auto max-w-screen-xl text-gray-100">
           <h1 className="font-montserrat text-2xl uppercase mt-14 p-5 font-light flex items-center pb-3">
-            <FaRegUserCircle className="mr-2" /> Modalidad Presencial
+            <FaRegUserCircle className="mr-2" /> CERTIFICACIONES ACI
           </h1>
+          <p className="text-xs pl-5">American Concrete Institute</p>
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10 pl-5 mt-3">
             <div>
               <div className="grid grid-cols-[1fr] gap-1 mb-3">
-                <Link href="/capacitacion/modalidad-presencial/certificaciones-aci" className="font-montserrat btn bg-slate-800 hover:bg-slate-500 p-3 text-left text-2xl">
-                CERTIFICACIONES ACI
-                <p className="text-xs">American Concrete Institute</p>
-                </Link>
                 <h3 onClick={() => setCurso("Técnico para pruebas al concreto en la obra-Grado I")} className={`font-montserrat btn ${useCurso === "Técnico para pruebas al concreto en la obra-Grado I" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase flex items-center`}>
                   Técnico para pruebas al concreto en la obra-Grado I
                 </h3>
