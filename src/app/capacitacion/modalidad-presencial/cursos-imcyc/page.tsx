@@ -268,7 +268,21 @@ const cursos = [
       "Reparaciones superficiales, a profundidad parcial y profundidad total",
       "CONSERVACIÓN RUTINARIA",
       "Juntas",
-      "Grietas longitudinales y transversales"
+      "Grietas longitudinales y transversales",
+      "Bacheo",
+      "TÉCNICAS DE REPARACIÓN",
+      "Reparaciones a profundidad parcial",
+      "Reparaciones a profundidad total",
+      "Cosido de losas",
+      "Restauración de transferencia de carga",
+      "Microperfilado superficial",
+      "Estabilización de losas",
+      "Sustitución de losas",
+      "SOBRECARPETAS EN PAVIMENTOS DE CONCRETO",
+      "Sobrelosas no adheridas",
+      "Sobrelosas adheridas",
+      "Sobrecarpetas de concreto en pavimentos flexibles",
+      "Sobrecarpetas asfálticas en pavimentos de concreto"
     ]
   }
 ];
