@@ -37,7 +37,7 @@ export default function CoWorking() {
                     layout="intrinsic"
                   />
                 </div>
-                <h3 className="font-montserrat pb-5 text-1xl mt-10 pl-3">2.1.1 Usted se compromete a que los datos que proporciona a El Instituto Mexicano del Cemento y del Concreto A.C. sean verídicos, completos y exactos. Cualquier dato falso, incompleto o inexacto será de su exclusiva responsabilidad.</h3>
+                <h3 className="font-montserrat pb-5 text-1xl mt-10 pl-3 pt-5">2.1.1 Usted se compromete a que los datos que proporciona a El Instituto Mexicano del Cemento y del Concreto A.C. sean verídicos, completos y exactos. Cualquier dato falso, incompleto o inexacto será de su exclusiva responsabilidad.</h3>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3">2.2. No tratamos datos personales sensibles.</h3>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3">2.3. Dependiendo de la relación que tengamos con usted, usamos sus datos personales para:</h3>
                 <ul className="font-montserrat pl-10 list-disc">
@@ -48,7 +48,7 @@ export default function CoWorking() {
                   <li>Para administrar la relación laboral que tengamos con nuestros empleados</li>
                   <li>Por motivos de identificación y seguridad</li>
                 </ul>
-                <h3 className="font-montserrat pb-5 text-1xl pl-3">2.4. No tratamos datos personales para finalidades derivadas o secundarias.</h3>
+                <h3 className="font-montserrat pb-5 text-1xl pl-3 pt-5">2.4. No tratamos datos personales para finalidades derivadas o secundarias.</h3>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3">2.5. Tal como lo señalamos en el punto 2.3, si daremos tratamiento mercadotécnico, publicitario o de prospección comercial a sus datos personales. Si usted desea que sus datos no sean tratados para estos fines, favor de comunicarlo a nuestro departamento de protección de datos personales o marcar esta casilla (en caso de que esté leyendo una versión impresa de nuestro aviso de privacidad integral).</h3>
                 <h2 className="font-montserrat pt-5 text-2xl font-bold">3. Las opciones y medios que el responsable ofrece al titular para limitar el uso o divulgación de los datos personales:</h2>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3 py-5">3.1. El responsable de protección de datos personales de IMCYC es el Departamento de Difusión. Poniéndose en contacto con él, usted podrá limitar el uso o divulgación de sus datos personales, a través del ejercicio de sus Derechos ARCO, tal como se indica en el siguiente punto.</h3>
@@ -62,12 +62,12 @@ export default function CoWorking() {
                   <li>La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados</li>
                   <li>Cualquier otro elemento o documento que facilite la localización de los datos personales</li>
                 </ul>
-                <h3 className="font-montserrat pb-5 text-1xl pl-3">4.3. Los mecanismos y procedimientos para que, en su caso, el titular pueda revocar su consentimiento al tratamiento de sus datos personales.</h3>
+                <h3 className="font-montserrat pb-5 text-1xl pl-3 pt-5">4.3. Los mecanismos y procedimientos para que, en su caso, el titular pueda revocar su consentimiento al tratamiento de sus datos personales.</h3>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3">4.3.1. De conformidad con lo establecido por el artículo 21 del Reglamento de la Ley Federal de Protección de Datos Personales en Posesión de Particulares:</h3>
                 <ul className="font-montserrat pl-10 list-disc">
                   <li>En cualquier momento, el titular podrá revocar su consentimiento para el tratamiento de sus datos personales, para lo cual el responsable deberá establecer mecanismos sencillos y gratuitos, que permitan al titular revocar su consentimiento al menos por el mismo medio por el que lo otorgó, siempre y cuando no lo impida una disposición legal</li>
                 </ul>
-                <h3 className="font-montserrat pb-5 text-1xl pl-3">4.3.2. El Instituto Mexicano del Cemento y del Concreto A.C. pone a su disposición los datos de contacto de nuestro Departamento Difusión en los anteriores puntos 3.1 y 4.1. Usted puede ponerse en contacto con él a través de los medios disponibles y mediante un escrito libre puede solicitar la revocación de su consentimiento al tratamiento de sus datos personales.</h3>
+                <h3 className="font-montserrat pb-5 text-1xl pl-3 pt-5">4.3.2. El Instituto Mexicano del Cemento y del Concreto A.C. pone a su disposición los datos de contacto de nuestro Departamento Difusión en los anteriores puntos 3.1 y 4.1. Usted puede ponerse en contacto con él a través de los medios disponibles y mediante un escrito libre puede solicitar la revocación de su consentimiento al tratamiento de sus datos personales.</h3>
                 <h2 className="font-montserrat pt-5 text-2xl font-bold">5. La cláusula que indique si el titular acepta o no la transferencia, cuando así se requiera.</h2>
                 <h3 className="font-montserrat pb-5 text-1xl pl-3 pt-5">5.1. El Instituto Mexicano del Cemento y del Concreto A.C. no transfiere datos personales.</h3>
                 <h2 className="font-montserrat pt-5 text-2xl font-bold">6. La información sobre el uso de mecanismos en medios remotos o locales de comunicación electrónica, óptica u otra tecnología (tales como cookies o web beacons), que permitan recabar datos personales de manera automática y simultánea al tiempo que el titular hace contacto con los mismos, en su caso; y IMCYC no hace uso de cookies.</h2>
