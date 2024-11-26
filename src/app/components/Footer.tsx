@@ -165,7 +165,7 @@ const Footer = () => {
               <a href="https://imcyc.com/" className="hover:underline">
                 Instituto Mexicano del Cemento y del Concreto A.C.
               </a>
-              , Todos los Derechos Revervados. <Link href="/aviso-de-privacidad"><span className="text-gray-100">Aviso de Privacidad.</span></Link>
+              , Todos los Derechos Revervados. <Link href="/aviso-de-privacidad"><span className="text-gray-100 hover:underline">Aviso de Privacidad.</span></Link>
             </span>
             <div className="flex items-center space-x-6 rtl:space-x-reverse">
               <Link href="https://www.facebook.com/imcycoficial/" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
