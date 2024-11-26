@@ -22,7 +22,7 @@ export default function OrganismoDeCertificacionDePersonas() {
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold mb-3">
                   Organismo de Certificación de Personas
                 </h1>
-                <p className='font-montserrat text-justify'>El Organismo de Certififcación de Personas del IMCYC, cuenta con la acreditación <strong>No. 157/2 otorgada por la Entidad Mexicana de Acreditación (ema)</strong>.</p>
+                <p className='font-montserrat text-justify'>El Organismo de Certififcación de Personas de El Instituto Mexicano del Cemento y del Concreto A.C., cuenta con la acreditación <strong>No. 157/2 otorgada por la Entidad Mexicana de Acreditación (ema)</strong>.</p>
               </div>
               
               <div className="w-full">
