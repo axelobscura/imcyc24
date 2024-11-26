@@ -1,5 +1,3 @@
-//FLOWBITE - https://flowbite.com/docs/components/navbar/
-
 export default function Mision() {
   return (
     <div>
