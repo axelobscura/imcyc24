@@ -50,7 +50,7 @@ export default function RootLayout({
       >
         <TopBar/>
         {children}
-        {/* <Membresias /> */}
+        <Membresias />
         <Footer/>
       </body>
     </html>
