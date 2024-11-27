@@ -2,9 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Asociados from "./Asociados";
-import { FaInstagram, FaFacebook, FaYoutubeSquare } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
-
 
 const Footer = () => {
   return (
@@ -22,7 +21,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 sm:gap-8 sm:grid-cols-3">
               <div>
                 <h2 className="mb-3 text-sm font-semibold text-gray-200 uppercase dark:text-white">
                   ¿Quiénes Somos?
@@ -153,6 +152,16 @@ const Footer = () => {
                       Constancias de aptitud
                     </Link>
                   </li>
+                  <li className="mb-2">
+                    <Link href="/prensa" className="hover:text-gray-100">
+                      Prensa
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link href="/libros" className="hover:text-gray-100">
+                      Libros
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -169,7 +178,7 @@ const Footer = () => {
             </span>
             <div className="flex items-center space-x-6 rtl:space-x-reverse">
               <Link href="https://www.facebook.com/imcycoficial/" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
-                <FaFacebook size={29} />
+                <FaFacebook size={27} />
               </Link>
               <Link href="https://instagram.com/imcyc_oficial?r=nametag" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                 <FaInstagram size={29} />
@@ -179,6 +188,9 @@ const Footer = () => {
               </Link>
               <Link href="https://www.youtube.com/channel/UCGLxU2D2q2i8ny_klAWqPTw" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                 <FaYoutubeSquare size={25} />
+              </Link>
+              <Link href="https://mx.linkedin.com/company/imcyc-oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
+                <FaLinkedin size={25} />
               </Link>
             </div>
           </div>

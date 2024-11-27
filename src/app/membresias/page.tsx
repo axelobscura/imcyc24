@@ -261,13 +261,13 @@ export default function Membresias() {
                                     $3,300.00
                                 </td>
                                 <td className="px-6 text-center">
-                                    $16,500.00
+                                    $18,150.00
                                 </td>
                                 <td className="px-6 py-4 text-center">
-                                    $27,500.00
+                                    $30,250.00
                                 </td>
                                 <td className="px-6 py-4 text-center">
-                                    $38,500.00
+                                    $42,350.00
                                 </td>
                             </tr>
                         </tbody>

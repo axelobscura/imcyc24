@@ -218,6 +218,18 @@ function Menu() {
             </ul>
           </MegaMenuDropdown>
           <NavbarLink
+            href="/prensa"
+            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+          >
+            Prensa
+          </NavbarLink>
+          <NavbarLink
+            href="/publicaciones"
+            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+          >
+            Publicaciones
+          </NavbarLink>
+          <NavbarLink
             href="/contacto"
             className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
