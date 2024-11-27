@@ -17,6 +17,11 @@ const config: Config = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      fontSize: {  
+        'tiny': '0.625rem', // 10px  
+        'medium': '1.1rem',
+        'huge': '4rem', // 64px  
+      },
     },
   },
   plugins: [

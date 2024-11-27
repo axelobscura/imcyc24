@@ -5,7 +5,9 @@ import { BiPlusCircle } from "react-icons/bi";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { MdAddBox } from "react-icons/md";
 
+const esquemas = ["Técnico Laboratorista en ensayos de Concreto Fresco (TLCF)","Técnico Laboratorista en ensayos de Concreto Endurecido (TLCE)","Técnico Laboratorista en ensayos Físicos de Agregados (TLFA)","Supervisor de laboratorio de ensayos en la rama de construcción (SL)","Técnico Laboratorista en ensayos Físicos de Cemento (TLFC)","Técnico Laboratorista en ensayos Químicos de Cemento (TLQC)","Operador de camión mezclador (OCM)","Técnico Especialista en Durabilidad (TED)","Técnico Especialista en uso de Aditivos (TEA)","Técnico Especialista en colocación de Concreto en Climas Extremos (TECCE)","Técnico especialista en Tecnología de Agregados para Concreto (TEAC)"]
 
 export default function OrganismoDeCertificacionDePersonas() {
   const [openModal, setOpenModal] = useState(false);
@@ -16,7 +18,7 @@ export default function OrganismoDeCertificacionDePersonas() {
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/bkgs/bkg2.jpeg')] bg-fixed bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20 text-white">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
-          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-start justify-items-stretch pt-20 w-full">
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-5 items-start justify-items-stretch pt-20 w-full">
             <div>
               <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold mb-3">
@@ -116,6 +118,13 @@ export default function OrganismoDeCertificacionDePersonas() {
               }
               {useProducto === "esquemas" &&
                 <>
+                  <ul>
+                    {esquemas.map((esq, index) => (
+                      <li key={index} className="bg-slate-900 bg-opacity-90 mb-1">
+                        <h2 className="flex items-center font-montserrat p-3 text-medium hover:bg-slate-700 font-light cursor-pointer"><MdAddBox size={25} className="mr-2" /> {esq}</h2>
+                      </li>
+                    ))}
+                  </ul>
                 </>
               }
               {useProducto === "personas" &&
