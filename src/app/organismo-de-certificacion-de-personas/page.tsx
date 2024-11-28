@@ -13,7 +13,7 @@ export default function OrganismoDeCertificacionDePersonas() {
   const [openModal, setOpenModal] = useState(false);
   const [openModalApelacion, setOpenModalApelacion] = useState(false);
   const [useProducto, setProducto] = useState("proceso");
-  const [posts, setPosts] = useState(null)
+  const [posts, setPosts] = useState([]);
  
   useEffect(() => {
     async function fetchPosts() {
@@ -22,11 +22,10 @@ export default function OrganismoDeCertificacionDePersonas() {
       setPosts(data)
     }
     fetchPosts()
-  }, [])
+  }, []);
  
   if (!posts) return <div>Loading...</div>
   
-  console.log(posts);
   return (
     <div>
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/bkgs/bkg2.jpeg')] bg-fixed bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
@@ -143,6 +142,18 @@ export default function OrganismoDeCertificacionDePersonas() {
               }
               {useProducto === "personas" &&
                 <>
+                {posts && posts.map((cert, index) => {
+                  if(cert[0] === "vigente"){
+                    return (
+                      <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3'>
+                        <h2 className="font-montserrat px-3 text-2xl font-bold pb-2">{cert[1]}<br/><span className='text-slate-400'>{cert[4]}</span></h2>
+                        <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert[2]}</strong></p>
+                        <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert[3]}</strong></p>
+                        <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert[5]}</strong></p>
+                      </div>
+                    )
+                  }
+                })}
                 </>
               }
               {useProducto === "consultar" &&
