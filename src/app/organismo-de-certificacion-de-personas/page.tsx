@@ -17,8 +17,8 @@ export default function OrganismoDeCertificacionDePersonas() {
  
   useEffect(() => {
     async function fetchPosts() {
-      let res = await fetch('/api/certificados')
-      let data = await res.json()
+      const res = await fetch('/api/certificados')
+      const data = await res.json()
       setPosts(data)
     }
     fetchPosts()
