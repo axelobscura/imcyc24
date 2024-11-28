@@ -6,6 +6,7 @@ import { BiPlusCircle } from "react-icons/bi";
 import { Button, Modal } from "flowbite-react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { MdAddBox } from "react-icons/md";
+import { PiUserCirclePlusFill } from "react-icons/pi";
 
 const esquemas = ["Técnico Laboratorista en ensayos de Concreto Fresco (TLCF)","Técnico Laboratorista en ensayos de Concreto Endurecido (TLCE)","Técnico Laboratorista en ensayos Físicos de Agregados (TLFA)","Supervisor de laboratorio de ensayos en la rama de construcción (SL)","Técnico Laboratorista en ensayos Físicos de Cemento (TLFC)","Técnico Laboratorista en ensayos Químicos de Cemento (TLQC)","Operador de camión mezclador (OCM)","Técnico Especialista en Durabilidad (TED)","Técnico Especialista en uso de Aditivos (TEA)","Técnico Especialista en colocación de Concreto en Climas Extremos (TECCE)","Técnico especialista en Tecnología de Agregados para Concreto (TEAC)"]
 
@@ -146,7 +147,7 @@ export default function OrganismoDeCertificacionDePersonas() {
                   if(cert[0] === "vigente"){
                     return (
                       <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3'>
-                        <h2 className="font-montserrat px-3 text-2xl font-bold pb-2">{cert[1]}<br/><span className='text-slate-400'>{cert[4]}</span></h2>
+                        <h2 className="font-montserrat px-3 text-2xl font-bold pb-2 flex items-center"><span><PiUserCirclePlusFill size={50} className='mr-2' /></span><span className='text-slate-400'>{cert[1]}<br/>{cert[4]}</span></h2>
                         <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert[2]}</strong></p>
                         <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert[3]}</strong></p>
                         <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert[5]}</strong></p>
