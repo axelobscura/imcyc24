@@ -1,9 +1,9 @@
 "use client";
+import { useState, useEffect } from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
 import { Button, Modal } from "flowbite-react";
-import { useState } from "react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { MdAddBox } from "react-icons/md";
 
@@ -13,6 +13,20 @@ export default function OrganismoDeCertificacionDePersonas() {
   const [openModal, setOpenModal] = useState(false);
   const [openModalApelacion, setOpenModalApelacion] = useState(false);
   const [useProducto, setProducto] = useState("proceso");
+  const [posts, setPosts] = useState(null)
+ 
+  useEffect(() => {
+    async function fetchPosts() {
+      let res = await fetch('/api/certificados')
+      let data = await res.json()
+      setPosts(data)
+    }
+    fetchPosts()
+  }, [])
+ 
+  if (!posts) return <div>Loading...</div>
+  
+  console.log(posts);
   return (
     <div>
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/bkgs/bkg2.jpeg')] bg-fixed bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
