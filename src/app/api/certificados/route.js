@@ -1,15 +1,10 @@
 import { google } from "googleapis";
 
 export async function GET() {
-
-  const credential = JSON.parse(
-    Buffer.from(process.env.GOOGLE_PRIVATE_KEY, "base64").toString().replace(/\n/g,"")
-  )
-
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: credential,
+      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
     },
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
   });
