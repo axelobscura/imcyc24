@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
-import { Button, Modal, Checkbox, Label, TextInput } from "flowbite-react";
+import { Button, Modal, Label, TextInput } from "flowbite-react";
 import { FaArrowAltCircleRight, FaArrowCircleDown } from "react-icons/fa";
 import { MdAddBox } from "react-icons/md";
 import { PiUserCirclePlusFill } from "react-icons/pi";
