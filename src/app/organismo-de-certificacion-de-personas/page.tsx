@@ -3,12 +3,117 @@ import { useState, useEffect } from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
-import { Button, Modal, Label, TextInput } from "flowbite-react";
+import { Button, Modal, Label, TextInput, Accordion } from "flowbite-react";
 import { FaArrowAltCircleRight, FaArrowCircleDown } from "react-icons/fa";
 import { MdAddBox } from "react-icons/md";
+import { IoIosAddCircle } from "react-icons/io";
 import { PiUserCirclePlusFill } from "react-icons/pi";
 
-const esquemas = ["Técnico Laboratorista en ensayos de Concreto Fresco (TLCF)","Técnico Laboratorista en ensayos de Concreto Endurecido (TLCE)","Técnico Laboratorista en ensayos Físicos de Agregados (TLFA)","Supervisor de laboratorio de ensayos en la rama de construcción (SL)","Técnico Laboratorista en ensayos Físicos de Cemento (TLFC)","Técnico Laboratorista en ensayos Químicos de Cemento (TLQC)","Operador de camión mezclador (OCM)","Técnico Especialista en Durabilidad (TED)","Técnico Especialista en uso de Aditivos (TEA)","Técnico Especialista en colocación de Concreto en Climas Extremos (TECCE)","Técnico especialista en Tecnología de Agregados para Concreto (TEAC)"]
+const esquemas = [
+  {
+    "nombre": "Técnico Laboratorista en ensayos de Concreto Fresco (TLCF)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "normas": [
+      {
+        "nmx": "NMX-C-161-ONNCCE-2013",
+        "astm": "ASTM C172/C172M",
+      },
+      {
+        "nmx": "NMX-C-156-ONNCCE-2010",
+        "astm": "ASTM C143/C143M",
+      },
+      {
+        "nmx": "NMX-C-157-ONNCCE-2006",
+        "astm": "ASTM C231/C231M",
+      },
+      {
+        "nmx": "NMX-C-158-ONNCCE-2006",
+        "astm": "ASTM C173/C173M",
+      },
+      {
+        "nmx": "NMX-C-159-ONNCCE-2016",
+        "astm": "ASTM C31/C31M",
+      },
+      {
+        "nmx": "NMX-C-162-ONNCCE-2014",
+        "astm": "ASTM C138/C138M",
+      },
+      {
+        "nmx": "NMX-C-435-ONNCCE-2010",
+        "astm": "ASTM C1064/C1064M",
+      }
+    ]
+  },
+  {
+    "nombre": "Técnico Laboratorista en ensayos de Concreto Endurecido (TLCE)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "normas": [
+      {
+        "nmx": "NMX-C-083-ONNCCE-2014",
+        "astm": "ASTM C39/C39M",
+      },
+      {
+        "nmx": "NMX-C-109-ONNCCE-2013",
+        "astm": "ASTM C617/C617M",
+      },
+      {
+        "nmx": "NMX-C-191-ONNCCE-2015",
+        "astm": "ASTM C78/C78M",
+      },
+      {
+        "nmx": "NMX-C-469-ONNCCE-2013",
+        "astm": "ASTM C1231/C1231M",
+      }
+    ]
+  },
+  {
+    "nombre": "Técnico Laboratorista en ensayos Físicos de Agregados (TLFA)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "normas": [
+      {
+        "nmx": "NMX-C-030-ONNCCE-2004",
+        "astm": "ASTM D75/D75M",
+      },
+      {
+        "nmx": "NMX-C-077-ONNCCE-2019",
+        "astm": "ASTM C136/C136M",
+      },
+      {
+        "nmx": "NMX-C-084-ONNCCE-2018",
+        "astm": "ASTM C117",
+      },
+      {
+        "nmx": "NMX-C-088-ONNCCE-2019",
+        "astm": "ASTM C40/C40M",
+      },
+      {
+        "nmx": "NMX-C-164-ONNCCE-2014",
+        "astm": "ASTM C127",
+      },
+      {
+        "nmx": "NMX-C-165-ONNCCE-2014",
+        "astm": "ASTM C128",
+      },
+      {
+        "nmx": "NMX-C-166-ONNCCE-2018",
+        "astm": "ASTM C566",
+      },
+      {
+        "nmx": "NMX-C-170-ONNCCE-2019",
+        "astm": "ASTM C702/C702M",
+      }
+    ]
+  }
+]
 
 export default function OrganismoDeCertificacionDePersonas() {
   const [openModal, setOpenModal] = useState(false);
@@ -41,7 +146,6 @@ export default function OrganismoDeCertificacionDePersonas() {
                 <p className='font-montserrat text-justify'>El Organismo de Certififcación de Personas de El Instituto Mexicano del Cemento y del Concreto A.C., cuenta con la acreditación <strong>No. 157/22 otorgada por la Entidad Mexicana de Acreditación (ema)</strong>.</p><br/>
                 <p className='font-montserrat text-justify text-tiny'>Pensando en las necesidades de la industria de la construcción, El Organismo de Certificación de Personas (OCPER) cuenta con la acreditación No. 157/22, la cual nos permitirá crear un mecanismo para que las personas interesadas puedan demostrar competencia en habilidades específicas para desempeñarse como técnicos laboratoristas en concreto, agregados y cemento, supervisores de laboratorio, operadores de ollas de mezclado de concreto, y otras actividades clave en la industria.</p>
               </div>
-              
               <div className="w-full">
                 <p className={`bg-opacity-70 ${useProducto === "proceso" ? 'bg-slate-100 bg-opacity-100 text-gray-900' : 'bg-slate-800'} bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center justify-between text-gray-100 cursor-pointer`} onClick={() => setProducto("proceso")}>PROCESO DE CERTIFICACIÓN <FaArrowAltCircleRight className="mr-3" size={20} /></p>
                 <p className={`bg-opacity-70 ${useProducto === "esquemas" ? 'bg-slate-100 bg-opacity-100 text-gray-900' : 'bg-slate-800'} bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center justify-between text-gray-100 cursor-pointer`} onClick={() => setProducto("esquemas")}>ESQUEMAS DE CERTIFICACIÓN <FaArrowAltCircleRight className="mr-3" size={20} /></p>
@@ -136,7 +240,34 @@ export default function OrganismoDeCertificacionDePersonas() {
                   <ul>
                     {esquemas.map((esq, index) => (
                       <li key={index} className="bg-slate-900 bg-opacity-90 mb-1">
-                        <h2 className="flex items-center font-montserrat p-3 text-medium hover:bg-slate-700 font-light cursor-pointer"><MdAddBox size={25} className="mr-2" /> {esq}</h2>
+                        <Accordion collapseAll className='mb-2 border-none'>
+                          <Accordion.Panel>
+                            <Accordion.Title className='p-0 border border-none flex items-center font-montserrat text-medium bg-slate-800 hover:bg-slate-700 font-light cursor-pointer'>
+                              <span className='flex items-center p-3'>
+                                <MdAddBox size={25} className="mr-2" /> {esq.nombre}
+                              </span>
+                            </Accordion.Title>
+                            <Accordion.Content className='border border-none'>
+                              <h2 className="font-montserrat text-1xl text-gray-200 mb-2 text-justify"><strong className='flex items-center'><IoIosAddCircle className='mr-1' /> Educación</strong>{esq.educacion}</h2>
+                              <h2 className="font-montserrat text-1xl text-gray-200 mb-2 text-justify"><strong className='flex items-center'><IoIosAddCircle className='mr-1' /> Experiencia</strong>{esq.experiencia}</h2>
+                              <h2 className="font-montserrat text-1xl text-gray-200 mb-2 text-justify"><strong className='flex items-center'><IoIosAddCircle className='mr-1' /> Documentos</strong>{esq.doc}</h2>
+                              <h2 className="font-montserrat text-1xl text-gray-200 mb-2 text-justify mb-3"><strong className='flex items-center'><IoIosAddCircle className='mr-1' /> Formación</strong>{esq.formacion}</h2>
+                              {esq.normas.map((norma, index) => (
+                                <div key={index} className='grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5'>
+                                  <div className='bg-slate-800 bg-opacity-90 p-3 border border-spacing-3 border-slate-700 mb-1'>
+                                    <h2 className="font-montserrat text-1xl text-gray-200 text-justify flex items-center"><IoIosAddCircle className='mr-2' /> <strong>{norma.nmx}</strong></h2>
+                                  </div>
+                                  <div className='bg-slate-800 bg-opacity-90 p-3 border border-spacing-3 border-slate-700 mb-1'>
+                                    <h2 className="font-montserrat text-1xl text-gray-200 text-justify flex items-center"><IoIosAddCircle className='mr-2' /> <strong>{norma.astm}</strong></h2>
+                                  </div>
+                                </div>
+                              ))}
+                              <hr className='mt-3'/>
+                              <p className="font-montserrat py-1 text-tiny font-bold">*Cuando el candidato sea extranjero y presente evidencias de educación, estas deben ser equivalentes al nivel educativo en México y del esquema de certificación que solicite.</p>
+                              <p className="font-montserrat py-1 text-tiny font-bold">En caso de tener alguna duda al respecto, por favor comunicarse a los datos indicados en el apartado de contacto.</p>
+                            </Accordion.Content>
+                          </Accordion.Panel>
+                        </Accordion>
                       </li>
                     ))}
                   </ul>

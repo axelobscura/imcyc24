@@ -5,6 +5,7 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
+  ToggleSwitch,
 } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
