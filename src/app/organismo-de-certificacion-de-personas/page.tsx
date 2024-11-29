@@ -16,6 +16,7 @@ const esquemas = [
     "experiencia": "(1 Año al menos realizando ensayos)",
     "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
     "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": [],
     "normas": [
       {
         "nmx": "NMX-C-161-ONNCCE-2013",
@@ -53,6 +54,7 @@ const esquemas = [
     "experiencia": "(1 Año al menos realizando ensayos)",
     "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
     "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": [],
     "normas": [
       {
         "nmx": "NMX-C-083-ONNCCE-2014",
@@ -78,6 +80,49 @@ const esquemas = [
     "experiencia": "(1 Año al menos realizando ensayos)",
     "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
     "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": [],
+    "normas": [
+      {
+        "nmx": "NMX-C-030-ONNCCE-2004",
+        "astm": "ASTM D75/D75M",
+      },
+      {
+        "nmx": "NMX-C-077-ONNCCE-2019",
+        "astm": "ASTM C136/C136M",
+      },
+      {
+        "nmx": "NMX-C-084-ONNCCE-2018",
+        "astm": "ASTM C117",
+      },
+      {
+        "nmx": "NMX-C-088-ONNCCE-2019",
+        "astm": "ASTM C40/C40M",
+      },
+      {
+        "nmx": "NMX-C-164-ONNCCE-2014",
+        "astm": "ASTM C127",
+      },
+      {
+        "nmx": "NMX-C-165-ONNCCE-2014",
+        "astm": "ASTM C128",
+      },
+      {
+        "nmx": "NMX-C-166-ONNCCE-2018",
+        "astm": "ASTM C566",
+      },
+      {
+        "nmx": "NMX-C-170-ONNCCE-2019",
+        "astm": "ASTM C702/C702M",
+      }
+    ]
+  },
+  {
+    "nombre": "Supervisor de laboratorio de ensayos en la rama de construcción (SL)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo nivel medio superior).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Conocimientos generales en ISO/IEC 17025:2017 NMX-EC-17025-IMNC-2018 'Requisitos generales para la competencia de los laboratorios de ensayo y calibración'.","Aseguramiento de la validez de los resultados.","Estimación de la incertidumbre.","Buenas prácticas de laboratorio."],
     "normas": [
       {
         "nmx": "NMX-C-030-ONNCCE-2004",
