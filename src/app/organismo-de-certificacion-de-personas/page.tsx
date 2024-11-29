@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
-import { Button, Modal } from "flowbite-react";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { Button, Modal, Checkbox, Label, TextInput } from "flowbite-react";
+import { FaArrowAltCircleRight, FaArrowCircleDown } from "react-icons/fa";
 import { MdAddBox } from "react-icons/md";
 import { PiUserCirclePlusFill } from "react-icons/pi";
 
@@ -38,7 +38,8 @@ export default function OrganismoDeCertificacionDePersonas() {
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold mb-3">
                   Organismo de Certificación de Personas
                 </h1>
-                <p className='font-montserrat text-justify'>El Organismo de Certififcación de Personas de El Instituto Mexicano del Cemento y del Concreto A.C., cuenta con la acreditación <strong>No. 157/2 otorgada por la Entidad Mexicana de Acreditación (ema)</strong>.</p>
+                <p className='font-montserrat text-justify'>El Organismo de Certififcación de Personas de El Instituto Mexicano del Cemento y del Concreto A.C., cuenta con la acreditación <strong>No. 157/22 otorgada por la Entidad Mexicana de Acreditación (ema)</strong>.</p><br/>
+                <p className='font-montserrat text-justify text-tiny'>Pensando en las necesidades de la industria de la construcción, El Organismo de Certificación de Personas (OCPER) cuenta con la acreditación No. 157/22, la cual nos permitirá crear un mecanismo para que las personas interesadas puedan demostrar competencia en habilidades específicas para desempeñarse como técnicos laboratoristas en concreto, agregados y cemento, supervisores de laboratorio, operadores de ollas de mezclado de concreto, y otras actividades clave en la industria.</p>
               </div>
               
               <div className="w-full">
@@ -143,22 +144,54 @@ export default function OrganismoDeCertificacionDePersonas() {
               }
               {useProducto === "personas" &&
                 <>
-                {posts && posts.map((cert, index) => {
-                  if(cert[0] === "vigente"){
-                    return (
-                      <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3'>
-                        <h2 className="font-montserrat px-3 text-2xl font-bold pb-2 flex items-center"><span><PiUserCirclePlusFill size={50} className='mr-2' /></span><span className='text-slate-400'>{cert[1]}<br/>{cert[4]}</span></h2>
-                        <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert[2]}</strong></p>
-                        <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert[3]}</strong></p>
-                        <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert[5]}</strong></p>
-                      </div>
-                    )
-                  }
-                })}
+                  <h2 className="font-montserrat font-light p-3 mb-3 text-2xl font-bold pb-2 flex items-center uppercase bg-green-900 bg-opacity-80">Certificados Vigentes</h2>
+                  {posts && posts.map((cert, index) => {
+                    if(cert[0] === "vigente"){
+                      return (
+                        <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3 border border-spacing-3 border-green-800'>
+                          <h2 className="font-montserrat px-3 text-2xl font-bold pb-2 flex items-center"><span><PiUserCirclePlusFill size={50} className='mr-2' /></span><span className='text-slate-400'>{cert[1]}<br/>{cert[4]}</span></h2>
+                          <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert[2]}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert[3]}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert[5]}</strong></p>
+                        </div>
+                      )
+                    }
+                  })}
+                  <h2 className="font-montserrat font-light p-3 mb-3 text-2xl font-bold pb-2 flex items-center uppercase bg-red-950 bg-opacity-80">Certificados Cancelados</h2>
+                  {posts && posts.map((cert, index) => {
+                    if(cert[0] === "cancelado"){
+                      return (
+                        <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3 border border-spacing-3 border-red-950'>
+                          <h2 className="font-montserrat px-3 text-2xl font-bold pb-2 flex items-center"><span><PiUserCirclePlusFill size={50} className='mr-2' /></span><span className='text-slate-400'>{cert[1]}<br/>{cert[4]}</span></h2>
+                          <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert[2]}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert[3]}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert[5]}</strong></p>
+                        </div>
+                      )
+                    }
+                  })}
                 </>
               }
               {useProducto === "consultar" &&
                 <>
+                <div className='bg-slate-900 bg-opacity-80 p-5'>
+                  <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Por favor, introduzca el número de certificado o gafete que desee consultar y porteriormente, buscar:</p>
+                  <form className="flex w-full flex-col gap-4">
+                    <div>
+                      <div className="mb-2 flex items-center">
+                      <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
+                      </div>
+                      <TextInput id="email1" type="email" placeholder="Introducir número de certificado" required />
+                    </div>
+                    <div>
+                      <div className="mb-2 flex items-center">
+                      <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de gafete:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
+                      </div>
+                      <TextInput id="email1" type="email" placeholder="Número de gafete" required />
+                    </div>
+                    <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
+                  </form>
+                </div>
                 </>
               }
             </div>
