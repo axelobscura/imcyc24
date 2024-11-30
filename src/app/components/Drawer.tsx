@@ -1,6 +1,5 @@
 "use client";
-import { Button, Drawer } from "flowbite-react";
-import { useState } from "react";
+import { Drawer } from "flowbite-react";
 
 export function DrawerImcyc({setIsOpen, isOpen} : {setIsOpen: (value: boolean) => void, isOpen: boolean}) {
   
