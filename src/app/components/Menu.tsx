@@ -6,7 +6,6 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import Link from "next/link";
 import Image from "next/image";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 
