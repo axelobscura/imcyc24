@@ -42,22 +42,22 @@ function Menu() {
             <ul className="grid grid-cols-4">
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/laboratorio-de-ensayos"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Laboratorio de ensayos
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/laboratorio-de-calibracion"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Laboratorio de calibración
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
@@ -71,53 +71,53 @@ function Menu() {
                   </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/proveedor-de-ensayos-de-aptitud"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Proveedor de ensayos de aptitud
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/organismo-de-certificacion-de-personas"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Organismo de certificación de personas
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/organismo-de-certificacion-de-producto"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Organismo de certificación de producto
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/asociados"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Nuestros asociados
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="quejas-y-apelaciones"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Quejas y apelaciones
-                  </Link>
+                  </a>
                 </li>
               </div>
             </ul>
@@ -136,83 +136,83 @@ function Menu() {
             <ul className="grid grid-cols-4">
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/capacitacion"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Capacitación
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/membresias"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Membresías
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="https://webinarsenconcreto.com/"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                     rel="noopener noreferrer" target="_blank"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Plataforma en línea
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/sellos-de-calidad"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Sellos de calidad
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/revista-cyt"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Revista CYT
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/tienda"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Tienda IMCYC
-                  </Link>
+                  </a>
                 </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>
-                  <Link
+                  <a
                     href="/co-working"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     CO-Working
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/gerencia-ensenanza/constancia-de-aptitud"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Constancias de aptitud
-                  </Link>
+                  </a>
                 </li>
               </div>
             </ul>
