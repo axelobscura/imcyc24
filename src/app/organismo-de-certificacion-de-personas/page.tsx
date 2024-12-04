@@ -80,7 +80,6 @@ const esquemas = [
     "experiencia": "(1 Año al menos realizando ensayos)",
     "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
     "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
-    "extras": [],
     "normas": [
       {
         "nmx": "NMX-C-030-ONNCCE-2004",
@@ -157,6 +156,109 @@ const esquemas = [
         "astm": "ASTM C702/C702M",
       }
     ]
+  },
+  {
+    "nombre": "Técnico Laboratorista en ensayos Físicos de Cemento (TLFC)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "normas": [
+      {
+        "nmx": "NMX-C-049-ONNCCE-2015",
+        "astm": "ASTM C430",
+      },
+      {
+        "nmx": "NMX-C-056-ONNCCE-2019",
+        "astm": "ASTM C204",
+      },
+      {
+        "nmx": "NMX-C-057-ONNCCE-2015",
+        "astm": "ASTM C187",
+      },
+      {
+        "nmx": "NMX-C-059-ONNCCE-2017",
+        "astm": "ASTM C191",
+      },
+      {
+        "nmx": "NMX-C-061-ONNCCE-2015",
+        "astm": "ASTM C109/C109M",
+      },
+      {
+        "nmx": "NMX-C-062-ONNCCE-2015",
+        "astm": "ASTM C151/C151M - ASTM C490/C490M",
+      },
+      {
+        "nmx": "NMX-C-132-ONNCCE-2015",
+        "astm": "ASTM C451",
+      },
+      {
+        "nmx": "NMX-C-152-ONNCCE-2015",
+        "astm": "ASTM C188",
+      },
+      {
+        "nmx": "NMX-C-185-ONNCCE-2015",
+        "astm": "ASTM 1038/C1038M",
+      }
+    ]
+  },
+  {
+    "nombre": "Técnico Laboratorista en ensayos Químicos de Cemento (TLQC)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "normas": [
+      {
+        "nmx": "NMX-C-131-ONNCCE-2016",
+        "astm": "ASTM C114",
+      }
+    ]
+  },
+  {
+    "nombre": "Operador de camión mezclador (OCM)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo secundaria).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Atención al cliente","Mantenimiento preventivo de ollas mezcladoras","Operación del camión revolvedor","Carga, muestreo y descarga del concreto","Inspección del camión mezclador antes, durante y después del transporte del concreto","Tecnología del concreto","Manejo a la defensiva"],
+    "normas": []
+  },
+  {
+    "nombre": "Técnico Especialista en Durabilidad (TED)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo medio superior).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Tecnología del concreto","Durabilidad de estructuras de concreto","Inspección y evaluación de estructuras de concreto","Medidas preventivas y métodos de prueba"],
+    "normas": []
+  },
+  {
+    "nombre": "Técnico Especialista en uso de Aditivos (TEA)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo medio superior).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Tecnología del concreto","Tecnología de aditivos para concreto","Muestreo de aditivos y pruebas de verificacióno","Pruebas de selección, evaluación, calidad y comportamiento","Métodos de ensayo","Marcado, etiquetado y embalaje"],
+    "normas": []
+  },
+  {
+    "nombre": "Técnico Especialista en colocación de Concreto en Climas Extremos (TECCE)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo medio superior).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Tecnología del concreto","Producción, entrega y colocación de concreto en climas cálido y frío","Pruebas e inspección"],
+    "normas": []
+  },
+  {
+    "nombre": "Técnico especialista en Tecnología de Agregados para Concreto (TEAC)",
+    "educacion": "*Certificado de estudios con reconocimiento de validez oficial (mínimo medio superior).",
+    "experiencia": "(1 Año al menos realizando ensayos)",
+    "doc": "Carta emitida por una organización o laboratorio de ensayos (con fecha de emisión no mayor a 1 año) donde indiquen sus actividades y responsabilidades vinculadas con este esquema de certificación.",
+    "formacion": "Diploma, certificado o constancia que demuestre capacitación teórica-práctica considerando los siguientes estándares:",
+    "extras": ["Tecnología del concreto","Agregados para concreto","Muestreo y pruebas de agregados"],
+    "normas": []
   }
 ]
 
@@ -289,7 +391,7 @@ export default function OrganismoDeCertificacionDePersonas() {
                           <Accordion.Panel>
                             <Accordion.Title className='p-0 border border-none flex items-center font-montserrat text-medium bg-slate-800 hover:bg-slate-700 font-light cursor-pointer'>
                               <span className='flex items-center p-3'>
-                                <MdAddBox size={25} className="mr-2" /> {esq.nombre}
+                                <MdAddBox size={25} className="mr-2" /> {index + 1} - {esq.nombre}
                               </span>
                             </Accordion.Title>
                             <Accordion.Content className='border border-none'>
@@ -304,6 +406,13 @@ export default function OrganismoDeCertificacionDePersonas() {
                                   </div>
                                   <div className='bg-slate-800 bg-opacity-90 p-3 border border-spacing-3 border-slate-700 mb-1'>
                                     <h2 className="font-montserrat text-1xl text-gray-200 text-justify flex items-center"><IoIosAddCircle className='mr-2' /> <strong>{norma.astm}</strong></h2>
+                                  </div>
+                                </div>
+                              ))}
+                              {esq.extras && esq.extras.map((norma, index) => (
+                                <div key={index} className='grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-5'>
+                                  <div className='bg-slate-800 bg-opacity-90 p-3 border border-spacing-3 border-slate-700 mb-1'>
+                                    <h2 className="font-montserrat text-1xl text-gray-200 text-justify flex items-center"><IoIosAddCircle className='mr-2' /> <strong>{norma}</strong></h2>
                                   </div>
                                 </div>
                               ))}
