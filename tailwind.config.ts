@@ -19,7 +19,7 @@ const config: Config = {
       },
       fontSize: {  
         'tiny': '0.625rem', // 10px  
-        'medium': '1.1rem',
+        'medium': '1rem',
         'huge': '4rem', // 64px  
       },
     },
