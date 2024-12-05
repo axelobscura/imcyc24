@@ -237,7 +237,7 @@ export default function Historia() {
 
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-0 pb-20 gap-16 sm:p-10 sm:pt-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-fixed bg-no-repeat">
+    <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-0 pb-20 gap-16 sm:p-10 sm:pt-20 font-[family-name:var(--font-geist-sans)] bg-gradient-to-b from-slate-800 to-slate-950 z-10 bg-cover bg-fixed bg-no-repeat">
       <main className="flex flex-col gap-8 row-start-2 sm:items-start z-0 mx-auto w-full max-w-screen-xl px-5">
         <h1 className="font-montserrat text-4xl font-bold pb-0 mb-0">Historia</h1>
         <p className="font-montserrat">Instituto Mexicano del Cemento y del Concreto A.C.</p>

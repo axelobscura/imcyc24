@@ -7,7 +7,7 @@ export default function CardHorizontal({titulo, desc, imagen}:{
   imagen: string;
 }) {
   return (
-      <div className="grid grid-cols-[1fr] sm:grid-cols-[190px_1fr] w-full bg-slate-800 bg-opacity-80 border border-slate-600 my-1 rounded-md items-center my-2">
+      <div className="grid grid-cols-[1fr] sm:grid-cols-[190px_1fr] w-full bg-slate-800 bg-opacity-80 border border-slate-600 my-1 rounded-md items-center">
         <div>
           <Image
             src={imagen}
