@@ -2,15 +2,29 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BiPlusCircle } from "react-icons/bi";
-import { Button, Modal } from "flowbite-react";
-import { useState } from "react";
+import { Button, Modal, Table } from "flowbite-react";
+import { useState, useEffect } from "react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 export default function OrganismoDeCertificacionDeProducto() {
   const [openModal, setOpenModal] = useState(false);
+  const [openVigentes, setOpenVigentes] = useState(false);
   const [openModalApelacion, setOpenModalApelacion] = useState(false);
   const [useProducto, setProducto] = useState("alcance");
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const res = await fetch('/api/empresas')
+      const data = await res.json()
+      setPosts(data)
+    }
+    fetchPosts()
+  }, []);
+ 
+  if (!posts) return <div>Cargando...</div>
+
   return (
     <div>
       <div className={`flex items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/cert.jpeg')] bg-fixed bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat`}>
@@ -173,8 +187,44 @@ export default function OrganismoDeCertificacionDeProducto() {
               {useProducto === "organizaciones" &&
                 <>
                   <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900">ORGANIZACIONES CERTIFICADAS</h3>
-                  
-                </>
+                  <Modal show={openVigentes} onClose={() => setOpenVigentes(false)} style={{
+                          maxWidth: '70rem',
+                          margin: '0 auto',
+                        }}>
+                    <Modal.Header className="font-montserrat">CERTIFICADOS VIGENTES</Modal.Header>
+                    <Modal.Body>
+                      <div className="space-y-12">
+                        <Table striped>
+                          <Table.Head className="border-gray-700 bg-gray-800">
+                            <Table.HeadCell>No. Certificado</Table.HeadCell>
+                            <Table.HeadCell>Empresa</Table.HeadCell>
+                            <Table.HeadCell>Estándar</Table.HeadCell>
+                            <Table.HeadCell>Alcance</Table.HeadCell>
+                            <Table.HeadCell>Vigencia</Table.HeadCell>
+                          </Table.Head>
+                          <Table.Body className="divide-y">
+                            {posts.map((ele, index) => {
+                              return (
+                                <Table.Row key={index} className="border-gray-700 bg-gray-800">
+                                  <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{ele[1]}</Table.Cell>
+                                  <Table.Cell className="whitespace-nowrap">{ele[2]}</Table.Cell>
+                                  <Table.Cell className="whitespace-nowrap">{ele[4]}</Table.Cell>
+                                  <Table.Cell className="whitespace-nowrap">{ele[3]}</Table.Cell>
+                                  <Table.Cell className="whitespace-nowrap">{ele[5]}</Table.Cell>
+                                  <Table.Cell className="whitespace-nowrap">{ele[6]}</Table.Cell>
+                                </Table.Row>
+                              )
+                            })}
+                          </Table.Body>
+                        </Table>
+                      </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button onClick={() => setOpenVigentes(false)}>CERRAR</Button>
+                    </Modal.Footer>
+                  </Modal>
+                  <p className="font-montserrat bg-green-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer my-2" onClick={() => setOpenVigentes(true)}><BiPlusCircle className="mr-3" size={20} /> CERTIFICADOS VIGENTES</p>
+                  </>
               }
               {useProducto === "contactos" &&
                 <>
