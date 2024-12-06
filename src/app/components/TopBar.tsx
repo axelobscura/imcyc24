@@ -21,6 +21,10 @@ const TopBar = () => {
         correo = "cursos@imcyc.com";
         telefono = '(52) 55 5322 5740';
         break;
+      case 'gerencia-ensenanza':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
       case 'asesoria-en-estructuras':
         correo = "bperez@imcyc.com";
         telefono = '(52) 55 5276 7200';

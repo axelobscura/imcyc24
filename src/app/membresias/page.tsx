@@ -6,7 +6,7 @@ import { BiBookmarkHeart } from "react-icons/bi";
 export default function Membresias() {
     return (
         <div>
-            <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-800 to-slate-900 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat">
+            <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-800 to-slate-900 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat py-40 sm:py-40">
                 <div className=" mx-auto max-w-screen-xl px-5">
                 <main className="pt-20">
                     <h1 className="font-montserrat text-4xl font-bold text-white pt-0 mb-0 pb-0">MEMBRESÍAS IMCYC</h1>

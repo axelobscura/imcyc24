@@ -9,7 +9,7 @@ export default function SellosDeCalidad() {
   return (
     <div>
       <div className="flex p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/sellos/ollas.jpg')] bg-fixed bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-30 pb-0">
+        <div className="mx-auto w-full max-w-screen-xl p-4 pt-40 sm:pt-30 pb-0">
           <main className="flex flex-col gap-8 row-start-2 items-center mx-auto max-w-screen-xl sm:items-start z-0 w-full text-white">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
