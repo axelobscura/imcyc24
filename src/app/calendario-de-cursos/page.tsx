@@ -15,8 +15,6 @@ export default function CalendarioDeCursos() {
  
   if (!posts) return <div>Loading...</div>
 
-  console.log("posts: ", posts);
-
   return (
     <div>
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/revista.jpeg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">

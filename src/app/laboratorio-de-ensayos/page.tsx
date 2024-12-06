@@ -41,9 +41,9 @@ export default function LaboratorioDeEnsayos() {
   ];
   return (
     <>
-      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 bg-opacity-80 bg-[url('/gerencia-tecnica.jpg')] bg-cover bg-gray-900 bg-blend-multiply">
-        <div className="mx-auto w-full max-w-screen-xl p-4 pt-90 sm:pt-80 pb-0 lg:py-20">
-          <p className="font-montserrat mb-0 text-2md font-light tracking-tight leading-none text-white md:text-2xl lg:text-2xl dark:text-white sm:pt-20 text-center uppercase">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 bg-opacity-80 bg-[url('/gerencia-tecnica.jpg')] bg-cover bg-gray-900 bg-blend-multiply pt-50">
+        <div className="mx-auto w-full max-w-screen-xl p-4 pt-96 sm:pt-96 pb-0 lg:py-40">
+          <p className="font-montserrat mb-0 text-2md font-light tracking-tight leading-none text-white md:text-2xl lg:text-2xl dark:text-white sm:pt-20 text-center uppercase pt-90">
             Servicios
           </p>
           <h1 className="font-montserrat mb-0 text-2md font-light tracking-tight leading-none text-white md:text-2xl lg:text-4xl dark:text-white sm:pt-0 text-center uppercase">

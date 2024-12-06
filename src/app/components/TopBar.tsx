@@ -1,28 +1,63 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 import Menu from "./Menu";
+import { usePathname } from 'next/navigation'
 import { FaInstagram, FaFacebook, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
-
+import AsociadosTop from "./AsociadosTop";
 
 const TopBar = () => {
+  const pathname = usePathname();
+  const path = pathname.split('/');
+  let correo = 'imcyc@imcyc.com';
+  let telefono = '(52) 55 5322 5740';
+  switch (path[1]) {
+      case 'laboratorio-de-ensayos':
+        correo = "mhernandez@imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
+      case 'capacitacion':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'asesoria-en-estructuras':
+        correo = "bperez@mail.imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
+      case 'laboratorio-de-calibracion':
+        correo = "vgomez@mail.imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
+      case 'proveedor-de-ensayos-de-aptitud':
+        correo = "dzamora@mail.imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
+      case 'organismo-de-certificacion-de-producto':
+        correo = "dzamora@mail.imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
+      default:
+        correo = "imcyc@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+  }
   return (
     <>
     <div className="fixed z-50 w-full">
       <nav className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
-                  <Link href="tel:5541251234" className="flex font-montserrat text-xs text-gray-200 dark:text-gray-200 hover:underline flex flex-row">
+                  <Link href={`tel:${telefono}`} className="flex font-montserrat text-xs text-gray-200 dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 mt-1">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
-                    <span className="ml-2 flex items-center"><strong>(52) 55 5467 1493</strong></span>
+                    <span className="ml-2 flex items-center"><strong><Link href={`tel:${telefono}`}>{telefono}</Link></strong></span>
                   </Link>
-                  <Link href="tel:5541251234" className="flex font-montserrat text-xs  text-white dark:text-gray-200 hover:underline flex flex-row">
+                  <Link href={`mailto:${correo}`} className="flex font-montserrat text-xs  text-white dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
-                    <span className="ml-2 flex items-center">imcyc@imcyc.com</span>
+                    <span className="ml-2 flex items-center">{correo}</span>
                   </Link>
                   <Link href="tel:5541251234" className="flex font-montserrat text-xs  text-white dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
@@ -50,6 +85,11 @@ const TopBar = () => {
               </div>
           </div>
       </nav>
+      <div className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
+          <AsociadosTop/>
+        </div>
+      </div>
       <Menu/>
       </div>
     </>
