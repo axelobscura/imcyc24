@@ -187,7 +187,7 @@ export default function OrganismoDeCertificacionDeProducto() {
               {useProducto === "organizaciones" &&
                 <>
                   <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900">ORGANIZACIONES CERTIFICADAS</h3>
-                  <Modal show={openVigentes} onClose={() => setOpenVigentes(false)} style={{
+                  <Modal show={openVigentes} onClose={() => setOpenVigentes(false)} className="font-montserrat" style={{
                           maxWidth: '70rem',
                           margin: '0 auto',
                         }}>
