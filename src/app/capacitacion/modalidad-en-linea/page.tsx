@@ -254,7 +254,7 @@ export default function ModalidadEnLinea() {
   return (
     <div>
       <div className="grid grid-rows-[1fr] p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-opacity-80 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="grid grid-rows-[1fr] justify-start z-0 mx-auto max-w-screen-xl text-gray-100">
+        <main className="grid grid-rows-[1fr] justify-start z-0 mx-auto max-w-screen-xl text-gray-100 my-20">
           <h1 className="font-montserrat text-2xl uppercase mt-14 p-5 font-light flex items-center pb-3">
             <FaRegUserCircle className="mr-2" /> MODALIDAD EN LÍNEA
           </h1>
