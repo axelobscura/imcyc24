@@ -10,6 +10,8 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 export default function OrganismoDeCertificacionDeProducto() {
   const [openModal, setOpenModal] = useState(false);
   const [openVigentes, setOpenVigentes] = useState(false);
+  const [openSuspendidos, setOpenSuspendidos] = useState(false);
+  const [openCancelados, setOpenCancelados] = useState(false);
   const [openModalApelacion, setOpenModalApelacion] = useState(false);
   const [useProducto, setProducto] = useState("alcance");
   const [posts, setPosts] = useState([]);
@@ -204,16 +206,18 @@ export default function OrganismoDeCertificacionDeProducto() {
                           </Table.Head>
                           <Table.Body className="divide-y">
                             {posts.map((ele, index) => {
-                              return (
-                                <Table.Row key={index} className="border-gray-700 bg-gray-800">
-                                  <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{ele[1]}</Table.Cell>
-                                  <Table.Cell className="whitespace-nowrap">{ele[2]}</Table.Cell>
-                                  <Table.Cell className="whitespace-nowrap">{ele[4]}</Table.Cell>
-                                  <Table.Cell className="whitespace-nowrap">{ele[3]}</Table.Cell>
-                                  <Table.Cell className="whitespace-nowrap">{ele[5]}</Table.Cell>
-                                  <Table.Cell className="whitespace-nowrap">{ele[6]}</Table.Cell>
-                                </Table.Row>
-                              )
+                              if(ele[0] === "vigente"){
+                                return (
+                                  <Table.Row key={index} className="border-gray-700 bg-gray-800">
+                                    <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{ele[1]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[2]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[4]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[3]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[5]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[6]}</Table.Cell>
+                                  </Table.Row>
+                                )
+                              }
                             })}
                           </Table.Body>
                         </Table>
@@ -223,7 +227,61 @@ export default function OrganismoDeCertificacionDeProducto() {
                       <Button onClick={() => setOpenVigentes(false)}>CERRAR</Button>
                     </Modal.Footer>
                   </Modal>
-                  <p className="font-montserrat bg-green-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer my-2" onClick={() => setOpenVigentes(true)}><BiPlusCircle className="mr-3" size={20} /> CERTIFICADOS VIGENTES</p>
+                  <p className="font-montserrat bg-green-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-2 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer my-2 mt-4" onClick={() => setOpenVigentes(true)}><BiPlusCircle className="mr-3" size={20} /> CERTIFICADOS VIGENTES</p>
+                  <Modal show={openSuspendidos} onClose={() => setOpenSuspendidos(false)} className="font-montserrat" style={{
+                          maxWidth: '70rem',
+                          margin: '0 auto',
+                        }}>
+                    <Modal.Header className="font-montserrat">CERTIFICADOS SUSPENDIDOS</Modal.Header>
+                    <Modal.Body>
+                      <div className="space-y-12">
+                        <p className="font-montserrat text-2xl text-center uppercase text-gray-900">No hay registros</p>
+                      </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button onClick={() => setOpenSuspendidos(false)}>CERRAR</Button>
+                    </Modal.Footer>
+                  </Modal>
+                  <p className="font-montserrat bg-yellow-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-2 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer my-2" onClick={() => setOpenSuspendidos(true)}><BiPlusCircle className="mr-3" size={20} /> CERTIFICADOS SUSPENDIDOS</p>
+                  <Modal show={openCancelados} onClose={() => setOpenCancelados(false)} className="font-montserrat" style={{
+                          maxWidth: '70rem',
+                          margin: '0 auto',
+                        }}>
+                    <Modal.Header className="font-montserrat">CERTIFICADOS CANCELADOS</Modal.Header>
+                    <Modal.Body>
+                      <div className="space-y-12">
+                        <Table striped>
+                          <Table.Head className="border-gray-700 bg-gray-800">
+                            <Table.HeadCell>No. Certificado</Table.HeadCell>
+                            <Table.HeadCell>Empresa</Table.HeadCell>
+                            <Table.HeadCell>Estándar</Table.HeadCell>
+                            <Table.HeadCell>Alcance</Table.HeadCell>
+                            <Table.HeadCell>Vigencia</Table.HeadCell>
+                          </Table.Head>
+                          <Table.Body className="divide-y">
+                            {posts.map((ele, index) => {
+                              if(ele[0] === "cancelado"){
+                                return (
+                                  <Table.Row key={index} className="border-gray-700 bg-gray-800">
+                                    <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{ele[1]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[2]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[4]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[3]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[5]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[6]}</Table.Cell>
+                                  </Table.Row>
+                                )
+                              }
+                            })}
+                          </Table.Body>
+                        </Table>
+                      </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button onClick={() => setOpenCancelados(false)}>CERRAR</Button>
+                    </Modal.Footer>
+                  </Modal>
+                  <p className="font-montserrat bg-red-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center text-gray-100 cursor-pointer my-2" onClick={() => setOpenCancelados(true)}><BiPlusCircle className="mr-3" size={20} /> CERTIFICADOS CANCELADOS</p>
                   </>
               }
               {useProducto === "contactos" &&
