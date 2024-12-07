@@ -41,6 +41,10 @@ const TopBar = () => {
         correo = "dzamora@imcyc.com";
         telefono = '(52) 55 5276 7200';
         break;
+      case 'organismo-de-certificacion-de-personas':
+        correo = "dzamora@imcyc.com";
+        telefono = '(52) 55 5276 7200';
+        break;
       default:
         correo = "imcyc@imcyc.com";
         telefono = '(52) 55 5322 5740';
