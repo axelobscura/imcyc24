@@ -5,7 +5,7 @@ export default function ModalidadPresencial() {
   return (
     <div>
       <div className="grid grid-rows-[1fr] items-center justify-items-center p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/certificacion/bkg.jpeg')] bg-gray-900 bg-opacity-80 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white">
+        <main className="grid grid-rows-[1fr] gap-8 z-0 mx-auto max-w-screen-xl text-white my-20">
           <h1 className="font-montserrat text-2xl font-bold uppercase mt-10 pt-10 pl-5 flex font-light">
           <FaRegArrowAltCircleRight size={30} className="mr-3" />  Modalidad Presencial
           </h1>
