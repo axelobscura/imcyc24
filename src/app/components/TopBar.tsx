@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import { usePathname } from 'next/navigation'
 import { FaInstagram, FaFacebook, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
 
 const TopBar = () => {
@@ -89,6 +90,9 @@ const TopBar = () => {
                   </Link>
                   <Link href="https://mx.linkedin.com/company/imcyc-oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <FaLinkedin size={21} />
+                  </Link>
+                  <Link href="/concreton" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
+                    <IoIosSearch size={27} />
                   </Link>
               </div>
           </div>
