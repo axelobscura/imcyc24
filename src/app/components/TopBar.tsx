@@ -97,11 +97,11 @@ const TopBar = () => {
               </div>
           </div>
       </nav>
-      {/* <div className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+      <div className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
           <AsociadosTop/>
         </div>
-      </div> */}
+      </div>
       <Menu/>
       </div>
     </>
