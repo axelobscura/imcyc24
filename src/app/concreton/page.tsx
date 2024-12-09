@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { RiRobot2Line } from "react-icons/ri";
 
-
 export default function Concreton() {
   return (
     <div>
