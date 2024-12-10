@@ -12,7 +12,7 @@ const Loader = () => {
           layout="intrinsic"
           className="rotate-infinite mb-3"
         />
-        <h2 className="font-montserrat text-2xl font-light uppercase">Cargando</h2>
+        <h2 className="font-montserrat text-2xl font-light uppercase text-white">Cargando</h2>
     </div>
   );
 };

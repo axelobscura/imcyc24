@@ -54,6 +54,7 @@ export default function Articulo() {
                 {contenido ? 
                   <div
                     dangerouslySetInnerHTML={{__html: contenido[1]}}
+                    className="text-white text-justify"
                   />
                 :
                   ""

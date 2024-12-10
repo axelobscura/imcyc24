@@ -53,7 +53,7 @@ export default function Prensa() {
                         </div>
                         <div>
                           <p className='text-gray-300'>{post[3]}</p>
-                          <p className='flex items-center justify-center text-2xl font-bold py-3 pr-7 text-justify'>{post[0]}</p>
+                          <p className='flex items-center justify-center text-2xl font-bold py-3 pr-7 text-justify text-white'>{post[0]}</p>
                         </div>
                       </div>
                     </Link>
