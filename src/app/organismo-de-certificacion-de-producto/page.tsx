@@ -50,7 +50,7 @@ export default function OrganismoDeCertificacionDeProducto() {
               <div className="w-full">
                 <Modal show={openModal} onClose={() => setOpenModal(false)}>
                   <Modal.Header className="font-montserrat">Proceso de Queja</Modal.Header>
-                  <Modal.Body>
+                  <Modal.Body className="bg-slate-900">
                     <div className="space-y-6">
                       <Image
                         src="/proceso_queja.png"
@@ -70,7 +70,7 @@ export default function OrganismoDeCertificacionDeProducto() {
               <div className="w-full">
                 <Modal show={openModalApelacion} onClose={() => setOpenModalApelacion(false)}>
                   <Modal.Header className="font-montserrat">Proceso de Apelación</Modal.Header>
-                  <Modal.Body>
+                  <Modal.Body className="bg-slate-900">
                     <div className="space-y-6">
                       <Image
                         src="/proceso_apelacion.png"
