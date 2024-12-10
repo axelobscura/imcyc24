@@ -40,3 +40,24 @@ body {
 .rotate-infinite {
   animation: rotate 2s linear infinite;
 }
+
+@media (max-width: 768px) {
+  .menu-responsivo ul li a {
+    background: #0c141f;
+    border-bottom: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid #1f324b;
+    transition: all 1s;
+  }
+  .menu-responsivo ul li a:hover {
+    color: #1f324b;
+  }
+  .menu-responsivo ul button {
+    width: 100%;
+    display: block;
+    display: flex;
+    background: #0c141f;
+    padding: 10px 8px;
+    border-bottom: 1px solid #1f324b;
+  }
+}
