@@ -41,7 +41,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2">
                     <Link href="/mision" className="hover:text-gray-100">
-                      Misión
+                      Misión, Visión y Política de calidad
                     </Link>
                   </li>
                   <li className="mb-2">
