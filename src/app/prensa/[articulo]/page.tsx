@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import Loader from "../../components/Loader";
 
 export default function Articulo() {
   const params = useParams<{ articulo: string }>()
@@ -23,7 +24,11 @@ export default function Articulo() {
     setContenido(post);
   }, [posts, params]);
  
-  if (!posts) return <div>Cargando...</div>
+  if (!posts) return <Loader/>
+
+  if(posts.length === 0) {
+    return <Loader/>
+  };
 
   return (
     <div>

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import Loader from "../components/Loader";
 
 export default function Prensa() {
   const [posts, setPosts] = useState([]);
@@ -15,7 +16,11 @@ export default function Prensa() {
     fetchPosts()
   }, []);
  
-  if (!posts) return <div>Cargando...</div>
+  if (!posts) return <Loader/>
+
+  if(posts.length === 0) {
+    return <Loader/>
+  };
 
   return (
     <div>
