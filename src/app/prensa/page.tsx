@@ -11,7 +11,7 @@ export default function Prensa() {
     async function fetchPosts() {
       const res = await fetch('/api/prensa')
       const data = await res.json()
-      setPosts(data)
+      setPosts(data.reverse())
     }
     fetchPosts()
   }, []);
