@@ -1,32 +1,33 @@
-import Image from "next/image";
+import { Slider } from "../components/Carousel";
+
+const imagenes = ["/estructuras/AE_1.jpg", "/estructuras/AE_2.jpg", "/estructuras/AE_3.jpg", "/estructuras/AE_4.jpg", "/estructuras/AE_5.jpg", "/estructuras/AE_6.jpg", "/estructuras/AE_7.jpg"];
 
 export default function GerenciaTecnica() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/cert.jpeg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-fixed bg-no-repeat">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
-        <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-center">
-          <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-10 sm:pl-26 md:pl-26 lg:pl-40">
-            <h1 className="text-4xl font-bold text-white pt-10 sm:pl-190">
-              ¿Qué es la GERENCIA TÉCNICA?
-            </h1>
-            <br />
-            <hr />
-            <br />
-            <p className="text-justify font-montserrat text-sm text-white">
-              <strong>La Gerencia Técnica del Instituto tiene como objetivo representar
-              una autoridad técnica reconocida en materia del cemento y del
-              concreto</strong>. Esta Gerencia se encuentra integrada por seis áreas, que
-              ofrecen asesorías técnicas y <strong>diversos servicios de Evaluación de
-              la Conformidad, que son Laboratorio de Ensayos, Laboratorio de
-              Calibración, Proveedor de Ensayos de Aptitud y Organismo de
-              Certificación de Producto</strong>.
+    <div>
+      <div className="font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="mx-auto w-full max-w-screen-xl p-4 pt-90 sm:pt-150 pb-0 lg:py-40">
+        <main className="flex flex-col gap-8 row-start-2 sm:items-start z-0 pt-10">
+          <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-0 items-start justify-items-center mt-10">
+            <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-10 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50">
+              <h1 className="font-montserrat text-3xl font-light text-white pt-0 sm:pl-50">
+                ¿Qué es la GERENCIA TÉCNICA?
+              </h1>
               <br />
+              <hr />
               <br />
-              El laboratorio de ensayos se encuentra conformado por el
-              laboratorio de concreto y el laboratorio de cemento, <strong>ambos
-              laboratorios cuentan con un sistema de gestión acreditado ante la
-              entidad mexicana de acreditación (ema) en las ramas de
-              construcción y metalmecánica</strong>.
+              <p className="text-justify font-montserrat text-1xl text-white">
+              <strong>La Gerencia Técnica del Instituto tiene como objetivo representar una autoridad técnica reconocida en materia del cemento y del concreto</strong>. Esta Gerencia se encuentra integrada por seis áreas, que
+              ofrecen asesorías técnicas y <strong>diversos servicios de Evaluación de la Conformidad, que son:</strong></p>.
+              <ul className="text-justify font-montserrat text-1xl text-white list-disc pl-10 mb-5">
+                <li>Laboratorio de Ensayos</li>
+                <li>Laboratorio de Calibración</li>
+                <li>Proveedor de Ensayos de Aptitud</li>
+                <li>Organismo de Certificación de Personas</li>
+                <li>Organismo de Certificación de Producto</li>
+              </ul>
+              <p className="text-justify font-montserrat text-1xl text-white">
+              El laboratorio de ensayos se encuentra conformado por el laboratorio de concreto y el laboratorio de cemento, <strong>ambos laboratorios cuentan con un sistema de gestión acreditado ante la entidad mexicana de acreditación (ema) en las ramas de construcción y metalmecánica</strong>.
               <br />
               <br />
               En la rama de construcción, <strong>el laboratorio cuenta con 18 métodos
@@ -100,18 +101,14 @@ export default function GerenciaTecnica() {
               laboratorio, operadores de ollas de mezclado de concreto, y otras
               actividades clave en la industria.
             </p>
+            </div>
+            <div>
+              <Slider imagenes={imagenes} />
+            </div>
           </div>
-          <div className="w-full flex justify-center pt-20">
-            <Image
-              src="/gerencia-tecnica.jpg"
-              alt="IMCYC"
-              width={900}
-              height={0}
-              layout="intrinsic"
-            />
-          </div>
+        </main>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

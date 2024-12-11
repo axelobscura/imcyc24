@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Slider } from "../components/Carousel";
 
-const imagenes = ["/estructuras/AE_1.jpg", "/estructuras/AE_2.jpg", "/estructuras/AE_3.jpg", "/estructuras/AE_4.jpg", "/estructuras/AE_5.jpg", "/estructuras/AE_6.jpg", "/estructuras/AE_7.jpg"]
+const imagenes = ["/estructuras/AE_1.jpg", "/estructuras/AE_2.jpg", "/estructuras/AE_3.jpg", "/estructuras/AE_4.jpg", "/estructuras/AE_5.jpg", "/estructuras/AE_6.jpg", "/estructuras/AE_7.jpg"];
 
 export default function AsesoriaEnEstructuras() {
   return (
