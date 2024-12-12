@@ -1,4 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
+import Link from "next/link";
+//<Link href="https://www.cmoctezuma.com.mx/" rel="noopener noreferrer" target="_blank">
 
 export default function Home() {
   return (
@@ -9,16 +11,16 @@ export default function Home() {
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
             <p className="pb-7 text-white">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
-            <a
+            <h1 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
+              COMPARTIR EL CONOCIMIENTO
+            </h1>
+            <Link
               href="/calendario-de-cursos"
-              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
+              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-blue-700 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 mr-3"
             >
               <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">
                 Nuevo calendario de cursos 2025
               </span>{" "}
-              <span className="text-sm font-medium text-white">
-                Cursos, Cerificaciones, Diplomados, Webinars en línea y más...
-              </span>
               <svg
                 className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
                 aria-hidden="true"
@@ -34,11 +36,59 @@ export default function Home() {
                   d="m1 9 4-4-4-4"
                 />
               </svg>
-            </a>
+            </Link>
+
+            <Link
+              href="https://www.imcyc.com/gerencia-tecnica/pdfs/Calendario_de_Programas_PEA_2025.pdf"
+              rel="noopener noreferrer" target="_blank"
+              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-green-700 rounded-full bg-green-900 dark:text-blue-300 hover:bg-green-200 dark:hover:bg-blue-800 mr-3"
+            >
+              <span className="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 me-3">
+                Calendario de Proveedor de Ensayos de Aptitud 2025
+              </span>{" "}
+              <svg
+                className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+            </Link>
+
+            <Link
+              href="/calendario-de-cursos"
+              rel="noopener noreferrer" target="_blank"
+              className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-green-700 rounded-full bg-yellow-900 dark:text-blue-300 hover:bg-yellow-200 dark:hover:bg-blue-800"
+            >
+              <span className="text-xs bg-yellow-600 rounded-full text-white px-4 py-1.5 me-3">
+                Calendario de Organismo de Certificación de Personas 2025
+              </span>{" "}
+              <svg
+                className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+            </Link>
             
-            <h1 className="font-montserrat mb-4 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
-              COMPARTIR EL CONOCIMIENTO
-            </h1>
+            
             <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">
             El Instituto Mexicano del Cemento y del Concreto A.C. es una organización dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.
             </p>

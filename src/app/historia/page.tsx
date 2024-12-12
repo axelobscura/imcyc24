@@ -4,6 +4,11 @@ export default function Historia() {
 
   const historia = [
     {
+      "ano": "2024",
+      "descripcion": "Ampliación de la acreditación en análisis químico de agua para fabricación de concreto y como laboratorio de calibración de temperatura.",
+      "imagen": "/historia/2021.jpg"
+    },
+    {
       "ano": "2022",
       "descripcion": "El PEA cumple 15 años acreditado.",
       "imagen": "/historia/2021.jpg"
@@ -239,8 +244,8 @@ export default function Historia() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-0 pb-20 gap-16 sm:p-10 sm:pt-20 font-[family-name:var(--font-geist-sans)] bg-gradient-to-b from-slate-800 to-slate-950 z-10 bg-cover bg-fixed bg-no-repeat">
       <main className="flex flex-col gap-2 row-start-2 sm:items-start z-0 mx-auto w-full max-w-screen-xl px-5 my-20">
-        <h1 className="font-montserrat text-4xl font-bold pb-0 mb-0">Historia</h1>
-        <p className="font-montserrat text-tiny">Instituto Mexicano del Cemento y del Concreto A.C.</p>
+        <h1 className="font-montserrat text-4xl font-bold pb-0 mb-0 text-white">Historia</h1>
+        <p className="font-montserrat text-small text-white">Instituto Mexicano del Cemento y del Concreto A.C.</p>
         {historia.map((contenido, index) => (
           <div key={index} className="w-full">
             <CardHorizontal titulo={contenido.ano} desc={contenido.descripcion} imagen={contenido.imagen} />
