@@ -11,7 +11,7 @@ export default function Publicaciones() {
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
                   Publicaciones
                 </h1>
-                <h3 className="font-montserrat pb-5 text-1xl pt-2">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+                <h3 className="font-montserrat pb-5 text-1xl pt-2 text-white">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] items-center"></div>
             </div>
