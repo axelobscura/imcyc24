@@ -25,21 +25,21 @@ export default function CalendarioDeCursos() {
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
                 CURSOS 2025
                 </h1>
-                <p className="font-montserrat text-1xl">Instituto Mexicano del Cemento y del Concreto A.C.</p>
+                <p className="font-montserrat text-1xl text-white">Instituto Mexicano del Cemento y del Concreto A.C.</p>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
                 <div className="flex flex-col gap-4">
-                  <h2 className='bg-gray-800 bg-opacity-50 p-5 uppercase text-2xl'>Enero</h2>
+                  <h2 className='bg-gray-800 bg-opacity-50 p-5 uppercase text-2xl text-white'>Enero</h2>
                 </div>
                 <div>
                   {posts.map((post, index) => (
                     <div key={index} className="font-montserrat grid grid-cols-[1fr_5fr_1fr] gap-4 bg-gray-950 bg-opacity-50 bg-blend-multiply p-2 my-1 items-center">
-                      <p className='flex items-center justify-center text-2xl font-bold'>{post[1]}</p>
+                      <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
                       <div className='bg-gray-800 bg-opacity-50 p-3'>
-                        <p className="text-2xl font-bold">{post[2]}</p>
-                        <p className='text-justify text-medium mt-2'>{post[3]}</p>
+                        <p className="text-2xl font-bold text-white">{post[2]}</p>
+                        <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
                       </div>
-                      <p className='flex items-center justify-center text-2xl font-bold'>${new Intl.NumberFormat('en-US').format(post[4])}</p>
+                      <p className='flex items-center justify-center text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}</p>
                     </div>
                   ))}
                 </div>
