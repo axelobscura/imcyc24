@@ -5,8 +5,8 @@ export default function Historia() {
   const historia = [
     {
       "ano": "2024",
-      "descripcion": "Ampliación de la acreditación en análisis químico de agua para fabricación de concreto y como laboratorio de calibración de temperatura.",
-      "imagen": "/historia/2021.jpg"
+      "descripcion": "Ampliación de la Acreditación en <strong>Análisis Químico de Agua para Fabricación de Concreto y como Laboratorio de calibración de temperatura</strong>.",
+      "imagen": "/historia/2020.jpg"
     },
     {
       "ano": "2022",
