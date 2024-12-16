@@ -95,7 +95,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2">
                     <Link href="/nuestros-asociados" className="hover:text-gray-100">
-                      Nuestros asociados
+                      Nuestros clientes
                     </Link>
                   </li>
                   <li className="mb-2">
@@ -107,7 +107,7 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className="mb-3 text-sm font-semibold text-gray-200 uppercase dark:text-white">
-                  Capacitación
+                  Gerencia Enseñanza
                   <p style={{fontSize: '12px'}}><small>Servicios de enseñanza y empresariales</small></p>
                 </h2>
                 <ul className="text-gray-300 font-light text-sm">

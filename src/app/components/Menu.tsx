@@ -24,12 +24,69 @@ function Menu() {
         </NavbarBrand>
         <NavbarToggle />
         <NavbarCollapse>
-          <NavbarLink
-            href="/que-es-el-imcyc"
-            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+          <MegaMenuDropdown
+            className="bg-gray-900 bg-opacity-95 border-none m-0 ml-0 text-white"
+            toggle={
+              <div className="font-montserrat whitespace-nowrap py-2 text-white rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase flex items-center mr-0 pr-0">
+                Quienes Somos
+              </div>
+            }
           >
-            Quienes Somos
-          </NavbarLink>
+            <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios Técnicos Especializados:</p>
+            <ul className="grid grid-cols-3">
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/que-es-el-imcyc"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    ¿Qué es el IMCYC?
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/historia"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Historia
+                  </a>
+                </li>
+              </div>
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/mision"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Misión, Visión y Política de calidad
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/gerencia-tecnica"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    gerencia-tecnica
+                  </a>
+                </li>
+              </div>
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/gerencia-ensenanza"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    ¿Qué es la Gerencia de Enseñanza?
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </MegaMenuDropdown>
           <MegaMenuDropdown
             className="bg-gray-900 bg-opacity-95 border-none m-0 ml-0 text-white"
             toggle={
@@ -107,7 +164,7 @@ function Menu() {
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
-                    Nuestros asociados
+                    Nuestros clientes
                   </a>
                 </li>
                 <li>
@@ -128,7 +185,7 @@ function Menu() {
             style={{ top: "196px" }}
             toggle={
               <div className="font-montserrat whitespace-nowrap py-2 text-white rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase flex items-center mr-0 pr-0">
-                Enseñanza
+                Gerencia Enseñanza
               </div>
             }
           >
@@ -151,6 +208,15 @@ function Menu() {
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Membresías
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/publicaciones"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Publicaciones
                   </a>
                 </li>
               </div>
@@ -217,17 +283,44 @@ function Menu() {
               </div>
             </ul>
           </MegaMenuDropdown>
+          <MegaMenuDropdown
+            className="p-0 m-0 top-96 bg-gray-900 bg-opacity-90 border-none ml-0 mr-0 pl-0 pr-0 text-white"
+            style={{ top: "196px" }}
+            toggle={
+              <div className="font-montserrat whitespace-nowrap py-2 text-white rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase flex items-center mr-0 pr-0">
+                Laboratorios
+              </div>
+            }
+          >
+            <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios de Laboratorio:</p>
+            <ul className="grid grid-cols-1">
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/capacitacion"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Laboratorio de ensayos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/membresias"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Laboratorio de calibración
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </MegaMenuDropdown>
           <NavbarLink
             href="/prensa"
             className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
             Prensa
-          </NavbarLink>
-          <NavbarLink
-            href="/publicaciones"
-            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
-          >
-            Publicaciones
           </NavbarLink>
           <NavbarLink
             href="/contacto"
