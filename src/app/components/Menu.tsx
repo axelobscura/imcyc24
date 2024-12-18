@@ -317,7 +317,7 @@ function Menu() {
               <div className="space-y-4 p-4">
                 <li>
                   <a
-                    href="/laboratorio-de-calibracion"
+                    href="/asociados"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
@@ -326,7 +326,7 @@ function Menu() {
                 </li>
                 <li>
                   <a
-                    href="/laboratorio-de-calibracion"
+                    href="/quejas"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />

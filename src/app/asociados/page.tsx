@@ -170,7 +170,7 @@ export default function Asociados() {
             <div>
               <div className="w-full sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-slate-900 pt-0 sm:pl-0 uppercase font-light mb-3">
-                  Nuestros Asociados
+                  Nuestros Clientes
                 </h1>
               </div>
             </div>
