@@ -5,6 +5,7 @@ import { BiPlusCircle } from "react-icons/bi";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
 import { Slider } from "../components/Carousel";
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 const imagenes = ["/aptitud/PE_01.jpg","/aptitud/PE_02.jpg","/aptitud/PE_03.jpg"];
 
@@ -74,15 +75,7 @@ export default function ProveedorDeEnsayosDeAptitud() {
               <Slider imagenes={imagenes} />
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
-              <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900">Acreditación PEA-ENS-002</h3>
-              <ul className="font-montserrat font-light m-5 list-disc">
-                <li>Concreto</li>
-                <li>Cemento</li>
-                <li>Terracerías</li>
-                <li>Compactación</li>
-                <li>Acero</li>
-              </ul>
-              <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900">AGREGADOS</h3>
+              <h3 className="font-montserrat font-bold text-2xl p-3 bg-slate-900 flex items-center"><BsArrowDownCircleFill className="mr-2" /> AGREGADOS</h3>
               <ul className="font-montserrat font-light m-5 list-disc">
                 <li>Agregados finos - Muestreo de agregados (método de apoyo)</li>
                 <li>Agregados finos - Reducción de muestras al tamaño requerido para los ensayos (método de apoyo)</li>

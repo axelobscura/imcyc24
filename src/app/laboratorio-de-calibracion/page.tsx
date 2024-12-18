@@ -36,6 +36,10 @@ export default function LaboratorioDeCalibracion() {
                 <li>Mantenimiento de equipo.</li>
                 <li>Reparación de equipo.</li>
               </ul>
+              <h3 className="font-montserrat font-bold text-2xl p-3">Acreditación T-217</h3>
+              <ul className="font-montserrat font-light m-5">
+                <li>Calibración de termómetros de lectura directa y termómetros de líquido en vidrio.</li>
+              </ul>
             </div>
           </div>
         </main>
