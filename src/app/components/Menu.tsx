@@ -293,7 +293,7 @@ function Menu() {
             }
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios de Laboratorio:</p>
-            <ul className="grid grid-cols-1">
+            <ul className="grid grid-cols-3">
               <div className="space-y-4 p-4">
                 <li>
                   <a
@@ -311,6 +311,37 @@ function Menu() {
                   >
                     <AiOutlinePlusCircle className="mr-2 text-2xl" />
                     Laboratorio de calibración
+                  </a>
+                </li>
+              </div>
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/laboratorio-de-calibracion"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Nuestros clientes
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/laboratorio-de-calibracion"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Quejas
+                  </a>
+                </li>
+              </div>
+              <div className="space-y-4 p-4">
+                <li>
+                  <a
+                    href="/laboratorio-de-calibracion"
+                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
+                  >
+                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
+                    Consulta nuestro CV
                   </a>
                 </li>
               </div>
