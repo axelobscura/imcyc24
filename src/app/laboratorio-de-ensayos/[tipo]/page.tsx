@@ -225,6 +225,15 @@ export default function TipoEnsayo() {
               <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <p className="text-3xs font-bold text-white text-left sm:text-left">Acreditación No. <strong>C-053-059/11</strong></p>
               </div>
+              <div className="bg-slate-900 bg-opacity-70 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
+                <p className='font-montserrat'><strong>	Ing. Mario Hernandez</strong></p>
+                <p><Link href="mailto:bperez@mail.imcyc.com">mhernandez@imcyc.com</Link></p>
+              </div>
+              <Link 
+                href="/quejas-y-apelaciones" 
+                className="bg-slate-900 bg-opacity-70 bg-blend-multiply p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 w-full block">
+                <p className="text-3xs font-bold text-white text-left sm:text-left">Quejas</p>
+              </Link>
               {param === "concreto" && <Slider imagenes={concretoSlider} />}
             </div>
             <div className='grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center'>
