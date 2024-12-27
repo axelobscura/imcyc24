@@ -346,7 +346,7 @@ export default function SellosDeCalidad() {
                           <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">PRUEBAS BÁSICAS<hr/>PRUEBAS BÁSICAS + PRUEBAS COMPLEMENTARIAS</h4>
                         </div>
                         <div>
-                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">COSTO</h4>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">$40,000<hr/>$45,000</h4>
                         </div>
                     </div>
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-2 px-0">
@@ -357,7 +357,7 @@ export default function SellosDeCalidad() {
                           <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">PRUEBAS BÁSICAS<hr/>PRUEBAS BÁSICAS + PRUEBAS COMPLEMENTARIAS</h4>
                         </div>
                         <div>
-                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">COSTO</h4>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">$30,000<hr/>$35,000</h4>
                         </div>
                     </div>
                   </div>
