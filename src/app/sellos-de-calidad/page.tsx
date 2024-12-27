@@ -242,8 +242,25 @@ export default function SellosDeCalidad() {
                     </ul>
                     <h4 className="font-montserrat ml-5 font-bold my-3">EL SELLO DE CALIDAD INCLUYE</h4>
                     <ul className="font-montserrat ml-5 list-disc pl-5 mb-5">
-                      <li>SELLO DE CALIDADo</li>
-                      <li>ACTA DE VERIFICACIÓN</li>
+                      <li><strong>SELLO DE CALIDAD</strong>
+                        <ul className="list-disc ml-3 mb-3">
+                          <li>Calcomanía de 30 cm de diámetro para pegar en el Laboratorio</li>
+                          <li>El Sello de Calidad tiene un número de folio en la parte superior, con este registro el IMCYC lleva un control para su autenticidad.</li>
+                        </ul>
+                      </li>
+                      <li><strong>ACTA DE VERIFICACIÓN</strong>
+                        <ul className="list-disc ml-3 mb-3">
+                          <li>El Acta de verificación es un documento que avala que su Laboratorio ha sido evaluado, aprobada por el IMYC y cumple satisfactoriamente con todas las secciones.</li>
+                          <li>El Acta de Verificación es única, por lo tanto es identificada con la siguiente información:
+                            <ul className="list-disc ml-3 mb-3">
+                              <li>Nombre de su Laboratorio</li>
+                              <li>Vigencia del Sello de calidad</li>
+                              <li>Número de folio IMCYC</li>
+                              <li>Holograma de Autenticidad IMCYC</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 }
