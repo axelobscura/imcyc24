@@ -4,6 +4,44 @@ import { useState } from "react";
 import { BiBadgeCheck, BiCross } from "react-icons/bi";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
+const zonaA = [
+  "Baja California", 
+  "Baja California Sur", 
+  "Chihuahua", 
+  "Coahuila", 
+  "Durango", 
+  "Nuevo León", 
+  "Sinaloa", 
+  "Sonora", 
+  "Tamaulipas", 
+  "Quintana Roo", 
+  "Yucatán", 
+  "Veracruz", 
+  "Guerrero", 
+  "Oaxaca", 
+  "Chiapas", 
+  "Tabasco", 
+  "Campeche", 
+  "Nayarit", 
+  "Jalisco", 
+  "Colima", 
+  "Zacatecas"
+];
+
+const zonaB = [
+  "Aguascalientes", 
+  "Guanajuato", 
+  "San Luis Potosí", 
+  "Puebla", 
+  "Tlaxcala", 
+  "Hidalgo", 
+  "Querétaro", 
+  "Michoacán", 
+  "Morelos", 
+  "Estado de México", 
+  "Ciudad de México"
+];
+
 export default function SellosDeCalidad() {
   const [sellos, setSellos] = useState("ollas");
   return (
@@ -21,13 +59,13 @@ export default function SellosDeCalidad() {
                   <h3 onClick={() => setSellos("ollas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "ollas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
                     OLLAS REVOLVEDORAS DE CONCRETO
                   </h3>
-                  <h3 onClick={() => setSellos("prensas")} className="font-montserrat btn text-xl font-bold my-1 bg-slate-900 hover:bg-slate-700 p-5 text-left text-md cursor-pointer">
+                  <h3 onClick={() => setSellos("prensas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "prensas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
                     PRENSAS DE CONCRETO
                   </h3>
-                  <h3 onClick={() => setSellos("laboratorios")} className="font-montserrat btn text-xl font-bold my-1 bg-slate-900 hover:bg-slate-700 p-5 text-left text-md cursor-pointer">
+                  <h3 onClick={() => setSellos("laboratorios")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "laboratorios" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
                     LABORATORIOS
                   </h3>
-                  <h3 onClick={() => setSellos("plantas")} className="font-montserrat btn text-xl font-bold my-1 bg-slate-900 hover:bg-slate-700 p-5 text-left text-md cursor-pointer">
+                  <h3 onClick={() => setSellos("plantas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "plantas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
                     PLANTAS
                   </h3>
                 </div>
@@ -262,6 +300,66 @@ export default function SellosDeCalidad() {
                         </ul>
                       </li>
                     </ul>
+                    <Image
+                      src="/mapa.svg"
+                      alt="IMCYC"
+                      width={700}
+                      height={0}
+                      layout="intrinsic"
+                      className="px-5"
+                    />
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 px-20">
+                      <div>
+                        <h4 className="font-montserrat ml-5 font-bold my-3">ZONA A:</h4>
+                        <ul className="list-disc ml-3 mb-3">
+                          {zonaA.map((zona, index) => (
+                            <li key={index}>{zona}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-montserrat ml-5 font-bold my-3">ZONA B:</h4>
+                        <ul className="list-disc ml-3 mb-3">
+                          {zonaB.map((zona, index) => (
+                            <li key={index}>{zona}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <h4 className="font-montserrat ml-5 font-bold my-3">INVERSIÓN POR SELLO DE GARANTÍA DE LABORATORIO</h4>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-2 px-0">
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">ZONA</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">MODALIDAD</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">COSTO</h4>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-2 px-0">
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">A</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">PRUEBAS BÁSICAS<hr/>PRUEBAS BÁSICAS + PRUEBAS COMPLEMENTARIAS</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">COSTO</h4>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-2 px-0">
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">B</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">PRUEBAS BÁSICAS<hr/>PRUEBAS BÁSICAS + PRUEBAS COMPLEMENTARIAS</h4>
+                        </div>
+                        <div>
+                          <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">COSTO</h4>
+                        </div>
+                    </div>
                   </div>
                 }
               </div>
