@@ -7,7 +7,7 @@ export default function CoWorking() {
       <div className="flex items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/qs1.jpg')] bg-gray-700 bg-blend-multiply bg-fixed z-10 bg-cover bg-center bg-no-repeat">
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-20">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full my-20">
-            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
+            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full text-white">
               <div className="bg-gray-900 bg-opacity-80 bg-blend-multiply w-full p-5 sm:pl-2 md:pl-2 lg:pl-2 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold flex">
                   <FaRegArrowAltCircleRight  className="mr-3"/> Aviso de Privacidad
