@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { BiBadgeCheck, BiCross } from "react-icons/bi";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { Table } from "flowbite-react";
 
 const zonaA = [
   "Baja California", 
@@ -46,27 +48,27 @@ export default function SellosDeCalidad() {
   const [sellos, setSellos] = useState("ollas");
   return (
     <div>
-      <div className="flex p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/sellos/ollas.jpg')] bg-fixed bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="flex p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-gray-800 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-40 sm:pt-30 pb-0">
           <main className="flex flex-col gap-8 row-start-2 items-center mx-auto max-w-screen-xl sm:items-start z-0 w-full text-white">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 items-start justify-items-stretch pt-20 w-full">
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-5">
-                <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-light mb-2 flex items-center">
+                <h1 className="font-montserrat text-3xl text-white pt-0 sm:pl-50 uppercase font-light mb-2 flex items-center">
                   <BiBadgeCheck className="mr-3" /> Sellos de Calidad
                 </h1>
                 <hr/>
                 <div>
-                  <h3 onClick={() => setSellos("ollas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "ollas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
-                    OLLAS REVOLVEDORAS DE CONCRETO
+                  <h3 onClick={() => setSellos("ollas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "ollas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-3 text-left text-md cursor-pointer flex items-center justify-between`}>
+                    OLLAS REVOLVEDORAS DE CONCRETO <IoIosArrowDroprightCircle size={'2rem'} />
                   </h3>
-                  <h3 onClick={() => setSellos("prensas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "prensas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
-                    PRENSAS DE CONCRETO
+                  <h3 onClick={() => setSellos("prensas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "prensas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-3 text-left text-md cursor-pointer flex items-center justify-between`}>
+                    PRENSAS DE CONCRETO <IoIosArrowDroprightCircle size={'2rem'} />
                   </h3>
-                  <h3 onClick={() => setSellos("laboratorios")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "laboratorios" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
-                    LABORATORIOS
+                  <h3 onClick={() => setSellos("laboratorios")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "laboratorios" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-3 text-left text-md cursor-pointer flex items-center justify-between`}>
+                    LABORATORIOS <IoIosArrowDroprightCircle size={'2rem'} />
                   </h3>
-                  <h3 onClick={() => setSellos("plantas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "plantas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-5 text-left text-md cursor-pointer`}>
-                    PLANTAS
+                  <h3 onClick={() => setSellos("plantas")} className={`font-montserrat btn text-xl font-bold my-1 ${sellos === "plantas" ? "bg-slate-700" : "bg-slate-900"} hover:bg-slate-700 p-3 text-left text-md cursor-pointer flex items-center justify-between`}>
+                    PLANTAS <IoIosArrowDroprightCircle size={'2rem'} />
                   </h3>
                 </div>
                 {sellos === "ollas" && 
@@ -360,6 +362,211 @@ export default function SellosDeCalidad() {
                           <h4 className="font-montserrat ml-5 font-bold my-3 bg-slate-950 p-5">$30,000<hr/>$35,000</h4>
                         </div>
                     </div>
+                  </div>
+                }
+                {sellos === "plantas" && 
+                  <div className="pb-5">
+                    <h3 className="font-montserrat text-2xl font-100 p-2 flex items-center pt-5 font-bold"><BiCross className="mr-3" /> PLANTAS DE CONCRETO</h3>
+                    <h4 className="font-montserrat ml-5 font-bold">SELLO DE CALIDAD IMCYC</h4>
+                    <p className="font-montserrat text-justify p-5">Garantiza el proceso de producción de concreto y el servicio de suministro.<br/><br/>VIGENCIA DE 1 AÑO, SUJETO A SEGUIMIENTO SEMESTRAL	INCLUYE LA VERIFICACIÓN DE LAS MEZCLAS DISEÑADAS POR LA PLANTA.<br/><br/>LAS MEZCLAS DE CONCRETO SUMINISTRADAS CONTARÁN CON EL RESPALDO DEL IMCYC.<br/><br/>LOS REQUISITOS DOCUMENTALES QUE SE REVISAN PARA GARANTIZAR EL CONTROL DE CALIDAD DENTRO DE LA PLANTA DE CONCRETO SON LOS SIGUIENTES:
+                    </p>
+                    <h4 className="font-montserrat ml-5 font-bold">REQUISITOS</h4>
+                    <ul className="font-montserrat ml-5 list-disc pl-5 mb-2 mt-5">
+                      <li>Infraestructura</li>
+                      <li>Ambiente para la operación de los procesos</li>
+                      <li>Control de la información documentada</li>
+                      <li>Revisión de los requisitos para el concreto y su suministro</li>
+                      <li>Control de los productos y servicios suministrados externamente</li>
+                      <li>Producción del concreto y provisión del servicio de suministro</li>
+                      <li>Identificación y trazabilidad</li>
+                      <li>Control de las salidas no conformes</li>
+                      <li>Seguimiento, medición, análisis y evaluación</li>
+                    </ul>
+                    <p className="font-montserrat text-justify p-5">La garantía para las mezclas de concreto se revisa en un laboratorio avalado por el IMCYC o en laboratorio IMCYC a través de los siguientes ensayos:</p>
+                    <h4 className="font-montserrat ml-5 font-bold mb-3">PARA CONCRETOS CONVENCIONALES:</h4>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-161</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Muestreo</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-156</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Revenimiento</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-128</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Módulo de elasticidad</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-161</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Masa unitaria</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-435</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Temperatura</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">C-083</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Resistencia a la compresión</h4>
+                      </div>
+                    </div>
+                    <h4 className="font-montserrat ml-5 font-bold mb-3">CUANDO EL DISEÑO LO REQUIERA SE PODRÁ EVALUAR ADICIONALMENTE:</h4>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Flexión de vigas</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Tensión por compresión diametral</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 mb-2">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Contracción por secado</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Contenido de aire</h4>
+                      </div>
+                    </div>
+                    <h4 className="font-montserrat ml-5 font-bold">PROCESO PARA LA OBTENCIÓN DEL SELLO:</h4>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">01</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Solicitud de sello de garantía por parte de la planta</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">02</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Firma del contrato por ambas partes</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">03</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Asignación del responsable del servicio</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">04</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Notificación de la fecha de evaluación</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">05</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Evaluación en sitio y muestreo de las mezclas de concreto</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">06</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Ensayos de laboratorio</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">07</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Presentar acciones correctivas (si aplica)</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">08</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Revisión del expediente</h4>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_8fr] gap-2 mb-2 mt-3">
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">09</h4>
+                      </div>
+                      <div className="bg-gray-950 bg-opacity-50 bg-blend-multiply w-full p-1 sm:mb-2">
+                        <h4 className="font-montserrat ml-5 font-bold">Inicia vigencia del Sello de garantía IMCYC</h4>
+                      </div>
+                    </div>
+                    <Image
+                      src="/mapa.svg"
+                      alt="IMCYC"
+                      width={700}
+                      height={0}
+                      layout="intrinsic"
+                      className="px-5"
+                    />
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-2 px-20">
+                      <div>
+                        <h4 className="font-montserrat ml-5 font-bold my-3">ZONA A:</h4>
+                        <ul className="list-disc ml-3 mb-3">
+                          {zonaA.map((zona, index) => (
+                            <li key={index}>{zona}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-montserrat ml-5 font-bold my-3">ZONA B:</h4>
+                        <ul className="list-disc ml-3 mb-3">
+                          {zonaB.map((zona, index) => (
+                            <li key={index}>{zona}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <h4 className="font-montserrat ml-5 font-bold my-3">INVERSIÓN POR SELLO DE GARANTÍA PARA PLANTAS DE CONCRETO</h4>
+                    <Table className="bg-slate-950">
+                      <Table.Head className="bg-slate-950 color-gray-100">
+                        <Table.HeadCell>Product name</Table.HeadCell>
+                        <Table.HeadCell>Color</Table.HeadCell>
+                        <Table.HeadCell>Category</Table.HeadCell>
+                        <Table.HeadCell>Price</Table.HeadCell>
+                      </Table.Head>
+                      <Table.Body className="divide-y">
+                        <Table.Row className="bg-slate-800 dark:border-gray-700 dark:bg-gray-800 color-white">
+                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                            {'Apple MacBook Pro 17"'}
+                          </Table.Cell>
+                          <Table.Cell>Sliver</Table.Cell>
+                          <Table.Cell>Laptop</Table.Cell>
+                          <Table.Cell>$2999</Table.Cell>
+                        </Table.Row>
+                      </Table.Body>
+                    </Table>
                   </div>
                 }
               </div>
