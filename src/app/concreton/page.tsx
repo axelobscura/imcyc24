@@ -20,8 +20,8 @@ export default function Concreton() {
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold text-center">
                   Asistente Concretón IMCYC
                 </h1>
-                <p className="font-montserrat text-center">Asistente en tecnología del Concreto y del Cemento</p>
-                <p className="font-montserrat text-tiny text-center">Instituto Mexicano del Cemento y del Concreto A.C.</p>
+                <p className="font-montserrat text-center text-white">Asistente en tecnología del Concreto y del Cemento</p>
+                <p className="font-montserrat text-tiny text-center text-white">Instituto Mexicano del Cemento y del Concreto A.C.</p>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center w-full">
                 <form className="font-montserrat flex items-center mx-auto w-full px-20">   
