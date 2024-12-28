@@ -6,8 +6,8 @@ const Asociados = () => {
   return (
     <>
       <div className="flex w-full">
-        <ul className="flex justify-between items-center w-full pt-10">
-          <li>
+        <ul className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] items-center justify-center w-full py-10 mx-auto">
+          <li className="text-center items-center margin-auto">
             <Link href="https://www.cemexmexico.com/" rel="noopener noreferrer" target="_blank">
                 <Image
                   src="/asociados/logo_cemex.svg"
