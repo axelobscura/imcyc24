@@ -33,13 +33,14 @@ export default function CalendarioDeCursos() {
                 </div>
                 <div>
                   {posts.map((post, index) => (
-                    <div key={index} className="font-montserrat grid grid-cols-[1fr_5fr_1fr] gap-4 bg-gray-950 bg-opacity-50 bg-blend-multiply p-2 my-1 items-center">
+                    <div key={index} className="font-montserrat grid grid-cols-[1fr_1fr_5fr_1fr] gap-4 bg-gray-950 bg-opacity-50 bg-blend-multiply p-2 my-1 items-center">
+                      <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[0]}</p>
                       <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
                       <div className='bg-gray-800 bg-opacity-50 p-3'>
                         <p className="text-2xl font-bold text-white">{post[2]}</p>
                         <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
                       </div>
-                      <p className='flex items-center justify-center text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}</p>
+                      <p className='flex items-center justify-center text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}.00</p>
                     </div>
                   ))}
                 </div>
