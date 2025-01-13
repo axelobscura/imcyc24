@@ -34,6 +34,7 @@ export default function CalendarioDeCursos() {
                       <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[0]}</p>
                       <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
                       <div className='bg-gray-800 bg-opacity-50 p-3'>
+                        <p className='text-justify text-medium mt-2 text-white'>{post[5]}</p>
                         <p className="text-2xl font-bold text-white">{post[2]}</p>
                         <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
                       </div>
