@@ -28,9 +28,6 @@ export default function CalendarioDeCursos() {
                 <p className="font-montserrat text-1xl text-white">Instituto Mexicano del Cemento y del Concreto A.C.</p>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
-                <div className="flex flex-col gap-4">
-                  <h2 className='bg-gray-800 bg-opacity-50 p-5 uppercase text-2xl text-white'>Enero</h2>
-                </div>
                 <div>
                   {posts.map((post, index) => (
                     <div key={index} className="font-montserrat grid grid-cols-[1fr_1fr_5fr_1fr] gap-4 bg-gray-950 bg-opacity-50 bg-blend-multiply p-2 my-1 items-center">
