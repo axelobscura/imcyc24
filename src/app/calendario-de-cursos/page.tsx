@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 
 export default function CalendarioDeCursos() {
   const [posts, setPosts] = useState([]);
+  const [color, setColor] = useState("");
 
   useEffect(() => {
     async function fetchPosts() {
@@ -12,6 +13,20 @@ export default function CalendarioDeCursos() {
     }
     fetchPosts()
   }, []);
+
+  const tipoCurso = (tipo: any) => {
+    if (tipo === 'Diplomado') {
+      setColor('bg-red-500');
+    } else if (tipo === 'Certificación ACI') {
+      setColor('bg-blue-500');
+    } else if (tipo === 'Seminario') {
+      setColor('bg-green-500');
+    } else if (tipo === 'Curso') {
+      setColor('bg-green-900');
+    } else {
+      setColor('bg-yellow-500');
+    }
+  };
  
   if (!posts) return <div>Loading...</div>
 
@@ -29,18 +44,21 @@ export default function CalendarioDeCursos() {
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
                 <div>
-                  {posts.map((post, index) => (
-                    <div key={index} className="font-montserrat grid grid-cols-[1fr_1fr_5fr_1fr] gap-4 bg-gray-950 bg-opacity-50 bg-blend-multiply p-2 my-1 items-center">
-                      <p className='flex items-center justify-left text-2xl font-bold text-white'>{post[0]}</p>
-                      <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
-                      <div className='bg-gray-800 bg-opacity-50 p-3'>
-                        <p className='text-justify text-medium mt-2 text-white'>{post[5]}</p>
-                        <p className="text-2xl font-bold text-white">{post[2]}</p>
-                        <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
+                  {posts.map((post, index) => {
+                    tipoCurso(post[5]);
+                    return (
+                      <div key={index} className={`font-montserrat grid grid-cols-[1fr_1fr_5fr_1fr] gap-4 ${color} bg-opacity-50 bg-blend-multiply p-2 my-1 items-center`}>
+                        <p className='flex items-center justify-left text-2xl font-bold text-white'>{post[0]}</p>
+                        <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
+                        <div className='bg-gray-800 bg-opacity-50 p-3'>
+                          <p className='text-justify text-medium mt-2 text-white'>{post[5]}</p>
+                          <p className="text-2xl font-bold text-white">{post[2]}</p>
+                          <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
+                        </div>
+                        <p className='flex items-center justify-left text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}.00</p>
                       </div>
-                      <p className='flex items-center justify-left text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}.00</p>
-                    </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
             </div>
