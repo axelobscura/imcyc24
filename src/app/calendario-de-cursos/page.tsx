@@ -14,7 +14,7 @@ export default function CalendarioDeCursos() {
     fetchPosts()
   }, []);
 
-  const tipoCurso = (tipo: any) => {
+  const tipoCurso = (tipo: string) => {
     if (tipo === 'Diplomado') {
       setColor('bg-red-500');
     } else if (tipo === 'Certificación ACI') {
