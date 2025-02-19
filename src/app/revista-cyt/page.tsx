@@ -1,5 +1,3 @@
-import { pdfjs, Document, Page as ReactPdfPage } from "react-pdf";
-
 export default function RevistaCyT() {
   return (
     <div>
