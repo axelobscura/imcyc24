@@ -1,35 +1,6 @@
-"use client";
-import { useState, useEffect } from 'react'
+"use client"
 
 export default function CalendarioDeCursos() {
-  const [posts, setPosts] = useState([]);
-  const [color, setColor] = useState("");
-
-  useEffect(() => {
-    async function fetchPosts() {
-      const res = await fetch('/api/cursos')
-      const data = await res.json()
-      setPosts(data)
-    }
-    fetchPosts()
-  }, []);
-
-  const tipoCurso = (tipo: string) => {
-    if (tipo === 'Diplomado') {
-      setColor('bg-red-500');
-    } else if (tipo === 'Certificación ACI') {
-      setColor('bg-blue-500');
-    } else if (tipo === 'Seminario') {
-      setColor('bg-green-500');
-    } else if (tipo === 'Curso') {
-      setColor('bg-green-900');
-    } else {
-      setColor('bg-yellow-500');
-    }
-  };
- 
-  if (!posts) return <div>Loading...</div>
-
   return (
     <div>
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/revista.jpeg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat bg-fixed">
@@ -44,21 +15,10 @@ export default function CalendarioDeCursos() {
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
                 <div>
-                  {posts.map((post, index) => {
-                    tipoCurso(post[5]);
-                    return (
-                      <div key={index} className={`font-montserrat grid grid-cols-[1fr_1fr_5fr_1fr] gap-4 ${color} bg-opacity-50 bg-blend-multiply p-2 my-1 items-center`}>
-                        <p className='flex items-center justify-left text-2xl font-bold text-white'>{post[0]}</p>
-                        <p className='flex items-center justify-center text-2xl font-bold text-white'>{post[1]}</p>
-                        <div className='bg-gray-800 bg-opacity-50 p-3'>
-                          <p className='text-justify text-medium mt-2 text-white'>{post[5]}</p>
-                          <p className="text-2xl font-bold text-white">{post[2]}</p>
-                          <p className='text-justify text-medium mt-2 text-white'>{post[3]}</p>
-                        </div>
-                        <p className='flex items-center justify-left text-2xl font-bold text-white'>${new Intl.NumberFormat('en-US').format(post[4])}.00</p>
-                      </div>
-                    )
-                  })}
+                  <iframe src='/docs/calendario25.pdf' style={{
+                    width: '100%',
+                    height: '100vh'
+                  }} />
                 </div>
               </div>
             </div>
