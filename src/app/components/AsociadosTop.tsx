@@ -12,7 +12,7 @@ const AsociadosTop = () => {
                 <Image
                   src="/asociados/logo_cemex.svg"
                   alt="Asociados"
-                  width={110}
+                  width={153}
                   height={0}
                 />
             </Link>
@@ -52,7 +52,7 @@ const AsociadosTop = () => {
                 <Image
                   src="/asociados/logo_holcim_b.svg"
                   alt="Asociados"
-                  width={140}
+                  width={145}
                   height={0}
                 />
             </Link>

@@ -13,18 +13,7 @@ export default function CoWorking() {
                 </h1>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-center">
-                <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-                  <h2 className="font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold">
-                    Karen Palacios Reynoso
-                  </h2>
-                  <p className="font-montserrat text-1xl">cursos@imcyc.com</p>
-                </div>
-                <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-                  <h2 className="font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold">
-                    Carlos Hernandez
-                  </h2>
-                  <p className="font-montserrat text-1xl">cursos2@imcyc.com</p>
-                </div>
+
               </div>
             </div>
           </main>

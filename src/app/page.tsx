@@ -98,7 +98,7 @@ export default function Home() {
               >
                 Email sign-up
               </label>
-              <div className="relative">
+              {/* <div className="relative">
                 <div className="absolute inset-y-0 rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none">
                   <svg
                     className="w-4 h-4 text-gray-400 dark:text-gray-400"
@@ -124,7 +124,7 @@ export default function Home() {
                 >
                   REGISTRARSE
                 </button>
-              </div>
+              </div> */}
             </form>
           </div>
         </section>

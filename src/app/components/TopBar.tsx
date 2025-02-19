@@ -46,6 +46,30 @@ const TopBar = () => {
         correo = "dzamora@imcyc.com";
         telefono = '(52) 55 5276 7200';
         break;
+      case 'membresias':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'publicaciones':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'sellos-de-calidad':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'revista-cyt':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'tienda':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
+      case 'co-working':
+        correo = "cursos@imcyc.com";
+        telefono = '(52) 55 5322 5740';
+        break;
       default:
         correo = "imcyc@imcyc.com";
         telefono = '(52) 55 5322 5740';
