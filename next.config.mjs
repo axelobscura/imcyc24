@@ -1,12 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  webpack(config, { nextRuntime }) {
-    if (nextRuntime === "nodejs") {
-      config.resolve.alias.canvas = false;
-    }
-
-    return config;
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
+
