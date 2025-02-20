@@ -39,7 +39,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="https://www.imcyc.com/gerencia-tecnica/pdfs/Calendario_de_Programas_PEA_2025.pdf"
+              href="/calendario-proveedor-de-ensayos-de-aptitud"
               rel="noopener noreferrer" target="_blank"
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-green-700 rounded-full bg-green-900 dark:text-blue-300 hover:bg-green-200 dark:hover:bg-blue-800 mr-3"
             >
