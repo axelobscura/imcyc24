@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
-            <p className="pb-7 text-white">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
+            <p className="font-montserrat pb-7 text-white text-2xl">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</p>
             <h1 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
               COMPARTIR EL CONOCIMIENTO
             </h1>
@@ -19,7 +19,7 @@ export default function Home() {
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-blue-700 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 mr-3"
             >
               <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">
-                Nuevo calendario de cursos 2025
+                Calendario de cursos y certificaciones 2025
               </span>{" "}
               <svg
                 className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
