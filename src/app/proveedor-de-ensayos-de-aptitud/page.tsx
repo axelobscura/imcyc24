@@ -30,8 +30,8 @@ export default function ProveedorDeEnsayosDeAptitud() {
                 <p><Link href="mailto:dzamora@mail.imcyc.com">dzamora@mail.imcyc.com</Link></p>
               </div>
               <div className="w-full">
-                <Link href="https://www.imcyc.com/gerencia-tecnica/pdfs/Calendario_de_Programas_PEA_2024.pdf" rel="noopener noreferrer" target="_blank">
-                  <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center"><BiPlusCircle className="mr-3" size={20} /> CONSULTA EL CALENDARIO 2024</p>
+                <Link href="/calendario-proveedor-de-ensayos-de-aptitud">
+                  <p className="bg-slate-800 bg-opacity-70 bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center"><BiPlusCircle className="mr-3" size={20} /> CONSULTA EL CALENDARIO 2025</p>
                 </Link>
               </div>
               <div className="w-full">
