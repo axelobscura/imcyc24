@@ -10,7 +10,7 @@ export default function Historia() {
     },
     {
       "ano": "2022",
-      "descripcion": "El PEA cumple 15 años acreditado.",
+      "descripcion": "El PEA cumple 15 años acreeditado.",
       "imagen": "/historia/2021.jpg"
     },
     {
