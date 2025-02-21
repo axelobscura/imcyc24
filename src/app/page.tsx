@@ -40,7 +40,6 @@ export default function Home() {
 
             <Link
               href="/calendario-proveedor-de-ensayos-de-aptitud"
-              rel="noopener noreferrer" target="_blank"
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-green-700 rounded-full bg-green-900 dark:text-blue-300 hover:bg-green-200 dark:hover:bg-blue-800 mr-3"
             >
               <span className="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 me-3">
@@ -65,7 +64,6 @@ export default function Home() {
 
             <Link
               href="/calendario-certificacion-de-personas"
-              rel="noopener noreferrer" target="_blank"
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-green-700 rounded-full bg-yellow-900 dark:text-blue-300 hover:bg-yellow-200 dark:hover:bg-blue-800"
             >
               <span className="text-xs bg-yellow-600 rounded-full text-white px-4 py-1.5 me-3">
