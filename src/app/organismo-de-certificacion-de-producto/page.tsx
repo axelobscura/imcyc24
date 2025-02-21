@@ -234,8 +234,32 @@ export default function OrganismoDeCertificacionDeProducto() {
                         }}>
                     <Modal.Header className="font-montserrat">CERTIFICADOS SUSPENDIDOS</Modal.Header>
                     <Modal.Body>
-                      <div className="space-y-12">
-                        <p className="font-montserrat text-2xl text-center uppercase text-gray-900">No hay registros</p>
+                    <div className="space-y-12">
+                        <Table striped>
+                          <Table.Head className="border-gray-700 bg-gray-800">
+                            <Table.HeadCell>No. Certificado</Table.HeadCell>
+                            <Table.HeadCell>Empresa</Table.HeadCell>
+                            <Table.HeadCell>Estándar</Table.HeadCell>
+                            <Table.HeadCell>Alcance</Table.HeadCell>
+                            <Table.HeadCell>Vigencia</Table.HeadCell>
+                          </Table.Head>
+                          <Table.Body className="divide-y">
+                            {posts.map((ele, index) => {
+                              if(ele[0] === "suspendido"){
+                                return (
+                                  <Table.Row key={index} className="border-gray-700 bg-gray-800">
+                                    <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{ele[1]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[2]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[4]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[3]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[5]}</Table.Cell>
+                                    <Table.Cell className="whitespace-nowrap">{ele[6]}</Table.Cell>
+                                  </Table.Row>
+                                )
+                              }
+                            })}
+                          </Table.Body>
+                        </Table>
                       </div>
                     </Modal.Body>
                     <Modal.Footer>
