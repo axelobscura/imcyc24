@@ -64,7 +64,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/calendario-de-cursos"
+              href="/calendario-certificacion-de-personas"
               rel="noopener noreferrer" target="_blank"
               className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-green-700 rounded-full bg-yellow-900 dark:text-blue-300 hover:bg-yellow-200 dark:hover:bg-blue-800"
             >
