@@ -7,12 +7,6 @@ export default function CalendarioDeCursos() {
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-40">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
-              <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-5 xl:pl-50 sm:mb-5">
-                <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
-                CURSOS 2025
-                </h1>
-                <p className="font-montserrat text-1xl text-white">Instituto Mexicano del Cemento y del Concreto A.C.</p>
-              </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
                 <div>
                   <iframe src='/docs/calendario25.pdf' style={{
