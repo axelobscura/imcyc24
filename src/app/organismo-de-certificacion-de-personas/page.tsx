@@ -267,6 +267,7 @@ export default function OrganismoDeCertificacionDePersonas() {
   const [openModalApelacion, setOpenModalApelacion] = useState(false);
   const [useProducto, setProducto] = useState("proceso");
   const [posts, setPosts] = useState([]);
+  const [useCertificado, setCertificado] = useState(false);
  
   useEffect(() => {
     async function fetchPosts() {
@@ -276,6 +277,14 @@ export default function OrganismoDeCertificacionDePersonas() {
     }
     fetchPosts()
   }, []);
+
+  const buscarCert = (e : any) => {
+    e.preventDefault();
+    setCertificado(true);
+    console.log(e.target.certificado.value);
+    console.log(e.target.credencial.value);
+    // const cert = posts.filter(certificado => certificado.nombre === useProducto);
+  }
  
   if (!posts) return <div>Loading...</div>
   
@@ -460,22 +469,28 @@ export default function OrganismoDeCertificacionDePersonas() {
               {useProducto === "consultar" &&
                 <>
                 <div className='bg-slate-900 bg-opacity-80 p-5'>
-                  <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Por favor, introduzca el número de certificado o gafete que desee consultar y porteriormente, buscar:</p>
-                  <form className="flex w-full flex-col gap-4">
+                  <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Por favor, introduzca el número de certificado o credencial que desee consultar y porteriormente, buscar:</p>
+                  {useCertificado ?
                     <div>
-                      <div className="mb-2 flex items-center">
-                      <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
-                      </div>
-                      <TextInput id="email1" type="email" placeholder="Introducir número de certificado" required />
+                      <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Buscando...</p>
                     </div>
-                    <div>
-                      <div className="mb-2 flex items-center">
-                      <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de gafete:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
+                  :
+                    <form className="flex w-full flex-col gap-4" onSubmit={buscarCert}>
+                      <div>
+                        <div className="mb-2 flex items-center">
+                        <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
+                        </div>
+                        <TextInput id="certificado" type="text" name='certificado' placeholder="Introducir número de certificado" required />
                       </div>
-                      <TextInput id="email1" type="email" placeholder="Número de gafete" required />
-                    </div>
-                    <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
-                  </form>
+                      <div>
+                        <div className="mb-2 flex items-center">
+                        <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de credencial:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
+                        </div>
+                        <TextInput id="credencial" type="credencial" name='credencial' placeholder="Número de credencial" required />
+                      </div>
+                      <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
+                    </form>
+                  }
                 </div>
                 </>
               }
