@@ -278,11 +278,12 @@ export default function OrganismoDeCertificacionDePersonas() {
     fetchPosts()
   }, []);
 
-  const buscarCert = (e : any) => {
+  const buscarCert = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setCertificado(true);
-    console.log(e.target.certificado.value);
-    console.log(e.target.credencial.value);
+    const form = e.target as HTMLFormElement;
+    console.log(form.certificado.value);
+    console.log(form.credencial.value);
     // const cert = posts.filter(certificado => certificado.nombre === useProducto);
   }
  
