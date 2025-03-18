@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Curso from "@/app/components/Curso";
 import { FaRegUserCircle } from "react-icons/fa";
+import Image from "next/image";
 
 const cursos = [
   {
@@ -178,6 +179,18 @@ export default function CertificacionesAci() {
                 <h3 onClick={() => setCurso("Concreto lanzado")} className={`font-montserrat btn ${useCurso === "Concreto lanzado" ? "bg-gray-100 text-gray-900 font-bold" : "bg-gray-900"} hover:bg-slate-500 p-3 text-left text-md cursor-pointer uppercase`}>
                   Concreto lanzado
                 </h3>
+                <div className="flex items-center justify-center mt-5">
+                  <a href="https://www.concrete.org/verify" target="_blank">
+                    <Image
+                      src="/logos/aci.png"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={200}
+                      height={0}
+                    />
+                    <p className="mt-3">Supporter of ACI Certification</p>
+                  </a>
+                </div>
+                
               </div>
             </div>
             <div>
