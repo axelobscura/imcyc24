@@ -27,7 +27,7 @@ const Footer = () => {
                   width={250}
                   height={0}
                 />
-                <p className="text-white pt-3">Supporter of ACI Certification</p>
+                <p className="text-white pt-3">ACI International Partner</p>
               </a>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:gap-8 sm:grid-cols-3">
