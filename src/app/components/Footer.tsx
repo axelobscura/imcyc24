@@ -16,9 +16,18 @@ const Footer = () => {
                 <Image
                   src="/logo-imcyc.svg"
                   alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                  width={170}
+                  width={250}
                   height={0}
                 />
+              </a>
+              <a href="https://www.concrete.org/verify" target="_blank" className="flex flex-col items-center mt-5">
+                <Image
+                  src="/logos/aci.svg"
+                  alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                  width={250}
+                  height={0}
+                />
+                <p className="text-white pt-3">Supporter of ACI Certification</p>
               </a>
             </div>
             <div className="grid grid-cols-1 gap-8 sm:gap-8 sm:grid-cols-3">
