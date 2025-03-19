@@ -21,10 +21,38 @@ export default function CalendarioDeCursos() {
                       <p className="mt-3 text-white">Supporter of ACI Certification</p>
                     </a>
                   </div>
-                  <iframe src='/docs/calendario25.pdf' style={{
-                    width: '100%',
-                    height: '100vh'
-                  }} />
+                  <div>
+                    <Image
+                      src="/docs/Calendario25_Page_1.jpg"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={900}
+                      height={0}
+                    />
+                    <Image
+                      src="/docs/Calendario25_Page_2.jpg"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={900}
+                      height={0}
+                    />
+                    <Image
+                      src="/docs/Calendario25_Page_3.jpg"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={900}
+                      height={0}
+                    />
+                    <Image
+                      src="/docs/Calendario25_Page_4.jpg"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={900}
+                      height={0}
+                    />
+                    <Image
+                      src="/docs/Calendario25_Page_5.jpg"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={900}
+                      height={0}
+                    />
+                  </div>
                   
                 </div>
               </div>
