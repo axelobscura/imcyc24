@@ -23,31 +23,31 @@ export default function CalendarioDeCursos() {
                   </div>
                   <div>
                     <Image
-                      src="/docs/Calendario25_Page_1.jpg"
+                      src="https://imcyc.net/2025/calendario25_Page_1.jpg"
                       alt="Instituto Mexicano del Cemento y del Concreto A.C."
                       width={900}
                       height={0}
                     />
                     <Image
-                      src="/docs/Calendario25_Page_2.jpg"
+                      src="https://imcyc.net/2025/calendario25_Page_2.jpg"
                       alt="Instituto Mexicano del Cemento y del Concreto A.C."
                       width={900}
                       height={0}
                     />
                     <Image
-                      src="/docs/Calendario25_Page_3.jpg"
+                      src="https://imcyc.net/2025/calendario25_Page_3.jpg"
                       alt="Instituto Mexicano del Cemento y del Concreto A.C."
                       width={900}
                       height={0}
                     />
                     <Image
-                      src="/docs/Calendario25_Page_4.jpg"
+                      src="https://imcyc.net/2025/calendario25_Page_4.jpg"
                       alt="Instituto Mexicano del Cemento y del Concreto A.C."
                       width={900}
                       height={0}
                     />
                     <Image
-                      src="/docs/Calendario25_Page_5.jpg"
+                      src="https://imcyc.net/2025/calendario25_Page_5.jpg"
                       alt="Instituto Mexicano del Cemento y del Concreto A.C."
                       width={900}
                       height={0}
