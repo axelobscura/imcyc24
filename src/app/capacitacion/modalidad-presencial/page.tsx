@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function ModalidadPresencial() {
@@ -37,6 +38,17 @@ export default function ModalidadPresencial() {
                 <Link href="/capacitacion/modalidad-presencial/seminarios" className="font-montserrat btn bg-slate-900 bg-opacity-50 hover:bg-slate-500 p-3 text-left text-xl">
                   SEMINARIOS
                 </Link>
+                <div className="flex items-center justify-center mt-5">
+                  <a href="https://www.concrete.org/verify" target="_blank">
+                    <Image
+                      src="/logos/aci.png"
+                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                      width={200}
+                      height={0}
+                    />
+                    <p className="mt-3">Supporter of ACI Certification</p>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="bg-black bg-opacity-50 text-gray-100 px-10 py-10 border border-gray-900">

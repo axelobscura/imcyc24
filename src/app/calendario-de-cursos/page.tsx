@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 
 export default function CalendarioDeCursos() {
   return (
@@ -9,10 +10,22 @@ export default function CalendarioDeCursos() {
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
                 <div>
+                  
                   <iframe src='/docs/calendario25.pdf' style={{
                     width: '100%',
                     height: '100vh'
                   }} />
+                  <div className="flex items-center justify-center mt-5">
+                    <a href="https://www.concrete.org/verify" target="_blank">
+                      <Image
+                        src="/logos/aci.png"
+                        alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                        width={200}
+                        height={0}
+                      />
+                      <p className="mt-3">Supporter of ACI Certification</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
