@@ -9,12 +9,7 @@ export default function CalendarioDeCursos() {
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
-                <div>
-                  
-                  <iframe src='/docs/calendario25.pdf' style={{
-                    width: '100%',
-                    height: '100vh'
-                  }} />
+                <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_4fr] items-start">
                   <div className="flex items-center justify-center mt-5">
                     <a href="https://www.concrete.org/verify" target="_blank">
                       <Image
@@ -23,9 +18,14 @@ export default function CalendarioDeCursos() {
                         width={200}
                         height={0}
                       />
-                      <p className="mt-3">Supporter of ACI Certification</p>
+                      <p className="mt-3 text-white">Supporter of ACI Certification</p>
                     </a>
                   </div>
+                  <iframe src='/docs/calendario25.pdf' style={{
+                    width: '100%',
+                    height: '100vh'
+                  }} />
+                  
                 </div>
               </div>
             </div>
