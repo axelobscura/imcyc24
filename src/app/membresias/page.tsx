@@ -241,13 +241,13 @@ export default function Membresias() {
                                 <td className="px-6 py-4">
                                 </td>
                                 <td className="px-6 text-center">
-                                    1 estación<br/>*5 veces al mes	
+                                    1 estación<br/>*1 veces al mes	
                                 </td>
                                 <td className="px-6 py-4 text-center">
-                                    1 estación<br/>*10 veces al mes	
+                                    1 estación<br/>*2 veces al mes	
                                 </td>
                                 <td className="px-6 py-4 text-center">
-                                    1 estación<br/>*15 veces al mes
+                                    1 estación<br/>*3 veces al mes
                                 </td>
                             </tr>
                             <tr className="text-center font-montserrat border-b bg-slate-900 border-gray-700 text-gray-100 font-bold">
