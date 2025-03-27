@@ -27,10 +27,14 @@ function Menu() {
           <MegaMenuDropdown
             className="bg-gray-900 bg-opacity-95 border-none m-0 ml-0 text-white"
             toggle={
-              <div className="font-montserrat whitespace-nowrap py-2 text-white rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase flex items-center mr-0 pr-0">
+              <div className="font-montserrat whitespace-nowrap py-0 text-white rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase flex items-center mr-0 pr-0">
                 Quienes Somos
               </div>
             }
+            style={{
+              margin: 0,
+              padding: 0,
+            }}
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios Técnicos Especializados:</p>
             <ul className="grid grid-cols-3">
@@ -179,7 +183,6 @@ function Menu() {
               </div>
             </ul>
           </MegaMenuDropdown>
-
           <MegaMenuDropdown
             className="p-0 m-0 top-96 bg-gray-900 bg-opacity-90 border-none ml-0 mr-0 pl-0 pr-0 text-white"
             style={{ top: "196px" }}
@@ -348,14 +351,22 @@ function Menu() {
             </ul>
           </MegaMenuDropdown>
           <NavbarLink
+            href="https://webinarsenconcreto.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-montserrat whitespace-nowrap py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+          >
+            Webinars
+          </NavbarLink>
+          <NavbarLink
             href="/prensa"
-            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+            className="font-montserrat whitespace-nowrap py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
             Prensa
           </NavbarLink>
           <NavbarLink
             href="/contacto"
-            className="font-montserrat whitespace-nowrap py-2 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
+            className="font-montserrat whitespace-nowrap py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
             Contacto
           </NavbarLink>
