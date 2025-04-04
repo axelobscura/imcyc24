@@ -20,7 +20,7 @@ const Footer = () => {
                   height={0}
                 />
               </a>
-              <a href="https://www.concrete.org/verify" target="_blank" className="flex flex-col items-center mt-5">
+              <a href="https://www.udem.edu.mx/es" target="_blank" className="flex flex-col items-center mt-5">
                 <Image
                   src="/udem.jpg"
                   alt="Instituto Mexicano del Cemento y del Concreto A.C."
