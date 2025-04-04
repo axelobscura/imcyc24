@@ -22,6 +22,14 @@ const Footer = () => {
               </a>
               <a href="https://www.concrete.org/verify" target="_blank" className="flex flex-col items-center mt-5">
                 <Image
+                  src="/udem.jpg"
+                  alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                  width={200}
+                  height={0}
+                />
+              </a>
+              <a href="https://www.concrete.org/verify" target="_blank" className="flex flex-col items-center mt-5">
+                <Image
                   src="/logos/aci.svg"
                   alt="Instituto Mexicano del Cemento y del Concreto A.C."
                   width={250}
