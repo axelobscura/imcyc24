@@ -373,7 +373,7 @@ export default function Tienda() {
                   <p className="text-gray-300">Tipo: {libro.tipo}</p>
                   <p className="text-gray-300">Precio: ${libro.precio}</p>
                   <a
-                    href={`/libros/${libro.archivo}`}
+                    href={`https://pay.conekta.com/link/dda97ba8bf9840a2a91ac43639463936`}
                     download
                     className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200"
                   >
