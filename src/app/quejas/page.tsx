@@ -18,7 +18,6 @@ export default function QuejasYApelaciones() {
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10">
                 <div>
-                  <p className={`bg-opacity-70 ${useProducto === "quejas" ? 'bg-slate-100 bg-opacity-100 text-gray-900' : 'bg-slate-800'} font-montserrat bg-blend-multiply w-full p-5 sm:mb-5 hover:bg-slate-100 hover:text-gray-900 font-bold flex flex-row items-center justify-between text-gray-100 cursor-pointer`} onClick={() => setProducto("quejas")}>QUEJAS <FaArrowAltCircleRight className="mr-3" size={20} /></p>
                 </div>
                 <div>
                   <div className='bg-slate-900 bg-opacity-80 p-5'>
