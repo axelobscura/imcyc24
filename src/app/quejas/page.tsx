@@ -13,7 +13,7 @@ export default function QuejasYApelaciones() {
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-bold">
-                  Quejas y Apelaciones
+                  Quejas
                 </h1>
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10">
