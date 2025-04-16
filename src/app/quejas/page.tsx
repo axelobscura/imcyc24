@@ -22,9 +22,6 @@ export default function QuejasYApelaciones() {
                 <div>
                   <div className='bg-slate-900 bg-opacity-80 p-5'>
                       <>
-                        <p className="font-montserrat text-2xl font-bold pb-2 flex items-center text-gray-100 mb-5 uppercase">
-                          QUEJAS
-                        </p>
                         <form className="flex w-full flex-col gap-4">
                           <div>
                             <div className="mb-2 flex items-center">
