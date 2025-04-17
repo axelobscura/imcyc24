@@ -37,7 +37,7 @@ function Menu() {
             }}
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios Técnicos Especializados:</p>
-            <ul className="grid grid-cols-3">
+            <ul className="grid grid-cols-1 md:grid-cols-3 md:w-full">
               <div className="space-y-4 p-4">
                 <li>
                   <a
@@ -100,7 +100,7 @@ function Menu() {
             }
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios Técnicos Especializados:</p>
-            <ul className="grid grid-cols-4">
+            <ul className="grid grid-cols-1 md:grid-cols-4 md:w-full">
               <div className="space-y-4 p-4">
                 <li>
                   <a
@@ -193,7 +193,7 @@ function Menu() {
             }
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios de Enseñanza y Empresariales:</p>
-            <ul className="grid grid-cols-4">
+            <ul className="grid grid-cols-1 md:grid-cols-4 md:w-full">
               <div className="space-y-4 p-4">
                 <li>
                   <a
@@ -296,7 +296,7 @@ function Menu() {
             }
           >
             <p className="p-5 pb-3 font-bold border-b border-gray-600">Servicios de Laboratorio:</p>
-            <ul className="grid grid-cols-1 sm:grid-cols-3">
+            <ul className="grid grid-cols-1 md:grid-cols-3 md:w-full">
               <div className="space-y-4 p-4">
                 <li>
                   <a
