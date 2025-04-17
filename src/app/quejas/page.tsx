@@ -1,10 +1,8 @@
 "use client";
-import { useState } from "react";
-import { FaArrowAltCircleRight, FaArrowCircleDown } from "react-icons/fa";
+import { FaArrowCircleDown } from "react-icons/fa";
 import { Button, Label, TextInput, Textarea, Select } from "flowbite-react";
 
 export default function QuejasYApelaciones() {
-  const [useProducto, setProducto] = useState("quejas");
   return (
     <div>
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/quejas.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
