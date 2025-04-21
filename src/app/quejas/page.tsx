@@ -44,12 +44,10 @@ export default function QuejasYApelaciones() {
                             <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="*Área:" className="font-montserrat text-1xl font-light flex items-center text-gray-100" />
                             </div>
                             <Select id="countries" required>
-                              <option>Laboratorio de ensayos</option>
-                              <option>Laboratorio de Calibración</option>
-                              <option>Asesorías técnicas en estructuras</option>
-                              <option>Organismo de certificación de producto</option>
-                              <option>Organismo de certificación de personas</option>
-                              <option>Proveedor de ensayos de aptitud</option>
+                              <option value="">Seleccionar</option>
+                              <option value="Organismo de certificación de producto">Organismo de certificación de producto</option>
+                              <option value="Organismo de certificación de personas">Organismo de certificación de personas</option>
+                              <option value="Proveedor de ensayos de aptitud">Proveedor de ensayos de aptitud</option>
                             </Select>
                           </div>
                           <div>
