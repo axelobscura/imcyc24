@@ -9,6 +9,14 @@ import { MdAddBox } from "react-icons/md";
 import { IoIosAddCircle } from "react-icons/io";
 import { PiUserCirclePlusFill } from "react-icons/pi";
 
+type Credencial = {
+  nombre: string;
+  fecha: string;
+  certificado: string;
+  credencial: string;
+  estatus: string;
+};
+
 const esquemas = [
   {
     "nombre": "Técnico Laboratorista en ensayos de Concreto Fresco (TLCF)",
@@ -268,6 +276,7 @@ export default function OrganismoDeCertificacionDePersonas() {
   const [useProducto, setProducto] = useState("proceso");
   const [posts, setPosts] = useState([]);
   const [useCertificado, setCertificado] = useState(false);
+  const [useCredencial, setCredencial] = useState<Credencial[]>([]);
  
   useEffect(() => {
     async function fetchPosts() {
@@ -277,17 +286,26 @@ export default function OrganismoDeCertificacionDePersonas() {
     }
     fetchPosts()
   }, []);
+ 
+  if (!posts) return <div>Loading...</div>
 
   const buscarCert = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setCertificado(true);
     const form = e.target as HTMLFormElement;
-    console.log(form.certificado.value);
-    console.log(form.credencial.value);
-    // const cert = posts.filter(certificado => certificado.nombre === useProducto);
+    posts.filter(certificado => {
+      if(certificado[2] === form.certificado.value || certificado[3] === form.credencial.value){
+        setCredencial([{
+          nombre: certificado[0],
+          fecha: certificado[1],
+          certificado: certificado[2],
+          credencial: certificado[3],
+          estatus: certificado[4],
+        }]);
+        setCertificado(true);
+      }
+    });
   }
- 
-  if (!posts) return <div>Loading...</div>
   
   return (
     <div>
@@ -470,27 +488,38 @@ export default function OrganismoDeCertificacionDePersonas() {
               {useProducto === "consultar" &&
                 <>
                 <div className='bg-slate-900 bg-opacity-80 p-5'>
-                  <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Por favor, introduzca el número de certificado o credencial que desee consultar y porteriormente, buscar:</p>
+                  
                   {useCertificado ?
                     <div>
-                      <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Buscando...</p>
+                      <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Resultado:</p>
+                      {useCredencial.map((cert, index) => (
+                        <div key={index} className='bg-slate-900 bg-opacity-55 mb-2 p-3 border border-spacing-3 border-green-800'>
+                          <h2 className="font-montserrat px-3 text-2xl font-bold pb-2 flex items-center"><span><PiUserCirclePlusFill size={50} className='mr-2' /></span><span className='text-slate-400'>{cert.nombre}<br/>{cert.estatus}</span></h2>
+                          <p className="font-montserrat px-3 text-1xl">Nombre: <strong>{cert.fecha}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert.certificado}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert.credencial}</strong></p>
+                        </div>
+                      ))}
                     </div>
                   :
-                    <form className="flex w-full flex-col gap-4" onSubmit={buscarCert}>
-                      <div>
-                        <div className="mb-2 flex items-center">
-                        <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
+                    <>
+                      <p className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100">Por favor, introduzca el número de certificado o credencial que desee consultar y posteriormente, buscar:</p>
+                      <form className="flex w-full flex-col gap-4" onSubmit={buscarCert}>
+                        <div>
+                          <div className="mb-2 flex items-center">
+                          <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
+                          </div>
+                          <TextInput id="certificado" type="text" name='certificado' placeholder="Introducir número de certificado" required />
                         </div>
-                        <TextInput id="certificado" type="text" name='certificado' placeholder="Introducir número de certificado" required />
-                      </div>
-                      <div>
-                        <div className="mb-2 flex items-center">
-                        <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de credencial:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
+                        <div>
+                          <div className="mb-2 flex items-center">
+                          <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de credencial:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
+                          </div>
+                          <TextInput id="credencial" type="credencial" name='credencial' placeholder="Número de credencial" required />
                         </div>
-                        <TextInput id="credencial" type="credencial" name='credencial' placeholder="Número de credencial" required />
-                      </div>
-                      <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
-                    </form>
+                        <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
+                      </form>
+                    </>
                   }
                 </div>
                 </>
