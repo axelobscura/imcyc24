@@ -30,8 +30,6 @@ export default function Articulo() {
     return <Loader/>
   };
 
-  console.log(contenido);
-
   return (
     <div>
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/libreria.png')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">

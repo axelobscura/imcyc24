@@ -30,7 +30,7 @@ export default function Home() {
             <p className="mb-0">SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
             <p className="text-xs mb-10">AV. IGNACIO MORONES PRIETO 4500-PTE, ZONA VALLE PONIENTE, 66238 SAN PEDRO GARZA GARCÍA, N.L.</p>
             <Link
-              href="https://www.imcyc.com/seminario-pisos-industriales-concreto-monterrey-2025/"
+              href="/eventos"
               className="inline-flex items-center justify-center px-5 py-3 text-2xl font-medium text-center text-gray-900 bg-yellow-300 hover:bg-gray-800 hover:text-white"
             >
               REGÍSTRATE <BsArrowRightSquareFill className="ms-2" />
