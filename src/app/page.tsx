@@ -26,7 +26,8 @@ export default function Home() {
             
             <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">EXPERTOS EN DISEÑO, CONSTRUCCIÓN, EVALUACIÓN, REPARACIÓN Y MANTENIMIENTO DE PISOS INDUSTRIALES COMPARTIENDO SUS CASOS DE ÉXITO
             </p>
-            <p className="mb-7">SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
+            <p className="mb-0">SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
+            <p className="text-xs mb-10">AV. IGNACIO MORONES PRIETO 4500-PTE, ZONA VALLE PONIENTE, 66238 SAN PEDRO GARZA GARCÍA, N.L.</p>
             <Link
               href="https://www.imcyc.com/seminario-pisos-industriales-concreto-monterrey-2025/"
               className="inline-flex items-center justify-center px-5 py-3 text-2xl font-medium text-center text-gray-900 bg-yellow-300 hover:bg-gray-800 hover:text-white"
