@@ -1,6 +1,4 @@
 "use client";
-import { FaArrowCircleDown } from "react-icons/fa";
-import { Button, Label, TextInput, Textarea, Select } from "flowbite-react";
 
 export default function Eventos() {
   return (
