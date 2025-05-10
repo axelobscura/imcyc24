@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import TopBar from "./components/TopBar";
 import Membresias from "./components/Membresias";
 import Footer from "./components/Footer";
+import "react-image-gallery/styles/css/image-gallery.css";
 import "./globals.css";
 
 const geistSans = localFont({
