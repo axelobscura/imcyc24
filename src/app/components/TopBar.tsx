@@ -7,6 +7,7 @@ import { FaInstagram, FaFacebook, FaYoutubeSquare, FaLinkedin } from "react-icon
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
+import { BsArrowRightSquareFill } from "react-icons/bs";
 
 const TopBar = () => {
   const pathname = usePathname();
@@ -78,7 +79,7 @@ const TopBar = () => {
     <>
     <div className="fixed z-50 w-full">
       <nav className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4">
+          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-0 pb-0 pl-4 pr-4">
               <div className="flex items-center space-x-6 rtl:space-x-reverse">
                   <Link href={`tel:${telefono}`} className="flex font-montserrat text-xs text-gray-200 dark:text-gray-200 hover:underline flex flex-row">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 mt-1">
@@ -117,6 +118,9 @@ const TopBar = () => {
                   </Link>
                   <Link href="/concreton" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <IoIosSearch size={27} />
+                  </Link>
+                  <Link href="/eventos" className="text-sm font-bold text-white dark:text-slate-800 bg-slate-700 hover:bg-slate-500 flex flex-row p-2 items-center">
+                    EVENTOS IMCYC <BsArrowRightSquareFill size={20} className="ml-2" />
                   </Link>
               </div>
           </div>
