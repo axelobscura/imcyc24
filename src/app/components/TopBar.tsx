@@ -119,7 +119,7 @@ const TopBar = () => {
                   <Link href="/concreton" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <IoIosSearch size={27} />
                   </Link>
-                  <Link href="/eventos" className="text-sm font-bold text-white dark:text-slate-800 bg-slate-700 hover:bg-slate-500 flex flex-row p-2 items-center">
+                  <Link href="/eventos" className="text-sm font-bold text-white dark:text-slate-800 bg-blue-700 hover:bg-slate-500 flex flex-row p-2 items-center px-5">
                     EVENTOS IMCYC <BsArrowRightSquareFill size={20} className="ml-2" />
                   </Link>
               </div>

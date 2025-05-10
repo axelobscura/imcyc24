@@ -1,6 +1,7 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 import Image from "next/image";
 import Link from "next/link";
+import { BsArrowRightSquareFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
               href="https://www.imcyc.com/seminario-pisos-industriales-concreto-monterrey-2025/"
               className="inline-flex items-center justify-center px-5 py-3 text-2xl font-medium text-center text-gray-900 bg-yellow-300 hover:bg-gray-800 hover:text-white"
             >
-              REGÍSTRATE
+              REGÍSTRATE <BsArrowRightSquareFill className="ms-2" />
             </Link>
             <form className="w-full max-w-md mx-auto">
               <label
