@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/seminario-pisos-industriales-concreto-monterrey-imcyc-2025.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/seminario-pisos-industriales-concreto-monterrey-imcyc-2025.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
-        <section className="z-0">
-          <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center lg:py-8 z-10 relative bg-black bg-opacity-70">
+        <section className="z-0 mt-20">
+          <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center lg:py-20 z-10 relative bg-black bg-opacity-70">
             <div className="flex justify-center items-center text-center w-full pb-10">
               <Image
                 src="/seminario/udem.jpg"
@@ -26,6 +26,7 @@ export default function Home() {
             
             <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">EXPERTOS EN DISEÑO, CONSTRUCCIÓN, EVALUACIÓN, REPARACIÓN Y MANTENIMIENTO DE PISOS INDUSTRIALES COMPARTIENDO SUS CASOS DE ÉXITO
             </p>
+            <p className="mb-7">SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
             <Link
               href="https://www.imcyc.com/seminario-pisos-industriales-concreto-monterrey-2025/"
               className="inline-flex items-center justify-center px-5 py-3 text-2xl font-medium text-center text-gray-900 bg-yellow-300 hover:bg-gray-800 hover:text-white"
