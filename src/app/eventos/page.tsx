@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Eventos() {
   return (
@@ -12,11 +14,28 @@ export default function Eventos() {
                   Eventos IMCYC
                 </h1>
               </div>
-              <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10">
-                <div>
-                </div>
+              <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-10">
                 <div>
                   <div className='bg-slate-900 bg-opacity-80 p-5'>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10">
+                      <div>
+                        <Link
+                          href="/eventos/seminario-pisos-industriales"
+                          className="inline-flex items-center justify-center"
+                        >
+                          <Image
+                            src="/eventos/seminario.jpg"
+                            alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{ width: '100%', height: 'auto' }}
+                            layout="intrinsic"
+                            className="mb-5"
+                          />
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
