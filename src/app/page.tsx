@@ -1,7 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRightSquareFill } from "react-icons/bs";
 
 export default function Home() {
   return (
