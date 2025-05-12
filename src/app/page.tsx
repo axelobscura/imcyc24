@@ -9,32 +9,20 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-10 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/seminario-pisos-industriales-concreto-monterrey-imcyc-2025.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0">
         <section className="z-0 mt-20">
-          <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center lg:py-20 z-10 relative bg-black bg-opacity-70">
-            <div className="flex justify-center items-center text-center w-full pb-10">
-              <Image
-                src="/seminario/udem.jpg"
-                alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                width={100}
-                height={0}
-              />
+          <div className="pb-0 mx-auto max-w-screen-xl text-center z-10 relative bg-black bg-opacity-70">
+            <div className="flex justify-center items-center text-center w-full">
+              <Link
+                href="/eventos"
+                className="inline-flex items-center justify-center"
+              >
+                <Image
+                  src="/eventos/banner_seminario.jpg"
+                  alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                  width={1900}
+                  height={0}
+                />
+              </Link>
             </div>
-            <p className="font-montserrat pb-5">El Instituto Mexicano del Cemento y del Concreto | Universidad de Monterrey<br/>presentan</p>
-            <h1 className="font-montserrat pb-7 text-white text-3xl font-bold">SEMINARIO</h1>
-            <h2 className="font-montserrat mb-7 text-3xl font-bold tracking-tight leading-none text-yellow-300 md:text-4xl lg:text-6xl dark:text-yellow-300">
-              PISOS INDUSTRIALES DE CONCRETO
-            </h2>
-            <h3 className="font-montserrat mb-7 text-3xl font-bold tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-yellow-300">22 y 23 Mayo</h3>
-            
-            <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">EXPERTOS EN DISEÑO, CONSTRUCCIÓN, EVALUACIÓN, REPARACIÓN Y MANTENIMIENTO DE PISOS INDUSTRIALES COMPARTIENDO SUS CASOS DE ÉXITO
-            </p>
-            <p className="mb-0">SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
-            <p className="text-xs mb-10">AV. IGNACIO MORONES PRIETO 4500-PTE, ZONA VALLE PONIENTE, 66238 SAN PEDRO GARZA GARCÍA, N.L.</p>
-            <Link
-              href="/eventos"
-              className="inline-flex items-center justify-center px-5 py-3 text-2xl font-medium text-center text-gray-900 bg-yellow-300 hover:bg-gray-800 hover:text-white"
-            >
-              REGÍSTRATE <BsArrowRightSquareFill className="ms-2" />
-            </Link>
             <form className="w-full max-w-md mx-auto">
               <label
                 className="mb-2 text-sm font-medium text-white sr-only dark:text-white"
