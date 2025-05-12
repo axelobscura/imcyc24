@@ -20,7 +20,7 @@ export default function Eventos() {
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_2fr] gap-10">
                       <div>
                         <Link
-                          href="/eventos/seminario-pisos-industriales"
+                          href="/eventos/seminario-pisos-industriales-de-concreto"
                           className="inline-flex items-center justify-center"
                         >
                           <Image
