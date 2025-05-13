@@ -41,6 +41,12 @@ body {
   animation: rotate 2s linear infinite;
 }
 
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .menu-responsivo ul li a {
     background: #0c141f;
