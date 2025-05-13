@@ -35,8 +35,11 @@ export default function Home() {
               width: '100%',
             }}
           >
-            <SwiperSlide>
-              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relative bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat pb-36 pt-36">
+            <SwiperSlide 
+              className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{ height: '100vh' }}
+            >
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
                 <h1 className="font-montserrat pt-40 pb-0 text-white text-2xl">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
                 <h2 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
                 COMPARTIR EL CONOCIMIENTO</h2>
@@ -113,14 +116,26 @@ export default function Home() {
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="/eventos/banner_seminario.jpg"
-                alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                width={1900}
-                height={0}
-                style={{ width: '100%', height: 'auto' }}
-              />
+            <SwiperSlide 
+              className="bg-[url('/eventos/banner_seminario.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+              }}
+            >
+                <Link
+                  href="/eventos/seminario-pisos-industriales-de-concreto"
+                >
+                  <Image
+                    src="/eventos/banner_seminario.jpg"
+                    alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                    width={1900}
+                    height={0}
+                    style={{ width: '100%', height: 'auto' }}
+                  />
+                </Link>
             </SwiperSlide>
           </Swiper>
         </section>
