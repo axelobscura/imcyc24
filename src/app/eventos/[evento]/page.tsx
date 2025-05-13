@@ -1,12 +1,10 @@
 "use client";
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Articulo() {
   const params = useParams<{ evento: string }>();
-
-  console.log(params);
-
   return (
     <div>
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/seminario-pisos-industriales-concreto-monterrey-imcyc-2025.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
@@ -101,6 +99,22 @@ export default function Articulo() {
                             Teléfono móvil: 55 9170 8059
                         </Link>
                       </p>
+                      <Link
+                          href="https://pay.conekta.com/link/3c93077fb6da4113912d26b554a7d171"
+                          className="inline-flex items-center justify-center w-full bg-yellow-400 color-gray-900 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                        >
+                          Regístrate hoy mismo
+                      </Link>
+                      <Link
+                          href="https://wa.me/5554671492"
+                          className="inline-flex items-center justify-center w-full bg-green-500 color-gray-900 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                        >
+                          <FaWhatsapp style={{ marginRight: '20px' }} /> Más Información y Asistencia para Inscripciones
+                      </Link>
                       <Link
                           href="https://pay.conekta.com/link/3c93077fb6da4113912d26b554a7d171"
                           className="inline-flex items-center justify-center w-full bg-yellow-400 color-gray-900 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"

@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <section>
           <Swiper
             slidesPerView={1}
-            spaceBetween={0}
+            spaceBetween={30}
             loop={true}
             autoplay={true}
             speed={500}
@@ -29,12 +29,33 @@ export default function Home() {
               clickable: true,
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper"
             style={{
               width: '100%',
             }}
           >
+            <SwiperSlide 
+              className="bg-[url('/eventos/banner_seminario.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+              }}
+            >
+                <Link
+                  href="/eventos/seminario-pisos-industriales-de-concreto"
+                >
+                  <Image
+                    src="/eventos/banner_seminario.jpg"
+                    alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                    width={1900}
+                    height={0}
+                    style={{ width: '100%', height: 'auto' }}
+                  />
+                </Link>
+            </SwiperSlide>
             <SwiperSlide 
               className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
@@ -116,27 +137,7 @@ export default function Home() {
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide 
-              className="bg-[url('/eventos/banner_seminario.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100vh',
-              }}
-            >
-                <Link
-                  href="/eventos/seminario-pisos-industriales-de-concreto"
-                >
-                  <Image
-                    src="/eventos/banner_seminario.jpg"
-                    alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                    width={1900}
-                    height={0}
-                    style={{ width: '100%', height: 'auto' }}
-                  />
-                </Link>
-            </SwiperSlide>
+            
           </Swiper>
         </section>
       </main>
