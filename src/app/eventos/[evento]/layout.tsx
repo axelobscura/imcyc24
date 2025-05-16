@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleTagManager } from '@next/third-parties/google';
 import localFont from "next/font/local";
 import TopBar from "../../components/TopBar";
 import Membresias from "../../components/Membresias";
