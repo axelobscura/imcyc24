@@ -28,13 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
+    <>
       <TopBar/>
       {children}
       <Membresias />
       <Footer/>
-    </body>
+    </>
   );
 }

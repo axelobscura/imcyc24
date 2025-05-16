@@ -27,7 +27,7 @@ export default function Articulo() {
                       <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200 text-center">EXPERTOS EN DISEÑO, CONSTRUCCIÓN, EVALUACIÓN, REPARACIÓN Y MANTENIMIENTO DE PISOS INDUSTRIALES COMPARTIENDO SUS CASOS DE ÉXITO
                       </p>
                       <h4>Horario: 08:00 a 18:00 horas</h4>
-                      <h4>Costo: $1,500.00 MXN + IVA</h4>
+                      <h4>Costo: <span className='line-through'>$1,500.00 MXN</span> <b>$1,200.00</b> + IVA</h4>
                       <p className="mb-0">Sede: SALA POLIVALENTE DE LA PREPARATORIA UNIDAD SAN PEDRO (USP-UDEM)</p>
                       <p className="text-xs mb-10">AV. IGNACIO MORONES PRIETO 4500-PTE, ZONA VALLE PONIENTE, 66238 SAN PEDRO GARZA GARCÍA, N.L.</p>
                       <p>El Seminario de Pisos Industriales de Concreto reúne a destacados especialistas en diseño, construcción, evaluación, mantenimiento y reparación de pisos industriales. Durante dos días se compartirán casos de éxito, soluciones tecnológicas y enfoques innovadores del sector. Un espacio ideal para el aprendizaje, networking y actualización profesional.</p>
