@@ -12,14 +12,14 @@ export default function Articulo() {
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
-                <h1 className="font-montserrat text-white uppercase text-4xl font-bold">{params.evento.split("-").join(" ")}</h1>
+                <h3 className='font-montserrat text-white bg-red-700 mb-3 text-center text-4xl'>APROVECHA NUESTRO <b>20%</b> DE DESCUENTO</h3>
                 {params.evento === "seminario-pisos-industriales-de-concreto" && (
                   <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-10">
                     <div className="text-white text-justify">
-                      <p className="text-gray-300 mb-5">El Instituto Mexicano del Cemento y del Concreto | Universidad de Monterrey presentan</p>
-                      <h2 className="font-montserrat mb-7 text-3xl text-center font-bold tracking-tight leading-none text-yellow-300 md:text-4xl lg:text-6xl dark:text-yellow-300">
+                      <p className="text-gray-300 mb-5 text-center">El Instituto Mexicano del Cemento y del Concreto | Universidad de Monterrey presentan</p>
+                      <h1 className="font-montserrat mb-7 text-3xl text-center font-bold tracking-tight leading-none text-yellow-300 md:text-4xl lg:text-6xl dark:text-yellow-300">
                         SEMINARIO
-                      </h2>
+                      </h1>
                       <h3 className="font-montserrat mb-7 text-3xl font-bold text-center tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-yellow-300">PISOS INDUSTRIALES DE CONCRETO</h3>
                       <h2 className="font-montserrat mb-7 text-3xl text-center font-bold tracking-tight leading-none text-yellow-300 md:text-4xl lg:text-6xl dark:text-yellow-300">
                         22 y 23 de mayo de 2025
