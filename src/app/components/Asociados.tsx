@@ -27,8 +27,8 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li>
-            <Link href="https://www.cementosfortaleza.com/" rel="noopener noreferrer" target="_blank">
+          <li className="text-center">
+            <Link href="https://www.cementosfortaleza.com/" rel="noopener noreferrer" target="_blank" className="text-center w-full block">
                 <Image
                   src="/asociados/logo_fortaleza_b.svg"
                   alt="Asociados"
