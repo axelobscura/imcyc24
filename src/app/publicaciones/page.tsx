@@ -381,7 +381,7 @@ export default function Publicaciones() {
                       <p className="text-gray-300 text-sm m-0 p-0">Precio: ${libro.precio}</p>
                     </div>
                     <a
-                      href={`https://pay.conekta.com/link/dda97ba8bf9840a2a91ac43639463936`}
+                      href={`https://pay.conekta.com/link/3c64c9684715486bbabfef184415762e`}
                       download
                       className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200 text-center mt-2"
                     >
