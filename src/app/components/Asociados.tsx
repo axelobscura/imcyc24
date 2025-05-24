@@ -27,8 +27,8 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li className="text-center">
-            <Link href="https://www.cementosfortaleza.com/" rel="noopener noreferrer" target="_blank" className="text-center w-full block">
+          <li className="flex text-center w-full items-center justify-center">
+            <Link href="https://www.cementosfortaleza.com/" rel="noopener noreferrer" target="_blank" className="text-center w-full flex items-center justify-center">
                 <Image
                   src="/asociados/logo_fortaleza_b.svg"
                   alt="Asociados"
@@ -38,7 +38,7 @@ const Asociados = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank">
+            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank" className="text-center w-full block">
                 <Image
                   src="/asociados/logo_chihuahua_b.svg"
                   alt="Asociados"
@@ -58,7 +58,7 @@ const Asociados = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://www.cementocruzazul.com.mx/" rel="noopener noreferrer" target="_blank">
+            <Link href="https://www.cementocruzazul.com.mx/" rel="noopener noreferrer" target="_blank" className="text-right w-full flex items-center justify-center">
                 <Image
                   src="/asociados/logo_cruzazul_b.svg"
                   alt="Asociados"
