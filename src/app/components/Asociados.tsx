@@ -12,13 +12,13 @@ const Asociados = () => {
                 <Image
                   src="/asociados/logo_cemex.svg"
                   alt="Asociados"
-                  width={120}
+                  width={170}
                   height={0}
                 />
             </Link>
           </li>
           <li>
-            <Link href="https://www.cmoctezuma.com.mx/" rel="noopener noreferrer" target="_blank">
+            <Link href="https://www.cmoctezuma.com.mx/" rel="noopener noreferrer" target="_blank" className="text-center w-full flex items-center justify-center">
                 <Image
                   src="/asociados/logo_moctezuma_b.svg"
                   alt="Asociados"

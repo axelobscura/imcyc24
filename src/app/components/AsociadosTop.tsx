@@ -12,7 +12,7 @@ const AsociadosTop = () => {
                 <Image
                   src="/asociados/logo_cemex.svg"
                   alt="Asociados"
-                  width={153}
+                  width={170}
                   height={0}
                 />
             </Link>
