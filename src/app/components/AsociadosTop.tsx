@@ -22,7 +22,7 @@ const AsociadosTop = () => {
                 <Image
                   src="/asociados/logo_moctezuma_b.svg"
                   alt="Asociados"
-                  width={170}
+                  width={160}
                   height={0}
                 />
             </Link>
