@@ -1,7 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client";
 import React from 'react';
-import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
