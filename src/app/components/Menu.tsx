@@ -213,15 +213,6 @@ function Menu() {
                     Membresías
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/publicaciones"
-                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
-                  >
-                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
-                    Publicaciones
-                  </a>
-                </li>
               </div>
               <div className="space-y-4 p-4">
                 <li>

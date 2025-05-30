@@ -351,41 +351,12 @@ export default function Tienda() {
   return (
     <div>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-        <main className="mx-auto w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-5 gap-8 row-start-2 items-center sm:items-start z-0" style={{
+        <main className="mx-auto w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-1 min-h-screen gap-8 row-start-2 items-center sm:items-start z-0" style={{
           marginTop: "90px",
           marginBottom: "100px",
           padding: "10px",
         }}>
-          {libros
-            .filter((libro) => libro.tipo !== "PUBLICACION")
-            .map((libro) => (
-                            <div
-                key={libro.id}
-                className="flex flex-col sm:flex-col gap-3 items-center justify-between bg-gray-800 bg-opacity-80 shadow-lg w-full max-w-[600px] h-[500px]"
-              > 
-                <div className="w-full h-[250px] overflow-hidden">
-                  <img
-                    src={`https://libreriaimcyc.com/images/libros/${libro.imagen}`}
-                    alt={libro.titulo}
-                    className="w-full h-full object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 p-3 flex-grow w-full">
-                  <h2 className="text-1xl font-bold text-white m-0 p-0 line-clamp-2">{libro.titulo}</h2>
-                  <div className="mt-auto">
-                    <p className="text-gray-300 text-sm m-0 p-0">Tipo: {libro.tipo}</p>
-                    <p className="text-gray-300 text-sm m-0 p-0">Precio: ${libro.precio}</p>
-                  </div>
-                  <a
-                    href={`https://pay.conekta.com/link/dda97ba8bf9840a2a91ac43639463936`}
-                    download
-                    className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200 text-center mt-2"
-                  >
-                    COMPRAR
-                  </a>
-                </div>
-              </div>
-            ))}
+          <h1 className="text-4xl text-white font-bold text-center">EN CONSTRUCCIÓN</h1>
         </main>
       </div>
     </div>
