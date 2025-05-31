@@ -6,8 +6,8 @@ const Asociados = () => {
   return (
     <>
       <div className="flex w-full">
-        <ul className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] items-center justify-center w-full py-10 mx-auto">
-          <li className="text-center items-center margin-auto">
+        <ul className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] items-center justify-center w-full py-10 mx-auto gap-10">
+          <li className="flex text-center items-center margin-auto justify-center">
             <Link href="https://www.cemexmexico.com/" rel="noopener noreferrer" target="_blank">
                 <Image
                   src="/asociados/logo_cemex.svg"
@@ -17,7 +17,7 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li>
+          <li className="justify-center">
             <Link href="https://www.cmoctezuma.com.mx/" rel="noopener noreferrer" target="_blank" className="text-center w-full flex items-center justify-center">
                 <Image
                   src="/asociados/logo_moctezuma_b.svg"
@@ -37,8 +37,8 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li>
-            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank" className="text-center w-full block">
+          <li className="justufy-center">
+            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank" className="flex text-center w-full">
                 <Image
                   src="/asociados/logo_chihuahua_b.svg"
                   alt="Asociados"
@@ -47,8 +47,8 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li>
-            <Link href="https://www.holcim.com.mx/" rel="noopener noreferrer" target="_blank">
+          <li className="ustufy-center">
+            <Link href="https://www.holcim.com.mx/" rel="noopener noreferrer" target="_blank" className="flex text-center w-full justify-center">
                 <Image
                   src="/asociados/logo_holcim_b.svg"
                   alt="Asociados"
@@ -57,7 +57,7 @@ const Asociados = () => {
                 />
             </Link>
           </li>
-          <li>
+          <li className="flex w-full justufy-center">
             <Link href="https://www.cementocruzazul.com.mx/" rel="noopener noreferrer" target="_blank" className="text-right w-full flex items-center justify-center">
                 <Image
                   src="/asociados/logo_cruzazul_b.svg"
