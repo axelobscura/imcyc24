@@ -38,7 +38,7 @@ const Asociados = () => {
             </Link>
           </li>
           <li className="justufy-center">
-            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank" className="flex text-center w-full">
+            <Link href="https://www.gcc.com/" rel="noopener noreferrer" target="_blank" className="flex text-center w-full justify-center">
                 <Image
                   src="/asociados/logo_chihuahua_b.svg"
                   alt="Asociados"
