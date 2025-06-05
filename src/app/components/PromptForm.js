@@ -1,9 +1,8 @@
 import { useState } from "react";
 import styles from "./PromptForm.module.css";
 
-export default function PromptForm({ onSubmit, isLoading, handleCopy, copied }) {
+export default function PromptForm({ onSubmit, isLoading }) {
   const [prompt, setPrompt] = useState("");
-  const [consultas, setConsultas] = useState();
   return (
     <form
       onSubmit={(e) => {
@@ -12,7 +11,6 @@ export default function PromptForm({ onSubmit, isLoading, handleCopy, copied }) 
           return;
         }
         onSubmit(prompt);
-        setConsultas(prompt);
         setPrompt("");
       }}
     >
