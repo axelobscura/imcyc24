@@ -32,28 +32,6 @@ export default function Home() {
         </div>
         <p className={styles.titulo}>ASISTENTE CONCRETÓN</p>
         <p className={styles.subtitulo}>Instituto Mexicano del Cemento y del Concreto A.C.</p>
-        {choices.map((choice: Choice) => {
-          return (
-        <div className={styles.response} ref={contentRef} key={choice.index}>
-          <ReactMarkdown
-            rehypePlugins={[rehypeHighlight]}
-            components={{
-          pre: (props: React.HTMLProps<HTMLPreElement>) => (
-            <pre className={styles.codeBlock} {...props} />
-          ),
-          code: (props: React.HTMLProps<HTMLElement> & { inline?: boolean }) => {
-            const { inline, ...rest } = props;
-            return (
-              <code className={inline ? styles.inlineCode : styles.codeContent} {...rest} />
-            );
-          },
-            }}
-          >
-            {choice.message.content}
-          </ReactMarkdown>
-        </div>
-          );
-        })}
         <PromptForm
           isLoading={isLoading}
           onSubmit={async (prompt: string) => {
@@ -78,6 +56,28 @@ export default function Home() {
         setChoices(result.choices);
           }}
         />
+        {choices.map((choice: Choice) => {
+          return (
+        <div className={styles.response} ref={contentRef} key={choice.index}>
+          <ReactMarkdown
+            rehypePlugins={[rehypeHighlight]}
+            components={{
+          pre: (props: React.HTMLProps<HTMLPreElement>) => (
+            <pre className={styles.codeBlock} {...props} />
+          ),
+          code: (props: React.HTMLProps<HTMLElement> & { inline?: boolean }) => {
+            const { inline, ...rest } = props;
+            return (
+              <code className={inline ? styles.inlineCode : styles.codeContent} {...rest} />
+            );
+          },
+            }}
+          >
+            {choice.message.content}
+          </ReactMarkdown>
+        </div>
+          );
+        })}
       </div>
     </main>
   );
