@@ -42,7 +42,7 @@ export default function Home() {
             <pre className={styles.codeBlock} {...props} />
           ),
           code: (props: React.HTMLProps<HTMLElement> & { inline?: boolean }) => {
-            // @ts-ignore
+            // @ts-expect-error
             const { inline, ...rest } = props;
             return (
               <code className={inline ? styles.inlineCode : styles.codeContent} {...rest} />
