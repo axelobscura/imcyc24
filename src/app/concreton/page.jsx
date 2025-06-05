@@ -11,23 +11,7 @@ export default function Home() {
   const [choices, setChoices] = useState([]);
   const [chainedChoices, setChainedChoices] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [copied, setCopied] = useState(false);
   const contentRef = useRef(null);
-
-  const handleCopy = () => {
-    console.log('handleCopy called');
-    if (contentRef.current) {
-      const textToCopy = contentRef.current.innerText;
-      navigator.clipboard.writeText(textToCopy)
-        .then(() => {
-          setCopied(true);
-          setTimeout(() => setCopied(false), 2000);
-        })
-        .catch((err) => {
-          setCopied(false);
-        });
-    }
-  };
 
   return (
     <main className={styles.main}>
@@ -65,7 +49,6 @@ export default function Home() {
         <PromptForm
           isLoading={isLoading}
           handleCopy={handleCopy}
-          copied={copied}
           onSubmit={async (prompt) => {
             setIsLoading(true);
             const response = await fetch("/api/chat-gpt", {
