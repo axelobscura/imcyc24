@@ -56,6 +56,7 @@ export default function Home() {
         setChoices(result.choices);
           }}
         />
+        <hr/>
         {choices.map((choice: Choice) => {
           return (
         <div className={styles.response} ref={contentRef} key={choice.index}>
