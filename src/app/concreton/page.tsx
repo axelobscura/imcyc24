@@ -42,7 +42,6 @@ export default function Home() {
             <pre className={styles.codeBlock} {...props} />
           ),
           code: (props: React.HTMLProps<HTMLElement> & { inline?: boolean }) => {
-            // @ts-expect-error: 'inline' is not a standard prop on HTMLElement, but is used by react-markdown
             const { inline, ...rest } = props;
             return (
               <code className={inline ? styles.inlineCode : styles.codeContent} {...rest} />
