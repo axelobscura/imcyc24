@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./PromptForm.module.css";
 
-export default function PromptForm({ onSubmit, isLoading }) {
+export default function PromptForm({ onSubmit, isLoading } : { onSubmit: any, isLoading: boolean }) {
   const [prompt, setPrompt] = useState("");
   return (
     <form
