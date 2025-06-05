@@ -48,7 +48,6 @@ export default function Home() {
         })}
         <PromptForm
           isLoading={isLoading}
-          handleCopy={handleCopy}
           onSubmit={async (prompt) => {
             setIsLoading(true);
             const response = await fetch("/api/chat-gpt", {
