@@ -116,7 +116,7 @@ const TopBar = () => {
                   <Link href="https://mx.linkedin.com/company/imcyc-oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <FaLinkedin size={21} />
                   </Link>
-                  <Link href="/concreton" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
+                  <Link href="/" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                     <IoIosSearch size={27} />
                   </Link>
                   <Link href="/eventos" className="text-sm font-bold text-white dark:text-slate-800 bg-blue-700 hover:bg-slate-500 flex flex-row p-2 items-center px-5">
