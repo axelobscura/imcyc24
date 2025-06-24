@@ -47,7 +47,7 @@ export default function Home() {
                     width={2500}
                     height={0}
                     className="mx-auto mb-4"
-                    style={{ maxWidth: '100%', height: 'auto' }}
+                    style={{ width: '100%', height: 'auto' }}
                   />
                 </Link>
               </div>
