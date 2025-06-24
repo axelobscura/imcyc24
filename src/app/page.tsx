@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -23,7 +24,7 @@ export default function Home() {
             spaceBetween={30}
             loop={true}
             autoplay={true}
-            speed={500}
+            speed={900}
             pagination={{
               clickable: true,
             }}
@@ -34,6 +35,23 @@ export default function Home() {
               width: '100%',
             }}
           >
+            <SwiperSlide 
+              className="bg-[url('/banner/IM-HERO-BANNER.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{ height: '100vh' }}
+            >
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
+                <Link href={"/eventos"}>
+                  <Image
+                    src="/banner/IM-HERO-BANNER.jpg"
+                    alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                    width={2500}
+                    height={0}
+                    className="mx-auto mb-4"
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide 
               className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
