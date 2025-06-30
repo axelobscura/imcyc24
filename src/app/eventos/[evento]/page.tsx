@@ -248,7 +248,7 @@ export default function Articulo() {
                         </Link>
                       </p>
                       <Link
-                          href="https://pay.conekta.com/link/3c93077fb6da4113912d26b554a7d171"
+                          href="https://pay.conekta.com/link/c8fb6b6c78ff4509a37c3d0ddf40444f"
                           className="inline-flex items-center justify-center w-full bg-red-700 color-gray-100 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
                           rel="noopener noreferrer" 
                           target="_blank"
@@ -264,7 +264,7 @@ export default function Articulo() {
                           <FaWhatsapp style={{ marginRight: '20px' }} /> Más Información y Asistencia para Inscripciones
                       </Link>
                       <Link
-                          href="https://pay.conekta.com/link/3c93077fb6da4113912d26b554a7d171"
+                          href="https://pay.conekta.com/link/c8fb6b6c78ff4509a37c3d0ddf40444f"
                           className="inline-flex items-center justify-center w-full bg-red-700 color-gray-100 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
                           rel="noopener noreferrer" 
                           target="_blank"
