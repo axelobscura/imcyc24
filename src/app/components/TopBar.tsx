@@ -33,7 +33,7 @@ function updateClock(setTime: any, setDate: any) {
     // Set the time and date in the component state
     if (setTime && setDate) {
         setTime(`${hours}:${minutes}:${seconds} ${ampm}`);
-        setDate(`${dayName}, ${monthName} ${date}, ${year}`);
+        setDate(`${dayName} ${date} de ${monthName} ${year}`);
     }
 }
 
@@ -142,7 +142,7 @@ const TopBar = () => {
                   <div className="flex items-center font-montserrat text-xs">
                     {date && (
                       <span className="ml-2 flex items-center">
-                        <strong className="text-white dark:text-gray-200">{date}</strong>
+                        <strong className="text-white dark:text-gray-200 mr-2">{date}</strong> |
                       </span>
                     )}
                     {time && (
