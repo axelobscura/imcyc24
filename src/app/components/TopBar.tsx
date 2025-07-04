@@ -9,7 +9,10 @@ import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 
-function updateClock(setTime: any, setDate: any) {
+function updateClock(
+  setTime: React.Dispatch<React.SetStateAction<string>>,
+  setDate: React.Dispatch<React.SetStateAction<string>>
+) {
     const now = new Date();
     
     // Get time components
