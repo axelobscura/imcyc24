@@ -46,7 +46,7 @@ const TopBar = () => {
   useEffect(() => {
     // Initialize the clock when the component mounts
     updateClock(setTime, setDate);
-    let intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
       updateClock(setTime, setDate);
     }, 1000);
     console.log('TopBar component mounted, ', intervalId);
