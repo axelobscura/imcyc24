@@ -142,7 +142,7 @@ const TopBar = () => {
                     </svg>
                     <span className="ml-2 flex items-center">Lun - Vie 8:30 am - 18:30 pm</span>
                   </Link>
-                  <div className="flex items-center font-montserrat text-xs">
+                  <div className="flex items-center font-montserrat text-xs" style={{ fontSize: '0.59rem' }}>
                     {date && (
                       <span className="ml-2 flex items-center">
                         <strong className="text-white dark:text-gray-200 mr-2">{date}</strong> |
