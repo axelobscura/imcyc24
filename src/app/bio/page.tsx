@@ -19,19 +19,19 @@ export default function Bio() {
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
-                <Link href="/bio" className="hover:underline bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3">
+                <Link href="/bio" target="_blank" className="hover:bg-gray-600 bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3 hover:text-white">
                   WEB
                 </Link>
-                <Link href="https://whatsapp.com/channel/0029VaxAc7bBadmZxBEODC21" target="_blank" className="hover:underline bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3">
+                <Link href="https://whatsapp.com/channel/0029VaxAc7bBadmZxBEODC21" target="_blank" className="hover:bg-gray-600 bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3 hover:text-white">
                   CANAL DE WHATSAPP
                 </Link>
-                <Link href="https://www.instagram.com/imcyc_oficial/" className="hover:underline bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3">
+                <Link href="https://www.instagram.com/imcyc_oficial/" target="_blank" className="hover:bg-gray-600 bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3 hover:text-white">
                   INSTAGRAM
                 </Link>
-                <Link href="https://www.facebook.com/imcycoficial" className="hover:underline bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3">
+                <Link href="https://www.facebook.com/imcycoficial" target="_blank" className="hover:bg-gray-600 bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3 hover:text-white">
                   FACEBOOK
                 </Link>
-                <Link href="https://mx.linkedin.com/company/imcyc-oficial" className="hover:underline bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3">
+                <Link href="https://mx.linkedin.com/company/imcyc-oficial" target="_blank" className="hover:bg-gray-600 bg-gray-300 p-5 rounded-xl text-gray-900 font-montserrat text-lg text-center uppercase font-bold m-3 hover:text-white">
                   LINKEDIN
                 </Link>
               </div>
