@@ -8,7 +8,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-900 dark:bg-gray-900 px-2">
+      <footer className="bg-gray-900 dark:bg-gray-900 px-2 footerimcyc">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
