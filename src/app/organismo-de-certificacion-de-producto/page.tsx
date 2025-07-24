@@ -182,8 +182,8 @@ export default function OrganismoDeCertificacionDeProducto() {
                     <li>Resultados de ensayos realizados a los productos.</li>
                   </ul> 
                   <h5 className="font-montserrat font-bold text-1xl p-3">Para dar inicio al proceso de certificación de producto, enviar los formatos FIG-GTOCP-002 y FIG-GTOCP-014 llenados a los correos indicados en el apartado de contactos.</h5>
-                  <Link href="https://imcyc.com/2024/FIG-GTOCP-002_Solicitud_de_certificacion_de_producto.docx"><p className="bg-slate-800 opacity-900 p-5 mb-3">Descargar FIG-GTOCP-002 - Solicitud de certificación de producto - .</p></Link>
-                  <Link href="https://imcyc.com/2022/FIG-GTOCP-014-Condiciones-de-certificacion.pdf"><p className="bg-slate-800 opacity-900 p-5 mb-3">Descargar FIG-GTOCP-014 - Condiciones de certificación - .</p></Link>
+                  <Link href="/docs/FIG-GTOCP-002_Solicitud_de_certificacion_de_producto.docx"><p className="bg-slate-800 opacity-900 p-5 mb-3">Descargar FIG-GTOCP-002 - Solicitud de certificación de producto - .</p></Link>
+                  <Link href="/docs/FIG-GTOCP-014_Condiciones_de_certificacion.pdf"><p className="bg-slate-800 opacity-900 p-5 mb-3">Descargar FIG-GTOCP-014 - Condiciones de certificación - .</p></Link>
                 </>
               }
               {useProducto === "organizaciones" &&
