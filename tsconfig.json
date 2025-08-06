@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/app/concreton/page.js"  ],
+, "src/app/concreton/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
