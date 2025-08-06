@@ -1,6 +1,7 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
 import { useState, useEffect } from 'react'
+import { useUsuario } from '../../../lib/swr-hooks'
 //import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
@@ -10,31 +11,16 @@ export default function Usuarios() {
   //const [isLogged, setIsLogged] = useState(false);
 
   //const router = useRouter();
+  
+  const {usuario, isLoading} = useUsuario(email, password);
 
-  /*
-  useEffect(() => {
-    const testEmail = "ruribe@imcyc.com";
-    const pwd = "12345";
-    if (email === testEmail && password === pwd) {
-      router.push("/usuarios?empresa=ACI");
-    }
-    if (isError) {
-      alert("Error: " + isError);
-      setIsLogged(false);
-    }
-  }, [email, password]);
-  */
-  useEffect(() => {
-    /*
-    async function fetchPosts() {
-      const res = await fetch('/api/get-categorias')
-      const data = await res.json()
-      setPosts(data.reverse())
-    }
-    fetchPosts()
-    */
-    
-  }, [email, password]);
+  if(isLoading){
+        return(
+          <h1>Loader</h1>
+      )
+  }
+
+  console.log(usuario);
 
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
