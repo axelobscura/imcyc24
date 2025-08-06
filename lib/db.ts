@@ -1,6 +1,6 @@
-import mysql from 'serverless-mysql'
+import mysql2 from 'serverless-mysql'
 
-export const db = mysql({
+export const db = mysql2({
   config: {
     host: process.env.MYSQL_HOST,
     database: process.env.MYSQL_DATABASE,
