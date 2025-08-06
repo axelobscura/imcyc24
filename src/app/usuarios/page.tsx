@@ -1,7 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
-import { useState } from 'react'
-import { useUsuario } from '../../../lib/swr-hooks'
+import { useState, useEffect } from 'react'
 //import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
@@ -11,16 +10,31 @@ export default function Usuarios() {
   //const [isLogged, setIsLogged] = useState(false);
 
   //const router = useRouter();
-  
-  const {usuario, isLoading} = useUsuario("axosar@gmail.com", "12345");
 
-  if(isLoading){
-        return(
-          <h1>Loader</h1>
-      )
-  }
-
-  console.log(usuario);
+  /*
+  useEffect(() => {
+    const testEmail = "ruribe@imcyc.com";
+    const pwd = "12345";
+    if (email === testEmail && password === pwd) {
+      router.push("/usuarios?empresa=ACI");
+    }
+    if (isError) {
+      alert("Error: " + isError);
+      setIsLogged(false);
+    }
+  }, [email, password]);
+  */
+  useEffect(() => {
+    /*
+    async function fetchPosts() {
+      const res = await fetch('/api/get-categorias')
+      const data = await res.json()
+      setPosts(data.reverse())
+    }
+    fetchPosts()
+    */
+    
+  }, [email, password]);
 
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,13 +44,11 @@ export default function Usuarios() {
 
     async function fetchUser() {
       const res = await fetch('/api/get-usuario?email=' + form.email.value + '&pw=' + form.password.value);
+      console.log(res);
       const data = await res.json()
       setPosts(data)
     }
-    fetchUser();
-
-    console.log("Email:", email);
-    console.log("Password:", password);
+    fetchUser()
   };
   /*
   if (!posts.length) {
