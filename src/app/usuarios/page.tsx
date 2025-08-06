@@ -43,7 +43,7 @@ export default function Usuarios() {
     setPassword(form.password.value);
 
     async function fetchUser() {
-      const res = await fetch('/api/get-usuario?email=' + form.email.value + '&password=' + form.password.value);
+      const res = await fetch('/api/get-usuario?email=' + form.email.value + '&pw=' + form.password.value);
       const data = await res.json()
       setPosts(data)
     }
