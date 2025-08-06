@@ -1,6 +1,7 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
 import { useState, useEffect } from 'react'
+import useUsuario from '../../../lib/swr-hooks'
 //import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
@@ -41,6 +42,7 @@ export default function Usuarios() {
     const form = e.target as HTMLFormElement;
     setEmail(form.email.value);
     setPassword(form.password.value);
+
     async function fetchUser() {
       const res = await fetch('/api/get-usuario?email=' + form.email.value + '&password=' + form.password.value);
       const data = await res.json()
