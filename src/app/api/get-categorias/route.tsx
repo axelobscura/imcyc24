@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { query } from '../../../../lib/db'
 
 export async function GET(request: Request) {
+  console.log("Fetching categorias", request);
   try {
     const results = await query(`
       SELECT * FROM categorias ORDER BY id ASC

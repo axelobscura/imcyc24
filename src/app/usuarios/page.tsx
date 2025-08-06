@@ -7,9 +7,9 @@ export default function Usuarios() {
   const [posts, setPosts] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLogged, setIsLogged] = useState(false);
+  //const [isLogged, setIsLogged] = useState(false);
 
-  const router = useRouter();
+  //const router = useRouter();
 
   /*
   useEffect(() => {
@@ -36,12 +36,13 @@ export default function Usuarios() {
     
   }, [email, password]);
 
-  const ingreso = async (e: any) => {
+  const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setEmail(e.target.email.value);
-    setPassword(e.target.password.value);
+    const form = e.target as HTMLFormElement;
+    setEmail(form.email.value);
+    setPassword(form.password.value);
     async function fetchUser() {
-      const res = await fetch('/api/get-usuario?email=' + e.target.email.value + '&password=' + e.target.password.value);
+      const res = await fetch('/api/get-usuario?email=' + form.email.value + '&password=' + form.password.value);
       const data = await res.json()
       setPosts(data)
     }
