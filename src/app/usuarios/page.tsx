@@ -1,6 +1,63 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
+"use client"
+import { useState, useEffect } from 'react'
+import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
+  const [posts, setPosts] = useState([]);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLogged, setIsLogged] = useState(false);
+
+  const router = useRouter();
+
+  /*
+  useEffect(() => {
+    const testEmail = "ruribe@imcyc.com";
+    const pwd = "12345";
+    if (email === testEmail && password === pwd) {
+      router.push("/usuarios?empresa=ACI");
+    }
+    if (isError) {
+      alert("Error: " + isError);
+      setIsLogged(false);
+    }
+  }, [email, password]);
+  */
+  useEffect(() => {
+    /*
+    async function fetchPosts() {
+      const res = await fetch('/api/get-categorias')
+      const data = await res.json()
+      setPosts(data.reverse())
+    }
+    fetchPosts()
+    */
+    
+  }, [email, password]);
+
+  const ingreso = async (e: any) => {
+    e.preventDefault();
+    setEmail(e.target.email.value);
+    setPassword(e.target.password.value);
+    async function fetchUser() {
+      const res = await fetch('/api/get-usuario?email=' + e.target.email.value + '&password=' + e.target.password.value);
+      const data = await res.json()
+      setPosts(data)
+    }
+    fetchUser()
+  };
+  /*
+  if (!posts.length) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <p className="text-gray-500">Cargando...</p>
+      </div>
+    )
+  }
+  */
+  console.log(posts);
+
   return (
     <div>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat font-montserrat">
@@ -11,9 +68,10 @@ export default function Usuarios() {
         }}>
           <div className="text-center">
             <h1 className="text-4xl text-white font-light text-center">¡BIENVENIDO!</h1>
-            <p className="mt-3">Instituto Mexicano del Cemento y del Concreto A.C.</p>
+            <h2 className="text-white">PANEL DE USUARIOS</h2>
+            <p className="mt-3 text-gray-300">Instituto Mexicano del Cemento y del Concreto A.C.</p>
             <div className="mt-8 p-6 bg-gray-900 bg-opacity-75 rounded-lg shadow-lg mx-0 sm:mx-72">
-              <form className="flex flex-col gap-6 text-left">
+              <form onSubmit={ingreso} className="flex flex-col gap-6 text-left">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     Correo electrónico:
