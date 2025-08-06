@@ -12,7 +12,7 @@ export default function Usuarios() {
 
   //const router = useRouter();
   
-  const {usuario, isLoading} = useUsuario(email, password);
+  const {usuario, isLoading} = useUsuario("axosar@gmail.com", "12345");
 
   if(isLoading){
         return(
