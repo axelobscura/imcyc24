@@ -7,7 +7,7 @@ export async function GET(request: Request) {
       SELECT * FROM categorias ORDER BY id ASC
     `)
     return NextResponse.json(results);
-  } catch (e: any) {
+  } catch (e: unknown) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }

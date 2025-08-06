@@ -14,7 +14,7 @@ export function useCategorias() {
   }
 }
 
-export function useUsuario(email: any, password: any) {
+export function useUsuario(email: string, password: string) {
   const { data, error } = useSWR([`/api/get-usuario?email=`+email+`&password=`+password], fetcher)
   return {
     usuario: data,
