@@ -17,7 +17,7 @@ export async function query(
     const results = await db.query(q, values)
     await db.end()
     return results
-  } catch {
-    console.error('Database query error:', q, values)
+  } catch (e: any) {
+    throw Error(e.message)
   }
 }
