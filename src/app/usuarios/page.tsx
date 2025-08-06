@@ -33,7 +33,10 @@ export default function Usuarios() {
       const data = await res.json()
       setPosts(data)
     }
-    fetchUser()
+    fetchUser();
+
+    console.log("Email:", email);
+    console.log("Password:", password);
   };
   /*
   if (!posts.length) {
