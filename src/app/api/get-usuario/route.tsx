@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   console.log("Email: "+elEmail+" Pwd: "+elPwd);
   try {
     const results: unknown = await query(`
-      SELECT * FROM usuarios WHERE email="${elEmail}" AND password="${elPwd}"
+      SELECT * FROM usuarios WHERE email=${elEmail} AND password=${elPwd}
     `)
     return NextResponse.json(results);
   } catch (e: unknown) {
