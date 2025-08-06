@@ -7,9 +7,9 @@ export async function GET(request: Request) {
   const elPwd = params.split('&')[1].split('=')[1];
   console.log("Email: "+elEmail+" Pwd: "+elPwd);
   try {
-    const results: unknown = await query(`
-      SELECT * FROM usuarios WHERE email=${elEmail} AND password=${elPwd}
-    `)
+    const results = await query(`
+      SELECT * FROM usuarios WHERE email='${elEmail}' AND password='${elPwd}'
+    `) as { email: string; password: string; }[];
     return NextResponse.json(results);
   } catch (e: unknown) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
