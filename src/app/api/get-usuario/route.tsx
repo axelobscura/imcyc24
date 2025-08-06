@@ -10,6 +10,7 @@ export async function GET(request: Request) {
     const results = await query(`
       SELECT * FROM usuarios WHERE email='${elEmail}' AND password='${elPwd}'
     `) as { email: string; password: string; }[];
+    console.log("Query results:", results);
     return NextResponse.json(results);
   } catch (e: unknown) {
     console.error('Database query error:', e);
