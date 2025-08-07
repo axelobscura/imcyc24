@@ -1,6 +1,6 @@
-import mysql2 from 'serverless-mysql'
+import mysql from 'serverless-mysql'
 
-export const db = mysql2({
+export const db = mysql({
   config: {
     host: process.env.MYSQL_HOST,
     database: process.env.MYSQL_DATABASE,
@@ -9,6 +9,10 @@ export const db = mysql2({
   },
 })
 
+/**
+ * @preserve
+ * Database query function - name should be preserved
+ */
 export async function query(
   q: string,
   values: (string | number)[] | string | number = []

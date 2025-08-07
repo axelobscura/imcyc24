@@ -12,6 +12,7 @@
     "@next/third-parties": "^15.0.2",
     "flowbite-react": "^0.10.2",
     "googleapis": "^144.0.0",
+    "mysql2": "^3.14.3",
     "next": "^15.0.2",
     "openai": "^4.2.0",
     "react": "^18",
