@@ -3,36 +3,15 @@ const nextConfig = {
   images: {
     domains: ['imcyc.net'],
   },
-  webpack: (config, { dev, isServer }) => {
-    if (!dev) {
-      config.optimization = {
-        ...config.optimization,
-        minimize: true,
-        minimizer: [
-          ...config.optimization.minimizer,
-        ],
-      }
-      
-      // Find TerserPlugin and modify options
-      const terserPlugin = config.optimization.minimizer.find(
-        plugin => plugin.constructor.name === 'TerserPlugin'
-      )
-      
-      if (terserPlugin) {
-        terserPlugin.options.terserOptions = {
-          ...terserPlugin.options.terserOptions,
-          mangle: {
-            ...terserPlugin.options.terserOptions.mangle,
-            keep_fnames: true, // Keep function names
-          },
-          compress: {
-            ...terserPlugin.options.terserOptions.compress,
-            keep_fnames: true, // Keep function names in compression
-          }
+  webpack: (config, { dev }) => {
+    if (!dev && process.env.DISABLE_MANGLING === 'true') {
+      // Disable mangling only when environment variable is set
+      config.optimization.minimizer.forEach(minimizer => {
+        if (minimizer.constructor.name === 'TerserPlugin') {
+          minimizer.options.terserOptions.mangle = false
         }
-      }
+      })
     }
-    
     return config
   }
 };
