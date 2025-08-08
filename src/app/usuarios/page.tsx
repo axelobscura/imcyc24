@@ -7,34 +7,8 @@ export default function Usuarios() {
   const [posts, setPosts] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const [isLogged, setIsLogged] = useState(false);
-
-  //const router = useRouter();
-
-  /*
-  useEffect(() => {
-    const testEmail = "ruribe@imcyc.com";
-    const pwd = "12345";
-    if (email === testEmail && password === pwd) {
-      router.push("/usuarios?empresa=ACI");
-    }
-    if (isError) {
-      alert("Error: " + isError);
-      setIsLogged(false);
-    }
-  }, [email, password]);
-  */
-  useEffect(() => {
-    /*
-    async function fetchPosts() {
-      const res = await fetch('/api/get-categorias')
-      const data = await res.json()
-      setPosts(data.reverse())
-    }
-    fetchPosts()
-    */
-    
-  }, [email, password]);
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,23 +16,38 @@ export default function Usuarios() {
     setEmail(form.email.value);
     setPassword(form.password.value);
 
-    async function fetchUser() {
-      const res = await fetch('/api/get-usuario?email=' + form.email.value + '&pw=' + form.password.value);
-      console.log(res);
-      const data = await res.json()
-      setPosts(data)
+    try {
+      const response = await fetch('/api/get_users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+
+      const data = await response.json();
+
+
+      console.log("Response data:", data);
+
+      if (response.ok) {
+        setMessage('User exists!');
+        setEmail('');
+        setPassword('');
+      } else {
+        setMessage(data.error || 'Something went wrong');
+      }
+    } catch (error) {
+      setMessage('Network error occurred');
+      console.error('Error:', error);
+    } finally {
+      setLoading(false);
     }
-    fetchUser()
   };
-  /*
-  if (!posts.length) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <p className="text-gray-500">Cargando...</p>
-      </div>
-    )
-  }
-  */
+
   console.log(posts);
 
   return (
