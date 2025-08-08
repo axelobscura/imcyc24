@@ -33,21 +33,41 @@ export async function POST(request: NextRequest) {
   
   try {
     connection = await mysql.createConnection(connectionConfig);
-    const { name, email } = await request.json();
+    const { email, password } = await request.json();
     
-    await connection.execute(
-      'INSERT INTO users (name, email) VALUES (?, ?)', 
-      [name, email]
+    // SELECT query to find user with matching email and password
+    const [rows] = await connection.execute<mysql.RowDataPacket[]>(
+      'SELECT * FROM usuarios WHERE email = ? AND password = ?', 
+      [email, password]
     );
     
-    return NextResponse.json(
-      { message: 'User created' },
-      { status: 201 }
-    );
+    // Check if user exists
+    if (Array.isArray(rows) && rows.length > 0) {
+      // User found - login successful
+      const user = rows[0] as { id: number; email: string };
+      return NextResponse.json(
+        { 
+          message: 'Login successful', 
+          user: {
+            id: user.id,
+            email: user.email
+            // Don't return password in response
+          }
+        },
+        { status: 200 }
+      );
+    } else {
+      // User not found - invalid credentials
+      return NextResponse.json(
+        { error: 'Invalid email or password' },
+        { status: 401 }
+      );
+    }
+    
   } catch (error) {
     console.error('Database error:', error);
     return NextResponse.json(
-      { error: 'Failed to create user' },
+      { error: 'Authentication failed' },
       { status: 500 }
     );
   } finally {
