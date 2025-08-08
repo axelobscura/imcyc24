@@ -1,7 +1,7 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
 import { useState, useEffect } from 'react'
-//import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
   const [posts, setPosts] = useState([]);
@@ -9,6 +9,8 @@ export default function Usuarios() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+
+  const router = useRouter();
 
   const checkUser = async () => {
     setLoading(true);
@@ -33,6 +35,7 @@ export default function Usuarios() {
         setEmail('');
         setPassword('');
         setPosts(data);
+        router.push(`/usuarios/panel?email=${email}&password=${password}`);
       } else {
         setMessage(data.error || 'Something went wrong');
       }
@@ -73,6 +76,7 @@ export default function Usuarios() {
             <h2 className="text-white">PANEL DE USUARIOS</h2>
             <p className="mt-3 text-gray-300">Instituto Mexicano del Cemento y del Concreto A.C.</p>
             <div className="mt-8 p-6 bg-gray-900 bg-opacity-75 rounded-lg shadow-lg mx-0 sm:mx-72">
+              {loading && <h2 className="text-white">ENVIANDO DATOS</h2>}
               <form onSubmit={ingreso} className="flex flex-col gap-6 text-left">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-white mb-2">

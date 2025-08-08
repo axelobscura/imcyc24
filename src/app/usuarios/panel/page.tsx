@@ -14,7 +14,7 @@ export default function Panel() {
                   <li>
                     <a
                       href="/usuarios/panel"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Inicio
                     </a>
@@ -22,7 +22,7 @@ export default function Panel() {
                   <li className="m-0">
                     <a
                       href="#usuarios"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Enseñanza
                     </a>
@@ -30,7 +30,7 @@ export default function Panel() {
                   <li className="m-0">
                     <a
                       href="#usuarios"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Laboratorio
                     </a>
@@ -38,7 +38,7 @@ export default function Panel() {
                   <li className="m-0">
                     <a
                       href="#usuarios"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Concretón
                     </a>
@@ -46,7 +46,7 @@ export default function Panel() {
                   <li>
                     <a
                       href="#reportes"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Webinars
                     </a>
@@ -54,7 +54,7 @@ export default function Panel() {
                   <li>
                     <a
                       href="#configuracion"
-                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-slate-700 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Productos
                     </a>
@@ -62,7 +62,7 @@ export default function Panel() {
                   <li>
                     <a
                       href="/usuarios"
-                      className="flex items-center px-4 py-4 rounded hover:bg-red-600 hover:text-white transition border-b-2 border-slate-600"
+                      className="flex items-center px-4 py-4 rounded hover:bg-red-600 hover:text-white transition border-b-2 border-slate-600 text-white"
                     >
                       <FaRegArrowAltCircleRight className="mr-2" /> Cerrar sesión
                     </a>
