@@ -1,6 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 //import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
@@ -10,14 +10,9 @@ export default function Usuarios() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  //const router = useRouter();
-
-  const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    setEmail(form.email.value);
-    setPassword(form.password.value);
-
+  const checkUser = async () => {
+    setLoading(true);
+    setMessage("");
     try {
       const response = await fetch('/api/get_users', {
         method: 'POST',
@@ -47,6 +42,18 @@ export default function Usuarios() {
     } finally {
       setLoading(false);
     }
+  }
+
+  useEffect(() => {
+    checkUser();
+  }, [email, password, posts]);
+
+  //const router = useRouter();
+  const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    setEmail(form.email.value);
+    setPassword(form.password.value);
   };
 
   console.log(posts);
