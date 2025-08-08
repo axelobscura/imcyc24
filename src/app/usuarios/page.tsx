@@ -37,6 +37,7 @@ export default function Usuarios() {
         setMessage('User exists!');
         setEmail('');
         setPassword('');
+        setPosts(data);
       } else {
         setMessage(data.error || 'Something went wrong');
       }
@@ -49,6 +50,8 @@ export default function Usuarios() {
   };
 
   console.log(posts);
+  console.log(loading);
+  console.log(message);
 
   return (
     <div>
