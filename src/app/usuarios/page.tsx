@@ -10,7 +10,7 @@ export default function Usuarios() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  const router = useRouter();
+  //const router = useRouter();
 
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
