@@ -1,5 +1,5 @@
 // pages/api/users.js
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import mysql from 'mysql2/promise';
 
 const connectionConfig = {
