@@ -1,6 +1,7 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 import MenuUsuarios from "@/app/components/MenuUsuarios";
 import BreadCrumbUser from "@/app/components/BreadCrumbUser";
+import { FaRegUserCircle } from "react-icons/fa";
 
 export default function Panel() {
   return (
@@ -15,9 +16,9 @@ export default function Panel() {
               <div className="mt-4 p-0 mx-4 mr-0 bg-slate-900 bg-opacity-90 rounded-lg shadow-lg border-2 border-blue-900">
                 <MenuUsuarios />
               </div>
-              <div className="mt-4 p-6 mx-5 mr-5 bg-slate-900 bg-opacity-75 rounded-lg shadow-lg border-2 border-blue-900">
-                <h1 className="text-4xl text-white font-light text-center">¡BIENVENIDO A SU PANEL DE ADMINISTRACIÓN!</h1>
-                <p className="mt-3">Instituto Mexicano del Cemento y del Concreto A.C.</p>
+              <div className="mt-4 p-3 mx-5 mr-5 bg-slate-900 bg-opacity-75 rounded-lg shadow-lg border-2 border-blue-900">
+                <h1 className="text-2xl text-white font-bold text-left flex items-center"><FaRegUserCircle className="mr-2" /> ¡BIENVENIDO A SU PANEL DE ADMINISTRACIÓN!</h1>
+                <p className="mt-2 text-white mb-3 text-left font-medium">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 <hr/>
               </div>
             </div>

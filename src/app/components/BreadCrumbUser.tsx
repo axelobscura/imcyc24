@@ -3,8 +3,13 @@
 export default function BreadCrumbUser() {
   return (
     <nav
-      className="flex px-5 py-3 text-gray-700 border border-blue-800 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-700"
+      className="flex px-4 py-3 text-gray-700 border border-blue-900 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-900"
       aria-label="Breadcrumb"
+      style={{
+        borderImage: "linear-gradient(9deg, #233876 10%, #5c7dde) 1",
+        borderWidth: "1px",
+        borderRadius: "0.5rem",
+      }}
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li className="inline-flex items-center">
