@@ -1,5 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 import { CiCircleChevRight } from "react-icons/ci";
+import Image from "next/image";
 
 export default function Contacto() {
   return (
@@ -8,7 +9,7 @@ export default function Contacto() {
         <div className="mx-auto w-full max-w-screen-xl p-4 pt-20 sm:pt-80 pb-0 lg:py-40">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full text-gray-200">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] gap-5 items-start justify-items-stretch pt-20 w-full">
-              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-700">
+              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-2 border border-gray-700">
                 <h1 className="flex items-center font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold pb-3">
                   <CiCircleChevRight className="mr-2"/> OFICINAS GENERALES
                 </h1>
@@ -53,7 +54,7 @@ export default function Contacto() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5 border border-gray-700">
+              <div className="bg-gray-800 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-2 border border-gray-700">
                 <h1 className="flex items-center font-montserrat text-2xl text-white pt-0 sm:pl-50 uppercase font-bold pb-3">
                   <CiCircleChevRight className="mr-2"/> GERENCIA TÉCNICA IMCYC
                 </h1>
@@ -105,6 +106,28 @@ export default function Contacto() {
                     <h4 className="flex justify-end"><strong>Ext. 151</strong></h4>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-5 items-start justify-items-stretch pt-5 w-full">
+              <div>
+                <h4 className="mb-2">Página web:</h4>
+                <Image src="/qr_web.jpg" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." width={200} height={200} />
+              </div>
+              <div>
+                <h4 className="mb-2">Facebook:</h4>
+                <Image src="/qr_fb.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." width={200} height={200} />
+              </div>
+              <div>
+                <h4 className="mb-2">Twitter:</h4>
+                <Image src="/qr_x.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." width={200} height={200} />
+              </div>
+              <div>
+                <h4 className="mb-2">LinkedIn:</h4>
+                <Image src="/qr_li.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." width={200} height={200} />
+              </div>
+              <div>
+                <h4 className="mb-2">Instagram:</h4>
+                <Image src="/qr_ins.png" alt="Instituto Mexicano del Cemento y del Concreto A.C." title="Instituto Mexicano del Cemento y del Concreto A.C." width={200} height={200} />
               </div>
             </div>
           </main>
