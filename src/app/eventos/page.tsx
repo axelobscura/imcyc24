@@ -20,6 +20,23 @@ export default function Eventos() {
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-10">
                       <div>
                         <Link
+                          href="/eventos/encuentro-del-cemento-y-del-concreto"
+                          className="inline-flex items-center justify-center w-full"
+                        >
+                          <Image
+                            src="/seminario-industria-cemento.jpg"
+                            alt="Instituto Mexicano del Cemento y del Concreto A.C."
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{ width: '100%', height: 'auto' }}
+                            layout="intrinsic"
+                            className="mb-5"
+                          />
+                        </Link>
+                      </div>
+                      <div>
+                        <Link
                           href="/eventos/diplomado-tecnologia-del-concreto"
                           className="inline-flex items-center justify-center w-full"
                         >
