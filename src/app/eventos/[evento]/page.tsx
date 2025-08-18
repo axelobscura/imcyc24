@@ -36,17 +36,13 @@ export default function Articulo() {
                       <br/>
                       <p className='font-montserrat'>Este encuentro es una plataforma única para <b>profesionales, investigadores, académicos y empresas</b> interesadas en el futuro de la construcción.</p>
                       <Link
-                          href="/docs/seminario_udem.pdf"
+                          href="/seminario/seminario-imcyc.pdf"
                           className="inline-flex items-center justify-center w-full bg-blue-400 color-gray-900 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-lg px-5 py-2.5 text-center dark:bg-blue-400 dark:hover:bg-blue-500 dark:focus:ring-blue-600 mt-10 text-1xl text-gray-900 font-bold font-montserrat"
                           rel="noopener noreferrer" 
                           target="_blank"
                         >
                           DESCARGAR PDF
                       </Link>
-
-
-
-
                       <h2 className="font-montserrat mb-7 text-1xl font-bold tracking-tight leading-none text-blue-300 md:text-2xl lg:text-3xl dark:text-blue-300 mt-9">
                         Inscripciones:
                       </h2>
@@ -79,12 +75,20 @@ export default function Articulo() {
                         </Link>
                       </p>
                       <Link
-                          href="https://pay.conekta.com/link/3c93077fb6da4113912d26b554a7d171"
+                          href="https://pay.conekta.com/link/30f0ca2e9ed6400f8ede10a5fe6fb30a"
                           className="inline-flex items-center justify-center w-full bg-blue-400 color-gray-900 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
                           rel="noopener noreferrer" 
                           target="_blank"
                         >
-                          Regístrate hoy mismo
+                          Regístrate hoy mismo - 1 persona (15,500 + IVA)
+                      </Link>
+                      <Link
+                          href="https://pay.conekta.com/link/be0d8d27b59149d99133068a711bce6b"
+                          className="inline-flex items-center justify-center w-full bg-blue-400 color-gray-900 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-4xl"
+                          rel="noopener noreferrer" 
+                          target="_blank"
+                        >
+                          Regístrate hoy mismo - 2 personas (19,500 + IVA)
                       </Link>
                       <Link
                           href="https://wa.me/5554671492"
