@@ -155,7 +155,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/tienda-imcyc" className="hover:text-gray-100">
+                    <Link href="https://grabador.imcyc.com/TiendaImcyc/ " className="hover:text-gray-100">
                       Tienda IMCYC
                     </Link>
                   </li>
