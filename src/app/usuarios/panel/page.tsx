@@ -61,7 +61,10 @@ export default function Panel() {
                 <h1 className="text-2xl text-white font-bold text-left flex items-center"><FaRegUserCircle className="mr-2" /> ¡BIENVENIDO A SU PANEL DE ADMINISTRACIÓN!</h1>
                 <p className="mt-2 text-white mb-3 text-left font-medium">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 <hr/>
+                <h2 className='text-white text-center uppercase w-full py-5 text-2xl'>Aplicaciones para la construcción</h2>
                 <div className='grid grid-cols-[1fr_1fr_1fr] gap-4 mt-4 items-center'>
+                  
+                  {/* 
                   {categorias && categorias.map((categoria: { id: number; nombre: string; descripcion: string }) => (
                     <Link key={categoria.id} href={`/usuarios/concreton/${categoria.id}`}>
                       <div className="mt-1 p-4 bg-gray-800 hover:bg-slate-300 bg-opacity-50 rounded-lg shadow-md border border-gray-700 text-left items-center justify-center w-full hover:text-gray-900">
@@ -70,6 +73,7 @@ export default function Panel() {
                       </div>
                     </Link>
                   ))}
+                  */}
                 </div>
                 {loading && <h2 className="text-white">CARGANDO...</h2>}
               </div>
