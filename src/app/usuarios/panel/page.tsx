@@ -27,7 +27,7 @@ export default function Panel() {
       if (response.ok) {
         console.log("Response data:", data);
         setMessage('User exists!');
-        setCategorias(data);
+        //setCategorias(data);
       } else {
         setMessage(data.error || 'Something went wrong');
       }
