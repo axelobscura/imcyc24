@@ -9,13 +9,13 @@ import { FaRegUserCircle } from 'react-icons/fa';
 export default function Panel() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("test");
-  const [aplicaciones, setAplicaciones] = useState([]);
+  //const [categorias, setCategorias] = useState([]);
 
-  const checkAplicaciones = async () => {
+  const checkCategorias = async () => {
     setLoading(true);
     setMessage("");
     try {
-      const response = await fetch('/api/get_aplicaciones', {
+      const response = await fetch('/api/get_categorias', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ export default function Panel() {
       if (response.ok) {
         console.log("Response data:", data);
         setMessage('User exists!');
-        setAplicaciones(data);
+        //setCategorias(data);
       } else {
         setMessage(data.error || 'Something went wrong');
       }
@@ -40,15 +40,14 @@ export default function Panel() {
   }
 
   useEffect(() => {
-    checkAplicaciones();
+    checkCategorias();
   }, []);
 
-  console.log("aplicaciones", aplicaciones);
-  console.log("message", message);
+  console.log("categorias", message);
 
   return (
     <div>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat font-montserrat">
         <main className="mx-auto w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-1 gap-8 row-start-2 items-center sm:items-start z-0">
           <div className="text-center">
             <div className="grid grid-cols-[1fr] gap-14 mt-10 mx-4">
@@ -62,9 +61,7 @@ export default function Panel() {
                 <h1 className="text-2xl text-white font-bold text-left flex items-center"><FaRegUserCircle className="mr-2" /> ¡BIENVENIDO A SU PANEL DE ADMINISTRACIÓN!</h1>
                 <p className="mt-2 text-white mb-3 text-left font-medium">Instituto Mexicano del Cemento y del Concreto A.C.</p>
                 <hr/>
-                <h2 className='text-white text-center uppercase w-full py-5 text-2xl'>Aplicaciones para la construcción</h2>
                 <div className='grid grid-cols-[1fr_1fr_1fr] gap-4 mt-4 items-center'>
-                  
                   {/* 
                   {categorias && categorias.map((categoria: { id: number; nombre: string; descripcion: string }) => (
                     <Link key={categoria.id} href={`/usuarios/concreton/${categoria.id}`}>
@@ -74,9 +71,8 @@ export default function Panel() {
                       </div>
                     </Link>
                   ))}
-                  */}
+                    */}
                 </div>
-                {loading && <h2 className="text-white">CARGANDO...</h2>}
               </div>
             </div>
           </div>

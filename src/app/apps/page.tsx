@@ -72,6 +72,7 @@ export default function Apps() {
                     </div>
                   </a>
                 ))}
+                {loading && <h2 className="text-white">CARGANDO...</h2>}
               </div>
             </div>
           </main>
