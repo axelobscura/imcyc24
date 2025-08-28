@@ -1,0 +1,22 @@
+import { NextResponse } from "next/server";
+import { query } from '../../../../lib/db'
+
+export async function GET(request: Request) {
+  console.log("Fetching categorias", request);
+  try {
+    const results = await query(`
+      SELECT * FROM aplicaciones ORDER BY id
+    `)
+    return NextResponse.json(results);
+  } catch (e: unknown) {
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
+  }
+}
+
+// Handles POST requests to /api
+/*
+export async function POST(request: Request) {
+  // ...
+  return NextResponse.json({ message: "Hello World" });
+}
+*/
