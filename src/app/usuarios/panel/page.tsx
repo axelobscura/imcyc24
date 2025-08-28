@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react'
 import BreadCrumbUser from '@/app/components/BreadCrumbUser';
 import MenuUsuarios from '../../components/MenuUsuarios';
 import { FaRegUserCircle } from 'react-icons/fa';
-import Link from 'next/link';
+//import Link from 'next/link';
 
 export default function Panel() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("test");
-  const [categorias, setCategorias] = useState([]);
+  //const [categorias, setCategorias] = useState([]);
 
   const checkCategorias = async () => {
     setLoading(true);
