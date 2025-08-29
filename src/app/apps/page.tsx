@@ -62,7 +62,7 @@ export default function Apps() {
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase">Aplicaciones para la construcción</h1>
               <div className="grid grid-cols-[1fr_1fr_1fr] py-10 gap-5">
-                {aplicaciones.map((app) => (
+                {!loading && aplicaciones.map((app) => (
                   <a key={app.id} href={app.url} target='_blank' className="grid grid-cols-[1fr_3fr] items-center w-full p-2 bg-gray-900 border border-gray-800 rounded-lg text-gray-100 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:text-gray-900">
                     <div className="bg-gray-100 mr-5 text-center relative rounded-full">
                       <Image src={`/iconos/${app.icono}.svg`} alt="Image description" width={50} height={30} className="relative m-3 rounded-lg" />
