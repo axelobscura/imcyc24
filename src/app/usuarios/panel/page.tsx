@@ -44,6 +44,7 @@ export default function Panel() {
   }, []);
 
   console.log("categorias", message);
+  console.log("message", loading);
 
   return (
     <div>
