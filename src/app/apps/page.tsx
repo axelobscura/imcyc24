@@ -3,6 +3,7 @@
 "use client"
 import { useState, useEffect } from 'react'
 import Image from "next/image";
+import Loader from '../components/Loader';
 
 export default function Apps() {
   const [loading, setLoading] = useState(false);
@@ -31,7 +32,7 @@ export default function Apps() {
       
       if (response.ok) {
         console.log("Response data:", data);
-        setMessage('User exists!');
+        setMessage('Aplicaciones para la construcción');
         setAplicaciones(data);
       } else {
         setMessage(data.error || 'Something went wrong');
@@ -48,11 +49,10 @@ export default function Apps() {
   }, []);
 
   if(loading){
-    <h2 className="text-white">CARGANDO...</h2>
+    <Loader />
   }
 
-  console.log("aplicaciones", aplicaciones);
-  console.log("message", message);
+  console.log(message);
   
   return (
     <div>

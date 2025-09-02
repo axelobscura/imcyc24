@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Loader = () => {
   return (
-    <div className="fixed inset-0 bg-slate-900 flex flex-col items-center justify-center z-50">
+    <div className="fixed inset-0 bg-slate-900 flex flex-col items-center justify-center z-50 w-full">
         <Image
           src={`/loader.svg`}
           alt="IMCYC"
