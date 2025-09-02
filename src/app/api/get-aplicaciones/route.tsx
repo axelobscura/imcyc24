@@ -1,22 +1,28 @@
 import { NextResponse } from "next/server";
-import { query } from '../../../../lib/db'
+import mysql from 'mysql2/promise';
 
-export async function GET(request: Request) {
-  console.log("Fetching categorias", request);
+const connectionConfig = {
+  host: process.env.MYSQL_HOST,
+  database: process.env.MYSQL_DATABASE,
+  user: process.env.MYSQL_USERNAME,
+  password: process.env.MYSQL_PASSWORD,
+};
+
+export async function GET() {
+  let connection;
+  
   try {
-    const results = await query(`
-      SELECT * FROM aplicaciones ORDER BY id
-    `)
-    return NextResponse.json(results);
-  } catch (e: unknown) {
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
+    connection = await mysql.createConnection(connectionConfig);
+    const [rows] = await connection.execute('SELECT * FROM aplicaciones ORDER BY id');
+    return NextResponse.json(rows);
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Failed to fetch aplicaciones' },
+      { status: 500 }
+    );
+  } finally {
+    if (connection) {
+      await connection.end();
+    }
   }
 }
-
-// Handles POST requests to /api
-/*
-export async function POST(request: Request) {
-  // ...
-  return NextResponse.json({ message: "Hello World" });
-}
-*/
