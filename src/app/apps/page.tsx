@@ -66,12 +66,12 @@ export default function Apps() {
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase pb-7">Aplicaciones para la construcción</h1>
               {loading && <h2 className="text-white">CARGANDO...</h2>}
-              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Plataformas educativas</h3>
+              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Plataformas educativas</h3>
               <div className='grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5'>
                 {!loading && aplicaciones.map((app) => {
                   if(app.categoria === 'plataforma-educativa'){
                     return (
-                      <a key={app.id} href={app.url} target='_blank' className="grid grid-cols-[1fr] items-center w-full p-2 bg-gray-900 border border-slate-700 rounded-lg text-gray-100 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:text-gray-900">
+                      <a key={app.id} href={app.url} target='_blank' className="grid grid-cols-[1fr] items-center w-full p-2 bg-gray-900 border border-blue-500 rounded-lg text-gray-100 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:text-gray-900">
                         <div>
                           <Image 
                             src={`/apps/${app.imagen}`} 
@@ -96,9 +96,9 @@ export default function Apps() {
                   }
                 })}
               </div>
-              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Certificaciones | Sellos de calidad</h3>
-              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Industria</h3>
-              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Personalizadas</h3>
+              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Certificaciones | Sellos de calidad</h3>
+              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Industria</h3>
+              <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Personalizadas</h3>
               <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5">
                 
                 
