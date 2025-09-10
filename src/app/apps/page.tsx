@@ -14,6 +14,9 @@ export default function Apps() {
     nombre: string;
     url: string;
     icono: string;
+    categoria: string;
+    imagen: string;
+    usuarios: number;
   }
   
   const [aplicaciones, setAplicaciones] = useState<Aplicacion[]>([]);
@@ -62,22 +65,43 @@ export default function Apps() {
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase pb-7">Aplicaciones para la construcción</h1>
+              {loading && <h2 className="text-white">CARGANDO...</h2>}
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Plataformas educativas</h3>
+              <div className='grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5'>
+                {!loading && aplicaciones.map((app) => {
+                  if(app.categoria === 'plataforma-educativa'){
+                    return (
+                      <a key={app.id} href={app.url} target='_blank' className="grid grid-cols-[1fr] items-center w-full p-2 bg-gray-900 border border-slate-700 rounded-lg text-gray-100 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:text-gray-900">
+                        <div>
+                          <Image 
+                            src={`/apps/${app.imagen}`} 
+                            alt="Image description" 
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            className="relative rounded-lg w-full h-auto"
+                          />
+                        </div>
+                        <div className='grid grid-cols-[1fr] md:grid-cols-[1fr_5fr] items-center mt-3'>
+                          <div className="bg-gray-100 mr-5 text-center relative rounded-full">
+                            <Image src={`/iconos/${app.icono}.svg`} alt="Image description" width={20} height={10} className="relative m-3 rounded-lg" />
+                          </div>
+                          <div>
+                            <h5 className="ml-2 text-1xl font-light tracking-tight dark:text-white">{app.nombre}</h5>
+                            <h3 className="ml-2 text-1xl font-bold tracking-tight dark:text-white">Número de Usuarios por mes: {app.usuarios.toLocaleString()}</h3>
+                          </div>
+                        </div>
+                      </a>
+                    )
+                  }
+                })}
+              </div>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Certificaciones | Sellos de calidad</h3>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Industria</h3>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-2 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Personalizadas</h3>
               <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5">
-                {!loading && aplicaciones.map((app) => (
-                  <a key={app.id} href={app.url} target='_blank' className="grid grid-cols-[1fr_3fr] items-center w-full p-2 bg-gray-900 border border-gray-800 rounded-lg text-gray-100 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 hover:text-gray-900">
-                    <div className="bg-gray-100 mr-5 text-center relative rounded-full">
-                      <Image src={`/iconos/${app.icono}.svg`} alt="Image description" width={50} height={30} className="relative m-3 rounded-lg" />
-                    </div>
-                    <div>
-                      <h5 className="m-2 text-1xl font-light tracking-tight dark:text-white">{app.nombre}</h5>
-                    </div>
-                  </a>
-                ))}
-                {loading && <h2 className="text-white">CARGANDO...</h2>}
+                
+                
               </div>
             </div>
           </main>
