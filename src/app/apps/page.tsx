@@ -30,7 +30,7 @@ export default function Apps() {
             width={0}
             height={0}
             sizes="100vw"
-            className="relative rounded-lg w-full h-auto"
+            className="relative rounded-lg w-full h-auto border border-gray-900"
           />
         </div>
         <div className='grid grid-cols-[1fr_1fr] md:grid-cols-[1fr_12fr] items-center mt-3'>
@@ -124,9 +124,13 @@ export default function Apps() {
               })}
               </div>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 mb-0 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Personalizadas</h3>
-              <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5">
-                
-                
+              <div className='grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5'>
+              {!loading && aplicaciones.map((app) => {
+                if(app.categoria === 'personalizadas'){
+                  return cardapp('personalizadas', app)
+                }
+                return null;
+              })}
               </div>
             </div>
           </main>
