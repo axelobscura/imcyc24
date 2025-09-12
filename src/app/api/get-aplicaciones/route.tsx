@@ -13,7 +13,7 @@ export async function GET() {
   
   try {
     connection = await mysql.createConnection(connectionConfig);
-    const [rows] = await connection.execute('SELECT * FROM aplicaciones ORDER BY id');
+    const [rows] = await connection.execute('SELECT * FROM aplicaciones ORDER BY orden ASC');
     return NextResponse.json(rows);
   } catch (error) {
     return NextResponse.json(
