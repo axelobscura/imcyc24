@@ -95,7 +95,7 @@ export default function Apps() {
         <div className="mx-auto w-full max-w-screen-xl p-4 mt-10 sm:pt-120 pb-0 lg:py-90">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
-              <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase pb-7">Aplicaciones para la construcción</h1>
+              <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase pb-5">Aplicaciones para la construcción</h1>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 mb-0 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Plataformas de estudio creadas para la industria</h3>
               <div className='grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_1fr] py-1 gap-5'>
                 {!loading && aplicaciones.map((app) => {
