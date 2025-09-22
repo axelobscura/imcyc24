@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: { articulo: string 
   // Ejemplo:
   // const res = await fetch(`https://tu-api.com/prensa/${params.articulo}`);
   // const articulo = await res.json();
-  const res = await fetch(`https://imcyc.com.mx/api/prensa`)
+  const res = await fetch(`https://imcyc.com.mx/api/prensa/`)
   const articulos = await res.json()
   const post = articulos.find((articulo: { [key: string]: string }) => articulo[4] === params.articulo);
 
