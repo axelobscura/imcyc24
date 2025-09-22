@@ -13,7 +13,7 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 function Menu() {
   return (
     <MegaMenu className="bg-gray-900 bg-opacity-50 dark:bg-gray-900 z-50 shadow-lg dark:bg-opacity-50 border-b border-slate-700">
-      <div className="w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-4 pr-4 text-white menu-responsivo">
+      <div className="w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-0 pr-0 text-white menu-responsivo">
         <NavbarBrand href="/">
           <Image
             src="/logo-imcyc.svg"
