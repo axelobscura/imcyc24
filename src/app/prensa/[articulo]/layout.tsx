@@ -1,9 +1,13 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 type Articulo = [string, string, string, string, string];
 
+type Props = {
+  params: { articulo: string }
+};
+
 export async function generateMetadata(
-  { params }: { params: { [key: string]: string } }
+  { params }: Props
 ): Promise<Metadata> {
   const res = await fetch(`https://imcyc.com.mx/api/prensa/`);
   const articulos = await res.json();
