@@ -1,15 +1,12 @@
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { articulo: string } }): Promise<Metadata> {
-  // Aquí puedes hacer fetch a tu API o base de datos para obtener los datos del artículo
-  // Ejemplo:
-  // const res = await fetch(`https://tu-api.com/prensa/${params.articulo}`);
-  // const articulo = await res.json();
-  const res = await fetch(`https://imcyc.com.mx/api/prensa/`)
-  const articulos = await res.json()
+export async function generateMetadata(
+  { params }: { params: { [key: string]: string } }
+): Promise<Metadata> {
+  const res = await fetch(`https://imcyc.com.mx/api/prensa/`);
+  const articulos = await res.json();
   const post = articulos.find((articulo: { [key: string]: string }) => articulo[4] === params.articulo);
 
-  // Simulación de datos:
   const articulo = {
     titulo: post[0],
     descripcion: post[0],
