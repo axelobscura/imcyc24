@@ -1,16 +1,18 @@
 import { Metadata } from 'next';
 
+type Articulo = [string, string, string, string, string];
+
 export async function generateMetadata(
   { params }: { params: { [key: string]: string } }
 ): Promise<Metadata> {
   const res = await fetch(`https://imcyc.com.mx/api/prensa/`);
   const articulos = await res.json();
-  const post = articulos.find((articulo: { [key: string]: string }) => articulo[4] === params.articulo);
+  const post = articulos.find((articulo: Articulo) => articulo[4] === params.articulo);
 
   const articulo = {
-    titulo: post[0],
-    descripcion: post[0],
-    imagen: `/prensa/${post[2]}`,
+    titulo: post?.[0] || 'Artículo IMCYC',
+    descripcion: post?.[0] || 'Artículo de prensa IMCYC',
+    imagen: post ? `/prensa/${post[2]}` : '/default-image.jpg',
   };
 
   return {
