@@ -1,14 +1,8 @@
-import type { Metadata } from 'next';
 
+// Define types for our article data
 type Articulo = [string, string, string, string, string];
 
-type Props = {
-  params: { articulo: string }
-};
-
-export async function generateMetadata(
-  { params }: Props
-): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { articulo: string } }) {
   const res = await fetch(`https://imcyc.com.mx/api/prensa/`);
   const articulos = await res.json();
   const post = articulos.find((articulo: Articulo) => articulo[4] === params.articulo);
