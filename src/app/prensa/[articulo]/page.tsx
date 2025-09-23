@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Loader from "../../components/Loader";
 
 export default function Articulo() {
-  const params = useParams<{ articulo: string }>()
+  const params = useParams<{ articulo: string }>();
   const [posts, setPosts] = useState([]);
   const [contenido, setContenido] = useState();
 
