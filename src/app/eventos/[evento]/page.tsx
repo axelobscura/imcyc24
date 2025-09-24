@@ -233,7 +233,7 @@ export default function Articulo() {
                       </h1>
                       <h3 className="font-montserrat mb-7 text-3xl font-bold text-center tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-yellow-300">TECNOLOGÍA DEL CONCRETO</h3>
                       <h2 className="font-montserrat mb-7 text-3xl text-center font-bold tracking-tight leading-none text-red-600 md:text-4xl lg:text-6xl dark:text-yellow-300">
-                        30 de septiembre de 2025
+                        30 de octubre de 2025
                       </h2>
                       <p className="font-montserrat mb-8 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200 text-center">10 módulos mensuales hasta octubre 2026
                       </p>
