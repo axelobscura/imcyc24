@@ -3,13 +3,13 @@ import { headers } from 'next/headers';
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../../globals.css";
 
-type Props = {
+type GenerateMetadataProps = {
   params: { evento: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata(
-  { params }: Props
+  { params }: GenerateMetadataProps
 ): Promise<Metadata> {
   // Get the current URL from headers
   const headersList = await headers();
