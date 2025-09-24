@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import TopBar from "../../components/TopBar";
-import Membresias from "../../components/Membresias";
-import Footer from "../../components/Footer";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../../globals.css";
 
@@ -40,10 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <TopBar/>
       {children}
-      <Membresias />
-      <Footer/>
     </>
   );
 }
