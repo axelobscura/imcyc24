@@ -5,7 +5,6 @@ import "../../globals.css";
 
 type Props = {
   params: { evento: string }
-  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata(
