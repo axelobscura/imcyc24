@@ -3,14 +3,12 @@ import { headers } from 'next/headers';
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../../globals.css";
 
-interface LayoutProps {
-  params: {
-    evento: string; // Assuming 'evento' is the dynamic segment in your route
-  };
+type Props = {
+  params: { evento: string }
 }
 
 export async function generateMetadata(
-  { params }: LayoutProps
+  { params }: Props
 ): Promise<Metadata> {
   // Get the current URL from headers
   const headersList = await headers();
