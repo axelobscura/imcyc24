@@ -21,16 +21,16 @@ export async function generateMetadata(
   console.log('Generating metadata for:', eventoFormatted);
 
   return {
-    title: `${evento} | Instituto Mexicano del Cemento y del Concreto A.C.`,
-    description: `${evento} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
+    title: `${eventoFormatted} | Instituto Mexicano del Cemento y del Concreto A.C.`,
+    description: `${eventoFormatted} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
     openGraph: {
-      title: `${evento} | Instituto Mexicano del Cemento y del Concreto A.C.`,
-      description: `${evento} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
+      title: `${eventoFormatted} | Instituto Mexicano del Cemento y del Concreto A.C.`,
+      description: `${eventoFormatted} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
       url: fullUrl, // Using the dynamic URL here
-      siteName: `${evento} | Instituto Mexicano del Cemento y del Concreto A.C.`,
+      siteName: `${eventoFormatted} | Instituto Mexicano del Cemento y del Concreto A.C.`,
       images: [
         {
-          url: fullUrl,
+          url: 'https://imcyc.net/images/imcyc-evento-profesionalizacion-industria.jpg',
           width: 800,
           height: 600,
           alt: 'Instituto Mexicano del Cemento y del Concreto A.C.',
@@ -42,9 +42,9 @@ export async function generateMetadata(
       card: 'summary_large_image',
       site: '@imcyc',
       creator: '@imcyc',
-      title: `${evento} | Instituto Mexicano del Cemento y del Concreto A.C.`,
-      description: `${evento} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
-      images: fullUrl,
+      title: `${eventoFormatted} | Instituto Mexicano del Cemento y del Concreto A.C.`,
+      description: `${eventoFormatted} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
+      images: 'https://imcyc.net/images/imcyc-evento-profesionalizacion-industria.jpg',
     },
   }
 }
