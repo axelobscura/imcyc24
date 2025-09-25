@@ -292,7 +292,7 @@ export default function Articulo() {
                         <li>Juntas metálicas en pisos industriales</li>
                       </ul>
                       <Link
-                          href="/banner/dtc.pdf"
+                          href="https://imcyc.net/images/dtc.pdf"
                           className="inline-flex items-center justify-center w-full bg-red-700 color-gray-100 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-lg px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600 mt-10 text-3xl text-gray-100 font-bold"
                           rel="noopener noreferrer" 
                           target="_blank"
