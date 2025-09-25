@@ -4,7 +4,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import "../../globals.css";
 
 type Props = {
-  params: { evento: string }
+  params: Promise<{ evento: string }>;
+  // searchParams: { [key: string]: string | string[] | undefined } --- IGNORE ---
 }
 
 export async function generateMetadata(
@@ -14,7 +15,10 @@ export async function generateMetadata(
   const headersList = await headers();
   const domain = headersList.get('host') || 'imcyc.com';
   const fullUrl = `https://${domain}/eventos/${params.evento}`;
-  const evento = params.evento.split('-').join(' ').toUpperCase();
+  const { evento } = await params;
+  const eventoFormatted = evento.split('-').join(' ').toUpperCase();
+
+  console.log('Generating metadata for:', eventoFormatted);
 
   return {
     title: `${evento} | Instituto Mexicano del Cemento y del Concreto A.C.`,
