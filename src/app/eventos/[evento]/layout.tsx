@@ -18,8 +18,6 @@ export async function generateMetadata(
   const fullUrl = `https://${domain}/eventos/${evento}`;
   const eventoFormatted = evento.split('-').join(' ').toUpperCase();
 
-  console.log('Generating metadata for:', eventoFormatted);
-
   return {
     title: `${eventoFormatted} | Instituto Mexicano del Cemento y del Concreto A.C.`,
     description: `${eventoFormatted} | El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.`,
