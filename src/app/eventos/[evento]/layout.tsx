@@ -14,8 +14,8 @@ export async function generateMetadata(
   // Get the current URL from headers
   const headersList = await headers();
   const domain = headersList.get('host') || 'imcyc.com';
-  const fullUrl = `https://${domain}/eventos/${params.evento}`;
   const { evento } = await params;
+  const fullUrl = `https://${domain}/eventos/${evento}`;
   const eventoFormatted = evento.split('-').join(' ').toUpperCase();
 
   console.log('Generating metadata for:', eventoFormatted);
