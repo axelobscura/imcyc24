@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import { headers } from 'next/headers';
-import "react-image-gallery/styles/css/image-gallery.css";
-import "../../globals.css";
 
 type Props = {
   params: Promise<{ evento: string }>;
