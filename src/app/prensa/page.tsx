@@ -41,7 +41,7 @@ export default function Prensa() {
                       href={`/prensa/${post[4]}`}
                       key={index}
                     >
-                      <div key={index} className="font-montserrat grid grid-cols-[1fr] sm:grid-cols-[1fr_3fr] gap-4 bg-gray-950 hover:bg-slate-800 cursor-pointer bg-opacity-50 bg-blend-multiply p-2 items-center justify-center mb-2">
+                      <div key={index} className="font-montserrat grid grid-cols-[1fr] sm:grid-cols-[1fr_3fr] gap-4 bg-gray-950 hover:bg-slate-800 cursor-pointer bg-opacity-50 bg-blend-multiply p-2 items-center justify-center mb-2 border border-gray-700">
                         <div>
                           <Image
                             src={`/prensa/${post[2]}`}
