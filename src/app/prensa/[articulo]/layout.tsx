@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "PRENSA | Instituto Mexicano del Cemento y del Concreto A.C.",
     images: [
       {
-        url: 'https://imcyc.net/images/imcyc-evento-profesionalizacion-industria.jpg', // Must be an absolute URL
+        url: 'https://imcyc.net/images/encuentro.jpg', // Must be an absolute URL
         width: 800,
         height: 600,
         alt: 'Instituto Mexicano del Cemento y del Concreto A.C.',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     creator: '@imcyc',
     title: 'Instituto Mexicano del Cemento y del Concreto A.C.',
     description: 'El Instituto Mexicano del Cemento y del Concreto A.C. es una organización sin fines de lucro dedicada a promover el uso óptimo del cemento y del concreto en la construcción, contribuyendo a la mejora del desempeño profesional, el desarrollo industrial y los beneficios económicos para la sociedad.',
-    images: 'https://imcyc.net/images/imcyc-evento-profesionalizacion-industria.jpg', // Must be an absolute URL
+    images: 'https://imcyc.net/images/encuentro.jpg', // Must be an absolute URL
   },
 };
 
