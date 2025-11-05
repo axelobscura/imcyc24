@@ -16,7 +16,7 @@ function Menu() {
       <div className="w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2 pl-0 pr-0 text-white menu-responsivo">
         <NavbarBrand href="/">
           <Image
-            src="/logo-imcyc-rosa.svg"
+            src="/logo-imcyc.svg"
             alt="Instituto Mexicano del Cemento y del Concreto A.C."
             width={170}
             height={0}
