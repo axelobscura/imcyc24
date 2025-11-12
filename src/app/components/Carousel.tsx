@@ -8,14 +8,15 @@ export function Slider({imagenes}: {
   link?: string,
 }) {
   return (
+    console.log(imagenes),
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel pauseOnHover>
-        {imagenes.map((img, index) => (
+        {imagenes.map(img => (
           <Image
             src={img}
             width={800}
             height={0}
-            key={index}
+            key={img}
             alt="Instituto Mexicano del Cemento y del Concreto A.C."
           />
         ))}

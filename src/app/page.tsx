@@ -48,7 +48,7 @@ export default function Home() {
                 PRESENTA</h2>
                 <h3 className="font-montserrat pt-10 pb-2 text-white font-bold text-4xl md:text-2xl lg:text-5xl">4<sup>to</sup> ENCUENTRO DEL CEMENTO Y DEL CONCRETO</h3>
                 <h4 className="font-montserrat pb-5 text-white text-2xl">12, 13 y 14 DE NOVIEMBRE 2025 | ACAPULCO MÉXICO</h4>
-                <Contador fecha="November 12, 2025 23:59:59"/>
+                <h2 className="font-montserrat mb-2 text-3xl font-bold tracking-tight leading-none text-white md:text-4xl lg:text-4xl dark:text-white">!BIENVENIDOS!</h2>
                 <p className="font-montserrat mt-5 mb-3 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">El evento de mayor relevancia en la agenda de la construcción, <b>en el emblemático Hotel Princess, Acapulco, México</b>. Bajo la temática:
                 </p>
                 <p className='font-montserrat font-bold md:text-2xl lg:text-2xl text-white mb-7 uppercase'>El futuro de la industria de la construcción en materia de cemento, concreto y sostenibilidad</p>
