@@ -38,45 +38,6 @@ export default function Home() {
             }}
           >
             <SwiperSlide 
-              className="bg-[url('/prensa/acapulco.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
-              style={{ height: '100vh' }}
-            >
-              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
-                <h1 className="font-montserrat pt-40 pb-0 text-white text-2xl">EL INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
-                <h2 className="font-montserrat mb-2 text-3xl font-light tracking-tight leading-none text-white md:text-2xl lg:text-2xl dark:text-white">
-                PRESENTA</h2>
-                <h3 className="font-montserrat pt-10 pb-2 text-white font-bold text-4xl md:text-2xl lg:text-5xl">4<sup>to</sup> ENCUENTRO DEL CEMENTO Y DEL CONCRETO</h3>
-                <h4 className="font-montserrat pb-5 text-white text-2xl">12, 13 y 14 DE NOVIEMBRE 2025 | ACAPULCO MÉXICO</h4>
-                <h2 className="font-montserrat mb-2 text-3xl font-bold tracking-tight leading-none text-white md:text-4xl lg:text-4xl dark:text-white">¡BIENVENIDOS!</h2>
-                <p className="font-montserrat mt-5 mb-3 text-xs font-light text-white lg:text-xl sm:px-14 lg:px-24 dark:text-gray-200">El evento de mayor relevancia en la agenda de la construcción, <b>en el emblemático Hotel Princess, Acapulco, México</b>. Bajo la temática:
-                </p>
-                <p className='font-montserrat font-bold md:text-2xl lg:text-2xl text-white mb-7 uppercase'>El futuro de la industria de la construcción en materia de cemento, concreto y sostenibilidad</p>
-                <Link
-                  href="/prensa/encuentro-cemento-y-concreto-2025"
-                  className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-blue-700 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 mr-3"
-                >
-                  <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">
-                    MÁS INFORMACIÓN
-                  </span>{" "}
-                  <svg
-                    className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 6 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 9 4-4-4-4"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide 
               className="bg-[url('/prensa/diplomado.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
             >
