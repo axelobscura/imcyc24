@@ -155,7 +155,6 @@ export default function Home() {
                 </p>
               </div>
             </SwiperSlide>
-            
           </Swiper>
         </section>
       </main>
