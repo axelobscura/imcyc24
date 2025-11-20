@@ -28,16 +28,15 @@ export default function Usuarios() {
       });
 
       const data = await response.json();
-      
+
       if (response.ok) {
-        console.log("Response data:", data);
-        setMessage('User exists!');
+        setMessage('Bienvenido!');
         setEmail('');
         setPassword('');
         setPosts(data);
-        router.push(`/usuarios/panel?email=${email}&password=${password}`);
+        router.push(`/usuarios/panel`);
       } else {
-        setMessage(data.error || 'Something went wrong');
+        setMessage('Usuario y/o contraseña incorrectos');
       }
     } catch (error) {
       setMessage('Network error occurred');
@@ -76,6 +75,7 @@ export default function Usuarios() {
             <p className="mt-3 text-gray-300">Instituto Mexicano del Cemento y del Concreto A.C.</p>
             <div className="mt-8 p-6 bg-gray-900 bg-opacity-75 rounded-lg shadow-lg mx-0 sm:mx-72">
               {loading && <h2 className="text-white">ENVIANDO DATOS</h2>}
+              {message && <h2 className="text-white font-bold uppercase pb-5">{message}</h2>}
               <form onSubmit={ingreso} className="flex flex-col gap-6 text-left">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
