@@ -8,7 +8,7 @@ export default function Usuarios() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("test");
+  const [message, setMessage] = useState("Bienvenido!, Ingresar sus datos");
 
   const router = useRouter();
 
@@ -46,16 +46,13 @@ export default function Usuarios() {
     }
   }
 
-  useEffect(() => {
-    checkUser();
-  }, [email, password]);
-
   //const router = useRouter();
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     setEmail(form.email.value);
     setPassword(form.password.value);
+    checkUser();
   };
 
   console.log("posts", posts);

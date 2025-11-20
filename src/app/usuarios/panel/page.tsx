@@ -72,7 +72,7 @@ export default function Panel() {
                                 <div className="w-full h-[140px] overflow-hidden  bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
                                   <Image src={`/webinars/categorias/${categoria.imagen}`} alt="Logo" width={1500} height={100} className="w-full h-auto" />
                                 </div>
-                                <h2 className="text-sm text-white font-light py-5 px-3 min-h-[100px] hover:text-slate-900 w-full flex items-center justify-center text-center bg-slate-800 hover:bg-slate-900 hover:text-white">{categoria.nombre}</h2>
+                                <h2 className="text-sm text-white font-light py-5 px-2 min-h-[100px] hover:text-slate-900 w-full flex items-center justify-center text-center bg-slate-800 hover:bg-slate-900 hover:text-white">{categoria.nombre}</h2>
                                 <p className="mt-1 text-gray-300">{categoria.descripcion}</p>
                               </div>
                             </Link>
