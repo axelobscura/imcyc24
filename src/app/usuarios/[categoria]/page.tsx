@@ -1,3 +1,5 @@
+import { IoArrowDownCircleOutline } from "react-icons/io5";
+
 export default function Categoria({ params }: { params: { categoria: string } }) {
     console.log(params.categoria);
     return (
@@ -6,7 +8,7 @@ export default function Categoria({ params }: { params: { categoria: string } })
                 <main className="mx-auto w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-1 gap-0 row-start-2 items-center sm:items-start z-0">
                     <div className="text-center">
                         <div className="grid grid-cols-[1fr] gap-14 mt-10">
-                            <h1>{params.categoria}</h1>
+                            <h2 className="text-left text-2xl text-white uppercase flex items-center"><IoArrowDownCircleOutline className="mr-2" /> {params.categoria}</h2>
                         </div>
                     </div>
                 </main>
