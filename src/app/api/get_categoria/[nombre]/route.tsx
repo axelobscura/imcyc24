@@ -8,10 +8,13 @@ const connectionConfig = {
     password: process.env.MYSQL_PASSWORD_WEBINARS,
 };
 
-export async function GET(request: Request, { params }: { params: any }) {
+export async function GET(request: Request, { params }: {
+    params: {
+        nombre: string;
+    }
+}) {
     let connection;
     const nombre = params.nombre;
-    console.log(nombre);
     try {
         connection = await mysql.createConnection(connectionConfig);
         const results = await connection.execute('SELECT * FROM categorias WHERE link = ?', [nombre]) as any[];

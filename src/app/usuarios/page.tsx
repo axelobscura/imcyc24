@@ -1,6 +1,6 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
 "use client"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
