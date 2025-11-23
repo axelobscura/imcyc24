@@ -15,15 +15,13 @@ type Params = {
 export async function GET(request: Request, { params }: { params: Promise<Params> }) {
     let connection;
     const { nombre } = await params;
-    console.log(nombre);
+    //console.log('nombre: ', nombre);
     try {
         connection = await mysql.createConnection(connectionConfig);
         const results = await connection.execute('SELECT * FROM categorias WHERE link = ?', [nombre]) as unknown[];
-        console.log('resultados: ', results);
         const categoria = JSON.parse(JSON.stringify(results[0]));
         const categoriaId = Number(categoria[0].id);
         const results2 = await connection.execute('SELECT * FROM webinars WHERE id_categoria = ?', [categoriaId]) as unknown[];
-        console.log('resultados2: ', results2);
         const webinars = JSON.parse(JSON.stringify(results2 || []));
         return NextResponse.json({ message: 'categoria', webinars, categoria: categoria });
     } catch (error) {
