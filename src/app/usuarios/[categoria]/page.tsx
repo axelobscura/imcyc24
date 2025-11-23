@@ -25,12 +25,6 @@ interface Webinar {
     imagen?: string;
 }
 
-interface ApiResponse {
-    message: string;
-    webinars: Webinar[];
-    categoria: Categoria[];
-}
-
 interface BreadCrumb {
     categoria: string;
     url: string;
