@@ -56,7 +56,7 @@ declare global {
     }
 }
 
-export default function Webinar() {
+export default function Tipo() {
     const params = useParams();
 
     const initializeFlipbook = () => {

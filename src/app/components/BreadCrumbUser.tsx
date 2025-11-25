@@ -5,15 +5,17 @@ interface BreadCrumbUserProps {
   params?: {
     categoria?: string;
     webinar?: string;
+    tipo?: string;
     url?: string;
   } | null;
 }
 
 export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
-  const { categoria, webinar, url } = params || {};
+  const { categoria, webinar, tipo, url } = params || {};
 
   // Determine Category URL: use provided URL or construct from slug
   const categoryUrl = url || (categoria ? `/usuarios/${categoria}` : "#");
+  const webinarUrl = url || (webinar ? `/usuarios/${categoria}/${webinar}` : "#");
 
   return (
     <nav
@@ -54,8 +56,18 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
         )}
         {webinar && (
           <li className="inline-flex items-center">
-            <span className="inline-flex items-center text-sm font-medium text-gray-400 dark:text-gray-400">
+            <Link
+              href={webinarUrl}
+              className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
               | {decodeURIComponent((webinar || '').split('-').join(' ').toUpperCase())}
+            </Link>
+          </li>
+        )}
+        {tipo && (
+          <li className="inline-flex items-center">
+            <span className="inline-flex items-center text-sm font-medium text-gray-400 dark:text-gray-400">
+              | {decodeURIComponent((tipo || '').split('-').join(' ').toUpperCase())}
             </span>
           </li>
         )}
