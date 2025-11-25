@@ -112,7 +112,7 @@ export default function Webinar() {
                     <div>
                         <div className="grid grid-cols-[1fr_3fr] gap-14 mt-5">
                             <div>
-                                <MenuLateral nombre="WEBINAR" seccion={() => { }} categoria={null} />
+                                <MenuLateral seccion={() => { }} categoria={null} />
                             </div>
                             <div>
                                 <div style={{ 'width': '100%', 'height': '90%', 'position': 'relative', backgroundColor: 'rgba(0,0,0,0.5)' }}>
