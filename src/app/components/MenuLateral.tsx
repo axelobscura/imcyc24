@@ -13,8 +13,6 @@ export default function MenuLateral(
     }) {
     return (
         <div className='barra_lateral'>
-
-            <h2 className="text-white text-center">{nombre}</h2>
             <ul className='menu interno bg-slate-800 bg-opacity-50'>
                 <li>
                     <Link href={`/usuarios/${categoria}/`} onClick={seccion} className={categoria === ' EVALUACIÓN FINAL' ? 'active mb-0' : 'mb-0'}><BsChevronRight /> EVALUACIÓN DIAGNÓSTICO</Link>

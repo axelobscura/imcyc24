@@ -89,6 +89,18 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?wodyul');
+  src: url('/fonts/icomoon.eot?wodyul#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?wodyul') format('truetype'),
+    url('/fonts/icomoon.woff?wodyul') format('woff'),
+    url('/fonts/icomoon.svg?wodyul#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="flipbook-icon-"],
 [class*=" flipbook-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -104,7 +116,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 .flipbook-icon-pause1:before {
   content: "\e911";
