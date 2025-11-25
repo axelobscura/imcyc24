@@ -1,25 +1,16 @@
-import { BsChevronRight, BsChevronLeft } from 'react-icons/bs';
-import { useRouter } from 'next/navigation';
+import { BsChevronRight } from 'react-icons/bs';
 import Link from 'next/link';
 
 export default function MenuLateral(
     {
-        id,
-        imagen,
         nombre,
         seccion,
         categoria,
     }: {
-        id: number | null,
-        imagen: string | null,
         nombre: string | null,
         seccion: () => void | null,
         categoria: string | null,
     }) {
-    const router = useRouter()
-    const back = () => {
-        router.back()
-    }
     return (
         <div className='barra_lateral'>
 
