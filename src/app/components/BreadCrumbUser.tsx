@@ -28,7 +28,7 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
         borderRadius: "0rem",
       }}
     >
-      <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+      <ol className="font-montserrat inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li className="inline-flex items-center">
           <Link
             href="/usuarios/panel"

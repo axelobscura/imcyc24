@@ -29,9 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <GoogleTagManager gtmId="G-7SERF2HH4M" />
       <head>
+        <meta charSet="utf-8" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-7SERF2HH4M"
