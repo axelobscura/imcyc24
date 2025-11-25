@@ -1,6 +1,3 @@
-// app/not-found.tsx
-import Link from 'next/link';
-
 export default function NotFound() {
     return (
         <div className="font-[family-name:var(--font-geist-sans)] bg-[url('/qs2.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
