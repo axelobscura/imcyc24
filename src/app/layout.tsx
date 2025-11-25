@@ -36,7 +36,6 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-7SERF2HH4M"
         />
-
         <script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
@@ -49,10 +48,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TopBar/>
+        <TopBar />
         {children}
         <Membresias />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
