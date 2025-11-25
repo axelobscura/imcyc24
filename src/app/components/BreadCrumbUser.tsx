@@ -15,9 +15,6 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
   // Determine Category URL: use provided URL or construct from slug
   const categoryUrl = url || (categoria ? `/usuarios/${categoria}` : "#");
 
-  // Determine Category Name: use provided name/slug
-  const categoryName = categoria;
-
   return (
     <nav
       className="flex px-4 py-3 text-gray-700 border border-blue-900 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-900"
@@ -51,14 +48,14 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
               href={categoryUrl}
               className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
             >
-              | {categoryName?.split('-').join(' ').toUpperCase()}
+              | {decodeURIComponent((categoria || '').split('-').join(' ').toUpperCase())}
             </Link>
           </li>
         )}
         {webinar && (
           <li className="inline-flex items-center">
             <span className="inline-flex items-center text-sm font-medium text-gray-400 dark:text-gray-400">
-              | {webinar?.split('-').join(' ').toUpperCase()}
+              | {decodeURIComponent((webinar || '').split('-').join(' ').toUpperCase())}
             </span>
           </li>
         )}
