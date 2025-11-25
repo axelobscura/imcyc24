@@ -35,7 +35,6 @@ export default function Categoria() {
     const categoria = params.categoria as string;
     const [categoriaData, setCategoriaData] = useState<Categoria | null>(null);
     const [webinars, setWebinars] = useState<Webinar[] | null>(null);
-    const [breadCrumb, setBreadCrumb] = useState<BreadCrumb | null>(null);
 
     useEffect(() => {
         async function fetchData() {
@@ -53,13 +52,6 @@ export default function Categoria() {
         }
         fetchData();
     }, [categoria]);
-
-    useEffect(() => {
-        setBreadCrumb({
-            url: categoriaData?.link || '',
-            categoria: categoriaData?.nombre || ''
-        });
-    }, [categoriaData]);
 
     if (!webinars || !categoriaData) {
         return <Loader />;
