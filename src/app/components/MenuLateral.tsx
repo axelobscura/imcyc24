@@ -3,11 +3,9 @@ import Link from 'next/link';
 
 export default function MenuLateral(
     {
-        nombre,
         seccion,
         categoria,
     }: {
-        nombre: string | null,
         seccion: () => void | null,
         categoria: string | null,
     }) {
