@@ -4,13 +4,64 @@ import MenuLateral from "@/app/components/MenuLateral";
 import BreadCrumbUser from "@/app/components/BreadCrumbUser";
 import Script from 'next/script';
 
+interface FlipBookButtonOptions {
+    enabled?: boolean;
+    vAlign?: string;
+    hAlign?: string;
+    background?: string;
+}
+
+interface FlipBookPage {
+    title: string;
+}
+
+interface FlipBookOptions {
+    pdfUrl: string;
+    backgroundColor: string;
+    viewMode: string;
+    singlePageMode: boolean;
+    pages: FlipBookPage[];
+    btnToc?: FlipBookButtonOptions;
+    btnSelect?: FlipBookButtonOptions;
+    btnDownloadPages?: FlipBookButtonOptions;
+    btnDownloadPdf?: FlipBookButtonOptions;
+    btnPrint?: FlipBookButtonOptions;
+    btnShare?: FlipBookButtonOptions;
+    btnZoomIn?: FlipBookButtonOptions;
+    btnZoomOut?: FlipBookButtonOptions;
+    btnSound?: FlipBookButtonOptions;
+    btnThumbs?: FlipBookButtonOptions;
+    btnBookmark?: FlipBookButtonOptions;
+    btnExpand?: FlipBookButtonOptions;
+    btnAutoplay?: FlipBookButtonOptions;
+    currentPage?: { hAlign: string };
+    btnBackground?: string;
+}
+
+interface JQuery {
+    flipBook(options: FlipBookOptions): JQuery;
+}
+
+interface JQueryStatic {
+    (selector: string): JQuery;
+    fn: {
+        flipBook?: (options: FlipBookOptions) => JQuery;
+    };
+}
+
+declare global {
+    interface Window {
+        $?: JQueryStatic;
+    }
+}
+
 export default function Webinar() {
 
     const initializeFlipbook = () => {
         // Wait a bit to ensure both scripts are fully loaded
         setTimeout(() => {
-            if (typeof window !== 'undefined' && (window as any).$ && (window as any).$.fn && (window as any).$.fn.flipBook) {
-                ((window as any).$("#container") as any).flipBook({
+            if (typeof window !== 'undefined' && window.$ && window.$.fn && window.$.fn.flipBook) {
+                window.$("#container").flipBook({
                     pdfUrl: "/pdf/presentacion-ejecutiva.pdf",
                     backgroundColor: 'transparent',
                     viewMode: '3d',
