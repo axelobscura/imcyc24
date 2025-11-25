@@ -1,5 +1,6 @@
 "use client"
 import { useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import MenuLateral from "@/app/components/MenuLateral";
 import BreadCrumbUser from "@/app/components/BreadCrumbUser";
 import Script from 'next/script';
@@ -56,6 +57,7 @@ declare global {
 }
 
 export default function Webinar() {
+    const params = useParams();
 
     const initializeFlipbook = () => {
         // Wait a bit to ensure both scripts are fully loaded
@@ -107,10 +109,10 @@ export default function Webinar() {
             <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-10 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://amci.webinarsenconcreto.com/images/contenido.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat font-montserrat">
                 <main className="mx-auto w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-1 gap-0 row-start-2 items-center sm:items-start z-0">
                     <div className="grid grid-cols-[1fr] gap-14 mt-10">
-                        <BreadCrumbUser categoria={null} />
+                        <BreadCrumbUser params={{ ...params }} />
                     </div>
                     <div>
-                        <div className="grid grid-cols-[1fr_3fr] gap-14 mt-5">
+                        <div className="grid grid-cols-[1fr_3fr] gap-2 mt-5">
                             <div>
                                 <MenuLateral seccion={() => { }} categoria={null} />
                             </div>

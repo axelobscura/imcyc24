@@ -27,7 +27,6 @@ export default function Panel() {
       const data = await response.json();
 
       if (response.ok) {
-        console.log("Response data:", data);
         setMessage('User exists!');
         setCategorias(data);
       } else {
@@ -48,9 +47,6 @@ export default function Panel() {
   if (loading) {
     return <Loader />;
   }
-
-  console.log("categorias", message);
-  console.log("message", loading);
 
   return (
     <div>

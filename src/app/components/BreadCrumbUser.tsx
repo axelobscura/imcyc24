@@ -1,12 +1,23 @@
 "use client";
 import Link from "next/link";
 
-interface BreadCrumb {
-  categoria: string;
-  url: string;
+interface BreadCrumbUserProps {
+  params?: {
+    categoria?: string;
+    webinar?: string;
+    url?: string;
+  } | null;
 }
 
-export default function BreadCrumbUser({ categoria }: { categoria?: BreadCrumb | null }) {
+export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
+  const { categoria, webinar, url } = params || {};
+
+  // Determine Category URL: use provided URL or construct from slug
+  const categoryUrl = url || (categoria ? `/usuarios/${categoria}` : "#");
+
+  // Determine Category Name: use provided name/slug
+  const categoryName = categoria;
+
   return (
     <nav
       className="flex px-4 py-3 text-gray-700 border border-blue-900 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-900"
@@ -21,7 +32,7 @@ export default function BreadCrumbUser({ categoria }: { categoria?: BreadCrumb |
         <li className="inline-flex items-center">
           <Link
             href="/usuarios/panel"
-            className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white uppercase"
           >
             <svg
               className="w-3 h-3 me-1"
@@ -37,11 +48,18 @@ export default function BreadCrumbUser({ categoria }: { categoria?: BreadCrumb |
         {categoria && (
           <li className="inline-flex items-center">
             <Link
-              href={categoria.url}
+              href={categoryUrl}
               className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
             >
-              | {categoria.categoria}
+              | {categoryName?.split('-').join(' ').toUpperCase()}
             </Link>
+          </li>
+        )}
+        {webinar && (
+          <li className="inline-flex items-center">
+            <span className="inline-flex items-center text-sm font-medium text-gray-400 dark:text-gray-400">
+              | {webinar?.split('-').join(' ').toUpperCase()}
+            </span>
           </li>
         )}
       </ol>
