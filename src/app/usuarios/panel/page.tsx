@@ -81,10 +81,10 @@ export default function Panel() {
                           return (
                             <Link key={categoria.id} href={`/usuarios/${categoria.link}`} className='hover:scale-110 transition duration-500 ease-in-out hover:z-10 hover:shadow-lg hover:shadow-gray-900 hover:border-gray-900'>
                               <div className="mt-1 p-0 bg-gray-800 hover:bg-slate-300 bg-opacity-50 rounded-lg shadow-md text-left items-center justify-center w-full hover:text-gray-900">
-                                <div className="w-full h-[100px] overflow-hidden  bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-                                  <Image src={`/webinars/categorias/${categoria.imagen}`} alt="Logo" width={1500} height={100} className="w-full h-auto" />
+                                <div className="w-full h-[150px] overflow-hidden  bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+                                  <Image src={`/webinars/categorias/${categoria.imagen}`} alt="Logo" width={1500} height={150} className="w-full h-auto" />
                                 </div>
-                                <h2 className="text-sm text-white font-light py-5 px-2 min-h-[100px] hover:text-slate-900 w-full flex items-center justify-center text-center bg-slate-800 hover:bg-slate-900 hover:text-white">{categoria.nombre}</h2>
+                                <h2 className="text-sm text-white font-light py-3 px-2 min-h-[100px] hover:text-slate-900 w-full flex items-center justify-center text-center bg-slate-800 hover:bg-slate-900 hover:text-white">{categoria.nombre}</h2>
                                 <p className="mt-1 text-gray-300">{categoria.descripcion}</p>
                               </div>
                             </Link>
@@ -101,8 +101,8 @@ export default function Panel() {
                           return (
                             <Link key={categoria.id} href={`/usuarios/${categoria.link}`} className='hover:scale-110 transition duration-500 ease-in-out hover:z-10 hover:shadow-lg hover:shadow-gray-900 hover:border-gray-900'>
                               <div className="mt-1 p-0 bg-gray-800 hover:bg-slate-300 bg-opacity-50 rounded-lg shadow-md text-left items-center justify-center w-full hover:text-gray-900">
-                                <div className="w-full h-[100px] overflow-hidden  bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
-                                  <Image src={`/webinars/categorias/${categoria.imagen}`} alt="Logo" width={1500} height={100} className="w-full h-auto" />
+                                <div className="w-full h-[150px] overflow-hidden  bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
+                                  <Image src={`/webinars/categorias/${categoria.imagen}`} alt="Logo" width={1500} height={150} className="w-full h-auto" />
                                 </div>
                                 <h2 className="text-sm text-white font-light py-5 px-3 min-h-[100px] hover:text-slate-900 w-full flex items-center justify-center text-center bg-slate-800 hover:bg-slate-900 hover:text-white">{categoria.nombre}</h2>
                                 <p className="mt-1 text-gray-300">{categoria.descripcion}</p>

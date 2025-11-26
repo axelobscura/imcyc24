@@ -47,15 +47,15 @@ export default function Evaluacion() {
             <div className="w-full p-5 py-0">
                 {evaluacion.preguntas.map((pregunta: Pregunta, index: number) => (
                     <div key={index}>
-                        <p className="text-white my-2 bg-gray-800 bg-opacity-50 p-2 rounded-md grid grid-cols-[1fr] sm:grid-cols-[1fr_20fr] gap-0 items-center"><span className="text-white flex justify-center items-center bg-slate-500 p-2 rounded-md mr-3">{index + 1}</span> <span className="text-white text-left">{pregunta.pregunta}</span></p>
-                        <div className="mx-4 my-4 bg-slate-900 bg-opacity-50 p-3 rounded-md">
+                        <p className="text-white my-2 bg-gray-800 bg-opacity-50 p-2 grid grid-cols-[1fr] sm:grid-cols-[1fr_20fr] gap-0 items-center"><span className="text-white flex justify-center items-center bg-slate-500 p-2 mr-3 border-2 border-blue-500">{index + 1}</span> <span className="text-white text-left">{pregunta.pregunta}</span></p>
+                        <div className="mx-4 my-4 bg-slate-900 bg-opacity-50 p-3">
                             {pregunta.respuesta.map((respuestaObj: Respuesta, respuestaIndex: number) => (
                                 <label key={respuestaIndex} className="block text-white my-2 cursor-pointer hover:text-gray-300 grid grid-cols-[1fr] sm:grid-cols-[1fr_20fr] gap-0 items-center">
                                     <input
                                         type="radio"
                                         name={`pregunta-${index}`}
                                         value={respuestaObj.pregunta}
-                                        className="mr-2"
+                                        className="mr-2 p-3 border border-gray-300 rounded-md bg-gray-800 bg-opacity-50"
                                     />
                                     {respuestaObj.pregunta}
                                 </label>

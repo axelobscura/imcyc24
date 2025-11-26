@@ -23,7 +23,7 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
     <div className="grid grid-cols-[1fr] sm:grid-cols-[4fr_1fr] gap-0 mt-4 items-center">
       <div>
         <nav
-          className="flex px-4 py-3 text-gray-700 border border-blue-900 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-900"
+          className="flex px-4 py-3 text-gray-700 border border-blue-900 rounded-lg bg-slate-900 dark:bg-gray-800 dark:border-gray-900 bg-opacity-50"
           aria-label="Breadcrumb"
           style={{
             borderImage: "linear-gradient(9deg, #233876 10%, #5c7dde) 1",
@@ -78,8 +78,8 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
           </ol>
         </nav>
       </div>
-      <div className="bg-gray-800 px-4 py-3">
-        <h1 className="text-white">Bienvenido, {user?.nombre || user?.email}!</h1>
+      <div className="bg-gray-800 bg-opacity-50 px-4 py-3 border border-blue-500">
+        <h2 className="text-white text-sm font-medium uppercase">Bienvenido, {user?.nombre || user?.email}!</h2>
       </div>
     </div>
 
