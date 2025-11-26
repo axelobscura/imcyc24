@@ -2,16 +2,17 @@
 "use client"
 import { useState } from 'react'
 import { useRouter } from "next/navigation";
+import { useUser } from '../context/UserContext';
 
 export default function Usuarios() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("Bienvenido!, Ingresar sus datos");
 
   const router = useRouter();
+  const { login } = useUser();
 
-  const checkUser = async () => {
+  const checkUser = async (userEmail: string, userPassword: string) => {
     setLoading(true);
     setMessage("");
     try {
@@ -21,15 +22,25 @@ export default function Usuarios() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email,
-          password,
+          email: userEmail,
+          password: userPassword,
         }),
       });
 
       if (response.ok) {
+        const data = await response.json();
+
+        // Store user data in context
+        if (data.user) {
+          login({
+            id: data.user.id,
+            email: email,
+            nombre: data.user.nombre || userEmail.split('@')[0], // Use nombre if available, otherwise use email prefix
+            ...data.user, // Spread any additional fields
+          });
+        }
+
         setMessage('Bienvenido!');
-        setEmail('');
-        setPassword('');
         router.push(`/usuarios/panel`);
       } else {
         setMessage('Usuario y/o contraseña incorrectos');
@@ -46,9 +57,10 @@ export default function Usuarios() {
   const ingreso = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
-    setEmail(form.email.value);
-    setPassword(form.password.value);
-    checkUser();
+    const emailValue = form.email.value;
+    const passwordValue = form.password.value;
+    setEmail(emailValue);
+    checkUser(emailValue, passwordValue);
   };
 
   return (

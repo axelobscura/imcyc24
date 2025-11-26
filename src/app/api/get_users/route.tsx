@@ -11,7 +11,7 @@ const connectionConfig = {
 
 export async function GET() {
   let connection;
-  
+
   try {
     connection = await mysql.createConnection(connectionConfig);
     const [rows] = await connection.execute('SELECT * FROM usuarios');
@@ -30,29 +30,35 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
   let connection;
-  
+
   try {
     connection = await mysql.createConnection(connectionConfig);
     const { email, password } = await request.json();
-    
+
     // SELECT query to find user with matching email and password
     const [rows] = await connection.execute<mysql.RowDataPacket[]>(
-      'SELECT * FROM usuarios WHERE email = ? AND password = ?', 
+      'SELECT * FROM usuarios WHERE email = ? AND password = ?',
       [email, password]
     );
-    
+
     // Check if user exists
     if (Array.isArray(rows) && rows.length > 0) {
       // User found - login successful
-      const user = rows[0] as { id: number; email: string };
+      const user = rows[0] as {
+        id: number;
+        email: string;
+        nombre?: string;
+        categoria?: string;
+        [key: string]: unknown;
+      };
+
+      // Destructure to exclude password
+      const { password: _, ...userWithoutPassword } = user;
+
       return NextResponse.json(
-        { 
-          message: 'Login successful', 
-          user: {
-            id: user.id,
-            email: user.email
-            // Don't return password in response
-          }
+        {
+          message: 'Login successful',
+          user: userWithoutPassword
         },
         { status: 200 }
       );
@@ -63,7 +69,7 @@ export async function POST(request: NextRequest) {
         { status: 401 }
       );
     }
-    
+
   } catch (error) {
     console.error('Database error:', error);
     return NextResponse.json(

@@ -3,9 +3,21 @@ import { useParams } from 'next/navigation';
 import { useState, useEffect } from "react";
 import Loader from './Loader';
 
+interface Respuesta {
+    id: number;
+    id_pregunta: string;
+    pregunta: string;
+    correcta: string;
+}
+
+interface Pregunta {
+    pregunta: string;
+    respuesta: Respuesta[];
+}
+
 interface Evaluacion {
     message?: string;
-    preguntas?: unknown[];
+    preguntas?: Pregunta[];
 }
 
 export default function Evaluacion() {
@@ -33,8 +45,24 @@ export default function Evaluacion() {
                 <h2 className="text-center text-4xl font-bold text-white p-0 m-0">{typeof params?.webinar === 'string' ? decodeURIComponent(params.webinar.split('-').join(' ')).toUpperCase() : ''}</h2>
             </div>
             <div className="w-full p-5 py-0">
-                <p className="font-montserrat text-blue-500 w-full text-center text-2xl font-bold">
-                </p>
+                {evaluacion.preguntas.map((pregunta: Pregunta, index: number) => (
+                    <div key={index}>
+                        <p className="text-white my-2 bg-gray-800 bg-opacity-50 p-2 rounded-md grid grid-cols-[1fr] sm:grid-cols-[1fr_20fr] gap-0 items-center"><span className="text-white flex justify-center items-center bg-slate-500 p-2 rounded-md mr-3">{index + 1}</span> <span className="text-white text-left">{pregunta.pregunta}</span></p>
+                        <div className="mx-4 my-4 bg-slate-900 bg-opacity-50 p-3 rounded-md">
+                            {pregunta.respuesta.map((respuestaObj: Respuesta, respuestaIndex: number) => (
+                                <label key={respuestaIndex} className="block text-white my-2 cursor-pointer hover:text-gray-300 grid grid-cols-[1fr] sm:grid-cols-[1fr_20fr] gap-0 items-center">
+                                    <input
+                                        type="radio"
+                                        name={`pregunta-${index}`}
+                                        value={respuestaObj.pregunta}
+                                        className="mr-2"
+                                    />
+                                    {respuestaObj.pregunta}
+                                </label>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

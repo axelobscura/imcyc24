@@ -6,6 +6,8 @@ import { useParams } from 'next/navigation';
 import Loader from '@/app/components/Loader';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useUser } from '@/app/context/UserContext';
+import { useRouter } from 'next/navigation';
 
 interface Categoria {
     id: number;
@@ -30,6 +32,15 @@ export default function Categoria() {
     const categoria = params.categoria as string;
     const [categoriaData, setCategoriaData] = useState<Categoria | null>(null);
     const [webinars, setWebinars] = useState<Webinar[] | null>(null);
+    const { isLoggedIn } = useUser();
+    const router = useRouter();
+
+    // Redirect if not logged in
+    useEffect(() => {
+        if (!isLoggedIn) {
+            router.push('/usuarios');
+        }
+    }, [isLoggedIn, router]);
 
     useEffect(() => {
         async function fetchData() {

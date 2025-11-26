@@ -1,5 +1,5 @@
 //FLOWBITE - https://flowbite.com/docs/components/navbar/
-"use client"
+"use client";
 import { useState, useEffect } from 'react'
 import BreadCrumbUser from '@/app/components/BreadCrumbUser';
 import Link from 'next/link';
@@ -7,11 +7,22 @@ import Image from 'next/image';
 import Loader from '@/app/components/Loader';
 import { CiCirclePlus } from "react-icons/ci";
 import { IoArrowDownCircle } from "react-icons/io5";
+import { useUser } from '@/app/context/UserContext';
+import { useRouter } from 'next/navigation';
 
 export default function Panel() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("test");
   const [categorias, setCategorias] = useState([]);
+  const { user, isLoggedIn, logout } = useUser();
+  const router = useRouter();
+
+  // Redirect if not logged in
+  useEffect(() => {
+    if (!isLoggedIn) {
+      router.push('/usuarios');
+    }
+  }, [isLoggedIn, router]);
 
   const checkCategorias = async () => {
     setLoading(true);
@@ -47,7 +58,9 @@ export default function Panel() {
   if (loading) {
     return <Loader />;
   }
+
   console.log(message);
+  console.log('user: ', user);
 
   return (
     <div>
