@@ -49,11 +49,12 @@ export async function POST(request: NextRequest) {
         email: string;
         nombre?: string;
         categoria?: string;
+        password?: string;
         [key: string]: unknown;
       };
 
-      // Destructure to exclude password
-      const { password: _, ...userWithoutPassword } = user;
+      // Create user object without password
+      const { password, ...userWithoutPassword } = user;
 
       return NextResponse.json(
         {
