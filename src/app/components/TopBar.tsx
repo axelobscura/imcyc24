@@ -122,7 +122,7 @@ const TopBar = () => {
   return (
     <>
       <div className="fixed z-50 w-full headerimcyc">
-        <nav className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+        <nav className="bg-black border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-0 pb-0">
             <div className="flex items-center space-x-2 rtl:space-x-reverse">
               <Link href={`tel:${telefono}`} className="flex font-montserrat text-xs text-gray-200 dark:text-gray-200 hover:underline flex flex-row">

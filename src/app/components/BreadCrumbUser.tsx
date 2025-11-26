@@ -50,7 +50,7 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
               href={categoryUrl}
               className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
             >
-              | {decodeURIComponent((categoria || '').split('-').join(' ').toUpperCase())}
+              | {decodeURIComponent((categoria || '').split('-').join(' ')).toUpperCase()}
             </Link>
           </li>
         )}
@@ -60,14 +60,14 @@ export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
               href={webinarUrl}
               className="inline-flex items-center text-sm font-medium text-gray-200 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
             >
-              | {decodeURIComponent((webinar || '').split('-').join(' ').toUpperCase())}
+              | {decodeURIComponent((webinar || '').split('-').join(' ')).toUpperCase()}
             </Link>
           </li>
         )}
         {tipo && (
           <li className="inline-flex items-center">
             <span className="inline-flex items-center text-sm font-medium text-gray-400 dark:text-gray-400">
-              | {decodeURIComponent((tipo || '').split('-').join(' ').toUpperCase())}
+              | {decodeURIComponent((tipo || '').split('-').join(' ')).toUpperCase()}
             </span>
           </li>
         )}

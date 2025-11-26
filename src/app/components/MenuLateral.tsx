@@ -14,31 +14,29 @@ export default function MenuLateral(
         params: BreadCrumbUserProps
     }) {
     const { categoria, webinar, url } = params || {};
-    console.log('categoria', categoria)
-    console.log('webinar', webinar)
     return (
         <div className='barra_lateral'>
             <ul className='menu interno bg-slate-800 bg-opacity-50'>
                 <li>
-                    <Link href={`/usuarios/${categoria}/${webinar}/evaluacion-diagnostico`} className={'mb-0'}><BsChevronRight /> EVALUACIÓN DIAGNÓSTICO</Link>
+                    <Link href={`/usuarios/${categoria}/${webinar}/evaluación-diagnóstico`} className={'mb-0'}><BsChevronRight /> EVALUACIÓN DIAGNÓSTICO</Link>
                 </li>
                 <li>
-                    <Link href={`/usuarios/${categoria}/${webinar}/presentacion-ejecutiva`} className={'mb-0'}><BsChevronRight /> PRESENTACIÓN EJECUTIVA</Link>
+                    <Link href={`/usuarios/${categoria}/${webinar}/presentación-ejecutiva`} className={'mb-0'}><BsChevronRight /> PRESENTACIÓN EJECUTIVA</Link>
                 </li>
                 <li>
-                    <Link href={`/usuarios/${categoria}/${webinar}/presentacion-grabada`} className={'mb-0'}><BsChevronRight /> PRESENTACIÓN GRABADA</Link>
+                    <Link href={`/usuarios/${categoria}/${webinar}/presentación-grabada`} className={'mb-0'}><BsChevronRight /> PRESENTACIÓN GRABADA</Link>
                 </li>
                 <li>
                     <Link href={`/usuarios/${categoria}/${webinar}/dato-en-concreto`} className={'mb-0'}><BsChevronRight /> DATO EN CONCRETO</Link>
                 </li>
                 <li>
-                    <Link href={`/usuarios/${categoria}/${webinar}/infografias`} className={'mb-0'}><BsChevronRight /> INFOGRAFÍAS</Link>
+                    <Link href={`/usuarios/${categoria}/${webinar}/infografías`} className={'mb-0'}><BsChevronRight /> INFOGRAFÍAS</Link>
                 </li>
                 <li>
                     <Link href={`/usuarios/${categoria}/${webinar}/videos`} className={'mb-0'}><BsChevronRight /> VIDEOS</Link>
                 </li>
                 <li>
-                    <Link href={`/usuarios/${categoria}/${webinar}/evaluacion-final`} className={'mb-0'}><BsChevronRight /> EVALUACIÓN FINAL</Link>
+                    <Link href={`/usuarios/${categoria}/${webinar}/evaluación-final`} className={'mb-0'}><BsChevronRight /> EVALUACIÓN FINAL</Link>
                 </li>
                 <li>
                     <Link href={`/usuarios/${categoria}/${webinar}/contenido-adicional`} className={'mb-0'}><BsChevronRight /> CONTENIDO ADICIONAL</Link>
