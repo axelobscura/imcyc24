@@ -13,7 +13,7 @@ interface BreadCrumbUserProps {
 
 export default function BreadCrumbUser({ params }: BreadCrumbUserProps) {
   const { categoria, webinar, tipo, url } = params || {};
-  const { user, isLoggedIn, logout } = useUser();
+  const { user } = useUser();
 
   // Determine Category URL: use provided URL or construct from slug
   const categoryUrl = url || (categoria ? `/usuarios/${categoria}` : "#");

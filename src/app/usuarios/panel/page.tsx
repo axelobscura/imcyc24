@@ -14,7 +14,7 @@ export default function Panel() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("test");
   const [categorias, setCategorias] = useState([]);
-  const { user, isLoggedIn, logout } = useUser();
+  const { user, isLoggedIn } = useUser();
   const router = useRouter();
 
   // Redirect if not logged in
