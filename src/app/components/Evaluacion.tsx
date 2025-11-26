@@ -5,7 +5,7 @@ import Loader from './Loader';
 
 interface Evaluacion {
     message?: string;
-    preguntas?: any[];
+    preguntas?: unknown[];
 }
 
 export default function Evaluacion() {

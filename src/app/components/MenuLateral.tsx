@@ -4,7 +4,6 @@ import Link from 'next/link';
 interface BreadCrumbUserProps {
     categoria?: string;
     webinar?: string;
-    url?: string;
 }
 
 export default function MenuLateral(
@@ -13,7 +12,7 @@ export default function MenuLateral(
     }: {
         params: BreadCrumbUserProps
     }) {
-    const { categoria, webinar, url } = params || {};
+    const { categoria, webinar } = params || {};
     return (
         <div className='barra_lateral'>
             <ul className='menu interno bg-slate-800 bg-opacity-50'>

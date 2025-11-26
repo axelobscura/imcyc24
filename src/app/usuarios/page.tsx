@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useRouter } from "next/navigation";
 
 export default function Usuarios() {
-  const [posts, setPosts] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -33,7 +32,6 @@ export default function Usuarios() {
         setMessage('Bienvenido!');
         setEmail('');
         setPassword('');
-        setPosts(data);
         router.push(`/usuarios/panel`);
       } else {
         setMessage('Usuario y/o contraseña incorrectos');

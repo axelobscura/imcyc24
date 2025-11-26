@@ -20,10 +20,10 @@ export async function GET(request: Request, { params }: { params: Promise<Params
         connection = await mysql.createConnection(connectionConfig);
         const results = await connection.execute('SELECT * FROM webinars WHERE url = ?', [webinar]) as unknown[];
         const categoria = JSON.parse(JSON.stringify(results[0]));
-        const [rows2] = await connection.execute(`SELECT * FROM ${categoria[0].preguntas}`) as [RowDataPacket[], any];
+        const [rows2] = await connection.execute(`SELECT * FROM ${categoria[0].preguntas}`) as [RowDataPacket[], unknown];
         const pregRep = [];
         for (let i = 0; i < rows2.length; i++) {
-            const [rows3] = await connection.execute(`SELECT * FROM ${categoria[0].respuestas} where id_pregunta = ?`, [rows2[i].id]) as [RowDataPacket[], any];
+            const [rows3] = await connection.execute(`SELECT * FROM ${categoria[0].respuestas} where id_pregunta = ?`, [rows2[i].id]) as [RowDataPacket[], unknown];
             pregRep.push({ id: Number(rows2[i].id), pregunta: rows2[i].pregunta, respuesta: rows3 });
         }
         return NextResponse.json({ message: 'evaluacion', preguntas: pregRep });

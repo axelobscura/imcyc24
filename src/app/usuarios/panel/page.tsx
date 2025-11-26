@@ -47,6 +47,7 @@ export default function Panel() {
   if (loading) {
     return <Loader />;
   }
+  console.log(message);
 
   return (
     <div>
