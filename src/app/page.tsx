@@ -73,7 +73,7 @@ export default function Home() {
                   className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-green-700 rounded-full bg-green-900 dark:text-blue-300 hover:bg-green-200 dark:hover:bg-blue-800 mr-3"
                 >
                   <span className="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 me-3">
-                    Calendario de Proveedor de Ensayos de Aptitud 2025
+                    Calendario de Proveedor de Ensayos de Aptitud 2026
                   </span>{" "}
                   <svg
                     className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
