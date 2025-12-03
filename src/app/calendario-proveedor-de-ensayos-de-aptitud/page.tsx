@@ -8,7 +8,7 @@ export default function CalendarioProveedorDeEnsayosDeAptitud() {
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full text-white">
           <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-5 items-start justify-items-stretch pt-20 w-full">
             <div>
-              <iframe src='/docs/Calendario_de_Programas_PEA_2025.pdf' style={{
+              <iframe src='/docs/Calendario_de_Programas_PEA_2026.pdf' style={{
                   width: '100%',
                   height: '100vh'
               }} />
