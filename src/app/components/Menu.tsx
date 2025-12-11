@@ -113,17 +113,6 @@ function Menu() {
                 </li>
                 <li>
                   <a
-                    href="/laboratorio-de-calibracion"
-                    className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
-                  >
-                    <AiOutlinePlusCircle className="mr-2 text-2xl" />
-                    Laboratorio de calibración
-                  </a>
-                </li>
-              </div>
-              <div className="space-y-4 p-4">
-                <li>
-                  <a
                     href="/asesoria-en-estructuras"
                     className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500"
                   >
@@ -131,6 +120,9 @@ function Menu() {
                     Asesoría técnica en estructuras
                   </a>
                 </li>
+              </div>
+              <div className="space-y-4 p-4">
+                
                 <li>
                   <a
                     href="/proveedor-de-ensayos-de-aptitud"
@@ -140,8 +132,6 @@ function Menu() {
                     Proveedor de ensayos de aptitud
                   </a>
                 </li>
-              </div>
-              <div className="space-y-4 p-4">
                 <li>
                   <a
                     href="/organismo-de-certificacion-de-personas"
@@ -151,6 +141,9 @@ function Menu() {
                     Organismo de certificación de personas
                   </a>
                 </li>
+              </div>
+              <div className="space-y-4 p-4">
+                
                 <li>
                   <a
                     href="/organismo-de-certificacion-de-producto"
@@ -160,8 +153,6 @@ function Menu() {
                     Organismo de certificación de producto
                   </a>
                 </li>
-              </div>
-              <div className="space-y-4 p-4">
                 <li>
                   <a
                     href="/asociados"
@@ -171,6 +162,9 @@ function Menu() {
                     Nuestros clientes
                   </a>
                 </li>
+              </div>
+              <div className="space-y-4 p-4">
+                
                 <li>
                   <a
                     href="quejas-y-apelaciones"

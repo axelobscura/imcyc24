@@ -84,12 +84,6 @@ const Footer = () => {
                       Laboratorio de ensayos
                     </Link>
                   </li>
-                  
-                  <li className="mb-2">
-                    <Link href="/laboratorio-de-calibracion" className="hover:text-gray-100">
-                      Laboratorio de calibración
-                    </Link>
-                  </li>
                   <li className="mb-2">
                     <Link href="/asesoria-en-estructuras" className="hover:text-gray-100">
                       Asesoría técnica en estructuras
