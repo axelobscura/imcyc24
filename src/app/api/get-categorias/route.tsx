@@ -9,6 +9,7 @@ export async function GET(request: Request) {
     `)
     return NextResponse.json(results);
   } catch (e: unknown) {
+    console.error('Error fetching categorias:', e);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }

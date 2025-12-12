@@ -34,7 +34,7 @@ export default function Prensa() {
                 </h1>
                 <h3 className="font-montserrat text-1xl pt-2 text-white">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
               </div>
-              <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] items-center">
+              <div className="grid grid-cols-[1fr] sm:grid-cols-[5fr_1fr] items-start justify-start">
                 <div>
                   {posts.map((post, index) => (
                     <Link
@@ -61,6 +61,11 @@ export default function Prensa() {
                       </div>
                     </Link>
                   ))}
+                </div>
+                <div>
+                  <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                    <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
+                  </Link>
                 </div>
               </div>
             </div>
