@@ -5,6 +5,7 @@ import MenuLateral from "@/app/components/MenuLateral";
 import BreadCrumbUser from "@/app/components/BreadCrumbUser";
 import Script from 'next/script';
 import Evaluacion from '@/app/components/Evaluacion';
+import Video from '@/app/components/Video';
 
 interface FlipBookButtonOptions {
     enabled?: boolean;
@@ -125,12 +126,7 @@ export default function Tipo() {
 
                                     {decodeURIComponent(params.tipo as string) === "presentación-ejecutiva" && <div id="container"></div>}
 
-
-
-
-
-
-
+                                    {decodeURIComponent(params.tipo as string) === "videos" && <Video id="RoaJjkbP2mc" />}
 
 
                                 </div>

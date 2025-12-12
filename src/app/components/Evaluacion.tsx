@@ -32,6 +32,7 @@ export default function Evaluacion() {
             const response = await fetch(`/api/get_evaluacion/${params.webinar}`);
             const data = await response.json();
             setEvaluacion(data);
+            console.log('Evaluacion loaded:', data);
         };
         fetchEvaluacion();
     }, [params.webinar]);
@@ -61,8 +62,6 @@ export default function Evaluacion() {
     if (!evaluacion.preguntas) {
         return <Loader />;
     }
-
-    console.log(evaluacion)
     return (
         <div className="grid grid-cols-[1fr] w-full rounded-md items-center">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 my-5">
