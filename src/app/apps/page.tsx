@@ -69,6 +69,7 @@ export default function Apps() {
         setMessage(data.error || 'Something went wrong');
       }
     } catch (error) {
+      console.error('Network error:', error);
       setMessage('Network error occurred');
     } finally {
       setLoading(false);

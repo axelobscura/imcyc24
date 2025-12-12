@@ -25,6 +25,7 @@ export async function GET(request: Request, { params }: { params: Promise<Params
         const webinars = JSON.parse(JSON.stringify(results2 || []));
         return NextResponse.json({ message: 'categoria', webinars, categoria: categoria });
     } catch (error) {
+        console.error('Error fetching aplicaciones:', error);
         return NextResponse.json(
             { error: 'Failed to fetch users' },
             { status: 500 }

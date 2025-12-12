@@ -28,6 +28,7 @@ export async function GET(request: Request, { params }: { params: Promise<Params
         }
         return NextResponse.json({ message: 'evaluacion', preguntas: pregRep });
     } catch (error) {
+        console.error('Error fetching aplicaciones:', error);
         return NextResponse.json(
             { error: 'Failed to fetch evaluaciones' },
             { status: 500 }
