@@ -17,6 +17,7 @@ export async function GET() {
         const [rows] = await connection.execute('SELECT * FROM categorias');
         return NextResponse.json(rows);
     } catch (error) {
+        console.error('Error fetching aplicaciones:', error);
         return NextResponse.json(
             { error: 'Failed to fetch users' },
             { status: 500 }
