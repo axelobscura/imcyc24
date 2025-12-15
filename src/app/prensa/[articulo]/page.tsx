@@ -34,6 +34,18 @@ export default function Articulo() {
         <div className="mx-auto w-full max-w-screen-xl p-4 md:pt-40 sm:pt-0 pb-0 lg:py-40">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[5fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
+              <div className="block sm:hidden">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image 
+                        src="/prensa/banner_elemental_2.gif" 
+                        alt="IMCYC" 
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </Link>
+                  </div>
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-ligth mb-5">
                   {contenido && contenido[0]}
@@ -59,9 +71,11 @@ export default function Articulo() {
                 }
               </div>
               <div>
-                  <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
-                  </Link>
+                  <div className="hidden sm:block">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
+                    </Link>
+                  </div>
                 </div>
             </div>
           </main>
