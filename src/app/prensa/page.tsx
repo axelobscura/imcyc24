@@ -36,6 +36,18 @@ export default function Prensa() {
               </div>
               <div className="grid grid-cols-[1fr] sm:grid-cols-[5fr_1fr] items-start justify-start">
                 <div>
+                  <div className="block sm:hidden">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image 
+                        src="/prensa/banner_elemental_2.gif" 
+                        alt="IMCYC" 
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </Link>
+                  </div>
                   {posts.map((post, index) => (
                     <Link
                       href={`/prensa/${post[4]}`}
@@ -63,9 +75,11 @@ export default function Prensa() {
                   ))}
                 </div>
                 <div>
-                  <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
-                  </Link>
+                  <div className="hidden sm:block">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
