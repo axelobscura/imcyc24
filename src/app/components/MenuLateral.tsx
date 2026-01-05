@@ -14,7 +14,6 @@ export default function MenuLateral(
         params: BreadCrumbUserProps
     }) {
     const { categoria, webinar } = params || {};
-    console.log('MenuLateral params:', params.tipo as string);
     return (
         <div className='barra_lateral'>
             <ul className='menu interno bg-slate-800 bg-opacity-50'>
