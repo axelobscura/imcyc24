@@ -22,36 +22,10 @@ export default function CalendarioDeCursos() {
                     </a>
                   </div>
                   <div>
-                    <Image
-                      src="https://imcyc.net/2025/calendario25_Page_1.jpg"
-                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                      width={900}
-                      height={0}
-                    />
-                    <Image
-                      src="https://imcyc.net/2025/calendario25_Page_2.jpg"
-                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                      width={900}
-                      height={0}
-                    />
-                    <Image
-                      src="https://imcyc.net/2025/calendario25_Page_3.jpg"
-                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                      width={900}
-                      height={0}
-                    />
-                    <Image
-                      src="https://imcyc.net/2025/calendario25_Page_4.jpg"
-                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                      width={900}
-                      height={0}
-                    />
-                    <Image
-                      src="https://imcyc.net/2025/calendario25_Page_5.jpg"
-                      alt="Instituto Mexicano del Cemento y del Concreto A.C."
-                      width={900}
-                      height={0}
-                    />
+                    <iframe src='/docs/Calendario_de_Cursos_2026.pdf' style={{
+                        width: '100%',
+                        height: '100vh'
+                    }} />
                   </div>
                   
                 </div>

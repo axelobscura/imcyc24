@@ -71,6 +71,11 @@ const Footer = () => {
                       ¿Qué es la Gerencia de Enseñanza?
                     </Link>
                   </li>
+                  <li className="mb-2">
+                    <Link href="/apps" className="hover:text-gray-100">
+                      Aplicaciones para la construcción
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
@@ -181,7 +186,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 1953 - 2025{" "}
+              © 1953 - 2026{" "}
               <a href="https://imcyc.com/" className="hover:underline">
                 Instituto Mexicano del Cemento y del Concreto A.C.
               </a>
