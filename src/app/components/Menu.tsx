@@ -337,12 +337,12 @@ function Menu() {
             </ul>
           </MegaMenuDropdown>
           <NavbarLink
-            href="https://webinarsenconcreto.com/"
+            href="https://grabador.imcyc.com/TiendaImcyc/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-montserrat whitespace-nowrap py-1 px-2 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-100 md:p-0 md:dark:text-gray-100 text-sm uppercase"
           >
-            Webinars
+            Tienda
           </NavbarLink>
           <NavbarLink
             href="/prensa"
