@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import { FaRegUserCircle, FaBuilding, FaUserCheck, FaUserPlus, FaBrain } from "react-icons/fa";
 import { FaMobile } from "react-icons/fa6";
 import { IoIosAlert } from "react-icons/io";
@@ -9,7 +8,6 @@ import { IoShieldCheckmark } from "react-icons/io5";
 
 
 export default function Membresias() {
-    const [isOpenTipo, setIsOpenTrue] = useState(false);
 
 
     return (
