@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { FaRegUserCircle, FaBuilding, FaUserCheck, FaUserPlus, FaBrain } from "react-icons/fa";
 import { FaMobile } from "react-icons/fa6";
@@ -20,14 +19,14 @@ export default function Membresias() {
                     <p className="text-center text-white text-1xl">Elige el plan perfecto para tu carrera.<br/>Aprende sin límites y acelera tu crecimiento profesional.</p>
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-5 p-5 my-9 mb-3 bg-slate-950 rounded-[50px]">
                         <div className="bg-slate-700 flex flex-col items-center justify-center p-2 rounded-[30px] text-center border-2 border-blue-500 cursor-pointer">
-                            <p className="text-white text-1xl uppercase flex items-center"><FaRegUserCircle size={20} className="mr-3" /> Individual</p>
+                            <p className="text-white text-1xl uppercase flex items-center"><FaRegUserCircle size={20} className="mr-3" /> Individuales</p>
                         </div>
                         <div className="bg-slate-950 flex flex-col items-center justify-center p-2 rounded-[30px] text-center">
                             <p className="text-white text-1xl uppercase">Membresías</p>
                             <p className="text-1xl text-blue-500">Para empresas y profesionales</p>
                         </div>
                         <div className="bg-slate-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center cursor-pointer">
-                            <p className="text-white text-1xl uppercase flex items-center"><FaBuilding size={20} className="mr-3" /> Empresarial</p>
+                            <p className="text-white text-1xl uppercase flex items-center"><FaBuilding size={20} className="mr-3" /> Empresariales</p>
                         </div>
                     </div>
                 </main>
