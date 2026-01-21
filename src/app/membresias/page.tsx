@@ -6,6 +6,7 @@ import { BsCreditCard2FrontFill } from "react-icons/bs";
 import { IoShieldCheckmark } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import Link from "next/link";
+import PrecioMembresia from "../components/PrecioMembresia";
 
 export default function Membresias() {
     return (
@@ -41,7 +42,7 @@ export default function Membresias() {
                 <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 my-5">
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserCheck className="mr-3" /> Profesional</h2>
-                        <p className="text-white text-3xl font-bold">$99 <span className="text-sm text-gray-400">/mes</span></p>
+                        <PrecioMembresia tipo={'pro'}/>
                         <p className="text-gray-200 mt-3">Lo que incluye:</p>
                         <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                             <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
@@ -52,7 +53,7 @@ export default function Membresias() {
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserPlus className="mr-3" /> Profesional Plus</h2>
-                        <p className="text-white text-3xl font-bold">$299 <span className="text-sm text-gray-400">/mes</span></p>
+                        <PrecioMembresia tipo={'proplus'}/>
                         <p className="text-gray-200 mt-3">Lo que incluye:</p>
                         <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                             <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
