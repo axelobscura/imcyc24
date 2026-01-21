@@ -49,10 +49,10 @@ const PrecioMembresia = (tipo : {
     <>
     <div className="grid grid-cols-2 mb-3 gap-5">
         <div>
-          <p className={`text-white  ${selectedTipo === 'mes' ? 'bg-blue-900' : 'bg-slate-600'} hover:bg-blue-900 text-center rounded-[20px] cursor-pointer`} onClick={() => setSelectedTipo('mes')}>MENSUAL</p>
+          <p className={`text-white  ${selectedTipo === 'mes' ? 'bg-blue-900 border border-spacing-2 border-blue-500' : 'bg-slate-600'} hover:bg-blue-900 text-center rounded-[20px] cursor-pointer`} onClick={() => setSelectedTipo('mes')}>MENSUAL</p>
         </div>
         <div>
-          <p className={`text-white ${selectedTipo === 'año' ? 'bg-blue-900' : 'bg-slate-600'} hover:bg-blue-900 text-center rounded-[20px] cursor-pointer`} onClick={() => setSelectedTipo('año')}>ANUAL</p>
+          <p className={`text-white ${selectedTipo === 'año' ? 'bg-blue-900 border border-spacing-2 border-blue-500' : 'bg-slate-600'} hover:bg-blue-900 text-center rounded-[20px] cursor-pointer`} onClick={() => setSelectedTipo('año')}>ANUAL</p>
         </div>
     </div>
     <p className="text-white text-3xl font-bold">${usePrecio.precio} <span className="text-sm text-gray-400">/{selectedTipo}</span></p>
