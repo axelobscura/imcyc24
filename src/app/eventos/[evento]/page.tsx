@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Loader from "../../components/Loader";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaCalendar } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Evento() {
   const params = useParams<{ evento: string }>();
@@ -69,6 +70,19 @@ export default function Evento() {
                   <li>En caso de cancelación por parte del participante, ésta se deberá enviar por escrito máximo una semana antes del evento solicitando el traspaso de fondos a otro curso o servicio durante el calendario lectivo 2026, no hay devoluciones.</li>
                   <li>Precios más IVA.</li>
                 </ul>
+                <h2 className="text-2xl text-blue-400 text-bold flex items-center"><FaCircleArrowRight className="mr-3" /> REGÍSTRATE HOY MISMO</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 my-5 gap-4">
+                  <div>
+                    <Link href="/" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
+                      PAGAR INSCRIPCIÓN
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
+                      MÁS INFORMACIÓN
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </main>
