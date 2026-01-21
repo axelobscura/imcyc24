@@ -40,28 +40,42 @@ export default function Membresias() {
                     </div>
                 </div>
                 <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 my-5">
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserCheck className="mr-3" /> Profesional</h2>
-                        <PrecioMembresia tipo={'pro'}/>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
-                            <li className="pb-2">Plataforma En Línea</li>
-                            <li className="pb-2">Con anuncios</li>
-                            <li className="pb-2">20% de descuento para estudiantes y profesores</li>
-                        </ul>
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserCheck className="mr-3" /> Profesional</h2>
+                            <PrecioMembresia tipo={'pro'}/>
+                            <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                            <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                                <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
+                                <li className="pb-2">Plataforma En Línea</li>
+                                <li className="pb-2">Con anuncios</li>
+                                <li className="pb-2">20% de descuento para estudiantes y profesores</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                MÁS INFORMACIÓN
+                            </Link>
+                        </div>
                     </div>
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserPlus className="mr-3" /> Profesional Plus</h2>
-                        <PrecioMembresia tipo={'proplus'}/>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
-                            <li className="pb-2">Plataforma En Línea + contenido adicional</li>
-                            <li className="pb-2">Con anuncios ligeros</li>
-                            <li className="pb-2">10% de descuento en publicaciones</li>
-                            <li className="pb-2">10% de descuento en enseñanza</li>
-                        </ul>   
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserPlus className="mr-3" /> Profesional Plus</h2>
+                            <PrecioMembresia tipo={'proplus'}/>
+                            <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                            <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                                <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
+                                <li className="pb-2">Plataforma En Línea + contenido adicional</li>
+                                <li className="pb-2">Con anuncios ligeros</li>
+                                <li className="pb-2">10% de descuento en publicaciones</li>
+                                <li className="pb-2">10% de descuento en enseñanza</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                MÁS INFORMACIÓN
+                            </Link>
+                        </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaBrain className="mr-3" /> Inteligencia Artificial</h2>
