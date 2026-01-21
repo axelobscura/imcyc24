@@ -53,7 +53,7 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
                                 MÁS INFORMACIÓN
                             </Link>
                         </div>
@@ -72,7 +72,7 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
                                 MÁS INFORMACIÓN
                             </Link>
                         </div>
