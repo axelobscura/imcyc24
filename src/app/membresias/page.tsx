@@ -25,7 +25,7 @@ export default function Membresias() {
                         </div>
                         <div className="bg-slate-950 flex flex-col items-center justify-center p-2 rounded-[30px] text-center">
                             <p className="text-white text-1xl uppercase">Membresías</p>
-                            <p className="text-1xl text-blue-500">Para empresas y profesionales</p>
+                            <p className="text-1xl text-blue-500 uppercase">Para empresas y profesionales</p>
                         </div>
                         <div className="bg-slate-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center cursor-pointer">
                             <Link href="/membresias/empresariales" className="w-full h-full flex items-center justify-center">
