@@ -212,7 +212,7 @@ export default function Empresariales() {
                     <p className="text-white flex items-center"><SlClose className="mr-3" size={15} /> Certificaciones oficiales de competencia</p>
                     <p className="text-white flex items-center"><SlClose className="mr-3" size={15} />Exámenes de certificación técnica</p>
                     <div className="my-5 bg-slate-500 p-3 px-5 rounded-[20px]">
-                        <p className="text-white font-bold">Los planes se enfocan en capacitación y desarrollo profesional. Para obtener certificaciones oficiales y ensayos de aptitud, consulta nuestros servicios especializados.</p>
+                        <p className="text-white font-bold">Los planes se enfocan en capacitación y desarrollo profesional.<br/>Para obtener certificaciones oficiales y ensayos de aptitud, consulta nuestros servicios especializados.</p>
                     </div>
                 </div>
             </div>
