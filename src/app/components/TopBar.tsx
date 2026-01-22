@@ -166,7 +166,7 @@ const TopBar = () => {
               <Link href="https://x.com/imcyc_oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                 <RiTwitterXLine size={20} />
               </Link>
-              <Link href="https://www.youtube.com/channel/UCGLxU2D2q2i8ny_klAWqPTw" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
+              <Link href="https://www.youtube.com/channel/UCIG6a667-g1L3b6mYdBjHbA" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
                 <FaYoutubeSquare size={20} />
               </Link>
               <Link href="https://mx.linkedin.com/company/imcyc-oficial" rel="noopener noreferrer" target="_blank" className="text-sm  text-gray-500 dark:text-gray-400 hover:underline flex flex-row">
