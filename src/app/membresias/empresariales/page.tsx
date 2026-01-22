@@ -7,6 +7,7 @@ import { IoShieldCheckmark } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import Link from "next/link";
 import ButtonMasInformacion from "@/app/components/ButtonMasInformacion";
+import { BsBuildingsFill } from "react-icons/bs";
 
 export default function Empresariales() {
     return (
@@ -18,18 +19,19 @@ export default function Empresariales() {
                     <h2 className="text-center text-white text-6xl font-bold py-5">Precios <span className="text-blue-500">Universidad Digital IMCYC</span></h2>
                     <p className="text-center text-white text-1xl">Elige el plan perfecto para tu carrera.<br/>Aprende sin límites y acelera tu crecimiento profesional.</p>
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-5 p-5 my-9 mb-3 bg-slate-950 rounded-[50px]">
-                        <div className="bg-slate-900 hover:bg-blue-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-centercursor-pointer">
+                        <div className="bg-slate-900 hover:bg-blue-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center cursor-pointer">
                             <Link href="/membresias" className="w-full h-full flex items-center justify-center">
                                 <p className="text-white text-1xl uppercase flex items-center"><FaRegUserCircle size={20} className="mr-3" /> Individuales</p>
                             </Link>
                         </div>
-                        <div className="bg-slate-950 flex flex-col items-center justify-center p-2 rounded-[30px] text-center">
-                            <p className="text-white text-1xl uppercase">Membresías</p>
-                            <p className="text-1xl text-blue-500 uppercase">Para empresas y profesionales</p>
-                        </div>
-                        <div className="bg-slate-700 hover:bg-blue-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center border-2 border-blue-500 cursor-pointer">
+                        <div className="bg-slate-700 hover:bg-blue-700 flex flex-col items-center justify-center p-2 rounded-[30px] text-center border-2 border-blue-500 cursor-pointer">
                             <Link href="/membresias/empresariales" className="w-full h-full flex items-center justify-center">
                                 <p className="text-white text-1xl uppercase flex items-center"><FaBuilding size={20} className="mr-3" /> Empresariales</p>
+                            </Link>
+                        </div>
+                        <div className="bg-slate-900 hover:bg-blue-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center cursor-pointer">
+                            <Link href="/membresias/asociaciones" className="w-full h-full flex items-center justify-center">
+                                <p className="text-white text-1xl uppercase flex items-center"><BsBuildingsFill size={20} className="mr-3" /> Asociaciones</p>
                             </Link>
                         </div>
                     </div>
