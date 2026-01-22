@@ -18,7 +18,10 @@ export default function Empresariales() {
                     <h1 className="font-montserrat text-4xl font-light text-white pt-0 mb-0 pb-0 text-center">MEMBRESÍAS <span className="text-blue-400">EMPRESARIALES</span> IMCYC</h1>
                     <h2 className="text-center text-white text-6xl font-bold py-5">Precios <span className="text-blue-500">Universidad Digital IMCYC</span></h2>
                     <p className="text-center text-white text-1xl">Elige el plan perfecto para tu carrera.<br/>Aprende sin límites y acelera tu crecimiento profesional.</p>
-                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-5 p-5 my-9 mb-3 bg-slate-950 rounded-[50px]">
+                    <div className="grid grid-cols-[1fr] p-2 my-9 mb-0 bg-slate-950 rounded-t-[50px]">
+                        <p className="text-white text-center"><span className="uppercase font-bold">Membresías</span><br/>PARA EMPRESAS Y PROFESIONALES</p>
+                    </div>
+                    <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-5 p-5 my-9 mt-0 mb-5 bg-slate-950 rounded-b-[50px]">
                         <div className="bg-slate-900 hover:bg-blue-900 flex flex-col items-center justify-center p-2 rounded-[30px] text-center cursor-pointer">
                             <Link href="/membresias" className="w-full h-full flex items-center justify-center">
                                 <p className="text-white text-1xl uppercase flex items-center"><FaRegUserCircle size={20} className="mr-3" /> Individuales</p>
