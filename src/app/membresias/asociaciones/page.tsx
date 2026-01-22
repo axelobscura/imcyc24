@@ -15,7 +15,7 @@ export default function Asociaciones() {
             <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-900 to-slate-700 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat py-40 sm:py-40">
                 <div className="mx-auto max-w-screen-xl px-5">
                 <main className="pt-20">
-                    <h1 className="font-montserrat text-4xl font-light text-white pt-0 mb-0 pb-0 text-center">MEMBRESÍAS <span className="text-blue-400">EMPRESARIALES</span> IMCYC</h1>
+                    <h1 className="font-montserrat text-4xl font-light text-white pt-0 mb-0 pb-0 text-center">MEMBRESÍAS <span className="text-blue-400">ASOCIACIONES</span> IMCYC</h1>
                     <h2 className="text-center text-white text-6xl font-bold py-5">Precios <span className="text-blue-500">Universidad Digital IMCYC</span></h2>
                     <p className="text-center text-white text-1xl">Elige el plan perfecto para tu carrera.<br/>Aprende sin límites y acelera tu crecimiento profesional.</p>
                     <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] gap-5 p-5 my-9 mb-3 bg-slate-950 rounded-[50px]">
