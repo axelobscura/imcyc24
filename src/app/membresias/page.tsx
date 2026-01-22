@@ -7,6 +7,7 @@ import { IoShieldCheckmark } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import Link from "next/link";
 import PrecioMembresia from "../components/PrecioMembresia";
+import ButtonMasInformacion from "../components/ButtonMasInformacion";
 
 export default function Membresias() {
     return (
@@ -53,9 +54,7 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
-                                MÁS INFORMACIÓN
-                            </Link>
+                            <ButtonMasInformacion />
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
@@ -72,9 +71,7 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
-                                MÁS INFORMACIÓN
-                            </Link>
+                            <ButtonMasInformacion />
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">

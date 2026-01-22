@@ -6,6 +6,7 @@ import { BsCreditCard2FrontFill } from "react-icons/bs";
 import { IoShieldCheckmark } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import Link from "next/link";
+import ButtonMasInformacion from "@/app/components/ButtonMasInformacion";
 
 export default function Empresariales() {
     return (
@@ -39,80 +40,101 @@ export default function Empresariales() {
                     </div>
                 </div>
                 <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 my-5 mb-2">
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agua</h2>
-                        <p className="text-white text-3xl font-bold">$15,000 <span className="text-sm text-gray-400">/anual</span></p>
-                        <p className="text-gray-300 text-sm">$1,250/mes facturado anualmente</p>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2">Hasta 30 empleados</li>
-                            <li className="pb-2">Publicaciones 5% de descuento</li>
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 1M créditos)</li>
-                            <li className="pb-2">Logotipo en página web</li>
-                            <li className="pb-2">Presencia en redes: 1 publicación/mes</li>
-                            <li className="pb-2">Descuento en publicidad 5%</li>
-                            <li className="pb-2">Descuento en enseñanza 5%</li>
-                            <li className="pb-2">Descuento en pruebas de laboratorio 3%</li>
-                            <li className="pb-2">Descuento en viajes técnicos 5%</li>
-                            <li className="pb-2">Descuento en sellos de calidad 3%</li>
-                            <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                        </ul>
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                        <div>
+                          <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agua</h2>
+                          <p className="text-white text-3xl font-bold">$15,000 <span className="text-sm text-gray-400">/anual</span></p>
+                          <p className="text-gray-300 text-sm">$1,250/mes facturado anualmente</p>
+                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                              <li className="pb-2">Hasta 30 empleados</li>
+                              <li className="pb-2">Publicaciones 5% de descuento</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 1M créditos)</li>
+                              <li className="pb-2">Logotipo en página web</li>
+                              <li className="pb-2">Presencia en redes: 1 publicación/mes</li>
+                              <li className="pb-2">Descuento en publicidad 5%</li>
+                              <li className="pb-2">Descuento en enseñanza 5%</li>
+                              <li className="pb-2">Descuento en pruebas de laboratorio 3%</li>
+                              <li className="pb-2">Descuento en viajes técnicos 5%</li>
+                              <li className="pb-2">Descuento en sellos de calidad 3%</li>
+                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
+                          </ul>
+                        </div>
+                        <div className="my-3">
+                            <ButtonMasInformacion />
+                        </div>
                     </div>
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agregados</h2>
-                        <p className="text-white text-3xl font-bold">$25,000 <span className="text-sm text-gray-400">/anual</span></p>
-                        <p className="text-gray-300 text-sm">$2,083/mes facturado anualmente</p>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2">Desde 31, hasta 100 empleados</li>
-                            <li className="pb-2">Logotipo en página web</li>
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 2.250M créditos)</li>
-                            <li className="pb-2">Presencia en redes: 2 publicación/mes</li>
-                            <li className="pb-2">Descuento en publicidad 10%</li>
-                            <li className="pb-2">Descuento en enseñanza 10%</li>
-                            <li className="pb-2">Descuento en pruebas de laboratorio 5%</li>
-                            <li className="pb-2">Descuento en viajes técnicos 10%</li>
-                            <li className="pb-2">Descuento en sellos de calidad 5%</li>
-                            <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                        </ul>
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                        <div>
+                          <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agregados</h2>
+                          <p className="text-white text-3xl font-bold">$25,000 <span className="text-sm text-gray-400">/anual</span></p>
+                          <p className="text-gray-300 text-sm">$2,083/mes facturado anualmente</p>
+                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                              <li className="pb-2">Desde 31, hasta 100 empleados</li>
+                              <li className="pb-2">Logotipo en página web</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 2.250M créditos)</li>
+                              <li className="pb-2">Presencia en redes: 2 publicación/mes</li>
+                              <li className="pb-2">Descuento en publicidad 10%</li>
+                              <li className="pb-2">Descuento en enseñanza 10%</li>
+                              <li className="pb-2">Descuento en pruebas de laboratorio 5%</li>
+                              <li className="pb-2">Descuento en viajes técnicos 10%</li>
+                              <li className="pb-2">Descuento en sellos de calidad 5%</li>
+                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
+                          </ul>
+                          
+                        </div>
+                        <div className="my-3">
+                            <ButtonMasInformacion />
+                        </div>
                     </div>
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Concreto</h2>
-                        <p className="text-white text-3xl font-bold">$35,000 <span className="text-sm text-gray-400">/anual</span></p>
-                        <p className="text-gray-300 text-sm">$2,917/mes facturado anualmente</p>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2">Desde 101, hasta 500 empleados</li>
-                            <li className="pb-2">Logotipo en página web</li>
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 4M créditos)</li>
-                            <li className="pb-2">Presencia en redes: 3 publicación/mes</li>
-                            <li className="pb-2">Descuento en publicidad 15%</li>
-                            <li className="pb-2">Descuento en enseñanza 15%</li>
-                            <li className="pb-2">Descuento en pruebas de laboratorio 7%</li>
-                            <li className="pb-2">Descuento en viajes técnicos 15%</li>
-                            <li className="pb-2">Descuento en sellos de calidad 7%</li>
-                            <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                        </ul>
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                        <div>
+                          <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Concreto</h2>
+                          <p className="text-white text-3xl font-bold">$35,000 <span className="text-sm text-gray-400">/anual</span></p>
+                          <p className="text-gray-300 text-sm">$2,917/mes facturado anualmente</p>
+                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                              <li className="pb-2">Desde 101, hasta 500 empleados</li>
+                              <li className="pb-2">Logotipo en página web</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 4M créditos)</li>
+                              <li className="pb-2">Presencia en redes: 3 publicación/mes</li>
+                              <li className="pb-2">Descuento en publicidad 15%</li>
+                              <li className="pb-2">Descuento en enseñanza 15%</li>
+                              <li className="pb-2">Descuento en pruebas de laboratorio 7%</li>
+                              <li className="pb-2">Descuento en viajes técnicos 15%</li>
+                              <li className="pb-2">Descuento en sellos de calidad 7%</li>
+                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
+                          </ul>
+                        </div>
+                        <div className="my-3">
+                            <ButtonMasInformacion />
+                        </div>
                     </div>
                 </div>
                 <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] pt-0 gap-2 p-5 my-2">
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
-                      <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Cemento</h2>
-                      <p className="text-white text-3xl font-bold">$45,000 <span className="text-sm text-gray-400">/anual</span></p>
-                      <p className="text-gray-300 text-sm">$3,750/mes facturado anualmente</p>
-                      <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                      <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                          <li className="pb-2">Más de 500 empleados</li>
-                          <li className="pb-2">Logotipo en página web</li>
-                          <li className="pb-2">Acceso a IA, IMCYC (incl. 8M créditos)</li>
-                          <li className="pb-2">Presencia en redes: 4 publicación/mes</li>
-                          <li className="pb-2">Descuento en publicidad 20%</li>
-                          <li className="pb-2">Descuento en enseñanza 20%</li>
-                          <li className="pb-2">Descuento en pruebas de laboratorio 10%</li>
-                          <li className="pb-2">Descuento en viajes técnicos 20%</li>
-                          <li className="pb-2">Descuento en sellos de calidad 10%</li>
-                          <li className="pb-2">Incluye los beneficios del Plan Profesional</li>
-                      </ul>
+                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
+                      <div>
+                        <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Cemento</h2>
+                        <p className="text-white text-3xl font-bold">$45,000 <span className="text-sm text-gray-400">/anual</span></p>
+                        <p className="text-gray-300 text-sm">$3,750/mes facturado anualmente</p>
+                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                        <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
+                            <li className="pb-2">Más de 500 empleados</li>
+                            <li className="pb-2">Logotipo en página web</li>
+                            <li className="pb-2">Acceso a IA, IMCYC (incl. 8M créditos)</li>
+                            <li className="pb-2">Presencia en redes: 4 publicación/mes</li>
+                            <li className="pb-2">Descuento en publicidad 20%</li>
+                            <li className="pb-2">Descuento en enseñanza 20%</li>
+                            <li className="pb-2">Descuento en pruebas de laboratorio 10%</li>
+                            <li className="pb-2">Descuento en viajes técnicos 20%</li>
+                            <li className="pb-2">Descuento en sellos de calidad 10%</li>
+                            <li className="pb-2">Incluye los beneficios del Plan Profesional</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ButtonMasInformacion />
+                      </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaBrain className="mr-3" /> Inteligencia Artificial</h2>
