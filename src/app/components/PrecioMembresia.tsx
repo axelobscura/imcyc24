@@ -5,10 +5,12 @@ import { useState, useEffect } from "react";
 interface PrecioMembresiaProps {
     precio: string;
     mensaje?: string;
+    handleSelectPlan?: (plan: string) => void;
 }
 
-const PrecioMembresia = (tipo : {
-    tipo: string
+const PrecioMembresia = (props : {
+    tipo: string,
+    handleSelectPlan?: (plan: string) => void
 }) => {
   const [selectedTipo, setSelectedTipo] = useState<string>('mes');
   const [usePrecio, setPrecio] = useState<PrecioMembresiaProps>({
@@ -18,32 +20,36 @@ const PrecioMembresia = (tipo : {
 
   useEffect(() => {
     // You can add any side effects here if needed when selectedTipo changes
-    if(tipo.tipo === 'proplus') {
+    if(props.tipo === 'proplus') {
       if(selectedTipo === 'mes') {
         setPrecio({
           precio: '299',
           mensaje: ''
         });
+        props.handleSelectPlan && props.handleSelectPlan('proplus-mes');
       } else {
         setPrecio({
           precio: '3,289',
           mensaje: '$274/mes facturado anualmente'
         });
+        props.handleSelectPlan && props.handleSelectPlan('proplus-anual');
       }
-    } else if(tipo.tipo === 'pro') {
+    } else if(props.tipo === 'pro') {
       if(selectedTipo === 'mes') {
         setPrecio({
           precio: '99',
           mensaje: ''
         });
+        props.handleSelectPlan && props.handleSelectPlan('pro-mes');
       } else {
         setPrecio({
           precio: '1,089',
           mensaje: '$91/mes facturado anualmente'
         });
+        props.handleSelectPlan && props.handleSelectPlan('pro-anual');
       }
     }
-  }, [selectedTipo, tipo.tipo]);
+  }, [selectedTipo, props.tipo]);
 
   return (
     <>

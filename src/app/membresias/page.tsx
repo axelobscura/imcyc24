@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, {useState} from "react";
 import { FaRegUserCircle, FaBuilding, FaUserCheck, FaUserPlus, FaBrain } from "react-icons/fa";
 import { FaMobile } from "react-icons/fa6";
 import { IoIosAlert } from "react-icons/io";
@@ -11,6 +12,12 @@ import ButtonMasInformacion from "../components/ButtonMasInformacion";
 import { BsBuildingsFill } from "react-icons/bs";
 
 export default function Membresias() {
+    const [selectedPlan, setSelectedPlan] = useState<string>("");
+
+    const handleSelectPlan = (plan: string) => {
+        setSelectedPlan(plan);
+    };
+
     return (
         <div>
             <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-900 to-slate-700 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat py-40 sm:py-40">
@@ -49,7 +56,7 @@ export default function Membresias() {
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
                         <div>
                             <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserCheck className="mr-3" /> Profesional</h2>
-                            <PrecioMembresia tipo={'pro'}/>
+                            <PrecioMembresia tipo={'pro'} handleSelectPlan={handleSelectPlan}/>
                             <p className="text-gray-200 mt-3">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
@@ -59,13 +66,13 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <ButtonMasInformacion />
+                            <ButtonMasInformacion selectedPlan={selectedPlan} />
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
                         <div>
                             <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserPlus className="mr-3" /> Profesional Plus</h2>
-                            <PrecioMembresia tipo={'proplus'}/>
+                            <PrecioMembresia tipo={'proplus'} handleSelectPlan={handleSelectPlan}/>
                             <p className="text-gray-200 mt-3">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
@@ -76,7 +83,7 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <ButtonMasInformacion />
+                            <ButtonMasInformacion selectedPlan={selectedPlan} />
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
