@@ -59,7 +59,11 @@ export default function Membresias() {
                             <p className="text-gray-200 mt-3">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
-                                <li className="pb-2">Plataforma En Línea</li>
+                                <li className="pb-2">
+                                    <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
+                                        Plataforma En Línea
+                                    </Link>
+                                </li>
                                 <li className="pb-2">Con anuncios</li>
                                 <li className="pb-2">20% de descuento para estudiantes y profesores</li>
                             </ul>
@@ -75,7 +79,11 @@ export default function Membresias() {
                             <p className="text-gray-200 mt-3">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
-                                <li className="pb-2">Plataforma En Línea + contenido adicional</li>
+                                <li className="pb-2">
+                                    <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
+                                        Plataforma En Línea
+                                    </Link> + contenido adicional
+                                </li>
                                 <li className="pb-2">Con anuncios ligeros</li>
                                 <li className="pb-2">10% de descuento en publicaciones</li>
                                 <li className="pb-2">10% de descuento en enseñanza</li>
