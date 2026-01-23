@@ -26,13 +26,13 @@ const PrecioMembresia = (props : {
           precio: '299',
           mensaje: ''
         });
-        props.handleSelectPlan && props.handleSelectPlan('proplus-mes');
+        if (props.handleSelectPlan) props.handleSelectPlan('proplus-mes');
       } else {
         setPrecio({
           precio: '3,289',
           mensaje: '$274/mes facturado anualmente'
         });
-        props.handleSelectPlan && props.handleSelectPlan('proplus-anual');
+        if (props.handleSelectPlan) props.handleSelectPlan('proplus-anual');
       }
     } else if(props.tipo === 'pro') {
       if(selectedTipo === 'mes') {
@@ -40,13 +40,13 @@ const PrecioMembresia = (props : {
           precio: '99',
           mensaje: ''
         });
-        props.handleSelectPlan && props.handleSelectPlan('pro-mes');
+        if (props.handleSelectPlan) props.handleSelectPlan('pro-mes');
       } else {
         setPrecio({
           precio: '1,089',
           mensaje: '$91/mes facturado anualmente'
         });
-        props.handleSelectPlan && props.handleSelectPlan('pro-anual');
+        if (props.handleSelectPlan) props.handleSelectPlan('pro-anual');
       }
     }
   }, [selectedTipo, props.tipo]);
