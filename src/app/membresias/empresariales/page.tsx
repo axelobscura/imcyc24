@@ -44,7 +44,7 @@ export default function Empresariales() {
                         <p className="text-gray-900 mb-5 flex items-center bg-blue-500 rounded-[30px] mx-3 p-3 px-9 text-center font-bold"><IoIosAlert className="mr-2" /> Importante: Las membresías NO incluyen constancias de aptitud ni certificaciones presenciales.</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 my-5 mb-2">
+                <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 px-2 my-5 mb-2">
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
                         <div>
                           <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agua</h2>
