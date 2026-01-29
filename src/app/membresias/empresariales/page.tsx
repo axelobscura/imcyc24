@@ -43,31 +43,7 @@ export default function Empresariales() {
                         <p className="text-gray-900 mb-5 flex items-center bg-blue-500 rounded-[30px] mx-3 p-3 px-9 text-center font-bold"><IoIosAlert className="mr-2" /> Importante: Las membresías NO incluyen constancias de aptitud ni certificaciones presenciales.</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr_1fr] pt-0 gap-2 p-5 px-2 my-5 mb-2">
-                    <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
-                        <div>
-                          <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agua</h2>
-                          <p className="text-white text-3xl font-bold">$15,000 <span className="text-sm text-gray-400">/anual</span></p>
-                          <p className="text-gray-300 text-sm">$1,250/mes facturado anualmente</p>
-                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
-                          <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                              <li className="pb-2">Hasta 30 empleados</li>
-                              <li className="pb-2">Publicaciones 5% de descuento</li>
-                              <li className="pb-2">Acceso a IA, IMCYC (incl. 1M créditos)</li>
-                              <li className="pb-2">Logotipo en página web</li>
-                              <li className="pb-2">Presencia en redes: 1 publicación/mes</li>
-                              <li className="pb-2">Descuento en publicidad 5%</li>
-                              <li className="pb-2">Descuento en enseñanza 5%</li>
-                              <li className="pb-2">Descuento en pruebas de laboratorio 3%</li>
-                              <li className="pb-2">Descuento en viajes técnicos 5%</li>
-                              <li className="pb-2">Descuento en sellos de calidad 3%</li>
-                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                          </ul>
-                        </div>
-                        <div className="my-3">
-                            <ButtonMasInformacion />
-                        </div>
-                    </div>
+                <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr_1fr] pt-0 gap-2 p-5 px-2 my-5 mb-2">
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
                         <div>
                           <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agregados</h2>
@@ -75,7 +51,7 @@ export default function Empresariales() {
                           <p className="text-gray-300 text-sm">$2,083/mes facturado anualmente</p>
                           <p className="text-gray-200 mt-3">Lo que incluye:</p>
                           <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                              <li className="pb-2">Desde 31, hasta 100 empleados</li>
+                              <li className="pb-2">Desde 30, hasta 100 empleados</li>
                               <li className="pb-2">Logotipo en página web</li>
                               <li className="pb-2">Acceso a IA, IMCYC (incl. 2.250M créditos)</li>
                               <li className="pb-2">Presencia en redes: 2 publicación/mes</li>
