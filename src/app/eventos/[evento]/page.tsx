@@ -75,7 +75,7 @@ export default function Evento() {
                   </div>
                 </div>
                 <div className="hidden sm:block">
-                  <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                  <Link href="/eventos/tecnico-en-pruebas-de-resistencia">
                     <img src="https://www.imcyc.com/Imagenes/IM%20Cal%20Mar-19.gif" alt="IMCYC" />
                   </Link>
                 </div>
