@@ -45,16 +45,7 @@ export default function Eventos() {
                     >
                       <div key={index} className="font-montserrat grid grid-cols-[1fr] sm:grid-cols-[1fr_3fr] gap-4 bg-gray-950 hover:bg-slate-800 cursor-pointer bg-opacity-50 bg-blend-multiply p-2 items-center justify-center mb-2 border border-gray-700">
                         <div>
-                          <Image
-                            src={`/cursos/${post[2]}`}
-                            alt="IMCYC"
-                            width={300}
-                            height={0}
-                            layout="intrinsic"
-                            style={{
-                              width: '100%'
-                            }}
-                          />
+                          <img src={post[2]} alt={post[3]} style={{ width: '100%' }} />
                         </div>
                         <div>
                           <p className='text-blue-300 font-bold text-2xl flex items-center'><FaCalendarCheck className="mr-3" /> {post[3]}</p>

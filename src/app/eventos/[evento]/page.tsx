@@ -42,16 +42,7 @@ export default function Evento() {
                 </h1>
                 <h2 className="text-slate-200 text-xl my-3 font-bold flex items-center"><FaCircleArrowRight className="mr-3" /> {contenido && contenido[5]}</h2>
                 <p className='text-gray-300 mb-5 font-bold text-xl flex items-center'><FaCalendar className="mr-3" /> {contenido && contenido[3]}</p>
-                <Image
-                  src={`/cursos/${contenido && contenido[2]}`}
-                  alt="IMCYC"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  layout="intrinsic"
-                  className="mb-5"
-                />
+                <img src={contenido && contenido[2]} alt={contenido && contenido[3]} style={{ width: '100%' }} />
                 {contenido ? 
                   <div
                     dangerouslySetInnerHTML={{__html: contenido[1]}}
