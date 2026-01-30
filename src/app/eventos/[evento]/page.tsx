@@ -5,6 +5,7 @@ import Loader from "../../components/Loader";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaCalendar } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Evento() {
   const params = useParams<{ evento: string }>();
@@ -34,14 +35,14 @@ export default function Evento() {
       <div className="flex items-center justify-items-center p-0 gap-16 sm:p-0 font-[family-name:var(--font-geist-sans)] bg-[url('/asociados.webp')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat">
         <div className="mx-auto w-full max-w-screen-xl p-0 md:pt-40 sm:pt-0 pb-0 lg:py-40">
           <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
-            <div className="grid grid-cols-[1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
+            <div className="grid grid-cols-[6fr_1fr] gap-0 items-start justify-items-stretch pt-20 w-full">
               <div className="bg-gray-900 bg-opacity-50 bg-blend-multiply w-full p-5 sm:pl-5 md:pl-5 lg:pl-8 xl:pl-50 sm:mb-5">
                 <h1 className="font-montserrat text-4xl text-white pt-0 sm:pl-50 uppercase font-ligth mb-2 flex items-center">
                   <FaCircleArrowRight className="mr-3" /> {contenido && contenido[0]}
                 </h1>
                 <h2 className="text-slate-200 text-xl my-3 font-bold flex items-center"><FaCircleArrowRight className="mr-3" /> {contenido && contenido[5]}</h2>
                 <p className='text-gray-300 mb-5 font-bold text-xl flex items-center'><FaCalendar className="mr-3" /> {contenido && contenido[3]}</p>
-                <img src={contenido && contenido[2]} alt={contenido && contenido[3]} style={{ width: '100%' }} />
+                <img src={contenido && contenido[2]} alt={contenido && contenido[3]} style={{ width: '100%' }} className='mb-7' />
                 {contenido ? 
                   <div
                     dangerouslySetInnerHTML={{__html: contenido[1]}}
@@ -68,12 +69,24 @@ export default function Evento() {
                     </Link>
                   </div>
                   <div>
-                    <Link href="https://wa.me/5554671492" target="_blank" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
+                    <Link href="https://wa.me/525529098047" target="_blank" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
                       MÁS INFORMACIÓN
                     </Link>
                   </div>
                 </div>
+                <div className="hidden sm:block">
+                  <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.imcyc.com/Imagenes/IM%20Cal%20Mar-19.gif" alt="IMCYC" />
+                  </Link>
+                </div>
               </div>
+                <div>
+                  <div className="hidden sm:block">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
+                    </Link>
+                  </div>
+                </div>
             </div>
           </main>
         </div>

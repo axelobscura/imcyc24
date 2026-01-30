@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
 import { FaCalendarCheck } from "react-icons/fa";
@@ -35,7 +36,7 @@ export default function Eventos() {
                 </h1>
                 <h3 className="font-montserrat text-1xl pt-2 text-white">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
               </div>
-              <div className="grid grid-cols-[1fr] items-start justify-start">
+              <div className="grid grid-cols-[6fr_1fr] items-start justify-start">
                 <div>
                   {posts.map((post, index) => (
                     <Link
@@ -53,6 +54,18 @@ export default function Eventos() {
                       </div>
                     </Link>
                   ))}
+                  <div className="hidden sm:block">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <img src="https://www.imcyc.com/Imagenes/IM%20Cal%20Mar-19.gif" alt="IMCYC" />
+                    </Link>
+                  </div>
+                </div>
+                <div>
+                  <div className="hidden sm:block">
+                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
+                      <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
