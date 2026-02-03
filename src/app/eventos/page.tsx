@@ -1,13 +1,19 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
+interface Banner {
+  zona: string;
+  link: string;
+  imagen: string;
+}
+
 export default function Eventos() {
   const [posts, setPosts] = useState([]);
+  const [banners, setBanners] = useState<Banner[]>([]);
 
   useEffect(() => {
     async function fetchPosts() {
@@ -17,12 +23,30 @@ export default function Eventos() {
     }
     fetchPosts()
   }, []);
+
+  useEffect(() => {
+    async function fetchBanners() {
+      const res = await fetch('/api/banners')
+      const data = await res.json()
+      console.log('data banners: ', data);
+      data.forEach((banner: string[]) => {
+        setBanners(prevBanners => [...prevBanners, {
+          "zona": banner[0],
+          "link": banner[1],
+          "imagen": banner[2],
+        }]);
+      });
+    }
+    fetchBanners()
+  }, []);
  
-  if (!posts) return <Loader/>
+  if (!posts || !banners) return <Loader/>
 
   if(posts.length === 0) {
     return <Loader/>
   };
+
+  console.log('banners: ', banners);
 
   return (
     <div>
@@ -55,16 +79,32 @@ export default function Eventos() {
                     </Link>
                   ))}
                   <div className="hidden sm:block">
-                    <Link href="/eventos/tecnico-en-pruebas-de-resistencia" target="_blank" rel="noopener noreferrer">
-                      <img src="https://www.imcyc.com/Imagenes/IM%20Cal%20Mar-19.gif" alt="IMCYC" />
-                    </Link>
+                    {banners.map((banner, index) => {
+                      if(banner.zona === "z2") {
+                        return (
+                          <div key={index} className="my-0">
+                            <Link href={banner.link} target="_blank" rel="noopener noreferrer">
+                              <img src={banner.imagen} alt="eventos instituto mexicano del cemento y del concreto a.c." />
+                            </Link>
+                          </div>
+                        )
+                      }
+                    })}
                   </div>
                 </div>
                 <div>
                   <div className="hidden sm:block">
-                    <Link href="https://element5.mx/" target="_blank" rel="noopener noreferrer">
-                      <Image src="/prensa/banner_elemental.gif" alt="IMCYC" width={200} height={50} />
-                    </Link>
+                    {banners.map((banner, index) => {
+                      if(banner.zona === "z1") {
+                        return (
+                          <div key={index} className="my-0">
+                            <Link href={banner.link} target="_blank" rel="noopener noreferrer">
+                              <img src={banner.imagen} alt="eventos instituto mexicano del cemento y del concreto a.c." />
+                            </Link>
+                          </div>
+                        )
+                      }
+                    })}
                   </div>
                 </div>
               </div>
