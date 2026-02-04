@@ -58,9 +58,17 @@ export default function Empresariales() {
                               <li className="pb-2">Descuento en publicidad 10%</li>
                               <li className="pb-2">Descuento en enseñanza 10%</li>
                               <li className="pb-2">Descuento en pruebas de laboratorio 5%</li>
-                              <li className="pb-2">Descuento en viajes técnicos 10%</li>
                               <li className="pb-2">Descuento en sellos de calidad 5%</li>
                               <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
+                                <li className="pb-2">
+                                    <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
+                                        Plataforma En Línea
+                                    </Link> + contenido adicional
+                                </li>
+                                <li className="pb-2">Con anuncios ligeros</li>
+                                <li className="pb-2">10% de descuento en publicaciones</li>
+                                <li className="pb-2">10% de descuento en enseñanza</li>
                           </ul>
                           
                         </div>
@@ -82,9 +90,17 @@ export default function Empresariales() {
                               <li className="pb-2">Descuento en publicidad 15%</li>
                               <li className="pb-2">Descuento en enseñanza 15%</li>
                               <li className="pb-2">Descuento en pruebas de laboratorio 7%</li>
-                              <li className="pb-2">Descuento en viajes técnicos 15%</li>
                               <li className="pb-2">Descuento en sellos de calidad 7%</li>
                               <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
+                                <li className="pb-2">
+                                    <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
+                                        Plataforma En Línea
+                                    </Link> + contenido adicional
+                                </li>
+                                <li className="pb-2">Con anuncios ligeros</li>
+                                <li className="pb-2">10% de descuento en publicaciones</li>
+                                <li className="pb-2">10% de descuento en enseñanza</li>
                           </ul>
                         </div>
                         <div className="my-3">
@@ -107,9 +123,17 @@ export default function Empresariales() {
                             <li className="pb-2">Descuento en publicidad 20%</li>
                             <li className="pb-2">Descuento en enseñanza 20%</li>
                             <li className="pb-2">Descuento en pruebas de laboratorio 10%</li>
-                            <li className="pb-2">Descuento en viajes técnicos 20%</li>
                             <li className="pb-2">Descuento en sellos de calidad 10%</li>
                             <li className="pb-2">Incluye los beneficios del Plan Profesional</li>
+                            <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
+                                <li className="pb-2">
+                                    <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
+                                        Plataforma En Línea
+                                    </Link> + contenido adicional
+                                </li>
+                                <li className="pb-2">Con anuncios ligeros</li>
+                                <li className="pb-2">10% de descuento en publicaciones</li>
+                                <li className="pb-2">10% de descuento en enseñanza</li>
                         </ul>
                       </div>
                       <div>
