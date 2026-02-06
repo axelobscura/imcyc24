@@ -49,9 +49,8 @@ export default function Asociaciones() {
                           <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Asociaciones</h2>
                           <p className="text-white text-3xl font-bold">$45,000 <span className="text-sm text-gray-400">/anual</span></p>
                           <p className="text-gray-300 text-sm">$3,750/mes facturado anualmente</p>
-                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                           <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                              <li className="pb-2">Más de 500 empleados</li>
                               <li className="pb-2">Logotipo en página web</li>
                               <li className="pb-2">Presencia en redes: 4 publicación/mes</li>
                               <li className="pb-2">Descuento en publicidad 20%</li>

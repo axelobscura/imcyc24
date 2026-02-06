@@ -49,18 +49,15 @@ export default function Empresariales() {
                           <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Agregados</h2>
                           <p className="text-white text-3xl font-bold">$25,000 <span className="text-sm text-gray-400">/anual</span></p>
                           <p className="text-gray-300 text-sm">$2,083/mes facturado anualmente</p>
-                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                           <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                              <li className="pb-2">Desde 30, hasta 100 empleados</li>
                               <li className="pb-2">Logotipo en página web</li>
-                              <li className="pb-2">Acceso a IA, IMCYC (incl. 2.250M créditos)</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 2,250 Millones de créditos)</li>
                               <li className="pb-2">Presencia en redes: 2 publicación/mes</li>
                               <li className="pb-2">Descuento en publicidad 10%</li>
                               <li className="pb-2">Descuento en enseñanza 10%</li>
                               <li className="pb-2">Descuento en pruebas de laboratorio 5%</li>
                               <li className="pb-2">Descuento en sellos de calidad 5%</li>
-                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                              <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
                                 <li className="pb-2">
                                     <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
                                         Plataforma En Línea
@@ -81,18 +78,15 @@ export default function Empresariales() {
                           <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Concreto</h2>
                           <p className="text-white text-3xl font-bold">$35,000 <span className="text-sm text-gray-400">/anual</span></p>
                           <p className="text-gray-300 text-sm">$2,917/mes facturado anualmente</p>
-                          <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                          <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                           <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                              <li className="pb-2">Desde 101, hasta 500 empleados</li>
                               <li className="pb-2">Logotipo en página web</li>
-                              <li className="pb-2">Acceso a IA, IMCYC (incl. 4M créditos)</li>
+                              <li className="pb-2">Acceso a IA, IMCYC (incl. 4 Millones de créditos)</li>
                               <li className="pb-2">Presencia en redes: 3 publicación/mes</li>
                               <li className="pb-2">Descuento en publicidad 15%</li>
                               <li className="pb-2">Descuento en enseñanza 15%</li>
                               <li className="pb-2">Descuento en pruebas de laboratorio 7%</li>
                               <li className="pb-2">Descuento en sellos de calidad 7%</li>
-                              <li className="pb-2">Incluye los beneficios del Plan Profesional Plus</li>
-                              <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
                                 <li className="pb-2">
                                     <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
                                         Plataforma En Línea
@@ -114,18 +108,15 @@ export default function Empresariales() {
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUsers className="mr-3" /> Cemento</h2>
                         <p className="text-white text-3xl font-bold">$45,000 <span className="text-sm text-gray-400">/anual</span></p>
                         <p className="text-gray-300 text-sm">$3,750/mes facturado anualmente</p>
-                        <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                        <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                         <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
-                            <li className="pb-2">Más de 500 empleados</li>
                             <li className="pb-2">Logotipo en página web</li>
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 8M créditos)</li>
+                            <li className="pb-2">Acceso a IA, IMCYC (incl. 8 Millones de créditos)</li>
                             <li className="pb-2">Presencia en redes: 4 publicación/mes</li>
                             <li className="pb-2">Descuento en publicidad 20%</li>
                             <li className="pb-2">Descuento en enseñanza 20%</li>
                             <li className="pb-2">Descuento en pruebas de laboratorio 10%</li>
                             <li className="pb-2">Descuento en sellos de calidad 10%</li>
-                            <li className="pb-2">Incluye los beneficios del Plan Profesional</li>
-                            <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
                                 <li className="pb-2">
                                     <Link href="https://webinars.webinarsenconcreto.com/" target="_blank" className="text-blue-400  hover:underline">
                                         Plataforma En Línea

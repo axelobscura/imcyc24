@@ -56,7 +56,7 @@ export default function Membresias() {
                         <div>
                             <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserCheck className="mr-3" /> Profesional</h2>
                             <PrecioMembresia tipo={'pro'} handleSelectPlan={handleSelectPlan}/>
-                            <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                            <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2 line-through">Acceso a IA, IMCYC</li>
                                 <li className="pb-2">
@@ -76,7 +76,7 @@ export default function Membresias() {
                         <div>
                             <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaUserPlus className="mr-3" /> Profesional Plus</h2>
                             <PrecioMembresia tipo={'proplus'} handleSelectPlan={handleSelectPlan}/>
-                            <p className="text-gray-200 mt-3">Lo que incluye:</p>
+                            <p className="text-gray-200 mt-3 font-bold">Lo que incluye:</p>
                             <ul className="list-disc font-montserrat text-gray-200 mt-5 px-5">
                                 <li className="pb-2">Acceso a IA, IMCYC (incl. 750K créditos)</li>
                                 <li className="pb-2">
