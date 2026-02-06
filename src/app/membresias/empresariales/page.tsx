@@ -65,7 +65,6 @@ export default function Empresariales() {
                                 </li>
                                 <li className="pb-2">Con anuncios ligeros</li>
                                 <li className="pb-2">10% de descuento en publicaciones</li>
-                                <li className="pb-2">10% de descuento en enseñanza</li>
                           </ul>
                           
                         </div>
@@ -94,7 +93,6 @@ export default function Empresariales() {
                                 </li>
                                 <li className="pb-2">Con anuncios ligeros</li>
                                 <li className="pb-2">10% de descuento en publicaciones</li>
-                                <li className="pb-2">10% de descuento en enseñanza</li>
                           </ul>
                         </div>
                         <div className="my-3">
@@ -124,7 +122,6 @@ export default function Empresariales() {
                                 </li>
                                 <li className="pb-2">Con anuncios ligeros</li>
                                 <li className="pb-2">10% de descuento en publicaciones</li>
-                                <li className="pb-2">10% de descuento en enseñanza</li>
                         </ul>
                       </div>
                       <div>
@@ -134,10 +131,10 @@ export default function Empresariales() {
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
                         <h2 className="text-2xl font-bold text-gray-100 pb-3 flex items-center"><FaBrain className="mr-3" /> Inteligencia Artificial</h2>
                         <p className="text-gray-200 mt-3">Costo por persona:</p>
-                        <div className="text-white grid grid-cols-[1fr_1fr] bg-slate-700 p-3 rounded-[15px] mt-5">
+                        <div className="text-white grid grid-cols-[1fr_1fr] gap-10 bg-slate-700 p-3 rounded-[15px] mt-5">
                             <div>
-                                <div><p className="text-2xl font-bold">500K</p></div>
-                                <div><p>Créditos</p></div>
+                                <div><p className="text-2xl font-bold">500</p></div>
+                                <div><p className="text-sm">Mil Créditos</p></div>
                             </div>
                             <div>
                                 <div><p className="text-2xl font-bold">$129</p></div>
@@ -146,8 +143,8 @@ export default function Empresariales() {
                         </div>
                         <div className="text-white grid grid-cols-[1fr_1fr] bg-slate-700 p-3 rounded-[15px] mt-5">
                             <div>
-                                <div><p className="text-2xl font-bold">1.25M</p></div>
-                                <div><p>Créditos</p></div>
+                                <div><p className="text-2xl font-bold">1.25</p></div>
+                                <div><p className="text-sm">Millones de Créditos</p></div>
                             </div>
                             <div>
                                 <div><p className="text-2xl font-bold">$299</p></div>
@@ -156,8 +153,8 @@ export default function Empresariales() {
                         </div>
                         <div className="text-white grid grid-cols-[1fr_1fr] bg-slate-700 p-3 rounded-[15px] mt-5">
                             <div>
-                                <div><p className="text-2xl font-bold">2M</p></div>
-                                <div><p>Créditos</p></div>
+                                <div><p className="text-2xl font-bold">2</p></div>
+                                <div><p className="text-sm">Millones de Créditos</p></div>
                             </div>
                             <div>
                                 <div><p className="text-2xl font-bold">$499</p></div>
@@ -166,8 +163,8 @@ export default function Empresariales() {
                         </div>
                         <div className="text-white grid grid-cols-[1fr_1fr] bg-slate-700 p-3 rounded-[15px] mt-5">
                             <div>
-                                <div><p className="text-2xl font-bold">5M</p></div>
-                                <div><p>Créditos</p></div>
+                                <div><p className="text-2xl font-bold">5</p></div>
+                                <div><p className="text-sm">Millones de Créditos</p></div>
                             </div>
                             <div>
                                 <div><p className="text-2xl font-bold">$999</p></div>
