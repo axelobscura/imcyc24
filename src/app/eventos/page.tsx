@@ -59,7 +59,7 @@ export default function Eventos() {
                 </h1>
                 <h3 className="font-montserrat text-1xl pt-2 text-white">Instituto Mexicano del Cemento y del Concreto A.C.</h3>
               </div>
-              <div className="grid grid-cols-[6fr_1fr] items-start justify-start">
+              <div className="grid grid-cols-[1fr] sm:grid-cols-[6fr_1fr] items-start justify-start">
                 <div>
                   {posts.map((post, index) => (
                     <Link
