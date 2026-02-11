@@ -19,7 +19,7 @@ export default function Eventos() {
     async function fetchPosts() {
       const res = await fetch('/api/eventos')
       const data = await res.json()
-      setPosts(data.reverse())
+      setPosts(data)
     }
     fetchPosts()
   }, []);
@@ -28,7 +28,6 @@ export default function Eventos() {
     async function fetchBanners() {
       const res = await fetch('/api/banners')
       const data = await res.json()
-      console.log('data banners: ', data);
       data.forEach((banner: string[]) => {
         setBanners(prevBanners => [...prevBanners, {
           "zona": banner[0],
