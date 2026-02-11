@@ -9,6 +9,7 @@ import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
+import LogosMembresias from './LogosMembresias';
 
 function updateClock(
   setTime: React.Dispatch<React.SetStateAction<string>>,
@@ -118,7 +119,6 @@ const TopBar = () => {
       telefono = '(52) 55 5322 5740';
   }
 
-
   return (
     <>
       <div className="fixed z-50 w-full headerimcyc">
@@ -192,6 +192,13 @@ const TopBar = () => {
             <AsociadosTop />
           </div>
         </div>
+        {path[1] === 'membresias' && (
+          <div className="bg-gray-900 border-gray-200 dark:bg-gray-900 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+            <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl pt-2 pb-2">
+              <LogosMembresias />
+            </div>
+          </div>
+        )}
         <Menu />
       </div>
     </>
