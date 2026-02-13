@@ -80,16 +80,6 @@ const Membresias = () => {
           <li>
             <Link href="/membresias" rel="noopener noreferrer">
                 <Image
-                  src="/asociados/descargar.png"
-                  alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
-                  width={110}
-                  height={0}
-                />
-            </Link>
-          </li>
-          <li>
-            <Link href="/membresias" rel="noopener noreferrer">
-                <Image
                   src="/asociados/Uanl-color.png"
                   alt="Membresìas Instituto Mexicano del Cemento y del Concreto"
                   width={90}
