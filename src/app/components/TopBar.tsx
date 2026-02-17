@@ -9,6 +9,7 @@ import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
+import LogosMembresias from './LogosMembresias';
 
 function updateClock(
   setTime: React.Dispatch<React.SetStateAction<string>>,
@@ -191,7 +192,11 @@ const TopBar = () => {
             <AsociadosTop />
           </div>
         </div>
-        
+        <div className="bg-white border-gray-200 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
+          <div className="flex flex-wrap justify-between w-full pt-1 pb-1">
+            <LogosMembresias />
+          </div>
+        </div>
         <Menu />
       </div>
     </>

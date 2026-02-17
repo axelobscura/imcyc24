@@ -5,7 +5,7 @@ import Link from "next/link";
 const LogosMembresias = () => {
   return (
     <>
-      <div className="flex w-full bg-slate-800">
+      <div className="flex w-full bg-white">
         <div className="mx-auto w-full max-w-screen-xl py-2 lg:py-2">
         <ul className="flex justify-between items-center w-full">
           <li>
