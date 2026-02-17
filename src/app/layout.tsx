@@ -5,7 +5,6 @@ import TopBar from "./components/TopBar";
 import Footer from "./components/Footer";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./globals.css";
-import LogosMembresias from "./components/LogosMembresias";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
