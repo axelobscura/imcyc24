@@ -9,7 +9,6 @@ import { IoIosSearch } from "react-icons/io";
 import AsociadosTop from "./AsociadosTop";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
-import LogosMembresias from './LogosMembresias';
 
 function updateClock(
   setTime: React.Dispatch<React.SetStateAction<string>>,
