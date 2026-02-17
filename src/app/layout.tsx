@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { GoogleTagManager } from '@next/third-parties/google';
 import localFont from "next/font/local";
 import TopBar from "./components/TopBar";
-import Membresias from "./components/Membresias";
 import Footer from "./components/Footer";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./globals.css";
+import LogosMembresias from "./components/LogosMembresias";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         <TopBar />
         {children}
-        <Membresias />
+        <LogosMembresias />
         <Footer />
       </body>
     </html>

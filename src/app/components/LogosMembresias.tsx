@@ -5,14 +5,15 @@ import Link from "next/link";
 const LogosMembresias = () => {
   return (
     <>
-      <div className="flex w-full">
+      <div className="flex w-full bg-slate-800">
+        <div className="mx-auto w-full max-w-screen-xl py-2 lg:py-2">
         <ul className="flex justify-between items-center w-full">
           <li>
             <Link href="https://www.mapei.com/mx/es-mx/home" rel="noopener noreferrer" target="_blank">
                 <Image
                   src="/membresias/mapei.svg"
                   alt="Membresías"
-                  width={170}
+                  width={140}
                   height={0}
                 />
             </Link>
@@ -22,7 +23,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/adisa.png"
                   alt="Membresías"
-                  width={160}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -32,7 +33,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/ingetek.png"
                   alt="Membresías"
-                  width={160}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -42,12 +43,13 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/penetron.png"
                   alt="Membresías"
-                  width={160}
+                  width={130}
                   height={0}
                 />
             </Link>
           </li>
         </ul>
+        </div>
       </div>
     </>
   );
