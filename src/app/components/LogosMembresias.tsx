@@ -6,7 +6,7 @@ const LogosMembresias = () => {
   return (
     <>
       <div className="flex w-full bg-white">
-        <div className="mx-auto w-full max-w-screen-xl py-2 lg:py-2">
+        <div className="mx-auto w-full max-w-screen-xl py-0 lg:py-0">
         <ul className="flex justify-between items-center w-full">
           <li>
             <Link href="https://www.mapei.com/mx/es-mx/home" rel="noopener noreferrer" target="_blank">
@@ -23,7 +23,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/adisa.png"
                   alt="Membresías"
-                  width={130}
+                  width={140}
                   height={0}
                 />
             </Link>
@@ -33,7 +33,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/ingetek.png"
                   alt="Membresías"
-                  width={130}
+                  width={140}
                   height={0}
                 />
             </Link>
@@ -41,9 +41,9 @@ const LogosMembresias = () => {
           <li>
             <Link href="https://www.penetron.mx/" rel="noopener noreferrer" target="_blank">
                 <Image
-                  src="/membresias/penetron.png"
+                  src="/membresias/penetron.jpg"
                   alt="Membresías"
-                  width={130}
+                  width={140}
                   height={0}
                 />
             </Link>

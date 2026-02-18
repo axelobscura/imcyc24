@@ -193,7 +193,7 @@ const TopBar = () => {
           </div>
         </div>
         <div className="bg-white border-gray-200 xs:hidden hidden sm:hidden md:block lg:block dark:bg-opacity-90">
-          <div className="flex flex-wrap justify-between w-full pt-1 pb-1">
+          <div className="flex flex-wrap justify-between w-full p-0">
             <LogosMembresias />
           </div>
         </div>
