@@ -56,9 +56,7 @@ export default function Asociaciones() {
                               <li className="pb-2">Descuento en publicidad 20%</li>
                               <li className="pb-2">Descuento en enseñanza 20%</li>
                               <li className="pb-2">Descuento en pruebas de laboratorio 10%</li>
-                              <li className="pb-2">Descuento en viajes técnicos 20%</li>
                               <li className="pb-2">Descuento en sellos de calidad 10%</li>
-                              <li className="pb-2">Incluye los beneficios del Plan Profesional</li>
                           </ul>
                         </div>
                         <div className="my-3">
