@@ -11,13 +11,13 @@ export default function ButtonMasInformacion({ selectedPlan }: { selectedPlan?: 
   useEffect(() => {
     if(selectedPlan) {
       if(selectedPlan === 'pro-mes') {
-        setLink("https://pay.conekta.com/link/b867b825d19a4522a75b88cae3f3f7ec")
+        setLink("https://pay.conekta.com/link/1db095ad31b74460ad75ac98a291489d")
       } else if(selectedPlan === 'pro-anual') {
-        setLink("https://pay.conekta.com/link/367fd7ec93124287af69e05a4a4dc180")
+        setLink("https://pay.conekta.com/link/5ec65adb9f7e4a4ab12556e4a7ee7cce")
       } else if(selectedPlan === 'proplus-mes') {
-        setLink("https://pay.conekta.com/link/21e4d57e92ee450b909523127b672ed9")
+        setLink("https://pay.conekta.com/link/2cb089d2f1c548dca837108684cbbb9b")
       } else if(selectedPlan === 'proplus-anual') {
-        setLink("https://pay.conekta.com/link/367fd7ec93124287af69e05a4a4dc180")
+        setLink("https://pay.conekta.com/link/7b121a30b8ff4c65b44b79669232bd6d")
       } else {
         setLink("https://wa.me/5636853914");
       }

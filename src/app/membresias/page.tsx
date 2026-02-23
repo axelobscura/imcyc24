@@ -18,6 +18,8 @@ export default function Membresias() {
         setSelectedPlan(plan);
     };
 
+    console.log("Selected Plan in Membresias:", selectedPlan);
+
     return (
         <div>
             <div className="grid grid-rows-[1fr] pb-20 gap-16 sm:p-20 bg-gray-900 bg-gradient-to-t from-gray-900 to-slate-700 font-[family-name:var(--font-geist-sans)] z-10 bg-cover bg-center bg-no-repeat py-40 sm:py-40">
