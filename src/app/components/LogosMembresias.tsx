@@ -48,6 +48,16 @@ const LogosMembresias = () => {
                 />
             </Link>
           </li>
+          <li>
+            <Link href="https://www.facebook.com/p/Dicom-Construcci%C3%B3n-61574894141498/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/dicom.jpg"
+                  alt="Membresías"
+                  width={140}
+                  height={0}
+                />
+            </Link>
+          </li>
         </ul>
         </div>
       </div>
