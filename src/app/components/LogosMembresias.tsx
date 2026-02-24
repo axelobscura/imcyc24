@@ -58,6 +58,16 @@ const LogosMembresias = () => {
                 />
             </Link>
           </li>
+          <li>
+            <Link href="/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/bold.jpg"
+                  alt="Membresías"
+                  width={140}
+                  height={0}
+                />
+            </Link>
+          </li>
         </ul>
         </div>
       </div>
