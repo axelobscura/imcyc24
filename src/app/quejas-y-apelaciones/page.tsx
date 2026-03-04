@@ -51,14 +51,31 @@ export default function QuejasYApelaciones() {
                             <div className="mb-2 flex items-center">
                             <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="*Área:" className="font-montserrat text-1xl font-light flex items-center text-gray-100" />
                             </div>
+                            {useProducto === "quejas" && (
                             <Select id="countries" required>
                               <option>Laboratorio de ensayos</option>
-                              <option>Laboratorio de Calibración</option>
                               <option>Asesorías técnicas en estructuras</option>
                               <option>Organismo de certificación de producto</option>
                               <option>Organismo de certificación de personas</option>
                               <option>Proveedor de ensayos de aptitud</option>
                             </Select>
+                            )}
+                            {useProducto === "apelaciones" && (
+                            <Select id="countries" required>
+                              <option>Organismo de certificación de producto</option>
+                              <option>Organismo de certificación de personas</option>
+                              <option>Proveedor de ensayos de aptitud</option>
+                            </Select>
+                            )}
+                            {useProducto === "sugerencias" && (
+                            <Select id="countries" required>
+                              <option>Laboratorio de ensayos</option>
+                              <option>Asesorías técnicas en estructuras</option>
+                              <option>Organismo de certificación de producto</option>
+                              <option>Organismo de certificación de personas</option>
+                              <option>Proveedor de ensayos de aptitud</option>
+                            </Select>
+                            )}
                           </div>
                           <div>
                             <div className="mb-2 flex items-center">
