@@ -15,6 +15,7 @@ type Credencial = {
   certificado: string;
   credencial: string;
   estatus: string;
+  vigencia: string;
 };
 
 const esquemas = [
@@ -286,6 +287,8 @@ export default function OrganismoDeCertificacionDePersonas() {
     }
     fetchPosts()
   }, []);
+
+  console.table(posts);
  
   if (!posts) return <div>Loading...</div>
 
@@ -301,6 +304,7 @@ export default function OrganismoDeCertificacionDePersonas() {
           certificado: certificado[2],
           credencial: certificado[3],
           estatus: certificado[4],
+          vigencia: certificado[5]
         }]);
         setCertificado(true);
       }
@@ -498,6 +502,7 @@ export default function OrganismoDeCertificacionDePersonas() {
                           <p className="font-montserrat px-3 text-1xl">Nombre: <strong>{cert.fecha}</strong></p>
                           <p className="font-montserrat px-3 text-1xl">Certificado: <strong>{cert.certificado}</strong></p>
                           <p className="font-montserrat px-3 text-1xl">Credencial de certificación: <strong>{cert.credencial}</strong></p>
+                          <p className="font-montserrat px-3 text-1xl">Vigencia: <strong>{cert.vigencia}</strong></p>
                         </div>
                       ))}
                     </div>
@@ -509,13 +514,13 @@ export default function OrganismoDeCertificacionDePersonas() {
                           <div className="mb-2 flex items-center">
                           <FaArrowCircleDown className='mr-2' /> <Label htmlFor="email1" value="Introduzca el No. de certificado:" className="font-montserrat text-1xl font-bold flex items-center text-gray-100" />
                           </div>
-                          <TextInput id="certificado" type="text" name='certificado' placeholder="Introducir número de certificado" required />
+                          <TextInput id="certificado" type="text" name='certificado' placeholder="Introducir número de certificado" />
                         </div>
                         <div>
                           <div className="mb-2 flex items-center">
                           <FaArrowCircleDown className='mr-2' /> <Label htmlFor="password1" value="Introduzca el No. de credencial:" className="font-montserrat text-1xl font-bold pb-2 flex items-center text-gray-100" />
                           </div>
-                          <TextInput id="credencial" type="credencial" name='credencial' placeholder="Número de credencial" required />
+                          <TextInput id="credencial" type="credencial" name='credencial' placeholder="Número de credencial" />
                         </div>
                         <Button type="submit" className='font-montserrat uppercase font-bold'>Buscar</Button>
                       </form>
