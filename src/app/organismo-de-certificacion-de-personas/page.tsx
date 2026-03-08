@@ -287,8 +287,6 @@ export default function OrganismoDeCertificacionDePersonas() {
     }
     fetchPosts()
   }, []);
-
-  console.table(posts);
  
   if (!posts) return <div>Loading...</div>
 
