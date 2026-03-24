@@ -5,7 +5,7 @@ import Link from "next/link";
 const LogosMembresias = () => {
   return (
     <>
-      <div className="flex w-full bg-white">
+      <div className="flex w-full bg-white py-2">
         <div className="mx-auto w-full max-w-screen-xl py-0 lg:py-0">
         <ul className="flex justify-between items-center w-full">
           <li>
@@ -64,6 +64,16 @@ const LogosMembresias = () => {
                   src="/membresias/bold.jpg"
                   alt="Membresías"
                   width={140}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://anivip.org.mx/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/anivip.png"
+                  alt="Membresías"
+                  width={110}
                   height={0}
                 />
             </Link>
