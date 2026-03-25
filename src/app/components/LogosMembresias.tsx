@@ -13,7 +13,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/mapei.svg"
                   alt="Membresías"
-                  width={140}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -23,7 +23,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/adisa.png"
                   alt="Membresías"
-                  width={140}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -53,7 +53,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/dicom.jpg"
                   alt="Membresías"
-                  width={140}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -63,7 +63,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/bold.jpg"
                   alt="Membresías"
-                  width={140}
+                  width={130}
                   height={0}
                 />
             </Link>
@@ -73,7 +73,17 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/anivip.png"
                   alt="Membresías"
-                  width={110}
+                  width={100}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://element5.mx/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/element5.png"
+                  alt="Membresías"
+                  width={55}
                   height={0}
                 />
             </Link>
