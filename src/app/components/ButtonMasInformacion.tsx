@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function ButtonMasInformacion({ selectedPlan }: { selectedPlan?: string }) {
 
   console.log("Selected Plan:", selectedPlan);
-  const [useLink , setLink] = useState<string>("https://wa.me/5636853914");
+  const [useLink , setLink] = useState<string>("https://wa.me/525521045612");
 
   useEffect(() => {
     if(selectedPlan) {
@@ -19,10 +19,10 @@ export default function ButtonMasInformacion({ selectedPlan }: { selectedPlan?: 
       } else if(selectedPlan === 'proplus-anual') {
         setLink("https://pay.conekta.com/link/7b121a30b8ff4c65b44b79669232bd6d")
       } else {
-        setLink("https://wa.me/5636853914");
+        setLink("https://wa.me/525521045612");
       }
     } else {
-      setLink("https://wa.me/5636853914");
+      setLink("https://wa.me/525521045612");
     }
   }, [selectedPlan]);
 
