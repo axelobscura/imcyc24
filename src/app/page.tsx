@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -38,6 +39,22 @@ export default function Home() {
             }}
           >
             <SwiperSlide 
+              className="bg-[url('/udem-banner.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{ height: '100vh' }}
+            >
+                <Link
+                  href="/eventos/seminario-udem"
+                >
+                  <Image 
+                    src="/udem-banner.jpg" 
+                    alt="Calendario de cursos" 
+                    width={1920} 
+                    height={0}
+                    style={{ width: '100%', height: '100%' }}
+                  />
+                </Link>
+            </SwiperSlide>
+            <SwiperSlide 
               className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
             >
@@ -45,6 +62,7 @@ export default function Home() {
                 <h1 className="font-montserrat pt-40 pb-0 text-white text-2xl">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
                 <h2 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
                 COMPARTIR EL CONOCIMIENTO</h2>
+                
                 <Link
                   href="/calendario-de-cursos"
                   className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-blue-700 rounded-full bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 mr-3"
