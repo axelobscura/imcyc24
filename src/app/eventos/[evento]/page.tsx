@@ -84,12 +84,7 @@ export default function Evento() {
                   <li>Precios más IVA.</li>
                 </ul>
                 <h2 className="text-2xl text-blue-400 text-bold flex items-center"><FaCircleArrowRight className="mr-3" /> REGÍSTRATE HOY MISMO</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 my-5 gap-4">
-                  <div>
-                    <Link href="/" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
-                      PAGAR INSCRIPCIÓN
-                    </Link>
-                  </div>
+                <div className="grid grid-cols-1 my-5 gap-4">
                   <div>
                     <Link href="https://wa.me/525529098047" target="_blank" className="w-full bg-slate-500 text-white text-center flex justify-center items-center p-3 rounded-[10px] font-bold">
                       MÁS INFORMACIÓN
