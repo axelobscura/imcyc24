@@ -42,17 +42,43 @@ export default function Home() {
               className="bg-[url('/udem-banner.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
             >
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
+                <h1 className="font-montserrat pt-32 pb-5 text-white text-1xl">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
+                <Image
+                  src="/logo_udem.png"
+                  alt="UDEM Logo"
+                  width={300}
+                  height={0}
+                  className="mx-auto mt-5 mb-5"
+                />
+                <h4 className='text-white pb-5'>LE INVITAN AL</h4>
+                <h2 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
+                SEMINARIO <span className='font-bold'>CONCRETO</span> EN LA <span className='font-bold'>ARQUITECTURA</span></h2>
+                <p className="font-montserrat mb-8 text-3xl font-bold text-white dark:text-gray-200">COSTO <span className='text-imcycYellow'>$1,500 MXN + IVA</span> | 16 y 17 DE ABRIL | <span className='text-imcycYellow'>MTY</span>, N.L.</p>
                 <Link
                   href="/eventos/seminario-udem"
+                  className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-gray-900 rounded-full bg-yellow-500 dark:text-blue-300 hover:bg-yellow-700 dark:hover:bg-blue-800 mr-3"
                 >
-                  <Image 
-                    src="/udem-banner.jpg" 
-                    alt="Calendario de cursos" 
-                    width={1920} 
-                    height={0}
-                    style={{ width: '100%', height: '100%' }}
-                  />
+                  <span className="text-md bg-imcycYellow rounded-full text-gray-900 px-4 py-1.5 me-3">
+                    ¡<span className='font-bold'>REGÍSTRATE</span> AHORA MISMO!
+                  </span>{" "}
+                  <svg
+                    className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
                 </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide 
               className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"

@@ -13,6 +13,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        imcycYellow: "#ffea05",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
