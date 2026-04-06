@@ -10,6 +10,8 @@ import Link from "next/link";
 import PrecioMembresia from "../components/PrecioMembresia";
 import ButtonMasInformacion from "../components/ButtonMasInformacion";
 import { BsBuildingsFill } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
+import { RiBankCard2Line } from "react-icons/ri";
 
 export default function Membresias() {
     const [selectedPlan, setSelectedPlan] = useState<string>("");
@@ -71,7 +73,14 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <ButtonMasInformacion selectedPlan={selectedPlan} />
+                            <div className="grid grid-cols-1 gap-2">
+                                <Link href="https://pay.conekta.com/link/1db095ad31b74460ad75ac98a291489d" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                    <RiBankCard2Line size={30} className="mr-2" /> SUSCRIBIRME 
+                                </Link>
+                                <Link href="https://wa.me/525521045612" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                    <FaWhatsapp size={30} className="mr-2" /> MÁS INFORMACIÓN 
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px] flex flex-col justify-between">
@@ -92,7 +101,14 @@ export default function Membresias() {
                             </ul>
                         </div>
                         <div>
-                            <ButtonMasInformacion selectedPlan={selectedPlan} />
+                            <div className="grid grid-cols-1 gap-2">
+                                <Link href="https://pay.conekta.com/link/2cb089d2f1c548dca837108684cbbb9b" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                    <RiBankCard2Line size={30} className="mr-2" /> SUSCRIBIRME 
+                                </Link>
+                                <Link href="https://wa.me/525521045612" target="_blank" className="w-full bg-blue-500 hover:bg-slate-600 transition-all ease-in-out text-white text-center flex justify-center items-center p-2 rounded-[10px] font-bold">
+                                    <FaWhatsapp size={30} className="mr-2" /> MÁS INFORMACIÓN 
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="m-2 p-5 bg-slate-950 rounded-[20px]">
