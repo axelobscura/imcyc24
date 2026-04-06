@@ -50,7 +50,7 @@ export default function Evaluacion() {
             }
         }, 1000);
         return () => clearInterval(timer);
-    }, []);
+    }, [end]);
 
     const handleEvaluacion = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();

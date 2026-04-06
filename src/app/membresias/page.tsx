@@ -8,7 +8,6 @@ import { IoShieldCheckmark } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import Link from "next/link";
 import PrecioMembresia from "../components/PrecioMembresia";
-import ButtonMasInformacion from "../components/ButtonMasInformacion";
 import { BsBuildingsFill } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiBankCard2Line } from "react-icons/ri";
