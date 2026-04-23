@@ -54,7 +54,7 @@ export default function Home() {
                 <h4 className='text-white pb-5'>LE INVITAN AL</h4>
                 <h2 className="font-montserrat mb-7 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
                 SEMINARIO <span className='font-bold'>PISOS INDUSTRIALES</span> DE <span className='font-bold'>CONCRETO</span></h2>
-                <p className="font-montserrat mb-8 text-3xl font-bold text-white dark:text-gray-200">COSTO <span className='text-red-500'>$1,500 MXN + IVA</span> | 26 y 28 DE MAYO | <span className='text-red-500'>GUADALAJARA</span></p>
+                <p className="font-montserrat mb-8 text-3xl font-bold text-white dark:text-gray-200">COSTO <span className='text-red-500'>$1,500 MXN + IVA</span> | 27 y 28 DE MAYO | <span className='text-red-500'>GUADALAJARA</span></p>
                 <Link
                   href="/eventos/seminario-udem"
                   className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-gray-900 rounded-full bg-red-950 dark:text-blue-300 hover:bg-yellow-700 dark:hover:bg-blue-800 mr-3"
