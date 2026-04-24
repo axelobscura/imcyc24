@@ -42,7 +42,7 @@ export default function Home() {
               className="bg-[url('/banner/guadalajara.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
             >
-              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-10 sm:pt-36">
                 <h1 className="font-montserrat pt-32 pb-5 text-white text-1xl">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
                 <Image
                   src="/banner/logo_fibo.png"
