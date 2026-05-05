@@ -13,7 +13,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/mapei.svg"
                   alt="Membresías"
-                  width={130}
+                  width={120}
                   height={0}
                 />
             </Link>
@@ -23,7 +23,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/adisa.png"
                   alt="Membresías"
-                  width={130}
+                  width={120}
                   height={0}
                 />
             </Link>
@@ -34,6 +34,16 @@ const LogosMembresias = () => {
                   src="/membresias/ingetek.png"
                   alt="Membresías"
                   width={140}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.fester.com.mx/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/fester.png"
+                  alt="Membresías"
+                  width={100}
                   height={0}
                 />
             </Link>
@@ -53,7 +63,7 @@ const LogosMembresias = () => {
                 <Image
                   src="/membresias/dicom.jpg"
                   alt="Membresías"
-                  width={130}
+                  width={120}
                   height={0}
                 />
             </Link>
@@ -84,6 +94,16 @@ const LogosMembresias = () => {
                   src="/membresias/element5.png"
                   alt="Membresías"
                   width={55}
+                  height={0}
+                />
+            </Link>
+          </li>
+          <li>
+            <Link href="/" rel="noopener noreferrer" target="_blank">
+                <Image
+                  src="/membresias/clts.jpg"
+                  alt="Membresías"
+                  width={37}
                   height={0}
                 />
             </Link>
