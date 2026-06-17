@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import Image from 'next/legacy/image';
 
 
 export default function Home() {
@@ -37,6 +38,47 @@ export default function Home() {
               width: '100%',
             }}
           >
+            <SwiperSlide 
+              className="bg-[url('/banner/pisos.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
+              style={{ height: '100vh' }}
+            >
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
+                <h1 className="font-montserrat pt-40 pb-0 text-white text-2xl mb-5">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
+                <Image src="/banner/logo_aci.png" alt="TÉCNICO Y ACABADOR DE SUPERFICIES PLANAS DE CONCRETO" width={200} height={100} className="my-5" />
+                <h3 className="font-montserrat pt-5 pb-0 text-5xl mb-3 text-purple-400 font-bold">EXAMEN ACI</h3>
+                <h2 className="font-montserrat mb-0 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
+                TÉCNICO Y ACABADOR DE SUPERFICIES PLANAS DE CONCRETO</h2>
+                <p className="text-2xl font-montserrat py-5 text-purple-300">Certifica tu conocimiento técnico en la colocación, compactado, extendido, curado y acabado profesional de las superficies planas de concreto bajo estándares internacionales</p>
+                <p className="text-2xl font-montserrat py-1 text-purple-200 font-bold">Al aprobar obtienes Certificado ACI</p>
+                <p className="text-white text-2xl font-montserrat py-3 pb-1">DURACIÓN: 5h de 9h a 14h</p>
+                <p className="text-white text-2xl font-montserrat py-1 pb-3 font-bold">COSTO: $8,000.00 MXN + IVA</p>
+                <p className="bg-yellow-300 bg-opacity-80 b-3 text-2xl p-2 rounded-full text-white font-bold">INCLUYE SESIÓN TÉCNICA PREVIA, DE 9 A 12 H</p>
+                <h3 className="font-montserrat text-4xl font-bold text-purple-400 mb-5 mt-5">25 DE JUNIO 2026</h3>
+                <Link
+                  href="/eventos/examen-aci-tecnico-y-acabador-de-superficies-planas-de-concreto-certifica-tu-conocimiento-tecnico-en-la-colocacion-compactado-extendido-curado-y-acabado-profesional-de-las-superficies-planas-de-concreto-bajo-estandares-internacionales"
+                  className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-2 text-sm text-blue-700 rounded-full bg-purple-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 mr-3"
+                >
+                  <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">
+                    Más información
+                  </span>{" "}
+                  <svg
+                    className="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </SwiperSlide>
             <SwiperSlide 
               className="bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
