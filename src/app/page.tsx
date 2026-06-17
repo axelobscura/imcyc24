@@ -42,8 +42,8 @@ export default function Home() {
               className="bg-[url('/banner/pisos.jpg')] bg-gray-500 bg-blend-multiply z-10 bg-cover bg-center bg-no-repeat h-auto"
               style={{ height: '100vh' }}
             >
-              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relativepb-36 pt-36">
-                <h1 className="font-montserrat pt-40 pb-0 text-white text-2xl mb-5">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
+              <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relative pb-36 pt-36">
+                <h1 className="font-montserrat pt-20 pb-0 text-white text-2xl mb-5">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
                 <Image src="/banner/logo_aci.png" alt="TÉCNICO Y ACABADOR DE SUPERFICIES PLANAS DE CONCRETO" width={200} height={100} className="my-5" />
                 <h3 className="font-montserrat pt-5 pb-0 text-5xl mb-3 text-purple-400 font-bold">EXAMEN ACI</h3>
                 <h2 className="font-montserrat mb-0 text-3xl font-light tracking-tight leading-none text-white md:text-4xl lg:text-6xl dark:text-white">
