@@ -43,7 +43,7 @@ export default function Home() {
               style={{ height: '100vh' }}
             >
                 <Link
-                  href="/eventos/seminario-fibo-imcyc"
+                  href="/eventos/examen-aci-tecnico-y-acabador-de-superficies-planas-de-concreto-certifica-tu-conocimiento-tecnico-en-la-colocacion-compactado-extendido-curado-y-acabado-profesional-de-las-superficies-planas-de-concreto-bajo-estandares-internacionales"
                 >
                 <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relative pb-36 pt-36">
                   <h1 className="font-montserrat pt-20 pb-0 text-white text-2xl mb-5">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
@@ -85,7 +85,7 @@ export default function Home() {
               style={{ height: '100vh' }}
             >
                 <Link
-                  href="/eventos/examen-aci-tecnico-y-acabador-de-superficies-planas-de-concreto-certifica-tu-conocimiento-tecnico-en-la-colocacion-compactado-extendido-curado-y-acabado-profesional-de-las-superficies-planas-de-concreto-bajo-estandares-internacionales"
+                  href="/eventos/cemic-seminario-pisos-industriales"
                 >
                 <div className="py-0 px-0 mx-auto max-w-screen-xl text-center z-10 relative pb-36 pt-36">
                   <h1 className="font-montserrat pt-20 pb-0 text-white text-2xl mb-5">INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO A.C.</h1>
