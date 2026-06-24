@@ -94,7 +94,7 @@ export default function Apps() {
     <div>
       <div className="p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://www.webinarsenconcreto.com/images/2022/fondo1.jpg')] bg-gray-700 bg-blend-multiply z-10 bg-cover bg-fixed bg-no-repeat">
         <div className="mx-auto w-full max-w-screen-xl p-4 mt-10 sm:pt-120 pb-0 lg:py-90">
-          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full">
+          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start z-0 w-full pt-28">
             <div className="grid grid-cols-[1fr] sm:grid-cols-[1fr] gap-0 items-center justify-items-stretch pt-20 w-full">
               <h1 className="font-montserrat text-4xl font-light text-white text-center uppercase pb-5">Aplicaciones para la construcción</h1>
               <h3 className='flex items-center font-montserrat text-2xl font-light text-white text-left uppercase my-4 py-5 mb-0 border-t-[1px] border-t-white border-t-solid'><IoIosArrowDroprightCircle className='mr-1' /> Plataformas de estudio creadas para la industria</h3>
